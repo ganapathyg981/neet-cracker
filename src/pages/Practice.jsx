@@ -42,11 +42,11 @@ export default function Practice() {
 
   const handleOptionClick = (questionId, optionIndex, correctIndex) => {
     if (selectedAnswers[questionId] !== undefined) return;
-    
+
     const isCorrect = optionIndex === correctIndex;
-    setSelectedAnswers({ ...selectedAnswers, [questionId]: optionIndex });
-    setShowExplanation({ ...showExplanation, [questionId]: true });
-    
+    setSelectedAnswers(prev => ({ ...prev, [questionId]: optionIndex }));
+    setShowExplanation(prev => ({ ...prev, [questionId]: true }));
+
     recordQuestionAttempt(questionId, isCorrect);
   };
 
@@ -106,6 +106,7 @@ export default function Practice() {
               {['all', 'easy', 'medium', 'hard'].map((d) => (
                 <button
                   key={d}
+                  type="button"
                   className={`filter-btn ${difficultyFilter === d ? 'active' : ''}`}
                   onClick={() => setDifficultyFilter(d)}
                 >
@@ -119,6 +120,7 @@ export default function Practice() {
             <label className="filter-label">Chapter</label>
             <div className="filter-options scrollable">
               <button
+                type="button"
                 className={`filter-btn ${chapterFilter === 'all' ? 'active' : ''}`}
                 onClick={() => setChapterFilter('all')}
               >
@@ -127,6 +129,7 @@ export default function Practice() {
               {chapters.map((chapter) => (
                 <button
                   key={chapter.id}
+                  type="button"
                   className={`filter-btn ${chapterFilter === chapter.id ? 'active' : ''}`}
                   onClick={() => setChapterFilter(chapter.id)}
                 >
@@ -140,24 +143,28 @@ export default function Practice() {
             <label className="filter-label">Status</label>
             <div className="filter-options">
               <button
+                type="button"
                 className={`filter-btn ${statusFilter === 'all' ? 'active' : ''}`}
                 onClick={() => setStatusFilter('all')}
               >
                 All
               </button>
               <button
+                type="button"
                 className={`filter-btn ${statusFilter === 'unattempted' ? 'active' : ''}`}
                 onClick={() => setStatusFilter('unattempted')}
               >
                 Unattempted
               </button>
               <button
+                type="button"
                 className={`filter-btn ${statusFilter === 'correct' ? 'active' : ''}`}
                 onClick={() => setStatusFilter('correct')}
               >
                 ✓ Correct
               </button>
               <button
+                type="button"
                 className={`filter-btn ${statusFilter === 'wrong' ? 'active' : ''}`}
                 onClick={() => setStatusFilter('wrong')}
               >
@@ -166,7 +173,7 @@ export default function Practice() {
             </div>
           </div>
 
-          <button className="reset-filters-btn" onClick={resetFilters}>
+          <button type="button" className="reset-filters-btn" onClick={resetFilters}>
             <RotateCcw size={14} />
             Reset Filters
           </button>
@@ -224,7 +231,8 @@ export default function Practice() {
                       <div
                         key={idx}
                         className={optionClass}
-                        onClick={() => handleOptionClick(question.id, idx, question.correct)}
+                        onClick={() => !showResult && handleOptionClick(question.id, idx, question.correct)}
+                        style={{ cursor: showResult ? 'default' : 'pointer' }}
                       >
                         {String.fromCharCode(65 + idx)}. {option}
                       </div>
