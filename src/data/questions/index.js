@@ -2,21 +2,30 @@
 // Combines all chapter-specific questions into a unified export
 
 import { electricChargesFieldsQuestions } from './electric-charges-fields-questions.js';
+import { gravitationQuestions } from './gravitation-questions.js';
+import { rayOpticsQuestions } from './ray-optics-questions.js';
+import { currentElectricityQuestions } from './current-electricity-questions.js';
+import { electrostaticPotentialQuestions } from './electrostatic-potential-questions.js';
+import { semiconductorElectronicsQuestions } from './semiconductor-electronics-questions.js';
 
 // Combined question bank - all chapters
 export const allQuestions = [
   ...electricChargesFieldsQuestions,
-  // Future chapters will be added here:
-  // ...currentElectricityQuestions,
-  // ...gravitationQuestions,
-  // ...rayOpticsQuestions,
-  // ...semiconductorQuestions,
-  // ...electrostaticPotentialQuestions,
+  ...gravitationQuestions,
+  ...rayOpticsQuestions,
+  ...currentElectricityQuestions,
+  ...electrostaticPotentialQuestions,
+  ...semiconductorElectronicsQuestions,
 ];
 
 // Export individual chapter questions for targeted access
 export {
   electricChargesFieldsQuestions,
+  gravitationQuestions,
+  rayOpticsQuestions,
+  currentElectricityQuestions,
+  electrostaticPotentialQuestions,
+  semiconductorElectronicsQuestions,
 };
 
 // Utility function to get questions by chapter

@@ -5,6 +5,7 @@ import { getTopic, getChapter, sampleTopicDetail } from '../data/physicsData';
 import { getQuestionsByTopic } from '../data/questionBank';
 import { recordQuestionAttempt, getQuestionStatus, recordTopicViewed } from '../stores/progressStore';
 import Formula from '../components/Formula';
+import FormulaText from '../components/FormulaText';
 
 export default function TopicDetail() {
   const { subjectId, chapterId, topicId } = useParams();
@@ -155,45 +156,52 @@ export default function TopicDetail() {
           <p className="theory-text" style={{ marginBottom: '20px' }}>
             Tap on a formula to see its applications, derived formulas, and practice questions
           </p>
-          {data.formulas?.length > 0 ? (
-            <div className="formulas-grid">
-              {data.formulas.map((formula) => {
-                // Count questions for this formula
-                const formulaQuestions = questions.filter(q => 
-                  q.formulas && q.formulas.includes(formula.id)
-                );
-                
-                return (
-                  <div
-                    key={formula.id}
-                    className="formula-card-simple"
-                    onClick={() => navigate(`/study/${subjectId}/${chapterId}/${topicId}/formula/${formula.id}`)}
-                  >
-                    <div className="formula-card-simple-name">{formula.name}</div>
-                    <div className="formula-card-simple-math">
-                      <Formula math={formula.latex} display={true} />
-                    </div>
-                    <div className="formula-card-simple-footer">
-                      <span className="formula-card-simple-count">
-                        {formula.applications?.length || 0} applications
-                      </span>
-                      {formulaQuestions.length > 0 && (
-                        <span className="formula-card-simple-questions">
-                          {formulaQuestions.length} Q
+          {(() => {
+            const baseFormulas = data.formulas?.filter(formula => formula.category !== 'derived') || [];
+
+            return baseFormulas.length > 0 ? (
+              <div className="formulas-grid">
+                {baseFormulas.map((formula) => {
+                  // Count questions for this formula
+                  const formulaQuestions = questions.filter(q =>
+                    q.formulas && q.formulas.includes(formula.id)
+                  );
+
+                  // Count derived formulas
+                  const derivedCount = data.formulas.filter(f => f.derivedFrom === formula.id).length;
+
+                  return (
+                    <div
+                      key={formula.id}
+                      className="formula-card-simple"
+                      onClick={() => navigate(`/study/${subjectId}/${chapterId}/${topicId}/formula/${formula.id}`)}
+                    >
+                      <div className="formula-card-simple-name">{formula.name}</div>
+                      <div className="formula-card-simple-math">
+                        <Formula math={formula.latex} display={true} />
+                      </div>
+                      <div className="formula-card-simple-footer">
+                        <span className="formula-card-simple-count">
+                          {derivedCount} {derivedCount === 1 ? 'application' : 'applications'}
                         </span>
-                      )}
-                      <ArrowRight size={18} className="formula-card-simple-arrow" />
+                        {formulaQuestions.length > 0 && (
+                          <span className="formula-card-simple-questions">
+                            {formulaQuestions.length} Q
+                          </span>
+                        )}
+                        <ArrowRight size={18} className="formula-card-simple-arrow" />
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
-          ) : (
-            <div className="empty-state">
-              <div className="empty-state-icon">📐</div>
-              <p>Formulas will be added soon</p>
-            </div>
-          )}
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="empty-state">
+                <div className="empty-state-icon">📐</div>
+                <p>Formulas will be added soon</p>
+              </div>
+            );
+          })()}
         </div>
       )}
 
@@ -218,12 +226,12 @@ export default function TopicDetail() {
                         </span>
                       )}
                     </div>
-                    <p className="question-text">{question.text}</p>
+                    <p className="question-text"><FormulaText text={question.text} /></p>
                     <div className="options">
                       {question.options.map((option, idx) => {
                         const isSelected = currentAnswer === idx;
                         const isCorrect = question.correct === idx;
-                        
+
                         let optionClass = 'option';
                         if (showResult) {
                           if (isCorrect) optionClass += ' correct';
@@ -236,14 +244,14 @@ export default function TopicDetail() {
                             className={optionClass}
                             onClick={() => handleOptionClick(question.id, idx, question.correct)}
                           >
-                            {String.fromCharCode(65 + idx)}. {option}
+                            {String.fromCharCode(65 + idx)}. <FormulaText text={option} />
                           </div>
                         );
                       })}
                     </div>
                     {showExplanation[question.id] && (
                       <div className="explanation">
-                        <strong>Explanation:</strong> {question.explanation}
+                        <strong>Explanation:</strong> <FormulaText text={question.explanation} />
                       </div>
                     )}
                   </div>
@@ -267,24 +275,24 @@ export default function TopicDetail() {
                 <div className="mistake-header">
                   <div className="list-number">{idx + 1}</div>
                   <div className="mistake-title">
-                    {typeof mistake === 'string' ? mistake : mistake.mistake}
+                    {typeof mistake === 'string' ? <FormulaText text={mistake} /> : <FormulaText text={mistake.mistake} />}
                   </div>
                 </div>
                 {typeof mistake === 'object' && (
                   <div className="mistake-details">
                     {mistake.correct && (
                       <div className="mistake-correct">
-                        <span className="label">✓ Correct:</span> {mistake.correct}
+                        <span className="label">✓ Correct:</span> <FormulaText text={mistake.correct} />
                       </div>
                     )}
                     {mistake.whyItHappens && (
                       <div className="mistake-why">
-                        <span className="label">Why it happens:</span> {mistake.whyItHappens}
+                        <span className="label">Why it happens:</span> <FormulaText text={mistake.whyItHappens} />
                       </div>
                     )}
                     {mistake.neetExample && (
                       <div className="mistake-example">
-                        <span className="label">📝 NEET:</span> {mistake.neetExample}
+                        <span className="label">📝 NEET:</span> <FormulaText text={mistake.neetExample} />
                       </div>
                     )}
                   </div>

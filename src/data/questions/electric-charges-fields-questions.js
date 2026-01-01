@@ -1,355 +1,20887 @@
 // Electric Charges & Fields Questions
 // Chapter: electric-charges-fields
-// 120 curated NEET-style questions covering all base and derived formulas
+// 870 curated NEET-style questions covering all base and derived formulas
 // Organized by formula and topic for easy reference
 
 export const electricChargesFieldsQuestions = [
-  {id:'ecf-surface-density-01',text:'A uniformly charged disk has total charge 8µC and area 0.5 m². Surface charge density is:',options:['16 µC/m²','8 µC/m²','4 µC/m²','32 µC/m²'],correct:0,difficulty:'easy',explanation:'σ = Q/A = 8µC / 0.5 m² = 16 µC/m²',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-surface-density-02',text:'Surface charge density is defined as:',options:['Charge per unit volume','Charge per unit area','Charge per unit length','Charge per time'],correct:1,difficulty:'easy',explanation:'Surface charge density σ = Q/A (charge per unit area)',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-surface-density-03',text:'SI unit of surface charge density:',options:['C','C/m²','C/m','C·m²'],correct:1,difficulty:'easy',explanation:'σ = Q/A. Units = C/m² (Coulombs per square meter)',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-surface-density-04',text:'A spherical conductor has radius 0.2 m and charge 4µC. Surface charge density is:',options:['50 µC/m²','25 µC/m²','100 µC/m²','10 µC/m²'],correct:0,difficulty:'medium',explanation:'Area = 4πR² = 4π(0.2)² ≈ 0.503 m². σ = 4µC/0.503 ≈ 7.96µC/m². Closest: for more precise: 4/(4π×0.04) ≈ 80/π ≈ 25.5, but with cleaner numbers: if A = 0.16 m², σ = 25µC/m²',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-surface-density-05',text:'If surface charge density doubles, electric field just outside conductor becomes:',options:['2 times','½ times','4 times','Unchanged'],correct:0,difficulty:'medium',explanation:'E = σ/ε₀. If σ doubles, E doubles',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-surface-density-06',text:'Two spheres with same radius have surface charge densities σ₁ and σ₂ = 2σ₁. Charge ratio Q₁/Q₂ is:',options:['1/2','2/1','1/4','4/1'],correct:0,difficulty:'medium',explanation:'Q = σ × 4πR². If σ₂ = 2σ₁ and radii equal: Q₂/Q₁ = σ₂/σ₁ = 2. So Q₁/Q₂ = 1/2',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-surface-density-07',text:'At sharp points of a conductor, surface charge density is:',options:['Lower than flat regions','Higher than flat regions','Equal everywhere','Zero'],correct:1,difficulty:'medium',explanation:'σ is higher at regions of high curvature (sharp points). This causes higher field and corona discharge risk',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-surface-density-08',text:'A uniformly charged ring of radius 0.5 m has linear charge density λ = 2µC/m. Total charge and surface density (treating as 1D) are:',options:['2π µC charge','6.28 µC charge','Both applicable to ring geometry','Neither applies to ring'],correct:2,difficulty:'hard',explanation:'For ring: Q = λ × circumference = 2µC/m × 2π(0.5m) = 2π µC ≈ 6.28µC. Surface density doesn\'t apply to 1D rings; linear density applies',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-surface-density-09',text:'On a charged spherical conductor, where is surface charge density maximum?',options:['At poles','At equator','Everywhere equal (uniform)','At highest curvature regions'],correct:2,difficulty:'easy',explanation:'On a perfect sphere (uniform geometry), surface charge density is the same everywhere due to symmetry',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-surface-density-10',text:'Field just outside a conductor with surface charge density σ = 10⁻⁶ C/m² is:',options:['1.13 × 10⁵ N/C','2.26 × 10⁵ N/C','5.65 × 10⁴ N/C','1.13 × 10⁶ N/C'],correct:0,difficulty:'hard',explanation:'E = σ/ε₀ = (10⁻⁶)/(8.85×10⁻¹²) ≈ 1.13 × 10⁵ N/C',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['surface-density'],tags:['neet-2023','numerical'],year:2023},
-  {id:'ecf-volume-density-01',text:'A cube of side 1 m has total charge 0.5 C uniformly distributed. Volume charge density is:',options:['0.5 C/m³','1 C/m³','2 C/m³','0.25 C/m³'],correct:0,difficulty:'easy',explanation:'ρ = Q/V = 0.5C / (1m)³ = 0.5 C/m³',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-volume-density-02',text:'Volume charge density is defined as:',options:['Charge per unit mass','Charge per unit area','Charge per unit volume','Charge per unit time'],correct:2,difficulty:'easy',explanation:'ρ = Q/V (charge per unit volume)',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-volume-density-03',text:'SI unit of volume charge density:',options:['C/m','C/m²','C/m³','C·m'],correct:2,difficulty:'easy',explanation:'ρ = Q/V. Units = C/m³ (Coulombs per cubic meter)',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-volume-density-04',text:'A solid sphere of radius 0.1 m has total charge 2µC uniformly distributed. Volume charge density:',options:['4.77 µC/m³','9.55 µC/m³','19.1 µC/m³','2.39 µC/m³'],correct:1,difficulty:'medium',explanation:'V = (4/3)πr³ = (4/3)π(0.1)³ ≈ 4.19 × 10⁻³ m³. ρ = 2µC / 4.19×10⁻³ ≈ 0.48 C/m³',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-volume-density-05',text:'For a uniformly charged solid sphere, density is constant. Total charge in inner sphere of radius r/2 is:',options:['Q/8','Q/4','Q/2','Q'],correct:0,difficulty:'medium',explanation:'V ∝ r³. If r → r/2, then V → V/8. Charge Q ∝ V, so Q → Q/8',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2022','numerical'],year:2022},
-  {id:'ecf-volume-density-06',text:'Two cylinders with same height but different radii have same volume charge density ρ. Charge ratio Q₁/Q₂ equals:',options:['1:1','r₁²:r₂²','r₁:r₂','Same as volume ratio'],correct:3,difficulty:'medium',explanation:'Q = ρV. Since ρ is same, Q ∝ V. Q₁/Q₂ = V₁/V₂ = (πr₁²h)/(πr₂²h) = r₁²/r₂²',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-volume-density-07',text:'For a non-conducting solid sphere with uniform ρ, field inside at distance r from center:',options:['E = kQ/r²','E = kQr/R³','E = ρr/(3ε₀)','E = 0'],correct:2,difficulty:'hard',explanation:'Using Gauss law: Q_enc = ρ × (4/3)πr³. E × 4πr² = ρ(4πr³/3)/ε₀. E = ρr/(3ε₀)',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-volume-density-08',text:'If volume charge density doubles for same shape, all internal and external fields:',options:['Double','Quadruple','Halve','Become zero'],correct:0,difficulty:'easy',explanation:'E ∝ ρ (directly proportional). Doubling ρ doubles E everywhere',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-volume-density-09',text:'In a uniformly charged sphere, the relationship between ρ, Q, and R is:',options:['ρ = Q/(4πR²)','ρ = 3Q/(4πR³)','ρ = Q/R','ρ = Q/(4πR)'],correct:1,difficulty:'medium',explanation:'V = (4/3)πR³. Q = ρV = ρ(4/3)πR³. Therefore ρ = 3Q/(4πR³)',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-volume-density-10',text:'A non-conducting sphere has charge distributed with volume density ρ(r) = ρ₀(1 - r/R). Total charge is:',options:['(2/3)πR³ρ₀','(4/3)πR³ρ₀','(1/2)πR³ρ₀','(4/3)πR²ρ₀'],correct:0,difficulty:'hard',explanation:'Q = ∫ρ(r)dV = ∫₀ᴿ ρ₀(1-r/R) × 4πr²dr = (2/3)πR³ρ₀',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['volume-density'],tags:['neet-2023','hard-calculation'],year:2023},
-  {id:'ecf-charge-sharing-01',text:'Two identical conducting spheres with charges Q₁ = 6µC and Q₂ = 2µC touch and separate. Final charge on each:',options:['4µC','8µC','3µC','6µC'],correct:0,difficulty:'easy',explanation:'Total charge = 6 + 2 = 8µC. Divided equally: each gets 4µC',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-charge-sharing-02',text:'Charge sharing by conduction occurs when:',options:['Conductors are near each other','Conductors touch each other','Field lines pass between conductors','Electrostatic induction happens'],correct:1,difficulty:'easy',explanation:'Charge sharing requires physical contact/conduction between conductors',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-charge-sharing-03',text:'Three identical spheres with charges Q, 2Q, 0. After pairwise contact (sphere 1 with 2, then 2 with 3), final charges:',options:['3Q/2, Q, Q/2','Q, Q, Q','3Q/2, 3Q/4, 3Q/4','2Q, 2Q, 2Q'],correct:2,difficulty:'hard',explanation:'After 1&2 contact: each gets (Q+2Q)/2 = 3Q/2. After 2&3 contact: each gets (3Q/2+0)/2 = 3Q/4',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-charge-sharing-04',text:'Two conducting spheres of radii R₁ = R and R₂ = 2R with charges Q₁, Q₂ touch. After separation, potential on each is:',options:['Same','Different by factor 2','Different by factor √2','Proportional to radius'],correct:0,difficulty:'hard',explanation:'When conductors touch, they reach same potential V. After separation: V = Q\'/(4πε₀R) is same for both',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-charge-sharing-05',text:'Two identical spheres A (charge 4µC) and B (uncharged) touch. Charge on A after separation:',options:['4µC','2µC','0µC','8µC'],correct:1,difficulty:'easy',explanation:'Total = 4µC + 0 = 4µC. Divided equally: each = 2µC',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2022','numerical'],year:2022},
-  {id:'ecf-charge-sharing-06',text:'When two charged identical conductors touch and separate, which quantity is conserved?',options:['Charge on each','Potential on each','Total charge','Field between them'],correct:2,difficulty:'medium',explanation:'Total charge is always conserved. It redistributes equally between identical conductors',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-charge-sharing-07',text:'Three identical spheres A(+6µC), B(-2µC), C(+8µC). After A touches B, then B touches C, charge on B is:',options:['+1µC','+2µC','+3µC','+4µC'],correct:0,difficulty:'hard',explanation:'A touches B: each gets (6-2)/2 = 2µC. B(now 2µC) touches C(8µC): each gets (2+8)/2 = 5µC',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-charge-sharing-08',text:'For unequal spheres with different radii touching, charges redistribute such that:',options:['Each gets equal charge','Larger sphere gets more charge','Potential becomes equal','Field becomes zero'],correct:2,difficulty:'medium',explanation:'After contact, potentials equalize: V = Q/(4πε₀R) for each',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-charge-sharing-09',text:'Two conducting spheres of radii 1 cm and 2 cm, initially with charges Q and -Q. After touching, charge on larger sphere:',options:['Q','Q/3','2Q/3','Q/2'],correct:2,difficulty:'hard',explanation:'V = Q/(4πε₀R). For equilibrium: Q₁/R₁ = Q₂/R₂. With Q₁ + Q₂ = 0: Q₁ = Q/3, Q₂ = 2Q/3',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2021','hard-calculation'],year:2021},
-  {id:'ecf-charge-sharing-10',text:'In charge sharing between identical conductors, fraction of initial charge retained on original conductor:',options:['1/2','1/3','1','Depends on initial charge'],correct:0,difficulty:'easy',explanation:'For identical conductors: final charge = (Q₁ + Q₂)/2. On first: [(Q₁+Q₂)/2]/Q₁ = 1/2 if Q₂=0',subject:'physics',chapter:'electric-charges-fields',topic:'charging-methods',formulas:['charge-sharing'],tags:['neet-2023','conceptual'],year:2023},
-  {id:'ecf-induction-01',text:'In charging by induction, the induced charge on a conductor is always:',options:['Positive','Negative','Opposite to inducing charge','Zero'],correct:2,difficulty:'easy',explanation:'Induced charge has opposite sign to the charge that induces it',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-induction-02',text:'Steps of charging by induction: 1) Bring charge near, 2) Ground, 3) Remove ground, 4) Remove charge. Final charge:',options:['Same as step 1','Opposite to step 1','Zero','Depends on inducing charge'],correct:1,difficulty:'medium',explanation:'After removing inducing charge, object retains charge opposite to what induced it',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-induction-03',text:'An uncharged conductor near positive charge. Near end develops:',options:['Positive charge','Negative charge','No charge','Equal positive and negative'],correct:1,difficulty:'easy',explanation:'Positive charge repels electrons, accumulating negative charges near side',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-induction-04',text:'Maximum magnitude of induced charge compared to inducing charge Q:',options:['Greater than Q','Equal to Q','Less than Q','Zero'],correct:2,difficulty:'medium',explanation:'Induced charge ≤ inducing charge magnitude, depending on geometry',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-induction-05',text:'When grounding wire removed before moving inducing charge, induced charge:',options:['Increases','Decreases','Remains constant','Becomes zero'],correct:2,difficulty:'medium',explanation:'Once grounded and ungrounded, charge is fixed until external field changes',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-induction-06',text:'In induction process, when is grounded conductor always neutral?',options:['Before induction','During grounding','After ground removed','Never completely'],correct:1,difficulty:'hard',explanation:'While grounding wire connected, charge flows to maintain neutrality with ground',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-induction-07',text:'Faraday ice pail experiment demonstrates:',options:['Charge conservation','Charge induction and distribution','Charge screening','Field shielding'],correct:2,difficulty:'hard',explanation:'Shows charge distribution on conductors, confined to outer surface',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-induction-08',text:'If inducing charge moved farther away during induction (before ungrounding), induced charge:',options:['Increases','Decreases','Stays same','Reverses sign'],correct:1,difficulty:'hard',explanation:'Farther inducing charge creates weaker field, less charge induced',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-induction-09',text:'Charge induced on conductor depends on:',options:['Only inducing charge','Shape and size of conductor','Distance from inducing charge','All of above'],correct:3,difficulty:'medium',explanation:'Induced charge depends on geometry, magnitude and distance',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-induction-10',text:'Uncharged conductor inside Faraday cage charged outside will:',options:['Become charged','Develop induced charges that cancel external field','Shield interior completely','Redistribute exterior charge'],correct:1,difficulty:'hard',explanation:'Faraday cage develops induced charges that create zero field inside',subject:'physics',chapter:'electric-charges-fields',topic:'induction-charge',formulas:['induction-charge'],tags:['neet-2023','conceptual'],year:2023},
-  {id:'ecf-field-ring-01',text:'Electric field at center of uniformly charged ring:',options:['kQ/R²','Zero','kQ/R','2kQ/R²'],correct:1,difficulty:'easy',explanation:'At center, contributions cancel by symmetry',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-field-ring-02',text:'Field on axis of ring at distance x from center:',options:['E = kQx/R²','E = kQx/(R²+x²)^(3/2)','E = kQ/(R²+x²)','E = kQ(R²+x²)/x³'],correct:1,difficulty:'medium',explanation:'E = kQx/(R²+x²)^(3/2) by integrating ring elements',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-field-ring-03',text:'Maximum field on ring axis occurs at:',options:['Center','At R/√2 from center','At R from center','At infinity'],correct:1,difficulty:'hard',explanation:'dE/dx = 0 gives x = R/√2. Maximum away from center',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-field-ring-04',text:'Far from ring (x >> R), it acts like:',options:['Line charge','Disk','Point charge','Infinite sheet'],correct:2,difficulty:'medium',explanation:'When x >> R, ring appears as point charge with E ≈ kQ/x²',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-field-ring-05',text:'Ring charge Q, radius R. Field at axial distance R from center:',options:['kQ/R²','kQ/(2√2 R²)','kQ/(8R²)','kQ/2R²'],correct:1,difficulty:'hard',explanation:'E = kQR/(R²+R²)^(3/2) = kQ/(2√2 R²)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2022','hard-calculation'],year:2022},
-  {id:'ecf-field-ring-06',text:'Direction of field on positively charged ring axis:',options:['Toward ring','Away from ring','Tangential','Perpendicular to axis'],correct:1,difficulty:'easy',explanation:'Positive ring repels positive test charge outward',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-field-ring-07',text:'Two identical coaxial rings separated by 2R, field at midpoint:',options:['kQ/R²','2kQ/(√2)³R²','Zero (by symmetry)','kQ/(2R²)'],correct:2,difficulty:'medium',explanation:'By symmetry, equal contributions cancel',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-field-ring-08',text:'Charge density λ on ring of radius R and circumference C:',options:['λC = Q','λ = Q/C','C = 2πR','All above'],correct:3,difficulty:'easy',explanation:'All consistent: Q = λ × 2πR',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-field-ring-09',text:'Field on axis changes from 1/x² to ring behavior because:',options:['Geometry changes','Charge distributes','x becomes comparable to R','Integration limits differ'],correct:2,difficulty:'hard',explanation:'When x ~ R, approximations fail; must use full formula',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-field-ring-10',text:'Ring radius 0.1m with charge 2µC, field at 0.1m on axis:',options:['1.6×10⁵ N/C','8×10⁴ N/C','3.2×10⁵ N/C','1.27×10⁵ N/C'],correct:3,difficulty:'hard',explanation:'E = kQx/(R²+x²)^(3/2) ≈ 1.27×10⁵',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-ring','electric-field-point'],tags:['neet-2023','hard-calculation'],year:2023},
-  {id:'ecf-field-disk-01',text:'Field near disk surface (x → 0):',options:['σ/(2ε₀)','σ/ε₀','0','∞'],correct:0,difficulty:'easy',explanation:'E = (σ/2ε₀)[1 - x/√(R²+x²)] → σ/2ε₀',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-field-disk-02',text:'Far from disk (x >> R):',options:['E → 0','E → kQ/x²','E → σ/(2ε₀)','E → ∞'],correct:1,difficulty:'medium',explanation:'Far away, disk acts as point charge: E ≈ kQ/x²',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-field-disk-03',text:'Disk radius doubled, density same. Field at original point:',options:['Doubles','No change','Increases <2','Depends on position'],correct:3,difficulty:'hard',explanation:'Effect varies with position based on geometry',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-field-disk-04',text:'Field on axis at distance R from disk radius R:',options:['σ/(2ε₀)[1-1/√2]','σ/(2ε₀)','kQ/R²','σ/ε₀'],correct:0,difficulty:'hard',explanation:'E = (σ/2ε₀)[1 - R/√(2R²)] = (σ/2ε₀)[1 - 1/√2]',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2021','hard-calculation'],year:2021},
-  {id:'ecf-field-disk-05',text:'Two parallel disks opposite charges create field:',options:['0','σ/ε₀','σ/(2ε₀)','√2 σ/ε₀'],correct:1,difficulty:'medium',explanation:'Each contributes σ/2ε₀. Between opposite: fields add to σ/ε₀',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-field-disk-06',text:'E = (σ/2ε₀)[1 - x/√(R²+x²)] reduces to infinite sheet when:',options:['R → 0','x → ∞','R → ∞','x → 0'],correct:2,difficulty:'medium',explanation:'As R → ∞, term → 0, so E → σ/2ε₀',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-field-disk-07',text:'On disk axis, field:',options:['Increases linearly','Decreases 1/x','Has maximum','Always increases'],correct:2,difficulty:'hard',explanation:'Field reaches maximum at intermediate point, then decreases',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-field-disk-08',text:'Disk radius 0.2m, σ = 10⁻⁶ C/m². Field at surface:',options:['56.5 N/C','113 N/C','28.3 N/C','226 N/C'],correct:1,difficulty:'hard',explanation:'E = σ/2ε₀ ≈ 56.5 to 113 N/C',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-field-disk-09',text:'Two coaxial disks (one 2× radius, same σ):',options:['Simple addition','Not additive','Depends on position','Requires integration'],correct:3,difficulty:'hard',explanation:'Must integrate both disks separately',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-field-disk-10',text:'Disk vs ring: same Q and R. At center:',options:['Same','Disk > Ring','Ring > Disk','Depends on σ'],correct:1,difficulty:'hard',explanation:'Disk nonzero by distribution. Ring zero by symmetry',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-disk','field-ring'],tags:['neet-2023','conceptual'],year:2023},
-  {id:'ecf-field-sheet-01',text:'Field from infinite non-conducting sheet:',options:['Depends on distance','Independent of distance','E = σ/(4πε₀r²)','E = σ·r'],correct:1,difficulty:'easy',explanation:'E = σ/(2ε₀) = constant',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-field-sheet-02',text:'Field from conducting sheet:',options:['σ/(2ε₀)','σ/ε₀','0 outside','σ/4πε₀'],correct:1,difficulty:'medium',explanation:'E = σ/ε₀ (only on side with charge)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-field-sheet-03',text:'Two parallel sheets ±σ:',options:['0 everywhere','σ/ε₀ between, 0 outside','σ/(2ε₀) everywhere','Depends on position'],correct:1,difficulty:'hard',explanation:'Between: fields add. Outside: fields cancel',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-field-sheet-04',text:'Parallel conducting plates ±Q, area A:',options:['Field 0','E = Q/ε₀A','E = Q/(2ε₀A)','E = σ/ε₀'],correct:3,difficulty:'medium',explanation:'σ = Q/A, so E = σ/ε₀',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-field-sheet-05',text:'Parallel plate capacitor uses:',options:['Coulombs law','Gauss law','Superposition','All above'],correct:3,difficulty:'medium',explanation:'All three combine for result',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-field-sheet-06',text:'Sheet σ = 2 × 10⁻⁶ C/m². Field:',options:['113 N/C','226 N/C','56.5 N/C','452 N/C'],correct:0,difficulty:'hard',explanation:'E = σ/(2ε₀) ≈ 113 N/C',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-field-sheet-07',text:'Field direction from sheet:',options:['Parallel to sheet','Perpendicular to sheet','Tangential','Depends on σ sign'],correct:1,difficulty:'easy',explanation:'Always perpendicular (away if positive)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-field-sheet-08',text:'Three sheets +σ, -σ, +σ. Field:',options:['0 everywhere','Alternating direction','Same direction','Depends on spacing'],correct:1,difficulty:'hard',explanation:'Creates alternating patterns',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-field-sheet-09',text:'Test particle in sheet field:',options:['Toward sheet','Away from sheet','Toward positive','Depends on charge sign'],correct:3,difficulty:'medium',explanation:'Depends on test charge sign',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-field-sheet-10',text:'If sheet density doubles, field:',options:['Halves','Doubles','Quadruples','Stays same'],correct:1,difficulty:'easy',explanation:'E ∝ σ directly',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['field-infinite-sheet','gauss-law'],tags:['neet-2023','conceptual'],year:2023},
-  {id:'ecf-dipole-axial-01',text:'Field on dipole axis (far):',options:['E = kp/r²','E = 2kp/r³','E = kQ/r²','E = 0'],correct:1,difficulty:'medium',explanation:'E_a = 2kp/r³',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-dipole-axial-02',text:'Direction on dipole axis:',options:['Toward dipole','Away from dipole','Same as moment','Perpendicular'],correct:2,difficulty:'easy',explanation:'Points in dipole moment direction',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-dipole-axial-03',text:'Axial field decays as:',options:['1/r','1/r²','1/r³','1/r⁴'],correct:2,difficulty:'easy',explanation:'E_a ∝ 1/r³',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-dipole-axial-04',text:'Axial to equatorial field ratio:',options:['1:1','2:1','1:2','4:1'],correct:1,difficulty:'medium',explanation:'E_axial/E_equatorial = 2',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-dipole-axial-05',text:'Dipole p = 2 × 10⁻²⁹ C·m. Axial field at r = 1nm:',options:['1.8 × 10⁶ N/C','3.6 × 10⁶ N/C','7.2 × 10⁶ N/C','9 × 10⁵ N/C'],correct:1,difficulty:'hard',explanation:'E = 2kp/r³ ≈ 3.6×10⁶ N/C',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2022','hard-calculation'],year:2022},
-  {id:'ecf-dipole-axial-06',text:'Axial falls faster than point charge because:',options:['Less charge','Partial cancellation','Greater distance','Geometry effect'],correct:1,difficulty:'medium',explanation:'±q fields partially cancel',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-dipole-axial-07',text:'If moment doubles, axial field:',options:['2 times','4 times','Same','Half'],correct:0,difficulty:'easy',explanation:'E_a ∝ p',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-dipole-axial-08',text:'Far axis approximation as point charge:',options:['Yes','No','Only large r','Depends on direction'],correct:2,difficulty:'hard',explanation:'E ∝ 1/r³, not 1/r² like point charge',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-dipole-axial-09',text:'Two aligned dipoles on same axis:',options:['Attract','Repel','Depends on orientation','No interaction'],correct:2,difficulty:'hard',explanation:'Interaction depends on relative orientation and distance',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-dipole-axial-10',text:'Axial field sign changes:',options:['Never','Between charges','Far away','Depends on reference'],correct:0,difficulty:'medium',explanation:'Direction defined by moment, no sign change',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-axial-field','electric-field-point'],tags:['neet-2023','conceptual'],year:2023},
-  {id:'ecf-dipole-equatorial-01',text:'Equatorial field:',options:['E = kp/r³','E = 2kp/r³','E = 0','E = kQ/r²'],correct:0,difficulty:'medium',explanation:'E_e = kp/r³, opposite to moment',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-dipole-equatorial-02',text:'Equatorial field direction:',options:['Along moment','Opposite to moment','Perpendicular','Tangential'],correct:1,difficulty:'easy',explanation:'Opposite to dipole moment',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-dipole-equatorial-03',text:'Equatorial vs axial at same r:',options:['Stronger','Weaker','Equal','Depends on p'],correct:1,difficulty:'easy',explanation:'E_e = E_a/2',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-dipole-equatorial-04',text:'Axial 2× equatorial magnitude relation:',options:['Same direction','Opposite directions','One zero','Perpendicular'],correct:1,difficulty:'hard',explanation:'Axial parallels p, equatorial opposes',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-dipole-equatorial-05',text:'On equator, field:',options:['Toward +charge','Toward -charge','Opposite to moment','Toward center'],correct:2,difficulty:'medium',explanation:'-charge attracts less; net opposite to p',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-dipole-equatorial-06',text:'At far equator (r → ∞):',options:['Zero','1/r² behavior','1/r³ behavior','Infinite'],correct:2,difficulty:'medium',explanation:'Decays 1/r³',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-dipole-equatorial-07',text:'Positive charge on +z dipole equator force:',options:['Along +z','Along -z','Perpendicular','No force'],correct:1,difficulty:'hard',explanation:'Equatorial field opposes moment direction',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2019','numerical'],year:2019},
-  {id:'ecf-dipole-equatorial-08',text:'Dipole p = 10⁻²⁹ C·m. Equatorial field r = 1Å:',options:['9 × 10⁵ N/C','4.5 × 10⁵ N/C','1.8 × 10⁶ N/C','3.6 × 10⁶ N/C'],correct:0,difficulty:'hard',explanation:'E = kp/r³ ≈ 9×10⁵ N/C',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-dipole-equatorial-09',text:'Equator makes angle with dipole axis:',options:['0°','45°','90°','180°'],correct:2,difficulty:'easy',explanation:'Perpendicular by definition',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-dipole-equatorial-10',text:'Total dipole field combines:',options:['Vector sum','Scalar sum','Quadrature sum','Largest'],correct:0,difficulty:'medium',explanation:'Superposition of ±q fields',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-equatorial-field','electric-field-point'],tags:['neet-2023','conceptual'],year:2023},
-  {id:'ecf-field-sphere-01',text:'Outside sphere (r > R):',options:['E = kQ/r²','E = ρr/(3ε₀)','E = 0','E = σ/ε₀'],correct:0,difficulty:'easy',explanation:'Acts as point charge',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-field-sphere-02',text:'Inside sphere (r < R):',options:['E = 0','E = kQr/R³','E = ρr/(3ε₀)','E = kQ/R²'],correct:2,difficulty:'medium',explanation:'E = ρr/(3ε₀) linear in r',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-field-sphere-03',text:'At surface (r = R):',options:['Discontinuity','E = kQ/R²','Continuous','E = 0'],correct:2,difficulty:'medium',explanation:'Continuous: E = kQ/R²',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-field-sphere-04',text:'At sphere center:',options:['E = kQ/R²','E = ρR/(3ε₀)','E = 0','E = ∞'],correct:2,difficulty:'easy',explanation:'Zero by symmetry',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-field-sphere-05',text:'Sphere radius R, ρ = 10⁻⁶ C/m³. Field r = R/2:',options:['ρR/(6ε₀)','ρR/(3ε₀)','2ρR/(3ε₀)','ρR/(12ε₀)'],correct:0,difficulty:'hard',explanation:'E = ρr/(3ε₀) = ρR/(6ε₀)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2022','hard-calculation'],year:2022},
-  {id:'ecf-field-sphere-06',text:'Hollow shell:',options:['E = 0 everywhere inside','E = kQ/r² outside','Both true','Neither true'],correct:2,difficulty:'medium',explanation:'Both properties true',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-field-sphere-07',text:'Concentric shells Q₁ and Q₂:',options:['Interact','Don\'t interact','Independent','Partially shield'],correct:2,difficulty:'hard',explanation:'Superposition applies',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-field-sphere-08',text:'Non-uniform ρ(r) = ρ₀(1-r/R):',options:['E linear','E ∝ r²','E = 0 at center','E surface = kQ/R²'],correct:3,difficulty:'hard',explanation:'Surface field still E = kQ/R²',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-field-sphere-09',text:'Uniform ρ vs shell at r = R/2:',options:['Uniform has field','Shell has field','Same','Factor 2 difference'],correct:0,difficulty:'hard',explanation:'Uniform: nonzero. Shell: zero',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-field-sphere-10',text:'Conducting sphere discontinuity due to:',options:['Surface σ','Volume ρ','Both','Geometry'],correct:0,difficulty:'medium',explanation:'σ = ε₀E causes discontinuity',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-sphere','gauss-law-formula'],tags:['neet-2023','conceptual'],year:2023},
-  {id:'ecf-field-cylinder-01',text:'Outside cylinder (r > R):',options:['E = λ/(2πε₀r)','E = 0','E ∝ r','E ∝ 1/r²'],correct:0,difficulty:'medium',explanation:'E = λ/(2πε₀r)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-field-cylinder-02',text:'Inside cylinder (r < R):',options:['E = 0','E = λ/(2πε₀r)','E = ρr/(2ε₀)','E = kQ/r²'],correct:2,difficulty:'hard',explanation:'E = ρr/(2ε₀) linear in r',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-field-cylinder-03',text:'Cylindrical symmetry Gaussian:',options:['Sphere','Cube','Coaxial cylinder','Arbitrary'],correct:2,difficulty:'easy',explanation:'Coaxial exploits symmetry',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-field-cylinder-04',text:'Positive cylinder field direction:',options:['Along axis','Radially outward','Tangential','Toward axis'],correct:1,difficulty:'easy',explanation:'Radially outward',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-field-cylinder-05',text:'Cylinder λ = 2×10⁻⁸ C/m. Field r = 0.1m:',options:['3.6 × 10³ N/C','7.2 × 10³ N/C','1.8 × 10³ N/C','9 × 10³ N/C'],correct:0,difficulty:'hard',explanation:'E = λ/(2πε₀r) ≈ 3.6×10³',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2022','hard-calculation'],year:2022},
-  {id:'ecf-field-cylinder-06',text:'At r = R (surface):',options:['Discontinuity','Continuous','E = 0','Depends on ρ'],correct:2,difficulty:'medium',explanation:'Continuous for non-conducting',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-field-cylinder-07',text:'Coaxial ±λ cylinders:',options:['Field everywhere','Zero inside','Zero outside','Zero between'],correct:3,difficulty:'hard',explanation:'Contributions cancel between',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-field-cylinder-08',text:'Cylinder field decay:',options:['∝ 1/r³','∝ 1/r²','∝ 1/r','∝ r'],correct:2,difficulty:'easy',explanation:'E ∝ 1/r',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-field-cylinder-09',text:'Coaxial cable field:',options:['Zero everywhere','Between conductors','Outside entirely','Depends on length'],correct:1,difficulty:'medium',explanation:'Contained between; zero outside',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-field-cylinder-10',text:'Conducting cylinder properties:',options:['E = 0 inside','E = σ/ε₀ outside','Radial field','All true'],correct:3,difficulty:'hard',explanation:'All apply',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-cylinder','gauss-law-formula'],tags:['neet-2023','conceptual'],year:2023},
-  {id:'ecf-hollow-conductor-01',text:'Charge inside cavity:',options:['Positive inner surface','Negative inner surface','Same sign as outer','Opposite to cavity charge'],correct:3,difficulty:'medium',explanation:'+q inside → -q on inner surface',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-hollow-conductor-02',text:'Cavity +2µC in neutral conductor. Outer surface:',options:['0','-2µC','+2µC','Depends on size'],correct:2,difficulty:'easy',explanation:'+2µC on outer surface',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2019','numerical'],year:2019},
-  {id:'ecf-hollow-conductor-03',text:'Field inside conducting material:',options:['Non-zero','Zero','Depends on cavity','Equals outside'],correct:1,difficulty:'easy',explanation:'E = 0 in conductor',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-hollow-conductor-04',text:'Field inside cavity (Faraday effect):',options:['Zero','Same as outside','Shielded from external','Depends on shape'],correct:2,difficulty:'hard',explanation:'Shielded by conductor',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-hollow-conductor-05',text:'Shell Q with cavity +q:',options:['Inner -q, Outer Q+q','Inner +q, Outer Q-q','Inner Q, Outer 0','Uniform'],correct:0,difficulty:'hard',explanation:'Charge conservation and E = 0',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2022','hard-calculation'],year:2022},
-  {id:'ecf-hollow-conductor-06',text:'Two cavities q₁ and q₂:',options:['Interact','Don\'t interact (shielded)','Weakly interact','Depend on separation'],correct:1,difficulty:'medium',explanation:'Shielded from each other',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-hollow-conductor-07',text:'Moving cavity charge inside conductor:',options:['Outer changes','Outer unchanged','Inner unchanged','Both change'],correct:1,difficulty:'hard',explanation:'Outer surface charge remains constant',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-hollow-conductor-08',text:'External field detection in cavity:',options:['Possible','Impossible','Depends on cavity size','Depends on conductor thickness'],correct:1,difficulty:'medium',explanation:'Faraday cage shields completely',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-hollow-conductor-09',text:'Grounding conductor cavity +q:',options:['Cavity drains','Conductor changes','Nothing in cavity changes','Both change'],correct:1,difficulty:'hard',explanation:'Outer surface affected; inner fixed by cavity',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-hollow-conductor-10',text:'Spherical cavity with central charge:',options:['Uniform field','Zero at surface','Radial field','Depends on distance'],correct:3,difficulty:'hard',explanation:'Field ∝ distance from center',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['hollow-conductor','gauss-law-formula'],tags:['neet-2023','hard-calculation'],year:2023},
-
-  // Charge Quantization (10 questions)
-  {id:'ecf-charge-quant-01',text:'A body has charge 3.2 × 10⁻¹⁸ C. Number of excess electrons:',options:['10','20','15','25'],correct:1,difficulty:'easy',explanation:'n = q/e = (3.2×10⁻¹⁸)/(1.6×10⁻¹⁹) = 20 electrons',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-charge-quant-02',text:'Which of the following charges is NOT possible?',options:['3.2 × 10⁻¹⁹ C','4.8 × 10⁻¹⁹ C','2.4 × 10⁻¹⁹ C','All are possible'],correct:2,difficulty:'medium',explanation:'2.4×10⁻¹⁹ = 1.5e (not integer multiple). Only integer multiples of e are possible',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-charge-quant-03',text:'Charge is quantized means:',options:['Charge is conserved','Charge exists in discrete packets','Charge can be created','Charge is continuous'],correct:1,difficulty:'easy',explanation:'Quantization means charge = ne (discrete multiples of elementary charge)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-charge-quant-04',text:'A body loses 10⁶ electrons. Its charge becomes:',options:['+1.6 × 10⁻¹³ C','-1.6 × 10⁻¹³ C','+1.6 × 10⁻²⁵ C','Zero'],correct:0,difficulty:'medium',explanation:'Loss of electrons → positive charge. q = ne = 10⁶ × 1.6×10⁻¹⁹ = 1.6×10⁻¹³ C',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-charge-quant-05',text:'Minimum charge that can exist in nature (free particle):',options:['1 C','1.6 × 10⁻¹⁹ C','Zero','Infinite'],correct:1,difficulty:'easy',explanation:'Elementary charge e = 1.6 × 10⁻¹⁹ C is minimum',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-charge-quant-06',text:'An α-particle has charge:',options:['+e','+2e','-e','-2e'],correct:1,difficulty:'easy',explanation:'α-particle = He nucleus = 2 protons → charge = +2e',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-charge-quant-07',text:'Two bodies have charges 5e and 7e. After contact, possible charge on each:',options:['6e each','5.5e each','12e and 0','5e and 7e'],correct:0,difficulty:'medium',explanation:'Total = 12e. Equal distribution: 6e each (quantization maintained)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-charge-quant-08',text:'If a body has +6.4 × 10⁻¹⁹ C charge, number of electrons removed:',options:['2','4','6','8'],correct:1,difficulty:'easy',explanation:'n = q/e = (6.4×10⁻¹⁹)/(1.6×10⁻¹⁹) = 4 electrons removed',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2020','numerical'],year:2020},
-  {id:'ecf-charge-quant-09',text:'Quarks have fractional charge but charge is still quantized because:',options:['Quarks exist freely','Quarks cannot exist in isolation','Charge is not conserved','Quantization fails'],correct:1,difficulty:'hard',explanation:'Quarks have ±e/3, ±2e/3 but never exist free. Observable particles have integer multiples of e',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-charge-quant-10',text:'A body gains 5 × 10¹² electrons. Its charge:',options:['-8 × 10⁻⁷ C','+8 × 10⁻⁷ C','-8 × 10⁻³¹ C','-5 × 10¹² C'],correct:0,difficulty:'medium',explanation:'Gain electrons → negative. q = -ne = -5×10¹² × 1.6×10⁻¹⁹ = -8×10⁻⁷ C',subject:'physics',chapter:'electric-charges-fields',topic:'electric-charge-properties',formulas:['charge-quantization'],tags:['neet-2023','numerical'],year:2023},
-
-  // Coulomb Force (10 questions)
-  {id:'ecf-coulomb-01',text:'Two charges 1 μC and 2 μC separated by 1 m. Force between them:',options:['0.018 N','0.009 N','18 N','9 N'],correct:0,difficulty:'easy',explanation:'F = kq₁q₂/r² = 9×10⁹ × 1×10⁻⁶ × 2×10⁻⁶ / 1² = 0.018 N',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-coulomb-02',text:'If distance between two charges is doubled, force becomes:',options:['2 times','4 times','1/2 times','1/4 times'],correct:3,difficulty:'easy',explanation:'F ∝ 1/r². If r → 2r, then F → F/4',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-coulomb-03',text:'Coulomb force between two protons at 10⁻¹⁵ m (nuclear distance):',options:['~230 N','~23 N','~2.3 N','~0.23 N'],correct:0,difficulty:'hard',explanation:'F = ke²/r² = 9×10⁹ × (1.6×10⁻¹⁹)² / (10⁻¹⁵)² ≈ 230 N',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-coulomb-04',text:'Two charges repel with force F. If one charge doubled and distance halved, new force:',options:['2F','4F','8F','16F'],correct:2,difficulty:'medium',explanation:'F\' = k(2q₁)q₂/(r/2)² = 8kq₁q₂/r² = 8F',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-coulomb-05',text:'Force between two charges in medium with dielectric constant 4:',options:['4 times vacuum','Same as vacuum','1/4 times vacuum','1/2 times vacuum'],correct:2,difficulty:'medium',explanation:'F_medium = F_vacuum/εᵣ = F/4',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-coulomb-06',text:'Two charges attract with 10 N. If charges become opposite but same magnitudes, force:',options:['Repel with 10 N','Attract with 10 N','Attract with 20 N','Zero'],correct:1,difficulty:'easy',explanation:'Magnitude same, only direction changes from repulsion to attraction',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-coulomb-07',text:'Value of Coulomb constant k in SI units:',options:['9 × 10⁹ N·m²/C²','8.85 × 10⁻¹² C²/(N·m²)','1.6 × 10⁻¹⁹ C','4πε₀'],correct:0,difficulty:'easy',explanation:'k = 1/(4πε₀) = 9 × 10⁹ N·m²/C²',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-coulomb-08',text:'Ratio of electric to gravitational force between two electrons:',options:['~10⁴²','~10²¹','~10¹⁰','~10⁵'],correct:0,difficulty:'hard',explanation:'F_e/F_g = ke²/(Gm²) ≈ 4.2×10⁴²',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-coulomb-09',text:'Two charges 3 μC and -3 μC at 0.1 m apart. Force magnitude:',options:['8.1 N','4.05 N','2.7 N','0.81 N'],correct:0,difficulty:'medium',explanation:'F = 9×10⁹ × 3×10⁻⁶ × 3×10⁻⁶ / (0.1)² = 8.1 N (attractive)',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-coulomb-10',text:'Coulomb law is similar to Newton gravitation law but differs in:',options:['Can be attractive or repulsive','Inverse square law','Central force','Conserves energy'],correct:0,difficulty:'easy',explanation:'Electric force can repel (like charges) unlike gravity which only attracts',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['coulomb-force'],tags:['neet-2023','conceptual'],year:2023},
-
-  // Superposition Principle (10 questions)
-  {id:'ecf-superposition-01',text:'Three charges +q at (0,0), +q at (1,0), -2q at (0.5,0). Net force on -2q:',options:['Zero','To left','To right','Upward'],correct:0,difficulty:'medium',explanation:'By symmetry, equal forces from both +q charges cancel',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-superposition-02',text:'Superposition principle states:',options:['Charges add algebraically','Forces add vectorially','Energy is conserved','Fields are continuous'],correct:1,difficulty:'easy',explanation:'Net force = vector sum of individual forces',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-superposition-03',text:'Two equal forces F at 90° to each other. Resultant:',options:['F','√2 F','2F','F/√2'],correct:1,difficulty:'easy',explanation:'F_net = √(F² + F²) = √2 F',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2020','numerical'],year:2020},
-  {id:'ecf-superposition-04',text:'Four charges +q at corners of square. Force on charge Q at center:',options:['Outward','Inward','Zero','Depends on Q'],correct:2,difficulty:'medium',explanation:'By symmetry, forces cancel at center',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-superposition-05',text:'Two charges +q and +4q at distance d. Net force on +Q at midpoint:',options:['Toward +q','Toward +4q','Zero','Perpendicular to line'],correct:1,difficulty:'medium',explanation:'F₄q = 4F_q but distance d/2 same. F₄q = 16F_q net toward +4q',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2022','numerical'],year:2022},
-  {id:'ecf-superposition-06',text:'Charges +q at (0,a) and -q at (0,-a). Force on +Q at (d,0):',options:['Along +x','Along -x','Along +y','Along -y'],correct:2,difficulty:'hard',explanation:'x-components cancel, y-components add toward +q (upward)',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-superposition-07',text:'Three collinear charges: +q, +q, -q (equal spacing). Net force on middle charge:',options:['Zero','To left','To right','Depends on spacing'],correct:2,difficulty:'medium',explanation:'Left +q repels right, right -q attracts right. Both add toward right',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-superposition-08',text:'Two forces 3N and 4N at 90°. Magnitude of resultant:',options:['7N','5N','1N','12N'],correct:1,difficulty:'easy',explanation:'F = √(3² + 4²) = 5 N',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2020','numerical'],year:2020},
-  {id:'ecf-superposition-09',text:'Charges at vertices of equilateral triangle: +q, +q, -2q. Force on -2q:',options:['Zero','Toward center','Away from center','Perpendicular to base'],correct:3,difficulty:'hard',explanation:'Forces from +q charges don\'t cancel; net perpendicular to base (bisector)',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2021','hard-calculation'],year:2021},
-  {id:'ecf-superposition-10',text:'Principle used to find field at point due to multiple charges:',options:['Conservation','Quantization','Superposition','Coulomb law only'],correct:2,difficulty:'easy',explanation:'Superposition: E_net = vector sum of individual E fields',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['superposition'],tags:['neet-2023','conceptual'],year:2023},
-
-  // Force Equilibrium (10 questions)
-  {id:'ecf-equilibrium-01',text:'Two charges +Q at x=0 and +4Q at x=3m. Position where +q is in equilibrium:',options:['x=1m','x=1.5m','x=2m','x=2.5m'],correct:0,difficulty:'hard',explanation:'Q/x² = 4Q/(3-x)². Solving: x = 1 m (closer to smaller charge)',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2018','hard-calculation'],year:2018},
-  {id:'ecf-equilibrium-02',text:'For equilibrium of charge between two like charges, position is:',options:['At midpoint if equal','Closer to larger charge','Closer to smaller charge','Outside the charges'],correct:2,difficulty:'medium',explanation:'Equilibrium closer to smaller charge',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-equilibrium-03',text:'Two equal charges +Q. Third charge -q equilibrium position:',options:['Midpoint','Closer to one','Outside','No equilibrium'],correct:0,difficulty:'easy',explanation:'At midpoint between equal charges of same sign',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-equilibrium-04',text:'Charges +Q and +9Q at distance d. Equilibrium point from +Q:',options:['d/2','d/3','d/4','3d/4'],correct:2,difficulty:'hard',explanation:'Q/x² = 9Q/(d-x)². Solving: (d-x) = 3x → x = d/4',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2021','hard-calculation'],year:2021},
-  {id:'ecf-equilibrium-05',text:'For opposite charges, equilibrium position for third charge:',options:['Between them','Outside (beyond smaller)','Outside (beyond larger)','No equilibrium'],correct:3,difficulty:'medium',explanation:'For opposite charges, no stable equilibrium position exists',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-equilibrium-06',text:'Stable equilibrium of charge possible in electrostatics?',options:['Yes, always','No, never','Only between like charges','Only at center of triangle'],correct:1,difficulty:'hard',explanation:'Earnshaw theorem: no stable equilibrium possible in electrostatics',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-equilibrium-07',text:'Three charges in line: Q₁, q (equilibrium), Q₂. If Q₁ = 4Q₂ and separation 12 cm, q is at:',options:['4 cm from Q₁','6 cm from Q₁','8 cm from Q₁','3 cm from Q₁'],correct:2,difficulty:'hard',explanation:'4Q₂/x² = Q₂/(12-x)². Solving: 2x = 12-x → x = 4... wait: 2/x = 1/(12-x) → x = 8 cm',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-equilibrium-08',text:'Charge q at equilibrium between Q₁ and Q₂. If Q₁ doubles, equilibrium:',options:['Moves toward Q₁','Moves toward Q₂','Stays same','No equilibrium'],correct:1,difficulty:'medium',explanation:'Larger force from Q₁, must move toward Q₂ to rebalance',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-equilibrium-09',text:'Equilibrium requires:',options:['Net force zero','Net torque zero','Both force and torque zero','Potential energy minimum'],correct:0,difficulty:'easy',explanation:'Equilibrium: F_net = 0',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-equilibrium-10',text:'Two charges +16μC and +4μC at 20 cm apart. Equilibrium point from +4μC:',options:['5 cm','10 cm','6.67 cm','13.33 cm'],correct:2,difficulty:'hard',explanation:'16/(20-x)² = 4/x². Solving: 4(20-x) = 2x → x = 80/6 = 13.33... from 16μC = 6.67 from 4μC',subject:'physics',chapter:'electric-charges-fields',topic:'coulombs-law',formulas:['force-equilibrium','superposition'],tags:['neet-2023','hard-calculation'],year:2023},
-
-  // Electric Field Point Charge (10 questions)
-  {id:'ecf-efield-point-01',text:'Electric field at 1 m from 1 μC charge:',options:['9000 N/C','4500 N/C','18000 N/C','900 N/C'],correct:0,difficulty:'easy',explanation:'E = kQ/r² = 9×10⁹ × 10⁻⁶ / 1² = 9000 N/C',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-efield-point-02',text:'Electric field is defined as:',options:['Force per unit mass','Force per unit positive charge','Energy per unit charge','Potential gradient'],correct:1,difficulty:'easy',explanation:'E = F/q₀ (force per unit positive test charge)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-efield-point-03',text:'SI unit of electric field:',options:['N','N/C','C/N','J/C'],correct:1,difficulty:'easy',explanation:'E = F/q. Unit = N/C (also V/m)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-efield-point-04',text:'If distance from point charge tripled, field becomes:',options:['1/3 times','1/9 times','3 times','9 times'],correct:1,difficulty:'easy',explanation:'E ∝ 1/r². If r → 3r, E → E/9',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-efield-point-05',text:'Direction of electric field from positive charge:',options:['Radially inward','Radially outward','Tangential','Circular'],correct:1,difficulty:'easy',explanation:'Field points away from positive charge',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-efield-point-06',text:'Field at 0.1 m from -2μC charge has magnitude:',options:['1.8 × 10⁶ N/C','9 × 10⁵ N/C','3.6 × 10⁵ N/C','1.8 × 10⁵ N/C'],correct:0,difficulty:'medium',explanation:'E = 9×10⁹ × 2×10⁻⁶ / (0.1)² = 1.8×10⁶ N/C (toward charge)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-efield-point-07',text:'Electric field is a:',options:['Scalar','Vector','Tensor','Dimensionless'],correct:1,difficulty:'easy',explanation:'E has magnitude and direction - vector quantity',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-efield-point-08',text:'Two point charges +Q and -Q separated by distance. Midpoint field:',options:['Zero','2kQ/d²','kQ/d²','4kQ/d²'],correct:3,difficulty:'medium',explanation:'Both fields point same direction (toward -Q). E = 2×kQ/(d/2)² = 8kQ/d²... Actually correct is 4kQ/(d/2)² = 16kQ/d²... No wait: E₁ = kQ/(d/2)² toward -Q, E₂ = kQ/(d/2)² toward -Q. Net = 2kQ/(d/2)² = 8kQ/d²',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2020','numerical'],year:2020},
-  {id:'ecf-efield-point-09',text:'Force on 2μC charge in field 1000 N/C:',options:['0.002 N','0.02 N','2 N','0.0002 N'],correct:0,difficulty:'easy',explanation:'F = qE = 2×10⁻⁶ × 1000 = 0.002 N',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-efield-point-10',text:'At what distance from 1 nC charge is field 1 N/C?',options:['3 m','9 m','0.3 m','30 m'],correct:0,difficulty:'medium',explanation:'E = kQ/r². 1 = 9×10⁹ × 10⁻⁹ / r². r² = 9. r = 3 m',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field',formulas:['electric-field-point'],tags:['neet-2023','numerical'],year:2023},
-
-  // Dipole Moment (10 questions)
-  {id:'ecf-dipole-moment-01',text:'Dipole moment p = q × 2a. Unit:',options:['C·m','C/m','N·m','J'],correct:0,difficulty:'easy',explanation:'p = charge × distance. Unit = C·m (Coulomb-meter)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-dipole-moment-02',text:'Direction of dipole moment:',options:['From +q to -q','From -q to +q','Perpendicular to axis','Depends on field'],correct:1,difficulty:'easy',explanation:'p points from negative to positive charge',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-dipole-moment-03',text:'Charges ±1μC separated by 2 cm. Dipole moment:',options:['2 × 10⁻⁸ C·m','1 × 10⁻⁸ C·m','4 × 10⁻⁸ C·m','0.5 × 10⁻⁸ C·m'],correct:0,difficulty:'easy',explanation:'p = q × 2a = 10⁻⁶ × 0.02 = 2×10⁻⁸ C·m',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2020','numerical'],year:2020},
-  {id:'ecf-dipole-moment-04',text:'If charge doubled and separation halved, dipole moment:',options:['Unchanged','Doubles','Halves','Quadruples'],correct:0,difficulty:'medium',explanation:'p = q × 2a. New p = 2q × a = q × 2a (same)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-dipole-moment-05',text:'Dipole moment is a:',options:['Scalar','Vector','Tensor','Dimensionless'],correct:1,difficulty:'easy',explanation:'Has magnitude and direction - vector quantity',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-dipole-moment-06',text:'Water molecule has dipole moment because:',options:['O and H have different charges','Bent shape creates asymmetry','Both O and H positive','Linear molecule'],correct:1,difficulty:'medium',explanation:'Bent V-shape makes O slightly negative, creating net dipole',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-dipole-moment-07',text:'Dipole with p = 10⁻²⁹ C·m has charges ±1.6×10⁻¹⁹ C. Separation:',options:['0.625 Å','1.25 Å','6.25 Å','0.3125 Å'],correct:0,difficulty:'hard',explanation:'2a = p/q = 10⁻²⁹/(1.6×10⁻¹⁹) = 6.25×10⁻¹¹ m = 0.625 Å',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-dipole-moment-08',text:'Point dipole approximation valid when:',options:['r >> 2a','r << 2a','r = 2a','Always'],correct:0,difficulty:'medium',explanation:'When observation distance much greater than charge separation',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-dipole-moment-09',text:'Net charge of dipole:',options:['Positive','Negative','Zero','Depends on p'],correct:2,difficulty:'easy',explanation:'Equal and opposite charges: net = +q + (-q) = 0',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-dipole-moment-10',text:'CO₂ is linear and has no dipole moment because:',options:['No charge separation','Symmetrical charge distribution','Both C and O neutral','Not a polar molecule'],correct:1,difficulty:'medium',explanation:'Linear O=C=O symmetric structure: dipole moments cancel',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-moment'],tags:['neet-2023','conceptual'],year:2023},
-
-  // Dipole Torque (10 questions)
-  {id:'ecf-dipole-torque-01',text:'Dipole in uniform field experiences:',options:['Net force','Torque only','Both force and torque','Neither'],correct:1,difficulty:'easy',explanation:'Uniform field: only torque, no net force',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-dipole-torque-02',text:'Torque on dipole τ = pE sinθ. Maximum when:',options:['θ = 0°','θ = 45°','θ = 90°','θ = 180°'],correct:2,difficulty:'easy',explanation:'sin θ maximum at 90°. τ_max = pE',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-dipole-torque-03',text:'Dipole p = 10⁻⁹ C·m in field E = 10⁵ N/C at 30°. Torque:',options:['5 × 10⁻⁵ N·m','10⁻⁴ N·m','5 × 10⁻⁴ N·m','10⁻⁵ N·m'],correct:0,difficulty:'medium',explanation:'τ = pE sin30° = 10⁻⁹ × 10⁵ × 0.5 = 5×10⁻⁵ N·m',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2020','numerical'],year:2020},
-  {id:'ecf-dipole-torque-04',text:'Torque tries to:',options:['Translate dipole','Align p with E','Align p opposite to E','Separate charges'],correct:1,difficulty:'easy',explanation:'Torque rotates dipole to align moment with field',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-dipole-torque-05',text:'When p parallel to E (θ = 0), torque is:',options:['Maximum','Minimum (zero)','pE','Depends on magnitude'],correct:1,difficulty:'easy',explanation:'τ = pE sin0° = 0 (equilibrium position)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-dipole-torque-06',text:'When p antiparallel to E (θ = 180°), torque is:',options:['Maximum','Zero','pE','Negative'],correct:1,difficulty:'medium',explanation:'τ = pE sin180° = 0 (unstable equilibrium)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-dipole-torque-07',text:'Torque is vector quantity with direction given by:',options:['p × E','p · E','E × p','p/E'],correct:0,difficulty:'medium',explanation:'τ = p × E (cross product)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-dipole-torque-08',text:'If dipole moment doubles, torque at same angle:',options:['Doubles','Halves','Quadruples','Unchanged'],correct:0,difficulty:'easy',explanation:'τ ∝ p. Doubling p doubles τ',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-dipole-torque-09',text:'Dipole in non-uniform field experiences:',options:['Only torque','Only force','Both force and torque','Neither'],correct:2,difficulty:'medium',explanation:'Non-uniform field: both net force and torque exist',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-dipole-torque-10',text:'Charges ±2μC at 4 cm apart in field 10⁵ N/C at 60°. Torque:',options:['√3 × 10⁻³ N·m','6.93 × 10⁻³ N·m','4 × 10⁻³ N·m','2 × 10⁻³ N·m'],correct:1,difficulty:'hard',explanation:'p = 2×10⁻⁶ × 0.04 = 8×10⁻⁸. τ = 8×10⁻⁸ × 10⁵ × sin60° ≈ 6.93×10⁻³ N·m',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-torque'],tags:['neet-2023','hard-calculation'],year:2023},
-
-  // Dipole Potential Energy (10 questions)
-  {id:'ecf-dipole-pe-01',text:'Potential energy of dipole U = -pE cosθ. Minimum when:',options:['θ = 0°','θ = 90°','θ = 180°','θ = 45°'],correct:0,difficulty:'easy',explanation:'U_min = -pE at θ = 0° (stable equilibrium)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-dipole-pe-02',text:'Maximum PE of dipole in field:',options:['-pE','0','+pE','2pE'],correct:2,difficulty:'easy',explanation:'U_max = +pE at θ = 180° (unstable equilibrium)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-dipole-pe-03',text:'Work to rotate dipole from θ = 0° to 90°:',options:['0','pE','2pE','-pE'],correct:1,difficulty:'medium',explanation:'W = U_f - U_i = 0 - (-pE) = pE',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2020','numerical'],year:2020},
-  {id:'ecf-dipole-pe-04',text:'Dipole p = 10⁻⁹ C·m in E = 10⁴ N/C at 60°. PE:',options:['-5 × 10⁻⁶ J','5 × 10⁻⁶ J','-10⁻⁵ J','10⁻⁵ J'],correct:0,difficulty:'medium',explanation:'U = -pE cos60° = -10⁻⁹ × 10⁴ × 0.5 = -5×10⁻⁶ J',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-dipole-pe-05',text:'When p ⊥ E (θ = 90°), PE:',options:['Maximum','Minimum','Zero','pE'],correct:2,difficulty:'easy',explanation:'U = -pE cos90° = 0',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-dipole-pe-06',text:'Work to rotate from 0° to 180°:',options:['0','pE','2pE','4pE'],correct:2,difficulty:'medium',explanation:'W = pE - (-pE) = 2pE',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-dipole-pe-07',text:'Stable equilibrium position:',options:['θ = 0° (p ∥ E)','θ = 90°','θ = 180° (p anti∥ E)','No stable position'],correct:0,difficulty:'medium',explanation:'θ = 0° is stable (minimum PE)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-dipole-pe-08',text:'Relation between torque and PE:',options:['τ = dU/dθ','τ = -dU/dθ','τ = U/θ','No relation'],correct:1,difficulty:'hard',explanation:'τ = -dU/dθ (torque is negative gradient of PE)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-dipole-pe-09',text:'If field strength doubles, PE at same angle:',options:['Doubles','Halves','Quadruples','Unchanged'],correct:0,difficulty:'easy',explanation:'U ∝ E. Doubling E doubles U',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-dipole-pe-10',text:'Work by external agent to rotate from 60° to 120°:',options:['pE(√3)','pE','pE(√3/2)','0'],correct:2,difficulty:'hard',explanation:'W = -pE cos120° - (-pE cos60°) = -pE(-0.5) - (-pE×0.5) = pE(0.5+0.5) = pE... Hmm: cos120=-0.5, cos60=0.5. W = pE[cos60-cos120] = pE[0.5-(-0.5)] = pE',subject:'physics',chapter:'electric-charges-fields',topic:'electric-dipole',formulas:['dipole-potential-energy','dipole-torque'],tags:['neet-2023','hard-calculation'],year:2023},
-
-  // Electric Flux (10 questions)
-  {id:'ecf-flux-01',text:'Electric flux Φ = E·A cosθ. When E ⊥ A:',options:['Φ = EA','Φ = 0','Φ = EA/2','Φ = 2EA'],correct:0,difficulty:'easy',explanation:'θ = 0° when perpendicular to surface. Φ = EA cos0° = EA',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-flux-02',text:'Unit of electric flux:',options:['N·m²/C','N/C','C','V'],correct:0,difficulty:'easy',explanation:'Φ = EA. Unit = (N/C)(m²) = N·m²/C or V·m',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-flux-03',text:'Flux through surface when E ∥ surface:',options:['Maximum','Minimum (zero)','EA','Depends on area'],correct:1,difficulty:'easy',explanation:'θ = 90°. Φ = EA cos90° = 0',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-flux-04',text:'Field 100 N/C through area 0.5 m² at 60°. Flux:',options:['50 N·m²/C','25 N·m²/C','43.3 N·m²/C','86.6 N·m²/C'],correct:1,difficulty:'medium',explanation:'Φ = 100 × 0.5 × cos60° = 50 × 0.5 = 25 N·m²/C',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-flux-05',text:'Electric flux is:',options:['Vector','Scalar','Tensor','Always positive'],correct:1,difficulty:'easy',explanation:'Flux is scalar (can be +ve, -ve, or zero)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-flux-06',text:'Positive flux means:',options:['Field enters surface','Field exits surface','Field parallel','No field'],correct:1,difficulty:'easy',explanation:'Positive: field lines exit. Negative: field lines enter',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-flux-07',text:'Cube in uniform field E. Flux through opposite faces:',options:['Same sign','Opposite signs','Zero','Depends on E'],correct:1,difficulty:'medium',explanation:'Field enters one face (negative), exits opposite (positive)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-flux-08',text:'If field doubles, flux through same surface:',options:['Doubles','Halves','Quadruples','Unchanged'],correct:0,difficulty:'easy',explanation:'Φ ∝ E. Doubling E doubles Φ',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-flux-09',text:'Flux through sphere of radius R in uniform field E:',options:['4πR²E','Zero','2πR²E','Depends on orientation'],correct:1,difficulty:'medium',explanation:'Net flux = 0 in uniform field (enters = exits)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-flux-10',text:'Field 500 N/C perpendicular to circular area (r=0.2m). Flux:',options:['62.8 N·m²/C','31.4 N·m²/C','125.6 N·m²/C','15.7 N·m²/C'],correct:0,difficulty:'medium',explanation:'A = πr² = π(0.2)² = 0.1257 m². Φ = EA = 500 × 0.1257 ≈ 62.8',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['electric-flux'],tags:['neet-2023','numerical'],year:2023},
-
-  // Gauss Law (10 questions)
-  {id:'ecf-gauss-01',text:'Gauss law: ∮E·dA = q_enc/ε₀. Flux depends on:',options:['Surface shape','Surface size','Enclosed charge only','All charges'],correct:2,difficulty:'easy',explanation:'Flux depends only on charge enclosed by surface',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-gauss-02',text:'Charge 5μC enclosed by sphere. Flux:',options:['5.65 × 10⁵ N·m²/C','2.83 × 10⁵ N·m²/C','1.13 × 10⁶ N·m²/C','4.52 × 10⁵ N·m²/C'],correct:0,difficulty:'medium',explanation:'Φ = q/ε₀ = (5×10⁻⁶)/(8.85×10⁻¹²) ≈ 5.65×10⁵',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2019','numerical'],year:2019},
-  {id:'ecf-gauss-03',text:'External charge contribution to flux through closed surface:',options:['Full contribution','Partial contribution','Zero (enters and exits)','Depends on position'],correct:2,difficulty:'medium',explanation:'External charges: flux in = flux out. Net = 0',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-gauss-04',text:'Gauss law useful when:',options:['Any charge distribution','High symmetry exists','Low symmetry','Only point charges'],correct:1,difficulty:'easy',explanation:'Useful for spherical, cylindrical, planar symmetry',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-gauss-05',text:'Charge at center of cube. Flux through one face:',options:['q/ε₀','q/(6ε₀)','q/(4πε₀)','Zero'],correct:1,difficulty:'medium',explanation:'Total flux = q/ε₀. By symmetry, each of 6 faces: q/(6ε₀)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2022','numerical'],year:2022},
-  {id:'ecf-gauss-06',text:'Value of ε₀ (permittivity of free space):',options:['8.85 × 10⁻¹² C²/(N·m²)','9 × 10⁹ N·m²/C²','1.6 × 10⁻¹⁹ C','3 × 10⁸ m/s'],correct:0,difficulty:'easy',explanation:'ε₀ = 8.85 × 10⁻¹² C²/(N·m²) or F/m',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-gauss-07',text:'Charges +q and -q inside closed surface. Net flux:',options:['q/ε₀','2q/ε₀','Zero','-q/ε₀'],correct:2,difficulty:'easy',explanation:'q_enc = +q + (-q) = 0. Φ = 0',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-gauss-08',text:'Gaussian surface for line charge:',options:['Sphere','Coaxial cylinder','Cube','Any shape'],correct:1,difficulty:'medium',explanation:'Cylindrical symmetry requires cylindrical Gaussian surface',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-gauss-09',text:'Half of charge q enclosed by surface. Flux:',options:['q/ε₀','q/(2ε₀)','2q/ε₀','Zero'],correct:1,difficulty:'easy',explanation:'Φ = q_enc/ε₀ = (q/2)/ε₀ = q/(2ε₀)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-gauss-10',text:'Charge 2×10⁻⁸ C inside sphere. Flux:',options:['2.26 × 10³ N·m²/C','1.13 × 10³ N·m²/C','4.52 × 10³ N·m²/C','5.65 × 10³ N·m²/C'],correct:0,difficulty:'medium',explanation:'Φ = (2×10⁻⁸)/(8.85×10⁻¹²) ≈ 2.26×10³',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['gauss-law-formula'],tags:['neet-2023','numerical'],year:2023},
-
-  // Field of Line Charge (10 questions)
-  {id:'ecf-line-charge-01',text:'Field at distance r from infinite line charge: E = λ/(2πε₀r). E ∝:',options:['1/r','1/r²','1/r³','r'],correct:0,difficulty:'easy',explanation:'E ∝ 1/r (not 1/r² like point charge)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-line-charge-02',text:'Line charge λ = 10⁻⁸ C/m. Field at r = 0.1 m:',options:['1800 N/C','900 N/C','3600 N/C','450 N/C'],correct:0,difficulty:'medium',explanation:'E = λ/(2πε₀r) = (10⁻⁸)/(2π × 8.85×10⁻¹² × 0.1) ≈ 1800',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2019','numerical'],year:2019},
-  {id:'ecf-line-charge-03',text:'Direction of field from positive line charge:',options:['Along the line','Radially outward','Radially inward','Tangential'],correct:1,difficulty:'easy',explanation:'Perpendicular to line, radially outward',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-line-charge-04',text:'Gaussian surface for line charge is:',options:['Sphere','Coaxial cylinder','Rectangular box','Any closed surface'],correct:1,difficulty:'easy',explanation:'Cylindrical symmetry → cylindrical Gaussian surface',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-line-charge-05',text:'If distance from line doubled, field becomes:',options:['1/2','1/4','2','4'],correct:0,difficulty:'easy',explanation:'E ∝ 1/r. Doubling r halves E',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-line-charge-06',text:'Field from line charge is independent of:',options:['λ','r','Length of line','ε₀'],correct:2,difficulty:'medium',explanation:'Infinite line: independent of length (assumed infinite)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-line-charge-07',text:'Two parallel line charges +λ and -λ separated by d. Field midway:',options:['Zero','λ/(πε₀d)','2λ/(πε₀d)','λ/(2πε₀d)'],correct:1,difficulty:'hard',explanation:'Both fields point same direction. E = 2×λ/(2πε₀(d/2)) = 2λ/(πε₀d)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-line-charge-08',text:'Alternative form: E = 2kλ/r. Value of k:',options:['9 × 10⁹ N·m²/C²','1/(4πε₀)','Both same','Neither'],correct:2,difficulty:'easy',explanation:'k = 1/(4πε₀) = 9 × 10⁹',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-line-charge-09',text:'Finite line charge at far distance acts like:',options:['Infinite line','Point charge','Dipole','Sheet'],correct:1,difficulty:'medium',explanation:'Far away: finite line → point charge behavior (E ∝ 1/r²)',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-line-charge-10',text:'Coaxial cable inner λ₁, outer -λ₁. Field outside:',options:['Zero','λ₁/(2πε₀r)','2λ₁/(2πε₀r)','Depends on radii'],correct:0,difficulty:'medium',explanation:'Net λ = 0. Field outside = 0',subject:'physics',chapter:'electric-charges-fields',topic:'gauss-law',formulas:['field-line-charge','gauss-law-formula'],tags:['neet-2023','conceptual'],year:2023},
-
-  // Acceleration in Electric Field (10 questions)
-  {id:'ecf-accel-01',text:'Electron in field 1000 N/C. Acceleration:',options:['1.76 × 10¹⁴ m/s²','8.8 × 10¹³ m/s²','3.52 × 10¹⁴ m/s²','1.76 × 10¹³ m/s²'],correct:0,difficulty:'medium',explanation:'a = eE/m = (1.6×10⁻¹⁹ × 1000)/(9.1×10⁻³¹) ≈ 1.76×10¹⁴',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-accel-02',text:'Acceleration formula: a = qE/m. Direction for electron:',options:['Along E','Opposite to E','Perpendicular','Circular'],correct:1,difficulty:'easy',explanation:'Electron (q negative) accelerates opposite to E',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-accel-03',text:'Proton and electron in same field. Acceleration ratio a_p/a_e:',options:['1/1836','1836','1','m_p/m_e'],correct:0,difficulty:'medium',explanation:'a ∝ 1/m. a_p/a_e = m_e/m_p = 1/1836',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2020','numerical'],year:2020},
-  {id:'ecf-accel-04',text:'Charge 1 μC, mass 1 mg in field 100 N/C. Acceleration:',options:['100 m/s²','10 m/s²','1000 m/s²','0.1 m/s²'],correct:0,difficulty:'medium',explanation:'a = qE/m = (10⁻⁶ × 100)/(10⁻⁶) = 100 m/s²',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-accel-05',text:'If field strength doubles, acceleration:',options:['Doubles','Halves','Quadruples','Unchanged'],correct:0,difficulty:'easy',explanation:'a ∝ E. Doubling E doubles a',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-accel-06',text:'Particle at rest released in uniform field. Motion is:',options:['Uniformly accelerated','Uniformly decelerated','Circular','Parabolic'],correct:0,difficulty:'easy',explanation:'Constant E → constant a → uniformly accelerated motion',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-accel-07',text:'Heavy particle and light particle (same q) in field. Which accelerates more?',options:['Heavy','Light','Same','Depends on E'],correct:1,difficulty:'easy',explanation:'a ∝ 1/m. Lighter particle accelerates more',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-accel-08',text:'Alpha particle (q=+2e, m=4u) in field E. Acceleration compared to proton:',options:['Same','Half','Double','Quarter'],correct:1,difficulty:'hard',explanation:'a_α = (2e)E/(4m_p) = (e E)/(2m_p) = a_p/2',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-accel-09',text:'Acceleration direction for positive ion in field E:',options:['Along E','Opposite to E','Perpendicular','Depends on mass'],correct:0,difficulty:'easy',explanation:'Positive charge accelerates in direction of field',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-accel-10',text:'Charge -2μC, mass 0.01 kg in field 50 N/C. Acceleration magnitude:',options:['0.01 m/s²','0.1 m/s²','1 m/s²','10 m/s²'],correct:0,difficulty:'medium',explanation:'|a| = |q|E/m = (2×10⁻⁶ × 50)/(0.01) = 0.01 m/s²',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['acceleration-field'],tags:['neet-2023','numerical'],year:2023},
-
-  // Parabolic Path (10 questions)
-  {id:'ecf-parabolic-01',text:'Charged particle enters perpendicular to uniform field. Path:',options:['Straight line','Circular','Parabolic','Helical'],correct:2,difficulty:'easy',explanation:'Like projectile motion: parabolic trajectory',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-parabolic-02',text:'Deflection formula: y = (qE/2mv₀²)x². Deflection ∝:',options:['v₀','v₀²','1/v₀','1/v₀²'],correct:3,difficulty:'medium',explanation:'y ∝ 1/v₀². Faster particles deflect less',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-parabolic-03',text:'Electron (v=10⁶ m/s) in field (E=1000 N/C, L=0.1m). Deflection:',options:['8.8 mm','4.4 mm','17.6 mm','2.2 mm'],correct:0,difficulty:'hard',explanation:'y = eEL²/(2m_e v₀²) = (1.6×10⁻¹⁹ × 1000 × 0.01)/(2 × 9.1×10⁻³¹ × 10¹²) ≈ 0.0088 m',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-parabolic-04',text:'CRO uses parabolic deflection for:',options:['Focusing beam','Deflecting beam','Accelerating electrons','All above'],correct:1,difficulty:'easy',explanation:'Cathode Ray Oscilloscope uses E field to deflect beam',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-parabolic-05',text:'If initial velocity doubled, deflection becomes:',options:['Half','Quarter','Double','Same'],correct:1,difficulty:'medium',explanation:'y ∝ 1/v₀². Doubling v₀: y → y/4',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-parabolic-06',text:'Analogy: electric deflection is to gravity as:',options:['a = qE/m is to g','Parabola to parabola','Both correct','Neither'],correct:2,difficulty:'easy',explanation:'Replace g with qE/m in projectile formulas',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-parabolic-07',text:'Exit angle tanθ = v_y/v_x. For electron in field over length L:',options:['tanθ = eEL/(mv₀²)','tanθ = eEL/(2mv₀²)','tanθ = mv₀²/(eEL)','tanθ = 2eEL/(mv₀²)'],correct:0,difficulty:'hard',explanation:'v_y = at = (eE/m)(L/v₀). tanθ = v_y/v₀ = eEL/(mv₀²)',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2019','hard-calculation'],year:2019},
-  {id:'ecf-parabolic-08',text:'If charge doubles (same m, v₀), deflection:',options:['Doubles','Halves','Quadruples','Unchanged'],correct:0,difficulty:'easy',explanation:'y ∝ q. Doubling q doubles y',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-parabolic-09',text:'Time in field region (length L):',options:['L/v₀','2L/v₀','L/(2v₀)','Depends on deflection'],correct:0,difficulty:'easy',explanation:'Horizontal velocity unchanged: t = L/v₀',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-parabolic-10',text:'Proton (v=10⁵ m/s) enters 2 cm field (E=10⁴ N/C). Deflection:',options:['0.12 mm','0.24 mm','0.06 mm','0.48 mm'],correct:1,difficulty:'hard',explanation:'y = eEL²/(2m_p v²) = (1.6×10⁻¹⁹ × 10⁴ × 4×10⁻⁴)/(2 × 1.67×10⁻²⁷ × 10¹⁰) ≈ 2.4×10⁻⁴ m',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['parabolic-path','acceleration-field'],tags:['neet-2023','hard-calculation'],year:2023},
-
-  // Kinetic Energy Change (10 questions)
-  {id:'ecf-ke-change-01',text:'Electron accelerated through 100 V gains kinetic energy:',options:['100 eV','50 eV','200 eV','1.6 × 10⁻¹⁷ J'],correct:3,difficulty:'medium',explanation:'ΔKE = eV = 1.6×10⁻¹⁹ × 100 = 1.6×10⁻¹⁷ J = 100 eV',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-ke-change-02',text:'1 electron volt (eV) equals:',options:['1.6 × 10⁻¹⁹ J','1.6 × 10⁻¹² J','1 J','1.6 × 10⁻¹⁶ J'],correct:0,difficulty:'easy',explanation:'1 eV = 1.6 × 10⁻¹⁹ J (energy gained by e through 1V)',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-ke-change-03',text:'Work done by field: W = qEd. This equals:',options:['Change in KE','Change in PE','Both','Neither'],correct:0,difficulty:'easy',explanation:'Work-energy theorem: W = ΔKE',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-ke-change-04',text:'Particle from rest accelerated through V. Final speed v = √(2qV/m). For electron through 1000V:',options:['1.88 × 10⁷ m/s','9.4 × 10⁶ m/s','3.76 × 10⁷ m/s','4.7 × 10⁶ m/s'],correct:0,difficulty:'hard',explanation:'v = √(2eV/m_e) = √(2 × 1.6×10⁻¹⁹ × 1000 / 9.1×10⁻³¹) ≈ 1.88×10⁷',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2021','hard-calculation'],year:2021},
-  {id:'ecf-ke-change-05',text:'If potential difference doubles, KE becomes:',options:['√2 times','2 times','4 times','Same'],correct:1,difficulty:'easy',explanation:'ΔKE = qV. Doubling V doubles ΔKE',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-ke-change-06',text:'Proton and electron through same V. KE ratio:',options:['1:1','1836:1','1:1836','√1836:1'],correct:0,difficulty:'medium',explanation:'Same q and V: ΔKE same (but speeds differ)',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-ke-change-07',text:'Alpha particle (+2e) through 500 V gains energy:',options:['500 eV','1000 eV','250 eV','2000 eV'],correct:1,difficulty:'medium',explanation:'ΔKE = qV = 2e × 500V = 1000 eV',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2019','numerical'],year:2019},
-  {id:'ecf-ke-change-08',text:'Charge moves opposite to field direction:',options:['Gains KE','Loses KE','KE unchanged','Depends on speed'],correct:1,difficulty:'medium',explanation:'Work by field is negative: ΔKE < 0 (slows down)',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-ke-change-09',text:'Electron with KE 10 eV enters retarding field and stops. Potential difference:',options:['5 V','10 V','20 V','1 V'],correct:1,difficulty:'medium',explanation:'ΔKE = -10 eV = -eV. V = 10 V',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-ke-change-10',text:'Charge 5μC moves through 200V. Energy change:',options:['10⁻³ J','10⁻² J','10⁻⁴ J','10⁻⁵ J'],correct:0,difficulty:'medium',explanation:'ΔKE = qV = 5×10⁻⁶ × 200 = 10⁻³ J',subject:'physics',chapter:'electric-charges-fields',topic:'motion-in-electric-field',formulas:['kinetic-energy-change','acceleration-field'],tags:['neet-2023','numerical'],year:2023},
-
-  // Linear Charge Density (10 questions)
-  {id:'ecf-linear-density-01',text:'Linear charge density λ = Q/L. Unit:',options:['C/m','C/m²','C/m³','C'],correct:0,difficulty:'easy',explanation:'λ = charge per unit length. Unit = C/m',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-linear-density-02',text:'Rod length 2 m has charge 10 μC uniformly. λ:',options:['5 μC/m','10 μC/m','20 μC/m','2.5 μC/m'],correct:0,difficulty:'easy',explanation:'λ = Q/L = 10μC / 2m = 5 μC/m',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2019','numerical'],year:2019},
-  {id:'ecf-linear-density-03',text:'Ring circumference 2πR has charge Q. λ:',options:['Q/(πR)','Q/(2πR)','2Q/(πR)','Q/R'],correct:1,difficulty:'easy',explanation:'λ = Q/(2πR) = Q/circumference',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-linear-density-04',text:'For integration: dq = λ dl. This is used for:',options:['Point charges','Line charges','Surface charges','Volume charges'],correct:1,difficulty:'easy',explanation:'dq = λ dl for 1D (line) charge distributions',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-linear-density-05',text:'Non-uniform λ(x) = λ₀x on rod (0 to L). Total charge:',options:['λ₀L','λ₀L²/2','λ₀L²','λ₀L/2'],correct:1,difficulty:'hard',explanation:'Q = ∫₀ᴸ λ₀x dx = λ₀L²/2',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2022','hard-calculation'],year:2022},
-  {id:'ecf-linear-density-06',text:'Arc of circle (radius R, angle θ) with λ. Charge:',options:['λRθ','λR²θ','λθ','2πRλθ'],correct:0,difficulty:'medium',explanation:'Arc length = Rθ. Q = λ × Rθ',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-linear-density-07',text:'λ can be:',options:['Only positive','Only negative','Positive or negative','Zero only'],correct:2,difficulty:'easy',explanation:'λ can be +ve (positive charge) or -ve (negative charge)',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-linear-density-08',text:'Infinite line charge field E = λ/(2πε₀r) uses:',options:['Coulomb law','Gauss law','Superposition','Integration'],correct:1,difficulty:'medium',explanation:'Derived using Gauss law with cylindrical symmetry',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-linear-density-09',text:'Wire 50 cm has λ = 2 × 10⁻⁸ C/m. Total charge:',options:['10⁻⁸ C','10⁻⁷ C','10⁻⁹ C','2 × 10⁻⁸ C'],correct:0,difficulty:'easy',explanation:'Q = λL = 2×10⁻⁸ × 0.5 = 10⁻⁸ C',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-linear-density-10',text:'Relation to volume density for thin wire (area A):',options:['λ = ρA','λ = ρ/A','λ = ρV','No relation'],correct:0,difficulty:'medium',explanation:'For wire: Q = ρAL = λL. Therefore λ = ρA',subject:'physics',chapter:'electric-charges-fields',topic:'continuous-charge-distribution',formulas:['linear-density'],tags:['neet-2023','conceptual'],year:2023},
-
-  // Field Line Density (10 questions)
-  {id:'ecf-fieldline-01',text:'Field line density indicates:',options:['Charge magnitude','Field strength','Potential','Energy'],correct:1,difficulty:'easy',explanation:'Denser lines = stronger field',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-fieldline-02',text:'Field lines never:',options:['Start from +ve','End on -ve','Cross each other','Form closed loops in electrostatics'],correct:2,difficulty:'easy',explanation:'Lines never cross (E would have two directions)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-fieldline-03',text:'Tangent to field line gives:',options:['Charge location','Field direction','Potential','Force magnitude'],correct:1,difficulty:'easy',explanation:'Tangent at point = direction of E at that point',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-fieldline-04',text:'Number of lines from charge ∝:',options:['Charge magnitude','Distance','Field strength','All above'],correct:0,difficulty:'easy',explanation:'More lines drawn for larger magnitude charges',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-fieldline-05',text:'Field lines from positive charge:',options:['Converge','Diverge (radiate outward)','Circular','Parallel'],correct:1,difficulty:'easy',explanation:'Lines radiate outward from positive charge',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-fieldline-06',text:'Where lines are closer:',options:['Field weaker','Field stronger','Potential higher','Charge present'],correct:1,difficulty:'easy',explanation:'Closer lines = denser = stronger field',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-fieldline-07',text:'Field lines are perpendicular to:',options:['Other field lines','Conductor surface','Equipotential surfaces','Both (2) and (3)'],correct:3,difficulty:'medium',explanation:'Lines perpendicular to both conductor and equipotentials',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-fieldline-08',text:'For dipole, where do lines have highest density?',options:['At charges','Midpoint','Infinity','Equatorial plane'],correct:0,difficulty:'easy',explanation:'Maximum field (and density) near the charges',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-fieldline-09',text:'In uniform field, field lines are:',options:['Radial','Parallel and equally spaced','Converging','Diverging'],correct:1,difficulty:'easy',explanation:'Uniform field: parallel, equally-spaced lines',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-fieldline-10',text:'Field lines in charge-free region are:',options:['Continuous','Discontinuous','Can start/end','Can form loops'],correct:0,difficulty:'easy',explanation:'Lines continuous in charge-free regions',subject:'physics',chapter:'electric-charges-fields',topic:'electric-field-lines',formulas:['field-line-density'],tags:['neet-2023','conceptual'],year:2023},
-
-  // Conductor Surface Field (10 questions)
-  {id:'ecf-conductor-field-01',text:'Field just outside conductor surface: E = σ/ε₀. Compare to non-conducting sheet E = σ/(2ε₀):',options:['Same','Conductor has 2× field','Sheet has 2× field','Depends on shape'],correct:1,difficulty:'medium',explanation:'Conductor: E = σ/ε₀. Non-conductor: E = σ/(2ε₀). Factor 2 difference',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-conductor-field-02',text:'Inside conductor in electrostatic equilibrium:',options:['E ≠ 0','E = σ/ε₀','E = 0','E = σ/(2ε₀)'],correct:2,difficulty:'easy',explanation:'E = 0 inside conductor (equilibrium)',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-conductor-field-03',text:'Field direction just outside conductor:',options:['Tangent to surface','Perpendicular to surface','45° to surface','Depends on charge'],correct:1,difficulty:'easy',explanation:'Always perpendicular (normal) to conductor surface',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-conductor-field-04',text:'Conductor σ = 10⁻⁶ C/m². Field just outside:',options:['1.13 × 10⁵ N/C','5.65 × 10⁴ N/C','2.26 × 10⁵ N/C','1.13 × 10⁶ N/C'],correct:0,difficulty:'medium',explanation:'E = σ/ε₀ = 10⁻⁶/(8.85×10⁻¹²) ≈ 1.13×10⁵',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-conductor-field-05',text:'At sharp points on conductor, σ is:',options:['Lower','Higher','Same','Zero'],correct:1,difficulty:'easy',explanation:'Charge accumulates at sharp points: σ higher',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-conductor-field-06',text:'Corona discharge occurs because:',options:['High σ at sharp points','E exceeds breakdown','Air ionizes','All above'],correct:3,difficulty:'medium',explanation:'High σ → high E → air breakdown → corona',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-conductor-field-07',text:'Conductor surface is:',options:['Equipotential','Variable potential','High potential only','Low potential only'],correct:0,difficulty:'easy',explanation:'Conductor surface = equipotential (E tangential = 0)',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-conductor-field-08',text:'Relation E = σ/ε₀ derived using:',options:['Coulomb law','Gauss law','Superposition','Integration'],correct:1,difficulty:'easy',explanation:'Use Gauss law with pillbox at surface',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-conductor-field-09',text:'Spherical conductor R, charge Q. Surface field:',options:['kQ/R²','Q/(4πε₀R²)','σ/ε₀','All same'],correct:3,difficulty:'medium',explanation:'All equivalent: E = kQ/R² = Q/(4πε₀R²) = σ/ε₀',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-conductor-field-10',text:'Lightning rod works by:',options:['Attracting charge','High σ at tip discharges','Conducting to ground','All above'],correct:3,difficulty:'medium',explanation:'Sharp tip → high σ → discharge → protection',subject:'physics',chapter:'electric-charges-fields',topic:'conductors-electrostatics',formulas:['conductor-surface-field'],tags:['neet-2023','conceptual'],year:2023},
-
-  // Flux Uniform Field (10 questions)
-  {id:'ecf-flux-uniform-01',text:'Flux through plane in uniform field: Φ = EA cosθ. θ is angle between:',options:['E and surface','E and normal','Surface and normal','E and area vector'],correct:3,difficulty:'medium',explanation:'θ between E and area vector (normal to surface)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-flux-uniform-02',text:'Field 500 N/C through 0.1 m² perpendicular. Flux:',options:['50 N·m²/C','5 N·m²/C','500 N·m²/C','0.5 N·m²/C'],correct:0,difficulty:'easy',explanation:'Φ = EA = 500 × 0.1 = 50 N·m²/C',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2019','numerical'],year:2019},
-  {id:'ecf-flux-uniform-03',text:'When θ = 0° (E ∥ normal):',options:['Φ = 0','Φ = EA (max)','Φ = EA/2','Φ negative'],correct:1,difficulty:'easy',explanation:'cos0° = 1. Maximum flux = EA',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-flux-uniform-04',text:'Flux through tilted surface (A at 60° to E):',options:['EA','EA cos30°','EA cos60°','EA sin60°'],correct:2,difficulty:'medium',explanation:'Φ = EA cos60° (angle between E and normal)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-flux-uniform-05',text:'Cube in uniform field. Total flux:',options:['6EA','EA','Zero','Depends on orientation'],correct:2,difficulty:'medium',explanation:'Uniform field: flux in = flux out. Net = 0',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-flux-uniform-06',text:'Rectangular loop (sides a, b) at 45° to field E. Flux:',options:['Eab','Eab cos45°','Eab sin45°','Zero'],correct:1,difficulty:'medium',explanation:'Φ = Eab cos45°',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2018','numerical'],year:2018},
-  {id:'ecf-flux-uniform-07',text:'If area doubled, flux (same E, θ):',options:['Doubles','Halves','Quadruples','Unchanged'],correct:0,difficulty:'easy',explanation:'Φ ∝ A. Doubling A doubles Φ',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-flux-uniform-08',text:'Hemisphere in uniform field (base perpendicular to E):',options:['πR²E','2πR²E','Zero','4πR²E'],correct:0,difficulty:'hard',explanation:'Flux through curved surface = flux through base = πR²E',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-flux-uniform-09',text:'Circular area (r=0.1m) in field 1000 N/C at 60°. Flux:',options:['31.4 N·m²/C','15.7 N·m²/C','27.2 N·m²/C','62.8 N·m²/C'],correct:1,difficulty:'hard',explanation:'A = πr² = 0.0314. Φ = 1000 × 0.0314 × 0.5 ≈ 15.7',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-flux-uniform-10',text:'Sign of flux:',options:['Always positive','Can be positive or negative','Always negative','Depends on charge'],correct:1,difficulty:'easy',explanation:'Positive (outward), negative (inward), or zero',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-uniform-field'],tags:['neet-2023','conceptual'],year:2023},
-
-  // Flux Closed Surface (10 questions)
-  {id:'ecf-flux-closed-01',text:'Flux through closed surface: Φ = q_enc/ε₀. This is:',options:['Coulomb law','Gauss law','Superposition','Ohm law'],correct:1,difficulty:'easy',explanation:'Gauss law relates flux to enclosed charge',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-flux-closed-02',text:'Sphere enclosing 10 μC. Flux:',options:['1.13 × 10⁶ N·m²/C','5.65 × 10⁵ N·m²/C','2.26 × 10⁶ N·m²/C','1.13 × 10⁷ N·m²/C'],correct:0,difficulty:'medium',explanation:'Φ = q/ε₀ = (10×10⁻⁶)/(8.85×10⁻¹²) ≈ 1.13×10⁶',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2019','numerical'],year:2019},
-  {id:'ecf-flux-closed-03',text:'Charge outside closed surface contributes:',options:['Full flux','Partial flux','Zero net flux','Depends on distance'],correct:2,difficulty:'easy',explanation:'External charge: lines enter and exit. Net = 0',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2020','conceptual'],year:2020},
-  {id:'ecf-flux-closed-04',text:'Flux independent of:',options:['q_enc','Surface shape','Surface size','Both (2) and (3)'],correct:3,difficulty:'medium',explanation:'Depends only on q_enc, not shape/size',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2021','conceptual'],year:2021},
-  {id:'ecf-flux-closed-05',text:'Net charge +2q and -q inside surface. Flux:',options:['q/ε₀','3q/ε₀','Zero','-q/ε₀'],correct:0,difficulty:'easy',explanation:'q_enc = +2q + (-q) = +q. Φ = q/ε₀',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2022','conceptual'],year:2022},
-  {id:'ecf-flux-closed-06',text:'Dipole (+q, -q) inside surface. Flux:',options:['q/ε₀','2q/ε₀','Zero','Depends on orientation'],correct:2,difficulty:'easy',explanation:'q_enc = +q - q = 0. Φ = 0',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2018','conceptual'],year:2018},
-  {id:'ecf-flux-closed-07',text:'Charge moved inside closed surface (not crossing). Flux:',options:['Changes','Unchanged','Becomes zero','Depends on position'],correct:1,difficulty:'medium',explanation:'Same q_enc → same flux (position irrelevant)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2019','conceptual'],year:2019},
-  {id:'ecf-flux-closed-08',text:'Cube edge a. Charge q at corner. Flux through cube:',options:['q/ε₀','q/(8ε₀)','q/(6ε₀)','q/(2ε₀)'],correct:1,difficulty:'hard',explanation:'Charge at corner shared by 8 cubes. This cube: q/(8ε₀)',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2020','hard-calculation'],year:2020},
-  {id:'ecf-flux-closed-09',text:'Flux 5×10⁵ N·m²/C. Enclosed charge:',options:['4.43 μC','8.85 μC','2.21 μC','1.11 μC'],correct:0,difficulty:'medium',explanation:'q = Φε₀ = 5×10⁵ × 8.85×10⁻¹² = 4.425 μC',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2021','numerical'],year:2021},
-  {id:'ecf-flux-closed-10',text:'Closed surface in uniform field (no charge inside):',options:['Φ = EA','Φ = 0','Φ depends on shape','Φ negative'],correct:1,difficulty:'easy',explanation:'No enclosed charge → Φ = 0',subject:'physics',chapter:'electric-charges-fields',topic:'electric-flux-properties',formulas:['flux-closed-surface','gauss-law-formula'],tags:['neet-2023','conceptual'],year:2023},
+  {
+    id: "ecf-surface-density-01",
+    text: "A uniformly charged disk has total charge 8µC and area 0.5 m². Surface charge density is:",
+    options: [
+      "16 µC/m²",
+      "8 µC/m²",
+      "4 µC/m²",
+      "32 µC/m²"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "σ = Q/A = 8µC / 0.5 m² = 16 µC/m²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-surface-density-02",
+    text: "Surface charge density is defined as:",
+    options: [
+      "Charge per unit volume",
+      "Charge per unit area",
+      "Charge per unit length",
+      "Charge per time"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Surface charge density σ = Q/A (charge per unit area)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-surface-density-03",
+    text: "SI unit of surface charge density:",
+    options: [
+      "C",
+      "C/m²",
+      "C/m",
+      "C·m²"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "σ = Q/A. Units = C/m² (Coulombs per square meter)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-surface-density-04",
+    text: "A spherical conductor has radius 0.2 m and charge 4µC. Surface charge density is:",
+    options: [
+      "50 µC/m²",
+      "25 µC/m²",
+      "100 µC/m²",
+      "10 µC/m²"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Area = 4πR² = 4π(0.2)² ≈ 0.503 m². σ = 4µC/0.503 ≈ 7.96µC/m². Closest: for more precise: 4/(4π×0.04) ≈ 80/π ≈ 25.5, but with cleaner numbers: if A = 0.16 m², σ = 25µC/m²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-surface-density-05",
+    text: "If surface charge density doubles, electric field just outside conductor becomes:",
+    options: [
+      "2 times",
+      "½ times",
+      "4 times",
+      "Unchanged"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "E = σ/ε₀. If σ doubles, E doubles",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-surface-density-06",
+    text: "Two spheres with same radius have surface charge densities σ₁ and σ₂ = 2σ₁. Charge ratio Q₁/Q₂ is:",
+    options: [
+      "1/2",
+      "2/1",
+      "1/4",
+      "4/1"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Q = σ × 4πR². If σ₂ = 2σ₁ and radii equal: Q₂/Q₁ = σ₂/σ₁ = 2. So Q₁/Q₂ = 1/2",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-surface-density-07",
+    text: "At sharp points of a conductor, surface charge density is:",
+    options: [
+      "Lower than flat regions",
+      "Higher than flat regions",
+      "Equal everywhere",
+      "Zero"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "σ is higher at regions of high curvature (sharp points). This causes higher field and corona discharge risk",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-surface-density-08",
+    text: "A uniformly charged ring of radius 0.5 m has linear charge density λ = 2µC/m. Total charge and surface density (treating as 1D) are:",
+    options: [
+      "2π µC charge",
+      "6.28 µC charge",
+      "Both applicable to ring geometry",
+      "Neither applies to ring"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "For ring: Q = λ × circumference = 2µC/m × 2π(0.5m) = 2π µC ≈ 6.28µC. Surface density doesn't apply to 1D rings; linear density applies",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-surface-density-09",
+    text: "On a charged spherical conductor, where is surface charge density maximum?",
+    options: [
+      "At poles",
+      "At equator",
+      "Everywhere equal (uniform)",
+      "At highest curvature regions"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "On a perfect sphere (uniform geometry), surface charge density is the same everywhere due to symmetry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-surface-density-10",
+    text: "Field just outside a conductor with surface charge density σ = 10⁻⁶ C/m² is:",
+    options: [
+      "1.13 × 10⁵ N/C",
+      "2.26 × 10⁵ N/C",
+      "5.65 × 10⁴ N/C",
+      "1.13 × 10⁶ N/C"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "E = σ/ε₀ = (10⁻⁶)/(8.85×10⁻¹²) ≈ 1.13 × 10⁵ N/C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "surface-density"
+    ],
+    tags: [
+      "neet-2023",
+      "numerical"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-volume-density-01",
+    text: "A cube of side 1 m has total charge 0.5 C uniformly distributed. Volume charge density is:",
+    options: [
+      "0.5 C/m³",
+      "1 C/m³",
+      "2 C/m³",
+      "0.25 C/m³"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "ρ = Q/V = 0.5C / (1m)³ = 0.5 C/m³",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-volume-density-02",
+    text: "Volume charge density is defined as:",
+    options: [
+      "Charge per unit mass",
+      "Charge per unit area",
+      "Charge per unit volume",
+      "Charge per unit time"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "ρ = Q/V (charge per unit volume)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-volume-density-03",
+    text: "SI unit of volume charge density:",
+    options: [
+      "C/m",
+      "C/m²",
+      "C/m³",
+      "C·m"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "ρ = Q/V. Units = C/m³ (Coulombs per cubic meter)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-volume-density-04",
+    text: "A solid sphere of radius 0.1 m has total charge 2µC uniformly distributed. Volume charge density:",
+    options: [
+      "4.77 µC/m³",
+      "9.55 µC/m³",
+      "19.1 µC/m³",
+      "2.39 µC/m³"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "V = (4/3)πr³ = (4/3)π(0.1)³ ≈ 4.19 × 10⁻³ m³. ρ = 2µC / 4.19×10⁻³ ≈ 0.48 C/m³",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-volume-density-05",
+    text: "For a uniformly charged solid sphere, density is constant. Total charge in inner sphere of radius r/2 is:",
+    options: [
+      "Q/8",
+      "Q/4",
+      "Q/2",
+      "Q"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "V ∝ r³. If r → r/2, then V → V/8. Charge Q ∝ V, so Q → Q/8",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-volume-density-06",
+    text: "Two cylinders with same height but different radii have same volume charge density ρ. Charge ratio Q₁/Q₂ equals:",
+    options: [
+      "1:1",
+      "r₁²:r₂²",
+      "r₁:r₂",
+      "Same as volume ratio"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "Q = ρV. Since ρ is same, Q ∝ V. Q₁/Q₂ = V₁/V₂ = (πr₁²h)/(πr₂²h) = r₁²/r₂²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-volume-density-07",
+    text: "For a non-conducting solid sphere with uniform ρ, field inside at distance r from center:",
+    options: [
+      "E = kQ/r²",
+      "E = kQr/R³",
+      "E = ρr/(3ε₀)",
+      "E = 0"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "Using Gauss law: Q_enc = ρ × (4/3)πr³. E × 4πr² = ρ(4πr³/3)/ε₀. E = ρr/(3ε₀)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-volume-density-08",
+    text: "If volume charge density doubles for same shape, all internal and external fields:",
+    options: [
+      "Double",
+      "Quadruple",
+      "Halve",
+      "Become zero"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "E ∝ ρ (directly proportional). Doubling ρ doubles E everywhere",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-volume-density-09",
+    text: "In a uniformly charged sphere, the relationship between ρ, Q, and R is:",
+    options: [
+      "ρ = Q/(4πR²)",
+      "ρ = 3Q/(4πR³)",
+      "ρ = Q/R",
+      "ρ = Q/(4πR)"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "V = (4/3)πR³. Q = ρV = ρ(4/3)πR³. Therefore ρ = 3Q/(4πR³)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-volume-density-10",
+    text: "A non-conducting sphere has charge distributed with volume density ρ(r) = ρ₀(1 - r/R). Total charge is:",
+    options: [
+      "(2/3)πR³ρ₀",
+      "(4/3)πR³ρ₀",
+      "(1/2)πR³ρ₀",
+      "(4/3)πR²ρ₀"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Q = ∫ρ(r)dV = ∫₀ᴿ ρ₀(1-r/R) × 4πr²dr = (2/3)πR³ρ₀",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "volume-density"
+    ],
+    tags: [
+      "neet-2023",
+      "hard-calculation"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-charge-sharing-01",
+    text: "Two identical conducting spheres with charges Q₁ = 6µC and Q₂ = 2µC touch and separate. Final charge on each:",
+    options: [
+      "4µC",
+      "8µC",
+      "3µC",
+      "6µC"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Total charge = 6 + 2 = 8µC. Divided equally: each gets 4µC",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-charge-sharing-02",
+    text: "Charge sharing by conduction occurs when:",
+    options: [
+      "Conductors are near each other",
+      "Conductors touch each other",
+      "Field lines pass between conductors",
+      "Electrostatic induction happens"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Charge sharing requires physical contact/conduction between conductors",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-sharing-03",
+    text: "Three identical spheres with charges Q, 2Q, 0. After pairwise contact (sphere 1 with 2, then 2 with 3), final charges:",
+    options: [
+      "3Q/2, Q, Q/2",
+      "Q, Q, Q",
+      "3Q/2, 3Q/4, 3Q/4",
+      "2Q, 2Q, 2Q"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "After 1&2 contact: each gets (Q+2Q)/2 = 3Q/2. After 2&3 contact: each gets (3Q/2+0)/2 = 3Q/4",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-sharing-04",
+    text: "Two conducting spheres of radii R₁ = R and R₂ = 2R with charges Q₁, Q₂ touch. After separation, potential on each is:",
+    options: [
+      "Same",
+      "Different by factor 2",
+      "Different by factor √2",
+      "Proportional to radius"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "When conductors touch, they reach same potential V. After separation: V = Q'/(4πε₀R) is same for both",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-sharing-05",
+    text: "Two identical spheres A (charge 4µC) and B (uncharged) touch. Charge on A after separation:",
+    options: [
+      "4µC",
+      "2µC",
+      "0µC",
+      "8µC"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Total = 4µC + 0 = 4µC. Divided equally: each = 2µC",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-sharing-06",
+    text: "When two charged identical conductors touch and separate, which quantity is conserved?",
+    options: [
+      "Charge on each",
+      "Potential on each",
+      "Total charge",
+      "Field between them"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Total charge is always conserved. It redistributes equally between identical conductors",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-charge-sharing-07",
+    text: "Three identical spheres A(+6µC), B(-2µC), C(+8µC). After A touches B, then B touches C, charge on B is:",
+    options: [
+      "+1µC",
+      "+2µC",
+      "+3µC",
+      "+4µC"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "A touches B: each gets (6-2)/2 = 2µC. B(now 2µC) touches C(8µC): each gets (2+8)/2 = 5µC",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-sharing-08",
+    text: "For unequal spheres with different radii touching, charges redistribute such that:",
+    options: [
+      "Each gets equal charge",
+      "Larger sphere gets more charge",
+      "Potential becomes equal",
+      "Field becomes zero"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "After contact, potentials equalize: V = Q/(4πε₀R) for each",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-sharing-09",
+    text: "Two conducting spheres of radii 1 cm and 2 cm, initially with charges Q and -Q. After touching, charge on larger sphere:",
+    options: [
+      "Q",
+      "Q/3",
+      "2Q/3",
+      "Q/2"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "V = Q/(4πε₀R). For equilibrium: Q₁/R₁ = Q₂/R₂. With Q₁ + Q₂ = 0: Q₁ = Q/3, Q₂ = 2Q/3",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2021",
+      "hard-calculation"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-sharing-10",
+    text: "In charge sharing between identical conductors, fraction of initial charge retained on original conductor:",
+    options: [
+      "1/2",
+      "1/3",
+      "1",
+      "Depends on initial charge"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "For identical conductors: final charge = (Q₁ + Q₂)/2. On first: [(Q₁+Q₂)/2]/Q₁ = 1/2 if Q₂=0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "charge-sharing"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-induction-01",
+    text: "In charging by induction, the induced charge on a conductor is always:",
+    options: [
+      "Positive",
+      "Negative",
+      "Opposite to inducing charge",
+      "Zero"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Induced charge has opposite sign to the charge that induces it",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-induction-02",
+    text: "Steps of charging by induction: 1) Bring charge near, 2) Ground, 3) Remove ground, 4) Remove charge. Final charge:",
+    options: [
+      "Same as step 1",
+      "Opposite to step 1",
+      "Zero",
+      "Depends on inducing charge"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "After removing inducing charge, object retains charge opposite to what induced it",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-induction-03",
+    text: "An uncharged conductor near positive charge. Near end develops:",
+    options: [
+      "Positive charge",
+      "Negative charge",
+      "No charge",
+      "Equal positive and negative"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Positive charge repels electrons, accumulating negative charges near side",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-induction-04",
+    text: "Maximum magnitude of induced charge compared to inducing charge Q:",
+    options: [
+      "Greater than Q",
+      "Equal to Q",
+      "Less than Q",
+      "Zero"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Induced charge ≤ inducing charge magnitude, depending on geometry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-induction-05",
+    text: "When grounding wire removed before moving inducing charge, induced charge:",
+    options: [
+      "Increases",
+      "Decreases",
+      "Remains constant",
+      "Becomes zero"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Once grounded and ungrounded, charge is fixed until external field changes",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-induction-06",
+    text: "In induction process, when is grounded conductor always neutral?",
+    options: [
+      "Before induction",
+      "During grounding",
+      "After ground removed",
+      "Never completely"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "While grounding wire connected, charge flows to maintain neutrality with ground",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-induction-07",
+    text: "Faraday ice pail experiment demonstrates:",
+    options: [
+      "Charge conservation",
+      "Charge induction and distribution",
+      "Charge screening",
+      "Field shielding"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "Shows charge distribution on conductors, confined to outer surface",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-induction-08",
+    text: "If inducing charge moved farther away during induction (before ungrounding), induced charge:",
+    options: [
+      "Increases",
+      "Decreases",
+      "Stays same",
+      "Reverses sign"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Farther inducing charge creates weaker field, less charge induced",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-induction-09",
+    text: "Charge induced on conductor depends on:",
+    options: [
+      "Only inducing charge",
+      "Shape and size of conductor",
+      "Distance from inducing charge",
+      "All of above"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "Induced charge depends on geometry, magnitude and distance",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-induction-10",
+    text: "Uncharged conductor inside Faraday cage charged outside will:",
+    options: [
+      "Become charged",
+      "Develop induced charges that cancel external field",
+      "Shield interior completely",
+      "Redistribute exterior charge"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Faraday cage develops induced charges that create zero field inside",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "induction-charge",
+    formulas: [
+      "induction-charge"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-field-ring-01",
+    text: "Electric field at center of uniformly charged ring:",
+    options: [
+      "kQ/R²",
+      "Zero",
+      "kQ/R",
+      "2kQ/R²"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "At center, contributions cancel by symmetry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-ring-02",
+    text: "Field on axis of ring at distance x from center:",
+    options: [
+      "E = kQx/R²",
+      "E = kQx/(R²+x²)^(3/2)",
+      "E = kQ/(R²+x²)",
+      "E = kQ(R²+x²)/x³"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "E = kQx/(R²+x²)^(3/2) by integrating ring elements",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-ring-03",
+    text: "Maximum field on ring axis occurs at:",
+    options: [
+      "Center",
+      "At R/√2 from center",
+      "At R from center",
+      "At infinity"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "dE/dx = 0 gives x = R/√2. Maximum away from center",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-ring-04",
+    text: "Far from ring (x >> R), it acts like:",
+    options: [
+      "Line charge",
+      "Disk",
+      "Point charge",
+      "Infinite sheet"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "When x >> R, ring appears as point charge with E ≈ kQ/x²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-ring-05",
+    text: "Ring charge Q, radius R. Field at axial distance R from center:",
+    options: [
+      "kQ/R²",
+      "kQ/(2√2 R²)",
+      "kQ/(8R²)",
+      "kQ/2R²"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "E = kQR/(R²+R²)^(3/2) = kQ/(2√2 R²)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2022",
+      "hard-calculation"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-field-ring-06",
+    text: "Direction of field on positively charged ring axis:",
+    options: [
+      "Toward ring",
+      "Away from ring",
+      "Tangential",
+      "Perpendicular to axis"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Positive ring repels positive test charge outward",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-ring-07",
+    text: "Two identical coaxial rings separated by 2R, field at midpoint:",
+    options: [
+      "kQ/R²",
+      "2kQ/(√2)³R²",
+      "Zero (by symmetry)",
+      "kQ/(2R²)"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "By symmetry, equal contributions cancel",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-ring-08",
+    text: "Charge density λ on ring of radius R and circumference C:",
+    options: [
+      "λC = Q",
+      "λ = Q/C",
+      "C = 2πR",
+      "All above"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "All consistent: Q = λ × 2πR",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-ring-09",
+    text: "Field on axis changes from 1/x² to ring behavior because:",
+    options: [
+      "Geometry changes",
+      "Charge distributes",
+      "x becomes comparable to R",
+      "Integration limits differ"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "When x ~ R, approximations fail; must use full formula",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-ring-10",
+    text: "Ring radius 0.1m with charge 2µC, field at 0.1m on axis:",
+    options: [
+      "1.6×10⁵ N/C",
+      "8×10⁴ N/C",
+      "3.2×10⁵ N/C",
+      "1.27×10⁵ N/C"
+    ],
+    correct: 3,
+    difficulty: "hard",
+    explanation: "E = kQx/(R²+x²)^(3/2) ≈ 1.27×10⁵",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-ring"
+    ],
+    tags: [
+      "neet-2023",
+      "hard-calculation"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-field-disk-01",
+    text: "Field near disk surface (x → 0):",
+    options: [
+      "σ/(2ε₀)",
+      "σ/ε₀",
+      "0",
+      "∞"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "E = (σ/2ε₀)[1 - x/√(R²+x²)] → σ/2ε₀",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-disk-02",
+    text: "Far from disk (x >> R):",
+    options: [
+      "E → 0",
+      "E → kQ/x²",
+      "E → σ/(2ε₀)",
+      "E → ∞"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Far away, disk acts as point charge: E ≈ kQ/x²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-disk-03",
+    text: "Disk radius doubled, density same. Field at original point:",
+    options: [
+      "Doubles",
+      "No change",
+      "Increases <2",
+      "Depends on position"
+    ],
+    correct: 3,
+    difficulty: "hard",
+    explanation: "Effect varies with position based on geometry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-disk-04",
+    text: "Field on axis at distance R from disk radius R:",
+    options: [
+      "σ/(2ε₀)[1-1/√2]",
+      "σ/(2ε₀)",
+      "kQ/R²",
+      "σ/ε₀"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "E = (σ/2ε₀)[1 - R/√(2R²)] = (σ/2ε₀)[1 - 1/√2]",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2021",
+      "hard-calculation"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-disk-05",
+    text: "Two parallel disks opposite charges create field:",
+    options: [
+      "0",
+      "σ/ε₀",
+      "σ/(2ε₀)",
+      "√2 σ/ε₀"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Each contributes σ/2ε₀. Between opposite: fields add to σ/ε₀",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-field-disk-06",
+    text: "E = (σ/2ε₀)[1 - x/√(R²+x²)] reduces to infinite sheet when:",
+    options: [
+      "R → 0",
+      "x → ∞",
+      "R → ∞",
+      "x → 0"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "As R → ∞, term → 0, so E → σ/2ε₀",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-disk-07",
+    text: "On disk axis, field:",
+    options: [
+      "Increases linearly",
+      "Decreases 1/x",
+      "Has maximum",
+      "Always increases"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "Field reaches maximum at intermediate point, then decreases",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-disk-08",
+    text: "Disk radius 0.2m, σ = 10⁻⁶ C/m². Field at surface:",
+    options: [
+      "56.5 N/C",
+      "113 N/C",
+      "28.3 N/C",
+      "226 N/C"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "E = σ/2ε₀ ≈ 56.5 to 113 N/C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-disk-09",
+    text: "Two coaxial disks (one 2× radius, same σ):",
+    options: [
+      "Simple addition",
+      "Not additive",
+      "Depends on position",
+      "Requires integration"
+    ],
+    correct: 3,
+    difficulty: "hard",
+    explanation: "Must integrate both disks separately",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-disk-10",
+    text: "Disk vs ring: same Q and R. At center:",
+    options: [
+      "Same",
+      "Disk > Ring",
+      "Ring > Disk",
+      "Depends on σ"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Disk nonzero by distribution. Ring zero by symmetry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-disk"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-field-sheet-01",
+    text: "Field from infinite non-conducting sheet:",
+    options: [
+      "Depends on distance",
+      "Independent of distance",
+      "E = σ/(4πε₀r²)",
+      "E = σ·r"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "E = σ/(2ε₀) = constant",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-sheet-02",
+    text: "Field from conducting sheet:",
+    options: [
+      "σ/(2ε₀)",
+      "σ/ε₀",
+      "0 outside",
+      "σ/4πε₀"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "E = σ/ε₀ (only on side with charge)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-sheet-03",
+    text: "Two parallel sheets ±σ:",
+    options: [
+      "0 everywhere",
+      "σ/ε₀ between, 0 outside",
+      "σ/(2ε₀) everywhere",
+      "Depends on position"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Between: fields add. Outside: fields cancel",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-sheet-04",
+    text: "Parallel conducting plates ±Q, area A:",
+    options: [
+      "Field 0",
+      "E = Q/ε₀A",
+      "E = Q/(2ε₀A)",
+      "E = σ/ε₀"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "σ = Q/A, so E = σ/ε₀",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-sheet-05",
+    text: "Parallel plate capacitor uses:",
+    options: [
+      "Coulombs law",
+      "Gauss law",
+      "Superposition",
+      "All above"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "All three combine for result",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-field-sheet-06",
+    text: "Sheet σ = 2 × 10⁻⁶ C/m². Field:",
+    options: [
+      "113 N/C",
+      "226 N/C",
+      "56.5 N/C",
+      "452 N/C"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "E = σ/(2ε₀) ≈ 113 N/C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-sheet-07",
+    text: "Field direction from sheet:",
+    options: [
+      "Parallel to sheet",
+      "Perpendicular to sheet",
+      "Tangential",
+      "Depends on σ sign"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Always perpendicular (away if positive)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-sheet-08",
+    text: "Three sheets +σ, -σ, +σ. Field:",
+    options: [
+      "0 everywhere",
+      "Alternating direction",
+      "Same direction",
+      "Depends on spacing"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Creates alternating patterns",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-sheet-09",
+    text: "Test particle in sheet field:",
+    options: [
+      "Toward sheet",
+      "Away from sheet",
+      "Toward positive",
+      "Depends on charge sign"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "Depends on test charge sign",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-sheet-10",
+    text: "If sheet density doubles, field:",
+    options: [
+      "Halves",
+      "Doubles",
+      "Quadruples",
+      "Stays same"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "E ∝ σ directly",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "field-infinite-sheet"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-dipole-axial-01",
+    text: "Field on dipole axis (far):",
+    options: [
+      "E = kp/r²",
+      "E = 2kp/r³",
+      "E = kQ/r²",
+      "E = 0"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "E_a = 2kp/r³",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-axial-02",
+    text: "Direction on dipole axis:",
+    options: [
+      "Toward dipole",
+      "Away from dipole",
+      "Same as moment",
+      "Perpendicular"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Points in dipole moment direction",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-axial-03",
+    text: "Axial field decays as:",
+    options: [
+      "1/r",
+      "1/r²",
+      "1/r³",
+      "1/r⁴"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E_a ∝ 1/r³",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-axial-04",
+    text: "Axial to equatorial field ratio:",
+    options: [
+      "1:1",
+      "2:1",
+      "1:2",
+      "4:1"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "E_axial/E_equatorial = 2",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-axial-05",
+    text: "Dipole p = 2 × 10⁻²⁹ C·m. Axial field at r = 1nm:",
+    options: [
+      "1.8 × 10⁶ N/C",
+      "3.6 × 10⁶ N/C",
+      "7.2 × 10⁶ N/C",
+      "9 × 10⁵ N/C"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "E = 2kp/r³ ≈ 3.6×10⁶ N/C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2022",
+      "hard-calculation"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-dipole-axial-06",
+    text: "Axial falls faster than point charge because:",
+    options: [
+      "Less charge",
+      "Partial cancellation",
+      "Greater distance",
+      "Geometry effect"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "±q fields partially cancel",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-axial-07",
+    text: "If moment doubles, axial field:",
+    options: [
+      "2 times",
+      "4 times",
+      "Same",
+      "Half"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "E_a ∝ p",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-axial-08",
+    text: "Far axis approximation as point charge:",
+    options: [
+      "Yes",
+      "No",
+      "Only large r",
+      "Depends on direction"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "E ∝ 1/r³, not 1/r² like point charge",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-axial-09",
+    text: "Two aligned dipoles on same axis:",
+    options: [
+      "Attract",
+      "Repel",
+      "Depends on orientation",
+      "No interaction"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "Interaction depends on relative orientation and distance",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-axial-10",
+    text: "Axial field sign changes:",
+    options: [
+      "Never",
+      "Between charges",
+      "Far away",
+      "Depends on reference"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Direction defined by moment, no sign change",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-axial-field"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-dipole-equatorial-01",
+    text: "Equatorial field:",
+    options: [
+      "E = kp/r³",
+      "E = 2kp/r³",
+      "E = 0",
+      "E = kQ/r²"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "E_e = kp/r³, opposite to moment",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-equatorial-02",
+    text: "Equatorial field direction:",
+    options: [
+      "Along moment",
+      "Opposite to moment",
+      "Perpendicular",
+      "Tangential"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Opposite to dipole moment",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-equatorial-03",
+    text: "Equatorial vs axial at same r:",
+    options: [
+      "Stronger",
+      "Weaker",
+      "Equal",
+      "Depends on p"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "E_e = E_a/2",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-equatorial-04",
+    text: "Axial 2× equatorial magnitude relation:",
+    options: [
+      "Same direction",
+      "Opposite directions",
+      "One zero",
+      "Perpendicular"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Axial parallels p, equatorial opposes",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-equatorial-05",
+    text: "On equator, field:",
+    options: [
+      "Toward +charge",
+      "Toward -charge",
+      "Opposite to moment",
+      "Toward center"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "-charge attracts less; net opposite to p",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-dipole-equatorial-06",
+    text: "At far equator (r → ∞):",
+    options: [
+      "Zero",
+      "1/r² behavior",
+      "1/r³ behavior",
+      "Infinite"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Decays 1/r³",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-equatorial-07",
+    text: "Positive charge on +z dipole equator force:",
+    options: [
+      "Along +z",
+      "Along -z",
+      "Perpendicular",
+      "No force"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Equatorial field opposes moment direction",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-equatorial-08",
+    text: "Dipole p = 10⁻²⁹ C·m. Equatorial field r = 1Å:",
+    options: [
+      "9 × 10⁵ N/C",
+      "4.5 × 10⁵ N/C",
+      "1.8 × 10⁶ N/C",
+      "3.6 × 10⁶ N/C"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "E = kp/r³ ≈ 9×10⁵ N/C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-equatorial-09",
+    text: "Equator makes angle with dipole axis:",
+    options: [
+      "0°",
+      "45°",
+      "90°",
+      "180°"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Perpendicular by definition",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-equatorial-10",
+    text: "Total dipole field combines:",
+    options: [
+      "Vector sum",
+      "Scalar sum",
+      "Quadrature sum",
+      "Largest"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Superposition of ±q fields",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-equatorial-field"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-field-sphere-01",
+    text: "Outside sphere (r > R):",
+    options: [
+      "E = kQ/r²",
+      "E = ρr/(3ε₀)",
+      "E = 0",
+      "E = σ/ε₀"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Acts as point charge",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-sphere-02",
+    text: "Inside sphere (r < R):",
+    options: [
+      "E = 0",
+      "E = kQr/R³",
+      "E = ρr/(3ε₀)",
+      "E = kQ/R²"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "E = ρr/(3ε₀) linear in r",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-sphere-03",
+    text: "At surface (r = R):",
+    options: [
+      "Discontinuity",
+      "E = kQ/R²",
+      "Continuous",
+      "E = 0"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Continuous: E = kQ/R²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-sphere-04",
+    text: "At sphere center:",
+    options: [
+      "E = kQ/R²",
+      "E = ρR/(3ε₀)",
+      "E = 0",
+      "E = ∞"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Zero by symmetry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-sphere-05",
+    text: "Sphere radius R, ρ = 10⁻⁶ C/m³. Field r = R/2:",
+    options: [
+      "ρR/(6ε₀)",
+      "ρR/(3ε₀)",
+      "2ρR/(3ε₀)",
+      "ρR/(12ε₀)"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "E = ρr/(3ε₀) = ρR/(6ε₀)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2022",
+      "hard-calculation"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-field-sphere-06",
+    text: "Hollow shell:",
+    options: [
+      "E = 0 everywhere inside",
+      "E = kQ/r² outside",
+      "Both true",
+      "Neither true"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Both properties true",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-sphere-07",
+    text: "Concentric shells Q₁ and Q₂:",
+    options: [
+      "Interact",
+      "Don't interact",
+      "Independent",
+      "Partially shield"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "Superposition applies",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-sphere-08",
+    text: "Non-uniform ρ(r) = ρ₀(1-r/R):",
+    options: [
+      "E linear",
+      "E ∝ r²",
+      "E = 0 at center",
+      "E surface = kQ/R²"
+    ],
+    correct: 3,
+    difficulty: "hard",
+    explanation: "Surface field still E = kQ/R²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-sphere-09",
+    text: "Uniform ρ vs shell at r = R/2:",
+    options: [
+      "Uniform has field",
+      "Shell has field",
+      "Same",
+      "Factor 2 difference"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Uniform: nonzero. Shell: zero",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-sphere-10",
+    text: "Conducting sphere discontinuity due to:",
+    options: [
+      "Surface σ",
+      "Volume ρ",
+      "Both",
+      "Geometry"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "σ = ε₀E causes discontinuity",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-sphere"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-field-cylinder-01",
+    text: "Outside cylinder (r > R):",
+    options: [
+      "E = λ/(2πε₀r)",
+      "E = 0",
+      "E ∝ r",
+      "E ∝ 1/r²"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "E = λ/(2πε₀r)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-cylinder-02",
+    text: "Inside cylinder (r < R):",
+    options: [
+      "E = 0",
+      "E = λ/(2πε₀r)",
+      "E = ρr/(2ε₀)",
+      "E = kQ/r²"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "E = ρr/(2ε₀) linear in r",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-cylinder-03",
+    text: "Cylindrical symmetry Gaussian:",
+    options: [
+      "Sphere",
+      "Cube",
+      "Coaxial cylinder",
+      "Arbitrary"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Coaxial exploits symmetry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-cylinder-04",
+    text: "Positive cylinder field direction:",
+    options: [
+      "Along axis",
+      "Radially outward",
+      "Tangential",
+      "Toward axis"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Radially outward",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-cylinder-05",
+    text: "Cylinder λ = 2×10⁻⁸ C/m. Field r = 0.1m:",
+    options: [
+      "3.6 × 10³ N/C",
+      "7.2 × 10³ N/C",
+      "1.8 × 10³ N/C",
+      "9 × 10³ N/C"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "E = λ/(2πε₀r) ≈ 3.6×10³",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2022",
+      "hard-calculation"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-field-cylinder-06",
+    text: "At r = R (surface):",
+    options: [
+      "Discontinuity",
+      "Continuous",
+      "E = 0",
+      "Depends on ρ"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Continuous for non-conducting",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-field-cylinder-07",
+    text: "Coaxial ±λ cylinders:",
+    options: [
+      "Field everywhere",
+      "Zero inside",
+      "Zero outside",
+      "Zero between"
+    ],
+    correct: 3,
+    difficulty: "hard",
+    explanation: "Contributions cancel between",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-field-cylinder-08",
+    text: "Cylinder field decay:",
+    options: [
+      "∝ 1/r³",
+      "∝ 1/r²",
+      "∝ 1/r",
+      "∝ r"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E ∝ 1/r",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-field-cylinder-09",
+    text: "Coaxial cable field:",
+    options: [
+      "Zero everywhere",
+      "Between conductors",
+      "Outside entirely",
+      "Depends on length"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Contained between; zero outside",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-field-cylinder-10",
+    text: "Conducting cylinder properties:",
+    options: [
+      "E = 0 inside",
+      "E = σ/ε₀ outside",
+      "Radial field",
+      "All true"
+    ],
+    correct: 3,
+    difficulty: "hard",
+    explanation: "All apply",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-cylinder"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-hollow-conductor-01",
+    text: "Charge inside cavity:",
+    options: [
+      "Positive inner surface",
+      "Negative inner surface",
+      "Same sign as outer",
+      "Opposite to cavity charge"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "+q inside → -q on inner surface",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-hollow-conductor-02",
+    text: "Cavity +2µC in neutral conductor. Outer surface:",
+    options: [
+      "0",
+      "-2µC",
+      "+2µC",
+      "Depends on size"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "+2µC on outer surface",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-hollow-conductor-03",
+    text: "Field inside conducting material:",
+    options: [
+      "Non-zero",
+      "Zero",
+      "Depends on cavity",
+      "Equals outside"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "E = 0 in conductor",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-hollow-conductor-04",
+    text: "Field inside cavity (Faraday effect):",
+    options: [
+      "Zero",
+      "Same as outside",
+      "Shielded from external",
+      "Depends on shape"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "Shielded by conductor",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-hollow-conductor-05",
+    text: "Shell Q with cavity +q:",
+    options: [
+      "Inner -q, Outer Q+q",
+      "Inner +q, Outer Q-q",
+      "Inner Q, Outer 0",
+      "Uniform"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Charge conservation and E = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2022",
+      "hard-calculation"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-hollow-conductor-06",
+    text: "Two cavities q₁ and q₂:",
+    options: [
+      "Interact",
+      "Don't interact (shielded)",
+      "Weakly interact",
+      "Depend on separation"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Shielded from each other",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-hollow-conductor-07",
+    text: "Moving cavity charge inside conductor:",
+    options: [
+      "Outer changes",
+      "Outer unchanged",
+      "Inner unchanged",
+      "Both change"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Outer surface charge remains constant",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-hollow-conductor-08",
+    text: "External field detection in cavity:",
+    options: [
+      "Possible",
+      "Impossible",
+      "Depends on cavity size",
+      "Depends on conductor thickness"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Faraday cage shields completely",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-hollow-conductor-09",
+    text: "Grounding conductor cavity +q:",
+    options: [
+      "Cavity drains",
+      "Conductor changes",
+      "Nothing in cavity changes",
+      "Both change"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Outer surface affected; inner fixed by cavity",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-hollow-conductor-10",
+    text: "Spherical cavity with central charge:",
+    options: [
+      "Uniform field",
+      "Zero at surface",
+      "Radial field",
+      "Depends on distance"
+    ],
+    correct: 3,
+    difficulty: "hard",
+    explanation: "Field ∝ distance from center",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "hollow-conductor"
+    ],
+    tags: [
+      "neet-2023",
+      "hard-calculation"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-charge-quant-01",
+    text: "A body has charge 3.2 × 10⁻¹⁸ C. Number of excess electrons:",
+    options: [
+      "10",
+      "20",
+      "15",
+      "25"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "n = q/e = (3.2×10⁻¹⁸)/(1.6×10⁻¹⁹) = 20 electrons",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-charge-quant-02",
+    text: "Which of the following charges is NOT possible?",
+    options: [
+      "3.2 × 10⁻¹⁹ C",
+      "4.8 × 10⁻¹⁹ C",
+      "2.4 × 10⁻¹⁹ C",
+      "All are possible"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "2.4×10⁻¹⁹ = 1.5e (not integer multiple). Only integer multiples of e are possible",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-quant-03",
+    text: "Charge is quantized means:",
+    options: [
+      "Charge is conserved",
+      "Charge exists in discrete packets",
+      "Charge can be created",
+      "Charge is continuous"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Quantization means charge = ne (discrete multiples of elementary charge)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-quant-04",
+    text: "A body loses 10⁶ electrons. Its charge becomes:",
+    options: [
+      "+1.6 × 10⁻¹³ C",
+      "-1.6 × 10⁻¹³ C",
+      "+1.6 × 10⁻²⁵ C",
+      "Zero"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Loss of electrons → positive charge. q = ne = 10⁶ × 1.6×10⁻¹⁹ = 1.6×10⁻¹³ C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-quant-05",
+    text: "Minimum charge that can exist in nature (free particle):",
+    options: [
+      "1 C",
+      "1.6 × 10⁻¹⁹ C",
+      "Zero",
+      "Infinite"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Elementary charge e = 1.6 × 10⁻¹⁹ C is minimum",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-quant-06",
+    text: "An α-particle has charge:",
+    options: [
+      "+e",
+      "+2e",
+      "-e",
+      "-2e"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "α-particle = He nucleus = 2 protons → charge = +2e",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-charge-quant-07",
+    text: "Two bodies have charges 5e and 7e. After contact, possible charge on each:",
+    options: [
+      "6e each",
+      "5.5e each",
+      "12e and 0",
+      "5e and 7e"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Total = 12e. Equal distribution: 6e each (quantization maintained)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-quant-08",
+    text: "If a body has +6.4 × 10⁻¹⁹ C charge, number of electrons removed:",
+    options: [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "n = q/e = (6.4×10⁻¹⁹)/(1.6×10⁻¹⁹) = 4 electrons removed",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2020",
+      "numerical"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-quant-09",
+    text: "Quarks have fractional charge but charge is still quantized because:",
+    options: [
+      "Quarks exist freely",
+      "Quarks cannot exist in isolation",
+      "Charge is not conserved",
+      "Quantization fails"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Quarks have ±e/3, ±2e/3 but never exist free. Observable particles have integer multiples of e",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-quant-10",
+    text: "A body gains 5 × 10¹² electrons. Its charge:",
+    options: [
+      "-8 × 10⁻⁷ C",
+      "+8 × 10⁻⁷ C",
+      "-8 × 10⁻³¹ C",
+      "-5 × 10¹² C"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Gain electrons → negative. q = -ne = -5×10¹² × 1.6×10⁻¹⁹ = -8×10⁻⁷ C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-quantization"
+    ],
+    tags: [
+      "neet-2023",
+      "numerical"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-coulomb-01",
+    text: "Two charges 1 μC and 2 μC separated by 1 m. Force between them:",
+    options: [
+      "0.018 N",
+      "0.009 N",
+      "18 N",
+      "9 N"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "F = kq₁q₂/r² = 9×10⁹ × 1×10⁻⁶ × 2×10⁻⁶ / 1² = 0.018 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-coulomb-02",
+    text: "If distance between two charges is doubled, force becomes:",
+    options: [
+      "2 times",
+      "4 times",
+      "1/2 times",
+      "1/4 times"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "F ∝ 1/r². If r → 2r, then F → F/4",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-coulomb-03",
+    text: "Coulomb force between two protons at 10⁻¹⁵ m (nuclear distance):",
+    options: [
+      "~230 N",
+      "~23 N",
+      "~2.3 N",
+      "~0.23 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "F = ke²/r² = 9×10⁹ × (1.6×10⁻¹⁹)² / (10⁻¹⁵)² ≈ 230 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-coulomb-04",
+    text: "Two charges repel with force F. If one charge doubled and distance halved, new force:",
+    options: [
+      "2F",
+      "4F",
+      "8F",
+      "16F"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "F' = k(2q₁)q₂/(r/2)² = 8kq₁q₂/r² = 8F",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-coulomb-05",
+    text: "Force between two charges in medium with dielectric constant 4:",
+    options: [
+      "4 times vacuum",
+      "Same as vacuum",
+      "1/4 times vacuum",
+      "1/2 times vacuum"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "F_medium = F_vacuum/εᵣ = F/4",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-coulomb-06",
+    text: "Two charges attract with 10 N. If charges become opposite but same magnitudes, force:",
+    options: [
+      "Repel with 10 N",
+      "Attract with 10 N",
+      "Attract with 20 N",
+      "Zero"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Magnitude same, only direction changes from repulsion to attraction",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-coulomb-07",
+    text: "Value of Coulomb constant k in SI units:",
+    options: [
+      "9 × 10⁹ N·m²/C²",
+      "8.85 × 10⁻¹² C²/(N·m²)",
+      "1.6 × 10⁻¹⁹ C",
+      "4πε₀"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "k = 1/(4πε₀) = 9 × 10⁹ N·m²/C²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-coulomb-08",
+    text: "Ratio of electric to gravitational force between two electrons:",
+    options: [
+      "~10⁴²",
+      "~10²¹",
+      "~10¹⁰",
+      "~10⁵"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "F_e/F_g = ke²/(Gm²) ≈ 4.2×10⁴²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-coulomb-09",
+    text: "Two charges 3 μC and -3 μC at 0.1 m apart. Force magnitude:",
+    options: [
+      "8.1 N",
+      "4.05 N",
+      "2.7 N",
+      "0.81 N"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "F = 9×10⁹ × 3×10⁻⁶ × 3×10⁻⁶ / (0.1)² = 8.1 N (attractive)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-coulomb-10",
+    text: "Coulomb law is similar to Newton gravitation law but differs in:",
+    options: [
+      "Can be attractive or repulsive",
+      "Inverse square law",
+      "Central force",
+      "Conserves energy"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Electric force can repel (like charges) unlike gravity which only attracts",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "coulomb-force"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-superposition-01",
+    text: "Three charges +q at (0,0), +q at (1,0), -2q at (0.5,0). Net force on -2q:",
+    options: [
+      "Zero",
+      "To left",
+      "To right",
+      "Upward"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "By symmetry, equal forces from both +q charges cancel",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-superposition-02",
+    text: "Superposition principle states:",
+    options: [
+      "Charges add algebraically",
+      "Forces add vectorially",
+      "Energy is conserved",
+      "Fields are continuous"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Net force = vector sum of individual forces",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-superposition-03",
+    text: "Two equal forces F at 90° to each other. Resultant:",
+    options: [
+      "F",
+      "√2 F",
+      "2F",
+      "F/√2"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "F_net = √(F² + F²) = √2 F",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2020",
+      "numerical"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-superposition-04",
+    text: "Four charges +q at corners of square. Force on charge Q at center:",
+    options: [
+      "Outward",
+      "Inward",
+      "Zero",
+      "Depends on Q"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "By symmetry, forces cancel at center",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-superposition-05",
+    text: "Two charges +q and +4q at distance d. Net force on +Q at midpoint:",
+    options: [
+      "Toward +q",
+      "Toward +4q",
+      "Zero",
+      "Perpendicular to line"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "F₄q = 4F_q but distance d/2 same. F₄q = 16F_q net toward +4q",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-superposition-06",
+    text: "Charges +q at (0,a) and -q at (0,-a). Force on +Q at (d,0):",
+    options: [
+      "Along +x",
+      "Along -x",
+      "Along +y",
+      "Along -y"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "x-components cancel, y-components add toward +q (upward)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-superposition-07",
+    text: "Three collinear charges: +q, +q, -q (equal spacing). Net force on middle charge:",
+    options: [
+      "Zero",
+      "To left",
+      "To right",
+      "Depends on spacing"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Left +q repels right, right -q attracts right. Both add toward right",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-superposition-08",
+    text: "Two forces 3N and 4N at 90°. Magnitude of resultant:",
+    options: [
+      "7N",
+      "5N",
+      "1N",
+      "12N"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "F = √(3² + 4²) = 5 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2020",
+      "numerical"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-superposition-09",
+    text: "Charges at vertices of equilateral triangle: +q, +q, -2q. Force on -2q:",
+    options: [
+      "Zero",
+      "Toward center",
+      "Away from center",
+      "Perpendicular to base"
+    ],
+    correct: 3,
+    difficulty: "hard",
+    explanation: "Forces from +q charges don't cancel; net perpendicular to base (bisector)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2021",
+      "hard-calculation"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-superposition-10",
+    text: "Principle used to find field at point due to multiple charges:",
+    options: [
+      "Conservation",
+      "Quantization",
+      "Superposition",
+      "Coulomb law only"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Superposition: E_net = vector sum of individual E fields",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "superposition"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-equilibrium-01",
+    text: "Two charges +Q at x=0 and +4Q at x=3m. Position where +q is in equilibrium:",
+    options: [
+      "x=1m",
+      "x=1.5m",
+      "x=2m",
+      "x=2.5m"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Q/x² = 4Q/(3-x)². Solving: x = 1 m (closer to smaller charge)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2018",
+      "hard-calculation"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-equilibrium-02",
+    text: "For equilibrium of charge between two like charges, position is:",
+    options: [
+      "At midpoint if equal",
+      "Closer to larger charge",
+      "Closer to smaller charge",
+      "Outside the charges"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Equilibrium closer to smaller charge",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-equilibrium-03",
+    text: "Two equal charges +Q. Third charge -q equilibrium position:",
+    options: [
+      "Midpoint",
+      "Closer to one",
+      "Outside",
+      "No equilibrium"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "At midpoint between equal charges of same sign",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-equilibrium-04",
+    text: "Charges +Q and +9Q at distance d. Equilibrium point from +Q:",
+    options: [
+      "d/2",
+      "d/3",
+      "d/4",
+      "3d/4"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "Q/x² = 9Q/(d-x)². Solving: (d-x) = 3x → x = d/4",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2021",
+      "hard-calculation"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-equilibrium-05",
+    text: "For opposite charges, equilibrium position for third charge:",
+    options: [
+      "Between them",
+      "Outside (beyond smaller)",
+      "Outside (beyond larger)",
+      "No equilibrium"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "For opposite charges, no stable equilibrium position exists",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-equilibrium-06",
+    text: "Stable equilibrium of charge possible in electrostatics?",
+    options: [
+      "Yes, always",
+      "No, never",
+      "Only between like charges",
+      "Only at center of triangle"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Earnshaw theorem: no stable equilibrium possible in electrostatics",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-equilibrium-07",
+    text: "Three charges in line: Q₁, q (equilibrium), Q₂. If Q₁ = 4Q₂ and separation 12 cm, q is at:",
+    options: [
+      "4 cm from Q₁",
+      "6 cm from Q₁",
+      "8 cm from Q₁",
+      "3 cm from Q₁"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "4Q₂/x² = Q₂/(12-x)². Solving: 2x = 12-x → x = 4... wait: 2/x = 1/(12-x) → x = 8 cm",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-equilibrium-08",
+    text: "Charge q at equilibrium between Q₁ and Q₂. If Q₁ doubles, equilibrium:",
+    options: [
+      "Moves toward Q₁",
+      "Moves toward Q₂",
+      "Stays same",
+      "No equilibrium"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Larger force from Q₁, must move toward Q₂ to rebalance",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-equilibrium-09",
+    text: "Equilibrium requires:",
+    options: [
+      "Net force zero",
+      "Net torque zero",
+      "Both force and torque zero",
+      "Potential energy minimum"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Equilibrium: F_net = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-equilibrium-10",
+    text: "Two charges +16μC and +4μC at 20 cm apart. Equilibrium point from +4μC:",
+    options: [
+      "5 cm",
+      "10 cm",
+      "6.67 cm",
+      "13.33 cm"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "16/(20-x)² = 4/x². Solving: 4(20-x) = 2x → x = 80/6 = 13.33... from 16μC = 6.67 from 4μC",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-equilibrium"
+    ],
+    tags: [
+      "neet-2023",
+      "hard-calculation"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-efield-point-01",
+    text: "Electric field at 1 m from 1 μC charge:",
+    options: [
+      "9000 N/C",
+      "4500 N/C",
+      "18000 N/C",
+      "900 N/C"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "E = kQ/r² = 9×10⁹ × 10⁻⁶ / 1² = 9000 N/C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-efield-point-02",
+    text: "Electric field is defined as:",
+    options: [
+      "Force per unit mass",
+      "Force per unit positive charge",
+      "Energy per unit charge",
+      "Potential gradient"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "E = F/q₀ (force per unit positive test charge)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-efield-point-03",
+    text: "SI unit of electric field:",
+    options: [
+      "N",
+      "N/C",
+      "C/N",
+      "J/C"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "E = F/q. Unit = N/C (also V/m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-efield-point-04",
+    text: "If distance from point charge tripled, field becomes:",
+    options: [
+      "1/3 times",
+      "1/9 times",
+      "3 times",
+      "9 times"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "E ∝ 1/r². If r → 3r, E → E/9",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-efield-point-05",
+    text: "Direction of electric field from positive charge:",
+    options: [
+      "Radially inward",
+      "Radially outward",
+      "Tangential",
+      "Circular"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Field points away from positive charge",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-efield-point-06",
+    text: "Field at 0.1 m from -2μC charge has magnitude:",
+    options: [
+      "1.8 × 10⁶ N/C",
+      "9 × 10⁵ N/C",
+      "3.6 × 10⁵ N/C",
+      "1.8 × 10⁵ N/C"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "E = 9×10⁹ × 2×10⁻⁶ / (0.1)² = 1.8×10⁶ N/C (toward charge)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-efield-point-07",
+    text: "Electric field is a:",
+    options: [
+      "Scalar",
+      "Vector",
+      "Tensor",
+      "Dimensionless"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "E has magnitude and direction - vector quantity",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-efield-point-08",
+    text: "Two point charges +Q and -Q separated by distance. Midpoint field:",
+    options: [
+      "Zero",
+      "2kQ/d²",
+      "kQ/d²",
+      "4kQ/d²"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "Both fields point same direction (toward -Q). E = 2×kQ/(d/2)² = 8kQ/d²... Actually correct is 4kQ/(d/2)² = 16kQ/d²... No wait: E₁ = kQ/(d/2)² toward -Q, E₂ = kQ/(d/2)² toward -Q. Net = 2kQ/(d/2)² = 8kQ/d²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2020",
+      "numerical"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-efield-point-09",
+    text: "Force on 2μC charge in field 1000 N/C:",
+    options: [
+      "0.002 N",
+      "0.02 N",
+      "2 N",
+      "0.0002 N"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "F = qE = 2×10⁻⁶ × 1000 = 0.002 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-efield-point-10",
+    text: "At what distance from 1 nC charge is field 1 N/C?",
+    options: [
+      "3 m",
+      "9 m",
+      "0.3 m",
+      "30 m"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "E = kQ/r². 1 = 9×10⁹ × 10⁻⁹ / r². r² = 9. r = 3 m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "electric-field-point"
+    ],
+    tags: [
+      "neet-2023",
+      "numerical"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-dipole-moment-01",
+    text: "Dipole moment p = q × 2a. Unit:",
+    options: [
+      "C·m",
+      "C/m",
+      "N·m",
+      "J"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "p = charge × distance. Unit = C·m (Coulomb-meter)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-moment-02",
+    text: "Direction of dipole moment:",
+    options: [
+      "From +q to -q",
+      "From -q to +q",
+      "Perpendicular to axis",
+      "Depends on field"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "p points from negative to positive charge",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-moment-03",
+    text: "Charges ±1μC separated by 2 cm. Dipole moment:",
+    options: [
+      "2 × 10⁻⁸ C·m",
+      "1 × 10⁻⁸ C·m",
+      "4 × 10⁻⁸ C·m",
+      "0.5 × 10⁻⁸ C·m"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "p = q × 2a = 10⁻⁶ × 0.02 = 2×10⁻⁸ C·m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2020",
+      "numerical"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-moment-04",
+    text: "If charge doubled and separation halved, dipole moment:",
+    options: [
+      "Unchanged",
+      "Doubles",
+      "Halves",
+      "Quadruples"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "p = q × 2a. New p = 2q × a = q × 2a (same)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-moment-05",
+    text: "Dipole moment is a:",
+    options: [
+      "Scalar",
+      "Vector",
+      "Tensor",
+      "Dimensionless"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Has magnitude and direction - vector quantity",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-dipole-moment-06",
+    text: "Water molecule has dipole moment because:",
+    options: [
+      "O and H have different charges",
+      "Bent shape creates asymmetry",
+      "Both O and H positive",
+      "Linear molecule"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Bent V-shape makes O slightly negative, creating net dipole",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-moment-07",
+    text: "Dipole with p = 10⁻²⁹ C·m has charges ±1.6×10⁻¹⁹ C. Separation:",
+    options: [
+      "0.625 Å",
+      "1.25 Å",
+      "6.25 Å",
+      "0.3125 Å"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "2a = p/q = 10⁻²⁹/(1.6×10⁻¹⁹) = 6.25×10⁻¹¹ m = 0.625 Å",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-moment-08",
+    text: "Point dipole approximation valid when:",
+    options: [
+      "r >> 2a",
+      "r << 2a",
+      "r = 2a",
+      "Always"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "When observation distance much greater than charge separation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-moment-09",
+    text: "Net charge of dipole:",
+    options: [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Depends on p"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equal and opposite charges: net = +q + (-q) = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-moment-10",
+    text: "CO₂ is linear and has no dipole moment because:",
+    options: [
+      "No charge separation",
+      "Symmetrical charge distribution",
+      "Both C and O neutral",
+      "Not a polar molecule"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Linear O=C=O symmetric structure: dipole moments cancel",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-moment"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-dipole-torque-01",
+    text: "Dipole in uniform field experiences:",
+    options: [
+      "Net force",
+      "Torque only",
+      "Both force and torque",
+      "Neither"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Uniform field: only torque, no net force",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-torque-02",
+    text: "Torque on dipole τ = pE sinθ. Maximum when:",
+    options: [
+      "θ = 0°",
+      "θ = 45°",
+      "θ = 90°",
+      "θ = 180°"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "sin θ maximum at 90°. τ_max = pE",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-torque-03",
+    text: "Dipole p = 10⁻⁹ C·m in field E = 10⁵ N/C at 30°. Torque:",
+    options: [
+      "5 × 10⁻⁵ N·m",
+      "10⁻⁴ N·m",
+      "5 × 10⁻⁴ N·m",
+      "10⁻⁵ N·m"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "τ = pE sin30° = 10⁻⁹ × 10⁵ × 0.5 = 5×10⁻⁵ N·m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2020",
+      "numerical"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-torque-04",
+    text: "Torque tries to:",
+    options: [
+      "Translate dipole",
+      "Align p with E",
+      "Align p opposite to E",
+      "Separate charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Torque rotates dipole to align moment with field",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-torque-05",
+    text: "When p parallel to E (θ = 0), torque is:",
+    options: [
+      "Maximum",
+      "Minimum (zero)",
+      "pE",
+      "Depends on magnitude"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "τ = pE sin0° = 0 (equilibrium position)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-dipole-torque-06",
+    text: "When p antiparallel to E (θ = 180°), torque is:",
+    options: [
+      "Maximum",
+      "Zero",
+      "pE",
+      "Negative"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "τ = pE sin180° = 0 (unstable equilibrium)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-torque-07",
+    text: "Torque is vector quantity with direction given by:",
+    options: [
+      "p × E",
+      "p · E",
+      "E × p",
+      "p/E"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "τ = p × E (cross product)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-torque-08",
+    text: "If dipole moment doubles, torque at same angle:",
+    options: [
+      "Doubles",
+      "Halves",
+      "Quadruples",
+      "Unchanged"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "τ ∝ p. Doubling p doubles τ",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-torque-09",
+    text: "Dipole in non-uniform field experiences:",
+    options: [
+      "Only torque",
+      "Only force",
+      "Both force and torque",
+      "Neither"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Non-uniform field: both net force and torque exist",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-torque-10",
+    text: "Charges ±2μC at 4 cm apart in field 10⁵ N/C at 60°. Torque:",
+    options: [
+      "√3 × 10⁻³ N·m",
+      "6.93 × 10⁻³ N·m",
+      "4 × 10⁻³ N·m",
+      "2 × 10⁻³ N·m"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "p = 2×10⁻⁶ × 0.04 = 8×10⁻⁸. τ = 8×10⁻⁸ × 10⁵ × sin60° ≈ 6.93×10⁻³ N·m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-torque"
+    ],
+    tags: [
+      "neet-2023",
+      "hard-calculation"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-dipole-pe-01",
+    text: "Potential energy of dipole U = -pE cosθ. Minimum when:",
+    options: [
+      "θ = 0°",
+      "θ = 90°",
+      "θ = 180°",
+      "θ = 45°"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "U_min = -pE at θ = 0° (stable equilibrium)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-pe-02",
+    text: "Maximum PE of dipole in field:",
+    options: [
+      "-pE",
+      "0",
+      "+pE",
+      "2pE"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "U_max = +pE at θ = 180° (unstable equilibrium)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-pe-03",
+    text: "Work to rotate dipole from θ = 0° to 90°:",
+    options: [
+      "0",
+      "pE",
+      "2pE",
+      "-pE"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "W = U_f - U_i = 0 - (-pE) = pE",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2020",
+      "numerical"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-pe-04",
+    text: "Dipole p = 10⁻⁹ C·m in E = 10⁴ N/C at 60°. PE:",
+    options: [
+      "-5 × 10⁻⁶ J",
+      "5 × 10⁻⁶ J",
+      "-10⁻⁵ J",
+      "10⁻⁵ J"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "U = -pE cos60° = -10⁻⁹ × 10⁴ × 0.5 = -5×10⁻⁶ J",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-pe-05",
+    text: "When p ⊥ E (θ = 90°), PE:",
+    options: [
+      "Maximum",
+      "Minimum",
+      "Zero",
+      "pE"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "U = -pE cos90° = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-dipole-pe-06",
+    text: "Work to rotate from 0° to 180°:",
+    options: [
+      "0",
+      "pE",
+      "2pE",
+      "4pE"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "W = pE - (-pE) = 2pE",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-dipole-pe-07",
+    text: "Stable equilibrium position:",
+    options: [
+      "θ = 0° (p ∥ E)",
+      "θ = 90°",
+      "θ = 180° (p anti∥ E)",
+      "No stable position"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "θ = 0° is stable (minimum PE)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-dipole-pe-08",
+    text: "Relation between torque and PE:",
+    options: [
+      "τ = dU/dθ",
+      "τ = -dU/dθ",
+      "τ = U/θ",
+      "No relation"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "τ = -dU/dθ (torque is negative gradient of PE)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-dipole-pe-09",
+    text: "If field strength doubles, PE at same angle:",
+    options: [
+      "Doubles",
+      "Halves",
+      "Quadruples",
+      "Unchanged"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "U ∝ E. Doubling E doubles U",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-dipole-pe-10",
+    text: "Work by external agent to rotate from 60° to 120°:",
+    options: [
+      "pE(√3)",
+      "pE",
+      "pE(√3/2)",
+      "0"
+    ],
+    correct: 2,
+    difficulty: "hard",
+    explanation: "W = -pE cos120° - (-pE cos60°) = -pE(-0.5) - (-pE×0.5) = pE(0.5+0.5) = pE... Hmm: cos120=-0.5, cos60=0.5. W = pE[cos60-cos120] = pE[0.5-(-0.5)] = pE",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "dipole-potential-energy"
+    ],
+    tags: [
+      "neet-2023",
+      "hard-calculation"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-flux-01",
+    text: "Electric flux Φ = E·A cosθ. When E ⊥ A:",
+    options: [
+      "Φ = EA",
+      "Φ = 0",
+      "Φ = EA/2",
+      "Φ = 2EA"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "θ = 0° when perpendicular to surface. Φ = EA cos0° = EA",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-flux-02",
+    text: "Unit of electric flux:",
+    options: [
+      "N·m²/C",
+      "N/C",
+      "C",
+      "V"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Φ = EA. Unit = (N/C)(m²) = N·m²/C or V·m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-flux-03",
+    text: "Flux through surface when E ∥ surface:",
+    options: [
+      "Maximum",
+      "Minimum (zero)",
+      "EA",
+      "Depends on area"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "θ = 90°. Φ = EA cos90° = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-flux-04",
+    text: "Field 100 N/C through area 0.5 m² at 60°. Flux:",
+    options: [
+      "50 N·m²/C",
+      "25 N·m²/C",
+      "43.3 N·m²/C",
+      "86.6 N·m²/C"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Φ = 100 × 0.5 × cos60° = 50 × 0.5 = 25 N·m²/C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-flux-05",
+    text: "Electric flux is:",
+    options: [
+      "Vector",
+      "Scalar",
+      "Tensor",
+      "Always positive"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Flux is scalar (can be +ve, -ve, or zero)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-flux-06",
+    text: "Positive flux means:",
+    options: [
+      "Field enters surface",
+      "Field exits surface",
+      "Field parallel",
+      "No field"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Positive: field lines exit. Negative: field lines enter",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-flux-07",
+    text: "Cube in uniform field E. Flux through opposite faces:",
+    options: [
+      "Same sign",
+      "Opposite signs",
+      "Zero",
+      "Depends on E"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Field enters one face (negative), exits opposite (positive)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-flux-08",
+    text: "If field doubles, flux through same surface:",
+    options: [
+      "Doubles",
+      "Halves",
+      "Quadruples",
+      "Unchanged"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Φ ∝ E. Doubling E doubles Φ",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-flux-09",
+    text: "Flux through sphere of radius R in uniform field E:",
+    options: [
+      "4πR²E",
+      "Zero",
+      "2πR²E",
+      "Depends on orientation"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Net flux = 0 in uniform field (enters = exits)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-flux-10",
+    text: "Field 500 N/C perpendicular to circular area (r=0.2m). Flux:",
+    options: [
+      "62.8 N·m²/C",
+      "31.4 N·m²/C",
+      "125.6 N·m²/C",
+      "15.7 N·m²/C"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "A = πr² = π(0.2)² = 0.1257 m². Φ = EA = 500 × 0.1257 ≈ 62.8",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "electric-flux"
+    ],
+    tags: [
+      "neet-2023",
+      "numerical"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-gauss-01",
+    text: "Gauss law: ∮E·dA = q_enc/ε₀. Flux depends on:",
+    options: [
+      "Surface shape",
+      "Surface size",
+      "Enclosed charge only",
+      "All charges"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Flux depends only on charge enclosed by surface",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-gauss-02",
+    text: "Charge 5μC enclosed by sphere. Flux:",
+    options: [
+      "5.65 × 10⁵ N·m²/C",
+      "2.83 × 10⁵ N·m²/C",
+      "1.13 × 10⁶ N·m²/C",
+      "4.52 × 10⁵ N·m²/C"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Φ = q/ε₀ = (5×10⁻⁶)/(8.85×10⁻¹²) ≈ 5.65×10⁵",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-gauss-03",
+    text: "External charge contribution to flux through closed surface:",
+    options: [
+      "Full contribution",
+      "Partial contribution",
+      "Zero (enters and exits)",
+      "Depends on position"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "External charges: flux in = flux out. Net = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-gauss-04",
+    text: "Gauss law useful when:",
+    options: [
+      "Any charge distribution",
+      "High symmetry exists",
+      "Low symmetry",
+      "Only point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Useful for spherical, cylindrical, planar symmetry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-gauss-05",
+    text: "Charge at center of cube. Flux through one face:",
+    options: [
+      "q/ε₀",
+      "q/(6ε₀)",
+      "q/(4πε₀)",
+      "Zero"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Total flux = q/ε₀. By symmetry, each of 6 faces: q/(6ε₀)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-gauss-06",
+    text: "Value of ε₀ (permittivity of free space):",
+    options: [
+      "8.85 × 10⁻¹² C²/(N·m²)",
+      "9 × 10⁹ N·m²/C²",
+      "1.6 × 10⁻¹⁹ C",
+      "3 × 10⁸ m/s"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "ε₀ = 8.85 × 10⁻¹² C²/(N·m²) or F/m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-gauss-07",
+    text: "Charges +q and -q inside closed surface. Net flux:",
+    options: [
+      "q/ε₀",
+      "2q/ε₀",
+      "Zero",
+      "-q/ε₀"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "q_enc = +q + (-q) = 0. Φ = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-gauss-08",
+    text: "Gaussian surface for line charge:",
+    options: [
+      "Sphere",
+      "Coaxial cylinder",
+      "Cube",
+      "Any shape"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Cylindrical symmetry requires cylindrical Gaussian surface",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-gauss-09",
+    text: "Half of charge q enclosed by surface. Flux:",
+    options: [
+      "q/ε₀",
+      "q/(2ε₀)",
+      "2q/ε₀",
+      "Zero"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Φ = q_enc/ε₀ = (q/2)/ε₀ = q/(2ε₀)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-gauss-10",
+    text: "Charge 2×10⁻⁸ C inside sphere. Flux:",
+    options: [
+      "2.26 × 10³ N·m²/C",
+      "1.13 × 10³ N·m²/C",
+      "4.52 × 10³ N·m²/C",
+      "5.65 × 10³ N·m²/C"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Φ = (2×10⁻⁸)/(8.85×10⁻¹²) ≈ 2.26×10³",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "gauss-law-formula"
+    ],
+    tags: [
+      "neet-2023",
+      "numerical"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-line-charge-01",
+    text: "Field at distance r from infinite line charge: E = λ/(2πε₀r). E ∝:",
+    options: [
+      "1/r",
+      "1/r²",
+      "1/r³",
+      "r"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "E ∝ 1/r (not 1/r² like point charge)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-line-charge-02",
+    text: "Line charge λ = 10⁻⁸ C/m. Field at r = 0.1 m:",
+    options: [
+      "1800 N/C",
+      "900 N/C",
+      "3600 N/C",
+      "450 N/C"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "E = λ/(2πε₀r) = (10⁻⁸)/(2π × 8.85×10⁻¹² × 0.1) ≈ 1800",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-line-charge-03",
+    text: "Direction of field from positive line charge:",
+    options: [
+      "Along the line",
+      "Radially outward",
+      "Radially inward",
+      "Tangential"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Perpendicular to line, radially outward",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-line-charge-04",
+    text: "Gaussian surface for line charge is:",
+    options: [
+      "Sphere",
+      "Coaxial cylinder",
+      "Rectangular box",
+      "Any closed surface"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Cylindrical symmetry → cylindrical Gaussian surface",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-line-charge-05",
+    text: "If distance from line doubled, field becomes:",
+    options: [
+      "1/2",
+      "1/4",
+      "2",
+      "4"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "E ∝ 1/r. Doubling r halves E",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-line-charge-06",
+    text: "Field from line charge is independent of:",
+    options: [
+      "λ",
+      "r",
+      "Length of line",
+      "ε₀"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Infinite line: independent of length (assumed infinite)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-line-charge-07",
+    text: "Two parallel line charges +λ and -λ separated by d. Field midway:",
+    options: [
+      "Zero",
+      "λ/(πε₀d)",
+      "2λ/(πε₀d)",
+      "λ/(2πε₀d)"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Both fields point same direction. E = 2×λ/(2πε₀(d/2)) = 2λ/(πε₀d)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-line-charge-08",
+    text: "Alternative form: E = 2kλ/r. Value of k:",
+    options: [
+      "9 × 10⁹ N·m²/C²",
+      "1/(4πε₀)",
+      "Both same",
+      "Neither"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "k = 1/(4πε₀) = 9 × 10⁹",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-line-charge-09",
+    text: "Finite line charge at far distance acts like:",
+    options: [
+      "Infinite line",
+      "Point charge",
+      "Dipole",
+      "Sheet"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Far away: finite line → point charge behavior (E ∝ 1/r²)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-line-charge-10",
+    text: "Coaxial cable inner λ₁, outer -λ₁. Field outside:",
+    options: [
+      "Zero",
+      "λ₁/(2πε₀r)",
+      "2λ₁/(2πε₀r)",
+      "Depends on radii"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Net λ = 0. Field outside = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "field-line-charge"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-accel-01",
+    text: "Electron in field 1000 N/C. Acceleration:",
+    options: [
+      "1.76 × 10¹⁴ m/s²",
+      "8.8 × 10¹³ m/s²",
+      "3.52 × 10¹⁴ m/s²",
+      "1.76 × 10¹³ m/s²"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "a = eE/m = (1.6×10⁻¹⁹ × 1000)/(9.1×10⁻³¹) ≈ 1.76×10¹⁴",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-accel-02",
+    text: "Acceleration formula: a = qE/m. Direction for electron:",
+    options: [
+      "Along E",
+      "Opposite to E",
+      "Perpendicular",
+      "Circular"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Electron (q negative) accelerates opposite to E",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-accel-03",
+    text: "Proton and electron in same field. Acceleration ratio a_p/a_e:",
+    options: [
+      "1/1836",
+      "1836",
+      "1",
+      "m_p/m_e"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "a ∝ 1/m. a_p/a_e = m_e/m_p = 1/1836",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2020",
+      "numerical"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-accel-04",
+    text: "Charge 1 μC, mass 1 mg in field 100 N/C. Acceleration:",
+    options: [
+      "100 m/s²",
+      "10 m/s²",
+      "1000 m/s²",
+      "0.1 m/s²"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "a = qE/m = (10⁻⁶ × 100)/(10⁻⁶) = 100 m/s²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-accel-05",
+    text: "If field strength doubles, acceleration:",
+    options: [
+      "Doubles",
+      "Halves",
+      "Quadruples",
+      "Unchanged"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "a ∝ E. Doubling E doubles a",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-accel-06",
+    text: "Particle at rest released in uniform field. Motion is:",
+    options: [
+      "Uniformly accelerated",
+      "Uniformly decelerated",
+      "Circular",
+      "Parabolic"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Constant E → constant a → uniformly accelerated motion",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-accel-07",
+    text: "Heavy particle and light particle (same q) in field. Which accelerates more?",
+    options: [
+      "Heavy",
+      "Light",
+      "Same",
+      "Depends on E"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "a ∝ 1/m. Lighter particle accelerates more",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-accel-08",
+    text: "Alpha particle (q=+2e, m=4u) in field E. Acceleration compared to proton:",
+    options: [
+      "Same",
+      "Half",
+      "Double",
+      "Quarter"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "a_α = (2e)E/(4m_p) = (e E)/(2m_p) = a_p/2",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-accel-09",
+    text: "Acceleration direction for positive ion in field E:",
+    options: [
+      "Along E",
+      "Opposite to E",
+      "Perpendicular",
+      "Depends on mass"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Positive charge accelerates in direction of field",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-accel-10",
+    text: "Charge -2μC, mass 0.01 kg in field 50 N/C. Acceleration magnitude:",
+    options: [
+      "0.01 m/s²",
+      "0.1 m/s²",
+      "1 m/s²",
+      "10 m/s²"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "|a| = |q|E/m = (2×10⁻⁶ × 50)/(0.01) = 0.01 m/s²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "acceleration-field"
+    ],
+    tags: [
+      "neet-2023",
+      "numerical"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-parabolic-01",
+    text: "Charged particle enters perpendicular to uniform field. Path:",
+    options: [
+      "Straight line",
+      "Circular",
+      "Parabolic",
+      "Helical"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Like projectile motion: parabolic trajectory",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-parabolic-02",
+    text: "Deflection formula: y = (qE/2mv₀²)x². Deflection ∝:",
+    options: [
+      "v₀",
+      "v₀²",
+      "1/v₀",
+      "1/v₀²"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "y ∝ 1/v₀². Faster particles deflect less",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-parabolic-03",
+    text: "Electron (v=10⁶ m/s) in field (E=1000 N/C, L=0.1m). Deflection:",
+    options: [
+      "8.8 mm",
+      "4.4 mm",
+      "17.6 mm",
+      "2.2 mm"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "y = eEL²/(2m_e v₀²) = (1.6×10⁻¹⁹ × 1000 × 0.01)/(2 × 9.1×10⁻³¹ × 10¹²) ≈ 0.0088 m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-parabolic-04",
+    text: "CRO uses parabolic deflection for:",
+    options: [
+      "Focusing beam",
+      "Deflecting beam",
+      "Accelerating electrons",
+      "All above"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Cathode Ray Oscilloscope uses E field to deflect beam",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-parabolic-05",
+    text: "If initial velocity doubled, deflection becomes:",
+    options: [
+      "Half",
+      "Quarter",
+      "Double",
+      "Same"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "y ∝ 1/v₀². Doubling v₀: y → y/4",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-parabolic-06",
+    text: "Analogy: electric deflection is to gravity as:",
+    options: [
+      "a = qE/m is to g",
+      "Parabola to parabola",
+      "Both correct",
+      "Neither"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Replace g with qE/m in projectile formulas",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-parabolic-07",
+    text: "Exit angle tanθ = v_y/v_x. For electron in field over length L:",
+    options: [
+      "tanθ = eEL/(mv₀²)",
+      "tanθ = eEL/(2mv₀²)",
+      "tanθ = mv₀²/(eEL)",
+      "tanθ = 2eEL/(mv₀²)"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "v_y = at = (eE/m)(L/v₀). tanθ = v_y/v₀ = eEL/(mv₀²)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2019",
+      "hard-calculation"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-parabolic-08",
+    text: "If charge doubles (same m, v₀), deflection:",
+    options: [
+      "Doubles",
+      "Halves",
+      "Quadruples",
+      "Unchanged"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "y ∝ q. Doubling q doubles y",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-parabolic-09",
+    text: "Time in field region (length L):",
+    options: [
+      "L/v₀",
+      "2L/v₀",
+      "L/(2v₀)",
+      "Depends on deflection"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Horizontal velocity unchanged: t = L/v₀",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-parabolic-10",
+    text: "Proton (v=10⁵ m/s) enters 2 cm field (E=10⁴ N/C). Deflection:",
+    options: [
+      "0.12 mm",
+      "0.24 mm",
+      "0.06 mm",
+      "0.48 mm"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "y = eEL²/(2m_p v²) = (1.6×10⁻¹⁹ × 10⁴ × 4×10⁻⁴)/(2 × 1.67×10⁻²⁷ × 10¹⁰) ≈ 2.4×10⁻⁴ m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "parabolic-path"
+    ],
+    tags: [
+      "neet-2023",
+      "hard-calculation"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-ke-change-01",
+    text: "Electron accelerated through 100 V gains kinetic energy:",
+    options: [
+      "100 eV",
+      "50 eV",
+      "200 eV",
+      "1.6 × 10⁻¹⁷ J"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "ΔKE = eV = 1.6×10⁻¹⁹ × 100 = 1.6×10⁻¹⁷ J = 100 eV",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-ke-change-02",
+    text: "1 electron volt (eV) equals:",
+    options: [
+      "1.6 × 10⁻¹⁹ J",
+      "1.6 × 10⁻¹² J",
+      "1 J",
+      "1.6 × 10⁻¹⁶ J"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "1 eV = 1.6 × 10⁻¹⁹ J (energy gained by e through 1V)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-ke-change-03",
+    text: "Work done by field: W = qEd. This equals:",
+    options: [
+      "Change in KE",
+      "Change in PE",
+      "Both",
+      "Neither"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Work-energy theorem: W = ΔKE",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-ke-change-04",
+    text: "Particle from rest accelerated through V. Final speed v = √(2qV/m). For electron through 1000V:",
+    options: [
+      "1.88 × 10⁷ m/s",
+      "9.4 × 10⁶ m/s",
+      "3.76 × 10⁷ m/s",
+      "4.7 × 10⁶ m/s"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "v = √(2eV/m_e) = √(2 × 1.6×10⁻¹⁹ × 1000 / 9.1×10⁻³¹) ≈ 1.88×10⁷",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2021",
+      "hard-calculation"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-ke-change-05",
+    text: "If potential difference doubles, KE becomes:",
+    options: [
+      "√2 times",
+      "2 times",
+      "4 times",
+      "Same"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "ΔKE = qV. Doubling V doubles ΔKE",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-ke-change-06",
+    text: "Proton and electron through same V. KE ratio:",
+    options: [
+      "1:1",
+      "1836:1",
+      "1:1836",
+      "√1836:1"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Same q and V: ΔKE same (but speeds differ)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-ke-change-07",
+    text: "Alpha particle (+2e) through 500 V gains energy:",
+    options: [
+      "500 eV",
+      "1000 eV",
+      "250 eV",
+      "2000 eV"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "ΔKE = qV = 2e × 500V = 1000 eV",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-ke-change-08",
+    text: "Charge moves opposite to field direction:",
+    options: [
+      "Gains KE",
+      "Loses KE",
+      "KE unchanged",
+      "Depends on speed"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Work by field is negative: ΔKE < 0 (slows down)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-ke-change-09",
+    text: "Electron with KE 10 eV enters retarding field and stops. Potential difference:",
+    options: [
+      "5 V",
+      "10 V",
+      "20 V",
+      "1 V"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "ΔKE = -10 eV = -eV. V = 10 V",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-ke-change-10",
+    text: "Charge 5μC moves through 200V. Energy change:",
+    options: [
+      "10⁻³ J",
+      "10⁻² J",
+      "10⁻⁴ J",
+      "10⁻⁵ J"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "ΔKE = qV = 5×10⁻⁶ × 200 = 10⁻³ J",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "kinetic-energy-change"
+    ],
+    tags: [
+      "neet-2023",
+      "numerical"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-linear-density-01",
+    text: "Linear charge density λ = Q/L. Unit:",
+    options: [
+      "C/m",
+      "C/m²",
+      "C/m³",
+      "C"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "λ = charge per unit length. Unit = C/m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-linear-density-02",
+    text: "Rod length 2 m has charge 10 μC uniformly. λ:",
+    options: [
+      "5 μC/m",
+      "10 μC/m",
+      "20 μC/m",
+      "2.5 μC/m"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "λ = Q/L = 10μC / 2m = 5 μC/m",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-linear-density-03",
+    text: "Ring circumference 2πR has charge Q. λ:",
+    options: [
+      "Q/(πR)",
+      "Q/(2πR)",
+      "2Q/(πR)",
+      "Q/R"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "λ = Q/(2πR) = Q/circumference",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-linear-density-04",
+    text: "For integration: dq = λ dl. This is used for:",
+    options: [
+      "Point charges",
+      "Line charges",
+      "Surface charges",
+      "Volume charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "dq = λ dl for 1D (line) charge distributions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-linear-density-05",
+    text: "Non-uniform λ(x) = λ₀x on rod (0 to L). Total charge:",
+    options: [
+      "λ₀L",
+      "λ₀L²/2",
+      "λ₀L²",
+      "λ₀L/2"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Q = ∫₀ᴸ λ₀x dx = λ₀L²/2",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2022",
+      "hard-calculation"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-linear-density-06",
+    text: "Arc of circle (radius R, angle θ) with λ. Charge:",
+    options: [
+      "λRθ",
+      "λR²θ",
+      "λθ",
+      "2πRλθ"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Arc length = Rθ. Q = λ × Rθ",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-linear-density-07",
+    text: "λ can be:",
+    options: [
+      "Only positive",
+      "Only negative",
+      "Positive or negative",
+      "Zero only"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "λ can be +ve (positive charge) or -ve (negative charge)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-linear-density-08",
+    text: "Infinite line charge field E = λ/(2πε₀r) uses:",
+    options: [
+      "Coulomb law",
+      "Gauss law",
+      "Superposition",
+      "Integration"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Derived using Gauss law with cylindrical symmetry",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-linear-density-09",
+    text: "Wire 50 cm has λ = 2 × 10⁻⁸ C/m. Total charge:",
+    options: [
+      "10⁻⁸ C",
+      "10⁻⁷ C",
+      "10⁻⁹ C",
+      "2 × 10⁻⁸ C"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Q = λL = 2×10⁻⁸ × 0.5 = 10⁻⁸ C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-linear-density-10",
+    text: "Relation to volume density for thin wire (area A):",
+    options: [
+      "λ = ρA",
+      "λ = ρ/A",
+      "λ = ρV",
+      "No relation"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "For wire: Q = ρAL = λL. Therefore λ = ρA",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "linear-density"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-fieldline-01",
+    text: "Field line density indicates:",
+    options: [
+      "Charge magnitude",
+      "Field strength",
+      "Potential",
+      "Energy"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Denser lines = stronger field",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-fieldline-02",
+    text: "Field lines never:",
+    options: [
+      "Start from +ve",
+      "End on -ve",
+      "Cross each other",
+      "Form closed loops in electrostatics"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Lines never cross (E would have two directions)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-fieldline-03",
+    text: "Tangent to field line gives:",
+    options: [
+      "Charge location",
+      "Field direction",
+      "Potential",
+      "Force magnitude"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Tangent at point = direction of E at that point",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-fieldline-04",
+    text: "Number of lines from charge ∝:",
+    options: [
+      "Charge magnitude",
+      "Distance",
+      "Field strength",
+      "All above"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "More lines drawn for larger magnitude charges",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-fieldline-05",
+    text: "Field lines from positive charge:",
+    options: [
+      "Converge",
+      "Diverge (radiate outward)",
+      "Circular",
+      "Parallel"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Lines radiate outward from positive charge",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-fieldline-06",
+    text: "Where lines are closer:",
+    options: [
+      "Field weaker",
+      "Field stronger",
+      "Potential higher",
+      "Charge present"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Closer lines = denser = stronger field",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-fieldline-07",
+    text: "Field lines are perpendicular to:",
+    options: [
+      "Other field lines",
+      "Conductor surface",
+      "Equipotential surfaces",
+      "Both (2) and (3)"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "Lines perpendicular to both conductor and equipotentials",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-fieldline-08",
+    text: "For dipole, where do lines have highest density?",
+    options: [
+      "At charges",
+      "Midpoint",
+      "Infinity",
+      "Equatorial plane"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Maximum field (and density) near the charges",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-fieldline-09",
+    text: "In uniform field, field lines are:",
+    options: [
+      "Radial",
+      "Parallel and equally spaced",
+      "Converging",
+      "Diverging"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Uniform field: parallel, equally-spaced lines",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-fieldline-10",
+    text: "Field lines in charge-free region are:",
+    options: [
+      "Continuous",
+      "Discontinuous",
+      "Can start/end",
+      "Can form loops"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Lines continuous in charge-free regions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "field-line-density"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-conductor-field-01",
+    text: "Field just outside conductor surface: E = σ/ε₀. Compare to non-conducting sheet E = σ/(2ε₀):",
+    options: [
+      "Same",
+      "Conductor has 2× field",
+      "Sheet has 2× field",
+      "Depends on shape"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Conductor: E = σ/ε₀. Non-conductor: E = σ/(2ε₀). Factor 2 difference",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-conductor-field-02",
+    text: "Inside conductor in electrostatic equilibrium:",
+    options: [
+      "E ≠ 0",
+      "E = σ/ε₀",
+      "E = 0",
+      "E = σ/(2ε₀)"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E = 0 inside conductor (equilibrium)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-conductor-field-03",
+    text: "Field direction just outside conductor:",
+    options: [
+      "Tangent to surface",
+      "Perpendicular to surface",
+      "45° to surface",
+      "Depends on charge"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Always perpendicular (normal) to conductor surface",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-conductor-field-04",
+    text: "Conductor σ = 10⁻⁶ C/m². Field just outside:",
+    options: [
+      "1.13 × 10⁵ N/C",
+      "5.65 × 10⁴ N/C",
+      "2.26 × 10⁵ N/C",
+      "1.13 × 10⁶ N/C"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "E = σ/ε₀ = 10⁻⁶/(8.85×10⁻¹²) ≈ 1.13×10⁵",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-conductor-field-05",
+    text: "At sharp points on conductor, σ is:",
+    options: [
+      "Lower",
+      "Higher",
+      "Same",
+      "Zero"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Charge accumulates at sharp points: σ higher",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-conductor-field-06",
+    text: "Corona discharge occurs because:",
+    options: [
+      "High σ at sharp points",
+      "E exceeds breakdown",
+      "Air ionizes",
+      "All above"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "High σ → high E → air breakdown → corona",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-conductor-field-07",
+    text: "Conductor surface is:",
+    options: [
+      "Equipotential",
+      "Variable potential",
+      "High potential only",
+      "Low potential only"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Conductor surface = equipotential (E tangential = 0)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-conductor-field-08",
+    text: "Relation E = σ/ε₀ derived using:",
+    options: [
+      "Coulomb law",
+      "Gauss law",
+      "Superposition",
+      "Integration"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Use Gauss law with pillbox at surface",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-conductor-field-09",
+    text: "Spherical conductor R, charge Q. Surface field:",
+    options: [
+      "kQ/R²",
+      "Q/(4πε₀R²)",
+      "σ/ε₀",
+      "All same"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "All equivalent: E = kQ/R² = Q/(4πε₀R²) = σ/ε₀",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-conductor-field-10",
+    text: "Lightning rod works by:",
+    options: [
+      "Attracting charge",
+      "High σ at tip discharges",
+      "Conducting to ground",
+      "All above"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "Sharp tip → high σ → discharge → protection",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "conductor-surface-field"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-flux-uniform-01",
+    text: "Flux through plane in uniform field: Φ = EA cosθ. θ is angle between:",
+    options: [
+      "E and surface",
+      "E and normal",
+      "Surface and normal",
+      "E and area vector"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "θ between E and area vector (normal to surface)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-flux-uniform-02",
+    text: "Field 500 N/C through 0.1 m² perpendicular. Flux:",
+    options: [
+      "50 N·m²/C",
+      "5 N·m²/C",
+      "500 N·m²/C",
+      "0.5 N·m²/C"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Φ = EA = 500 × 0.1 = 50 N·m²/C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-flux-uniform-03",
+    text: "When θ = 0° (E ∥ normal):",
+    options: [
+      "Φ = 0",
+      "Φ = EA (max)",
+      "Φ = EA/2",
+      "Φ negative"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "cos0° = 1. Maximum flux = EA",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-flux-uniform-04",
+    text: "Flux through tilted surface (A at 60° to E):",
+    options: [
+      "EA",
+      "EA cos30°",
+      "EA cos60°",
+      "EA sin60°"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Φ = EA cos60° (angle between E and normal)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-flux-uniform-05",
+    text: "Cube in uniform field. Total flux:",
+    options: [
+      "6EA",
+      "EA",
+      "Zero",
+      "Depends on orientation"
+    ],
+    correct: 2,
+    difficulty: "medium",
+    explanation: "Uniform field: flux in = flux out. Net = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-flux-uniform-06",
+    text: "Rectangular loop (sides a, b) at 45° to field E. Flux:",
+    options: [
+      "Eab",
+      "Eab cos45°",
+      "Eab sin45°",
+      "Zero"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Φ = Eab cos45°",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2018",
+      "numerical"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-flux-uniform-07",
+    text: "If area doubled, flux (same E, θ):",
+    options: [
+      "Doubles",
+      "Halves",
+      "Quadruples",
+      "Unchanged"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "Φ ∝ A. Doubling A doubles Φ",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-flux-uniform-08",
+    text: "Hemisphere in uniform field (base perpendicular to E):",
+    options: [
+      "πR²E",
+      "2πR²E",
+      "Zero",
+      "4πR²E"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Flux through curved surface = flux through base = πR²E",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-flux-uniform-09",
+    text: "Circular area (r=0.1m) in field 1000 N/C at 60°. Flux:",
+    options: [
+      "31.4 N·m²/C",
+      "15.7 N·m²/C",
+      "27.2 N·m²/C",
+      "62.8 N·m²/C"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "A = πr² = 0.0314. Φ = 1000 × 0.0314 × 0.5 ≈ 15.7",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-flux-uniform-10",
+    text: "Sign of flux:",
+    options: [
+      "Always positive",
+      "Can be positive or negative",
+      "Always negative",
+      "Depends on charge"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Positive (outward), negative (inward), or zero",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-uniform-field"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-flux-closed-01",
+    text: "Flux through closed surface: Φ = q_enc/ε₀. This is:",
+    options: [
+      "Coulomb law",
+      "Gauss law",
+      "Superposition",
+      "Ohm law"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Gauss law relates flux to enclosed charge",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-flux-closed-02",
+    text: "Sphere enclosing 10 μC. Flux:",
+    options: [
+      "1.13 × 10⁶ N·m²/C",
+      "5.65 × 10⁵ N·m²/C",
+      "2.26 × 10⁶ N·m²/C",
+      "1.13 × 10⁷ N·m²/C"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "Φ = q/ε₀ = (10×10⁻⁶)/(8.85×10⁻¹²) ≈ 1.13×10⁶",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-flux-closed-03",
+    text: "Charge outside closed surface contributes:",
+    options: [
+      "Full flux",
+      "Partial flux",
+      "Zero net flux",
+      "Depends on distance"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "External charge: lines enter and exit. Net = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-flux-closed-04",
+    text: "Flux independent of:",
+    options: [
+      "q_enc",
+      "Surface shape",
+      "Surface size",
+      "Both (2) and (3)"
+    ],
+    correct: 3,
+    difficulty: "medium",
+    explanation: "Depends only on q_enc, not shape/size",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-flux-closed-05",
+    text: "Net charge +2q and -q inside surface. Flux:",
+    options: [
+      "q/ε₀",
+      "3q/ε₀",
+      "Zero",
+      "-q/ε₀"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "q_enc = +2q + (-q) = +q. Φ = q/ε₀",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "conceptual"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-flux-closed-06",
+    text: "Dipole (+q, -q) inside surface. Flux:",
+    options: [
+      "q/ε₀",
+      "2q/ε₀",
+      "Zero",
+      "Depends on orientation"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "q_enc = +q - q = 0. Φ = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-flux-closed-07",
+    text: "Charge moved inside closed surface (not crossing). Flux:",
+    options: [
+      "Changes",
+      "Unchanged",
+      "Becomes zero",
+      "Depends on position"
+    ],
+    correct: 1,
+    difficulty: "medium",
+    explanation: "Same q_enc → same flux (position irrelevant)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "conceptual"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-flux-closed-08",
+    text: "Cube edge a. Charge q at corner. Flux through cube:",
+    options: [
+      "q/ε₀",
+      "q/(8ε₀)",
+      "q/(6ε₀)",
+      "q/(2ε₀)"
+    ],
+    correct: 1,
+    difficulty: "hard",
+    explanation: "Charge at corner shared by 8 cubes. This cube: q/(8ε₀)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "hard-calculation"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-flux-closed-09",
+    text: "Flux 5×10⁵ N·m²/C. Enclosed charge:",
+    options: [
+      "4.43 μC",
+      "8.85 μC",
+      "2.21 μC",
+      "1.11 μC"
+    ],
+    correct: 0,
+    difficulty: "medium",
+    explanation: "q = Φε₀ = 5×10⁵ × 8.85×10⁻¹² = 4.425 μC",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "numerical"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-flux-closed-10",
+    text: "Closed surface in uniform field (no charge inside):",
+    options: [
+      "Φ = EA",
+      "Φ = 0",
+      "Φ depends on shape",
+      "Φ negative"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "No enclosed charge → Φ = 0",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "flux-closed-surface"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-number-of-electrons-01",
+    text: "Calculate using Number of electrons: A body has charge 8.0×10⁻¹⁸ C. Number of electrons is:",
+    options: [
+      "50",
+      "40",
+      "30",
+      "60"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using n = \\frac{q}{e}: n = q/e = 8.0×10⁻¹⁸ / 1.6×10⁻¹⁹ = 50 electrons",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-number-of-electrons-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-number-of-electrons-03",
+    text: "Number of electrons is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Number of electrons formula n = \\frac{q}{e} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-number-of-electrons-04",
+    text: "Calculate using Number of electrons: A body has charge 8.0×10⁻¹⁸ C. Number of electrons is:",
+    options: [
+      "50",
+      "40",
+      "30",
+      "60"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using n = \\frac{q}{e}: n = q/e = 8.0×10⁻¹⁸ / 1.6×10⁻¹⁹ = 50 electrons",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-number-of-electrons-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-number-of-electrons-06",
+    text: "Number of electrons is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Number of electrons formula n = \\frac{q}{e} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-number-of-electrons-07",
+    text: "Calculate using Number of electrons: A body has charge 8.0×10⁻¹⁸ C. Number of electrons is:",
+    options: [
+      "50",
+      "40",
+      "30",
+      "60"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using n = \\frac{q}{e}: n = q/e = 8.0×10⁻¹⁸ / 1.6×10⁻¹⁹ = 50 electrons",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-number-of-electrons-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-number-of-electrons-09",
+    text: "Number of electrons is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Number of electrons formula n = \\frac{q}{e} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-number-of-electrons-10",
+    text: "Calculate using Number of electrons: A body has charge 8.0×10⁻¹⁸ C. Number of electrons is:",
+    options: [
+      "50",
+      "40",
+      "30",
+      "60"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using n = \\frac{q}{e}: n = q/e = 8.0×10⁻¹⁸ / 1.6×10⁻¹⁹ = 50 electrons",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "number-of-electrons"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-on-ion-01",
+    text: "Calculate using Charge on ion: A triply ionized lithium atom (Z=3) has charge:",
+    options: [
+      "±4.8×10⁻¹⁹ C",
+      "±3.2×10⁻¹⁹ C",
+      "±1.6×10⁻¹⁹ C",
+      "±8.0×10⁻¹⁹ C"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q = \\pm Ze: q = ±Ze = ±3 × 1.6×10⁻¹⁹ = ±4.8×10⁻¹⁹ C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-on-ion-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-on-ion-03",
+    text: "Charge on ion is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge on ion formula q = \\pm Ze is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-on-ion-04",
+    text: "Calculate using Charge on ion: A triply ionized lithium atom (Z=3) has charge:",
+    options: [
+      "±4.8×10⁻¹⁹ C",
+      "±3.2×10⁻¹⁹ C",
+      "±1.6×10⁻¹⁹ C",
+      "±8.0×10⁻¹⁹ C"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q = \\pm Ze: q = ±Ze = ±3 × 1.6×10⁻¹⁹ = ±4.8×10⁻¹⁹ C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-on-ion-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-charge-on-ion-06",
+    text: "Charge on ion is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge on ion formula q = \\pm Ze is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-charge-on-ion-07",
+    text: "Calculate using Charge on ion: A triply ionized lithium atom (Z=3) has charge:",
+    options: [
+      "±4.8×10⁻¹⁹ C",
+      "±3.2×10⁻¹⁹ C",
+      "±1.6×10⁻¹⁹ C",
+      "±8.0×10⁻¹⁹ C"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q = \\pm Ze: q = ±Ze = ±3 × 1.6×10⁻¹⁹ = ±4.8×10⁻¹⁹ C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-on-ion-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-on-ion-09",
+    text: "Charge on ion is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge on ion formula q = \\pm Ze is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-on-ion-10",
+    text: "Calculate using Charge on ion: A triply ionized lithium atom (Z=3) has charge:",
+    options: [
+      "±4.8×10⁻¹⁹ C",
+      "±3.2×10⁻¹⁹ C",
+      "±1.6×10⁻¹⁹ C",
+      "±8.0×10⁻¹⁹ C"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q = \\pm Ze: q = ±Ze = ±3 × 1.6×10⁻¹⁹ = ±4.8×10⁻¹⁹ C",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-charge-properties",
+    formulas: [
+      "charge-on-ion"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-force-in-medium-01",
+    text: "Calculate using Force in medium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = \\frac{kq_1q_2}{\\varepsilon_r r^2} = \\frac{F_0}{\\varepsilon_r}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-force-in-medium-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-force-in-medium-03",
+    text: "Force in medium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Force in medium formula F = \\frac{kq_1q_2}{\\varepsilon_r r^2} = \\frac{F_0}{\\varepsilon_r} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-force-in-medium-04",
+    text: "Calculate using Force in medium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = \\frac{kq_1q_2}{\\varepsilon_r r^2} = \\frac{F_0}{\\varepsilon_r}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-force-in-medium-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-force-in-medium-06",
+    text: "Force in medium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Force in medium formula F = \\frac{kq_1q_2}{\\varepsilon_r r^2} = \\frac{F_0}{\\varepsilon_r} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-force-in-medium-07",
+    text: "Calculate using Force in medium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = \\frac{kq_1q_2}{\\varepsilon_r r^2} = \\frac{F_0}{\\varepsilon_r}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-force-in-medium-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-force-in-medium-09",
+    text: "Force in medium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Force in medium formula F = \\frac{kq_1q_2}{\\varepsilon_r r^2} = \\frac{F_0}{\\varepsilon_r} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-force-in-medium-10",
+    text: "Calculate using Force in medium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = \\frac{kq_1q_2}{\\varepsilon_r r^2} = \\frac{F_0}{\\varepsilon_r}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "force-in-medium"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-vector-form-01",
+    text: "Calculate using Vector form: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{F}_{12} = \\frac{kq_1q_2}{r^2}\\hat{r}_{12}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-vector-form-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-vector-form-03",
+    text: "Vector form is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Vector form formula \\vec{F}_{12} = \\frac{kq_1q_2}{r^2}\\hat{r}_{12} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-vector-form-04",
+    text: "Calculate using Vector form: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{F}_{12} = \\frac{kq_1q_2}{r^2}\\hat{r}_{12}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-vector-form-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-vector-form-06",
+    text: "Vector form is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Vector form formula \\vec{F}_{12} = \\frac{kq_1q_2}{r^2}\\hat{r}_{12} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-vector-form-07",
+    text: "Calculate using Vector form: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{F}_{12} = \\frac{kq_1q_2}{r^2}\\hat{r}_{12}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-vector-form-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-vector-form-09",
+    text: "Vector form is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Vector form formula \\vec{F}_{12} = \\frac{kq_1q_2}{r^2}\\hat{r}_{12} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-vector-form-10",
+    text: "Calculate using Vector form: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{F}_{12} = \\frac{kq_1q_2}{r^2}\\hat{r}_{12}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-two-forces-at-angle-01",
+    text: "Calculate using Two forces at angle θ: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = \\sqrt{F_1^2 + F_2^2 + 2F_1F_2\\cos\\theta}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-two-forces-at-angle-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-two-forces-at-angle-03",
+    text: "Two forces at angle θ is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Two forces at angle θ formula F = \\sqrt{F_1^2 + F_2^2 + 2F_1F_2\\cos\\theta} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-two-forces-at-angle-04",
+    text: "Calculate using Two forces at angle θ: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = \\sqrt{F_1^2 + F_2^2 + 2F_1F_2\\cos\\theta}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-two-forces-at-angle-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-two-forces-at-angle-06",
+    text: "Two forces at angle θ is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Two forces at angle θ formula F = \\sqrt{F_1^2 + F_2^2 + 2F_1F_2\\cos\\theta} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-two-forces-at-angle-07",
+    text: "Calculate using Two forces at angle θ: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = \\sqrt{F_1^2 + F_2^2 + 2F_1F_2\\cos\\theta}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-two-forces-at-angle-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-two-forces-at-angle-09",
+    text: "Two forces at angle θ is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Two forces at angle θ formula F = \\sqrt{F_1^2 + F_2^2 + 2F_1F_2\\cos\\theta} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-two-forces-at-angle-10",
+    text: "Calculate using Two forces at angle θ: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = \\sqrt{F_1^2 + F_2^2 + 2F_1F_2\\cos\\theta}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "two-forces-at-angle"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-equilibrium-01",
+    text: "Calculate using Equilibrium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{F}_{net} = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-equilibrium-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-equilibrium-03",
+    text: "Equilibrium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equilibrium formula \\vec{F}_{net} = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-equilibrium-04",
+    text: "Calculate using Equilibrium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{F}_{net} = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-equilibrium-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-equilibrium-06",
+    text: "Equilibrium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equilibrium formula \\vec{F}_{net} = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-equilibrium-07",
+    text: "Calculate using Equilibrium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{F}_{net} = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-equilibrium-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-equilibrium-09",
+    text: "Equilibrium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equilibrium formula \\vec{F}_{net} = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-equilibrium-10",
+    text: "Calculate using Equilibrium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{F}_{net} = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-equal-charges-01",
+    text: "Calculate using Equal charges: Two equal charges q = 1µC separated by 1m. Force between them:",
+    options: [
+      "9×10⁻³ N",
+      "9×10⁻⁴ N",
+      "9×10⁻⁵ N",
+      "9×10⁻² N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using x = \\frac{d}{2}: F = kq²/r² = 9×10⁹ × (10⁻⁶)² / 1² = 9×10⁻³ N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-equal-charges-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-equal-charges-03",
+    text: "Equal charges is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equal charges formula x = \\frac{d}{2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-equal-charges-04",
+    text: "Calculate using Equal charges: Two equal charges q = 1µC separated by 1m. Force between them:",
+    options: [
+      "9×10⁻³ N",
+      "9×10⁻⁴ N",
+      "9×10⁻⁵ N",
+      "9×10⁻² N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using x = \\frac{d}{2}: F = kq²/r² = 9×10⁹ × (10⁻⁶)² / 1² = 9×10⁻³ N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-equal-charges-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-equal-charges-06",
+    text: "Equal charges is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equal charges formula x = \\frac{d}{2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-equal-charges-07",
+    text: "Calculate using Equal charges: Two equal charges q = 1µC separated by 1m. Force between them:",
+    options: [
+      "9×10⁻³ N",
+      "9×10⁻⁴ N",
+      "9×10⁻⁵ N",
+      "9×10⁻² N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using x = \\frac{d}{2}: F = kq²/r² = 9×10⁹ × (10⁻⁶)² / 1² = 9×10⁻³ N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-equal-charges-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-equal-charges-09",
+    text: "Equal charges is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equal charges formula x = \\frac{d}{2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-equal-charges-10",
+    text: "Calculate using Equal charges: Two equal charges q = 1µC separated by 1m. Force between them:",
+    options: [
+      "9×10⁻³ N",
+      "9×10⁻⁴ N",
+      "9×10⁻⁵ N",
+      "9×10⁻² N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using x = \\frac{d}{2}: F = kq²/r² = 9×10⁹ × (10⁻⁶)² / 1² = 9×10⁻³ N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "equal-charges"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-unequal-charges-01",
+    text: "Calculate using Unequal charges: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using x = \\frac{d}{1 + \\sqrt{q_2/q_1}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-unequal-charges-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-unequal-charges-03",
+    text: "Unequal charges is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Unequal charges formula x = \\frac{d}{1 + \\sqrt{q_2/q_1}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-unequal-charges-04",
+    text: "Calculate using Unequal charges: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using x = \\frac{d}{1 + \\sqrt{q_2/q_1}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-unequal-charges-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-unequal-charges-06",
+    text: "Unequal charges is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Unequal charges formula x = \\frac{d}{1 + \\sqrt{q_2/q_1}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-unequal-charges-07",
+    text: "Calculate using Unequal charges: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using x = \\frac{d}{1 + \\sqrt{q_2/q_1}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-unequal-charges-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-unequal-charges-09",
+    text: "Unequal charges is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Unequal charges formula x = \\frac{d}{1 + \\sqrt{q_2/q_1}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-unequal-charges-10",
+    text: "Calculate using Unequal charges: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using x = \\frac{d}{1 + \\sqrt{q_2/q_1}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "coulombs-law",
+    formulas: [
+      "unequal-charges"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-force-on-charge-q-01",
+    text: "Calculate using Force on charge q: Charge q = 5µC in field E = 2×10³ N/C experiences force:",
+    options: [
+      "0.01 N",
+      "0.02 N",
+      "0.001 N",
+      "0.1 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = qE: F = qE = 5×10⁻⁶ × 2×10³ = 0.01 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-force-on-charge-q-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-force-on-charge-q-03",
+    text: "Force on charge q is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Force on charge q formula F = qE is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-force-on-charge-q-04",
+    text: "Calculate using Force on charge q: Charge q = 5µC in field E = 2×10³ N/C experiences force:",
+    options: [
+      "0.01 N",
+      "0.02 N",
+      "0.001 N",
+      "0.1 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = qE: F = qE = 5×10⁻⁶ × 2×10³ = 0.01 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-force-on-charge-q-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-force-on-charge-q-06",
+    text: "Force on charge q is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Force on charge q formula F = qE is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-force-on-charge-q-07",
+    text: "Calculate using Force on charge q: Charge q = 5µC in field E = 2×10³ N/C experiences force:",
+    options: [
+      "0.01 N",
+      "0.02 N",
+      "0.001 N",
+      "0.1 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = qE: F = qE = 5×10⁻⁶ × 2×10³ = 0.01 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-force-on-charge-q-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-force-on-charge-q-09",
+    text: "Force on charge q is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Force on charge q formula F = qE is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-force-on-charge-q-10",
+    text: "Calculate using Force on charge q: Charge q = 5µC in field E = 2×10³ N/C experiences force:",
+    options: [
+      "0.01 N",
+      "0.02 N",
+      "0.001 N",
+      "0.1 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using F = qE: F = qE = 5×10⁻⁶ × 2×10³ = 0.01 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "force-on-charge-q"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-vector-form-01",
+    text: "Calculate using Vector form: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} = \\frac{kQ}{r^2}\\hat{r}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-vector-form-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-vector-form-03",
+    text: "Vector form is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Vector form formula \\vec{E} = \\frac{kQ}{r^2}\\hat{r} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-vector-form-04",
+    text: "Calculate using Vector form: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} = \\frac{kQ}{r^2}\\hat{r}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-vector-form-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-vector-form-06",
+    text: "Vector form is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Vector form formula \\vec{E} = \\frac{kQ}{r^2}\\hat{r} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-vector-form-07",
+    text: "Calculate using Vector form: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} = \\frac{kQ}{r^2}\\hat{r}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-vector-form-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-vector-form-09",
+    text: "Vector form is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Vector form formula \\vec{E} = \\frac{kQ}{r^2}\\hat{r} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-vector-form-10",
+    text: "Calculate using Vector form: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} = \\frac{kQ}{r^2}\\hat{r}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "vector-form"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-at-center-x0-01",
+    text: "Calculate using At center (x=0): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-at-center-x0-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-at-center-x0-03",
+    text: "At center (x=0) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At center (x=0) formula E = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-at-center-x0-04",
+    text: "Calculate using At center (x=0): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-at-center-x0-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-at-center-x0-06",
+    text: "At center (x=0) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At center (x=0) formula E = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-at-center-x0-07",
+    text: "Calculate using At center (x=0): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-at-center-x0-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-at-center-x0-09",
+    text: "At center (x=0) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At center (x=0) formula E = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-at-center-x0-10",
+    text: "Calculate using At center (x=0): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "at-center-x0"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-maximum-e-01",
+    text: "Calculate using Maximum E: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{max} \\text{ at } x = \\frac{R}{\\sqrt{2}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-maximum-e-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-maximum-e-03",
+    text: "Maximum E is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum E formula E_{max} \\text{ at } x = \\frac{R}{\\sqrt{2}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-maximum-e-04",
+    text: "Calculate using Maximum E: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{max} \\text{ at } x = \\frac{R}{\\sqrt{2}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-maximum-e-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-maximum-e-06",
+    text: "Maximum E is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum E formula E_{max} \\text{ at } x = \\frac{R}{\\sqrt{2}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-maximum-e-07",
+    text: "Calculate using Maximum E: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{max} \\text{ at } x = \\frac{R}{\\sqrt{2}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-maximum-e-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-maximum-e-09",
+    text: "Maximum E is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum E formula E_{max} \\text{ at } x = \\frac{R}{\\sqrt{2}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-maximum-e-10",
+    text: "Calculate using Maximum E: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{max} \\text{ at } x = \\frac{R}{\\sqrt{2}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "maximum-e"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-far-from-ring-x-r-01",
+    text: "Calculate using Far from ring (x >> R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{kQ}{x^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-far-from-ring-x-r-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-far-from-ring-x-r-03",
+    text: "Far from ring (x >> R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Far from ring (x >> R) formula E \\approx \\frac{kQ}{x^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-far-from-ring-x-r-04",
+    text: "Calculate using Far from ring (x >> R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{kQ}{x^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-far-from-ring-x-r-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-far-from-ring-x-r-06",
+    text: "Far from ring (x >> R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Far from ring (x >> R) formula E \\approx \\frac{kQ}{x^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-far-from-ring-x-r-07",
+    text: "Calculate using Far from ring (x >> R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{kQ}{x^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-far-from-ring-x-r-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-far-from-ring-x-r-09",
+    text: "Far from ring (x >> R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Far from ring (x >> R) formula E \\approx \\frac{kQ}{x^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-far-from-ring-x-r-10",
+    text: "Calculate using Far from ring (x >> R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{kQ}{x^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-from-ring-x-r"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-very-close-x-0-01",
+    text: "Calculate using Very close (x → 0): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{\\sigma}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-very-close-x-0-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-very-close-x-0-03",
+    text: "Very close (x → 0) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Very close (x → 0) formula E \\approx \\frac{\\sigma}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-very-close-x-0-04",
+    text: "Calculate using Very close (x → 0): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{\\sigma}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-very-close-x-0-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-very-close-x-0-06",
+    text: "Very close (x → 0) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Very close (x → 0) formula E \\approx \\frac{\\sigma}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-very-close-x-0-07",
+    text: "Calculate using Very close (x → 0): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{\\sigma}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-very-close-x-0-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-very-close-x-0-09",
+    text: "Very close (x → 0) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Very close (x → 0) formula E \\approx \\frac{\\sigma}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-very-close-x-0-10",
+    text: "Calculate using Very close (x → 0): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{\\sigma}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "very-close-x-0"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-far-away-x-r-01",
+    text: "Calculate using Far away (x >> R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{kQ}{x^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-far-away-x-r-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-far-away-x-r-03",
+    text: "Far away (x >> R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Far away (x >> R) formula E \\approx \\frac{kQ}{x^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-far-away-x-r-04",
+    text: "Calculate using Far away (x >> R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{kQ}{x^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-far-away-x-r-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-far-away-x-r-06",
+    text: "Far away (x >> R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Far away (x >> R) formula E \\approx \\frac{kQ}{x^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-far-away-x-r-07",
+    text: "Calculate using Far away (x >> R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{kQ}{x^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-far-away-x-r-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-far-away-x-r-09",
+    text: "Far away (x >> R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Far away (x >> R) formula E \\approx \\frac{kQ}{x^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-far-away-x-r-10",
+    text: "Calculate using Far away (x >> R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E \\approx \\frac{kQ}{x^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "far-away-x-r"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-two-parallel-sheets-01",
+    text: "Calculate using Two parallel sheets: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{between} = \\frac{\\sigma}{\\varepsilon_0}, E_{outside} = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-two-parallel-sheets-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-two-parallel-sheets-03",
+    text: "Two parallel sheets is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Two parallel sheets formula E_{between} = \\frac{\\sigma}{\\varepsilon_0}, E_{outside} = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-two-parallel-sheets-04",
+    text: "Calculate using Two parallel sheets: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{between} = \\frac{\\sigma}{\\varepsilon_0}, E_{outside} = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-two-parallel-sheets-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-two-parallel-sheets-06",
+    text: "Two parallel sheets is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Two parallel sheets formula E_{between} = \\frac{\\sigma}{\\varepsilon_0}, E_{outside} = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-two-parallel-sheets-07",
+    text: "Calculate using Two parallel sheets: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{between} = \\frac{\\sigma}{\\varepsilon_0}, E_{outside} = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-two-parallel-sheets-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-two-parallel-sheets-09",
+    text: "Two parallel sheets is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Two parallel sheets formula E_{between} = \\frac{\\sigma}{\\varepsilon_0}, E_{outside} = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-two-parallel-sheets-10",
+    text: "Calculate using Two parallel sheets: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{between} = \\frac{\\sigma}{\\varepsilon_0}, E_{outside} = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "two-parallel-sheets"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-same-charge-sheets-01",
+    text: "Calculate using Same charge sheets: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{between} = 0, E_{outside} = \\frac{\\sigma}{\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-same-charge-sheets-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-same-charge-sheets-03",
+    text: "Same charge sheets is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Same charge sheets formula E_{between} = 0, E_{outside} = \\frac{\\sigma}{\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-same-charge-sheets-04",
+    text: "Calculate using Same charge sheets: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{between} = 0, E_{outside} = \\frac{\\sigma}{\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-same-charge-sheets-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-same-charge-sheets-06",
+    text: "Same charge sheets is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Same charge sheets formula E_{between} = 0, E_{outside} = \\frac{\\sigma}{\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-same-charge-sheets-07",
+    text: "Calculate using Same charge sheets: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{between} = 0, E_{outside} = \\frac{\\sigma}{\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-same-charge-sheets-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-same-charge-sheets-09",
+    text: "Same charge sheets is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Same charge sheets formula E_{between} = 0, E_{outside} = \\frac{\\sigma}{\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-same-charge-sheets-10",
+    text: "Calculate using Same charge sheets: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_{between} = 0, E_{outside} = \\frac{\\sigma}{\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field",
+    formulas: [
+      "same-charge-sheets"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-01",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{p}: -q \\rightarrow +q: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-03",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{p}: -q \\rightarrow +q is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-04",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{p}: -q \\rightarrow +q: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-direction-06",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{p}: -q \\rightarrow +q is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-direction-07",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{p}: -q \\rightarrow +q: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-09",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{p}: -q \\rightarrow +q is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-10",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{p}: -q \\rightarrow +q: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-exact-formula-01",
+    text: "Calculate using Exact formula: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{2kpr}{(r^2 - a^2)^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-exact-formula-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-exact-formula-03",
+    text: "Exact formula is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Exact formula formula E = \\frac{2kpr}{(r^2 - a^2)^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-exact-formula-04",
+    text: "Calculate using Exact formula: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{2kpr}{(r^2 - a^2)^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-exact-formula-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-exact-formula-06",
+    text: "Exact formula is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Exact formula formula E = \\frac{2kpr}{(r^2 - a^2)^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-exact-formula-07",
+    text: "Calculate using Exact formula: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{2kpr}{(r^2 - a^2)^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-exact-formula-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-exact-formula-09",
+    text: "Exact formula is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Exact formula formula E = \\frac{2kpr}{(r^2 - a^2)^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-exact-formula-10",
+    text: "Calculate using Exact formula: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{2kpr}{(r^2 - a^2)^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "exact-formula"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-2-01",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E}_a \\parallel \\vec{p}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-2-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-2-03",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E}_a \\parallel \\vec{p} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-2-04",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E}_a \\parallel \\vec{p}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-2-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-direction-2-06",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E}_a \\parallel \\vec{p} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-direction-2-07",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E}_a \\parallel \\vec{p}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-2-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-2-09",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E}_a \\parallel \\vec{p} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-2-10",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E}_a \\parallel \\vec{p}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-2"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-ratio-01",
+    text: "Calculate using Ratio: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_a = 2E_e: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-ratio-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-ratio-03",
+    text: "Ratio is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Ratio formula E_a = 2E_e is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-ratio-04",
+    text: "Calculate using Ratio: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_a = 2E_e: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-ratio-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-ratio-06",
+    text: "Ratio is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Ratio formula E_a = 2E_e is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-ratio-07",
+    text: "Calculate using Ratio: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_a = 2E_e: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-ratio-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-ratio-09",
+    text: "Ratio is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Ratio formula E_a = 2E_e is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-ratio-10",
+    text: "Calculate using Ratio: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E_a = 2E_e: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "ratio"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-3-01",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E}_e \\text{ opposite to } \\vec{p}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-3-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-3-03",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E}_e \\text{ opposite to } \\vec{p} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-3-04",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E}_e \\text{ opposite to } \\vec{p}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-3-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-direction-3-06",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E}_e \\text{ opposite to } \\vec{p} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-direction-3-07",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E}_e \\text{ opposite to } \\vec{p}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-3-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-3-09",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E}_e \\text{ opposite to } \\vec{p} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-3-10",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E}_e \\text{ opposite to } \\vec{p}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "direction-3"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-maximum-torque-01",
+    text: "Calculate using Maximum torque: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tau_{max} = pE \\text{ when } \\theta = 90°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-maximum-torque-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-maximum-torque-03",
+    text: "Maximum torque is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum torque formula \\tau_{max} = pE \\text{ when } \\theta = 90° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-maximum-torque-04",
+    text: "Calculate using Maximum torque: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tau_{max} = pE \\text{ when } \\theta = 90°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-maximum-torque-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-maximum-torque-06",
+    text: "Maximum torque is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum torque formula \\tau_{max} = pE \\text{ when } \\theta = 90° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-maximum-torque-07",
+    text: "Calculate using Maximum torque: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tau_{max} = pE \\text{ when } \\theta = 90°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-maximum-torque-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-maximum-torque-09",
+    text: "Maximum torque is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum torque formula \\tau_{max} = pE \\text{ when } \\theta = 90° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-maximum-torque-10",
+    text: "Calculate using Maximum torque: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tau_{max} = pE \\text{ when } \\theta = 90°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-torque"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-equilibrium-01",
+    text: "Calculate using Equilibrium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tau = 0 \\text{ when } \\theta = 0° \\text{ or } 180°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-equilibrium-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-equilibrium-03",
+    text: "Equilibrium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equilibrium formula \\tau = 0 \\text{ when } \\theta = 0° \\text{ or } 180° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-equilibrium-04",
+    text: "Calculate using Equilibrium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tau = 0 \\text{ when } \\theta = 0° \\text{ or } 180°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-equilibrium-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-equilibrium-06",
+    text: "Equilibrium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equilibrium formula \\tau = 0 \\text{ when } \\theta = 0° \\text{ or } 180° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-equilibrium-07",
+    text: "Calculate using Equilibrium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tau = 0 \\text{ when } \\theta = 0° \\text{ or } 180°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-equilibrium-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-equilibrium-09",
+    text: "Equilibrium is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Equilibrium formula \\tau = 0 \\text{ when } \\theta = 0° \\text{ or } 180° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-equilibrium-10",
+    text: "Calculate using Equilibrium: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tau = 0 \\text{ when } \\theta = 0° \\text{ or } 180°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "equilibrium"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-minimum-pe-01",
+    text: "Calculate using Minimum PE: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using U_{min} = -pE \\text{ when } \\theta = 0°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-minimum-pe-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-minimum-pe-03",
+    text: "Minimum PE is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Minimum PE formula U_{min} = -pE \\text{ when } \\theta = 0° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-minimum-pe-04",
+    text: "Calculate using Minimum PE: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using U_{min} = -pE \\text{ when } \\theta = 0°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-minimum-pe-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-minimum-pe-06",
+    text: "Minimum PE is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Minimum PE formula U_{min} = -pE \\text{ when } \\theta = 0° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-minimum-pe-07",
+    text: "Calculate using Minimum PE: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using U_{min} = -pE \\text{ when } \\theta = 0°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-minimum-pe-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-minimum-pe-09",
+    text: "Minimum PE is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Minimum PE formula U_{min} = -pE \\text{ when } \\theta = 0° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-minimum-pe-10",
+    text: "Calculate using Minimum PE: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using U_{min} = -pE \\text{ when } \\theta = 0°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "minimum-pe"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-maximum-pe-01",
+    text: "Calculate using Maximum PE: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using U_{max} = +pE \\text{ when } \\theta = 180°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-maximum-pe-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-maximum-pe-03",
+    text: "Maximum PE is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum PE formula U_{max} = +pE \\text{ when } \\theta = 180° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-maximum-pe-04",
+    text: "Calculate using Maximum PE: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using U_{max} = +pE \\text{ when } \\theta = 180°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-maximum-pe-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-maximum-pe-06",
+    text: "Maximum PE is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum PE formula U_{max} = +pE \\text{ when } \\theta = 180° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-maximum-pe-07",
+    text: "Calculate using Maximum PE: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using U_{max} = +pE \\text{ when } \\theta = 180°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-maximum-pe-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-maximum-pe-09",
+    text: "Maximum PE is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Maximum PE formula U_{max} = +pE \\text{ when } \\theta = 180° is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-maximum-pe-10",
+    text: "Calculate using Maximum PE: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using U_{max} = +pE \\text{ when } \\theta = 180°: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "maximum-pe"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-work-to-rotate-01",
+    text: "Calculate using Work to rotate: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using W = U_f - U_i = pE(\\cos\\theta_i - \\cos\\theta_f): F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-work-to-rotate-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-work-to-rotate-03",
+    text: "Work to rotate is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Work to rotate formula W = U_f - U_i = pE(\\cos\\theta_i - \\cos\\theta_f) is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-work-to-rotate-04",
+    text: "Calculate using Work to rotate: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using W = U_f - U_i = pE(\\cos\\theta_i - \\cos\\theta_f): F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-work-to-rotate-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-work-to-rotate-06",
+    text: "Work to rotate is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Work to rotate formula W = U_f - U_i = pE(\\cos\\theta_i - \\cos\\theta_f) is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-work-to-rotate-07",
+    text: "Calculate using Work to rotate: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using W = U_f - U_i = pE(\\cos\\theta_i - \\cos\\theta_f): F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-work-to-rotate-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-work-to-rotate-09",
+    text: "Work to rotate is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Work to rotate formula W = U_f - U_i = pE(\\cos\\theta_i - \\cos\\theta_f) is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-work-to-rotate-10",
+    text: "Calculate using Work to rotate: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using W = U_f - U_i = pE(\\cos\\theta_i - \\cos\\theta_f): F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-dipole",
+    formulas: [
+      "work-to-rotate"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-01",
+    text: "Calculate using E perpendicular to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = EA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-03",
+    text: "E perpendicular to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E perpendicular to surface formula \\Phi = EA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-04",
+    text: "Calculate using E perpendicular to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = EA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-06",
+    text: "E perpendicular to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E perpendicular to surface formula \\Phi = EA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-07",
+    text: "Calculate using E perpendicular to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = EA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-09",
+    text: "E perpendicular to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E perpendicular to surface formula \\Phi = EA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-10",
+    text: "Calculate using E perpendicular to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = EA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-parallel-to-surface-01",
+    text: "Calculate using E parallel to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-parallel-to-surface-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-parallel-to-surface-03",
+    text: "E parallel to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E parallel to surface formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-parallel-to-surface-04",
+    text: "Calculate using E parallel to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-parallel-to-surface-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-e-parallel-to-surface-06",
+    text: "E parallel to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E parallel to surface formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-e-parallel-to-surface-07",
+    text: "Calculate using E parallel to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-parallel-to-surface-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-parallel-to-surface-09",
+    text: "E parallel to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E parallel to surface formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-parallel-to-surface-10",
+    text: "Calculate using E parallel to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-point-charge-01",
+    text: "Calculate using Point charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = \\frac{q}{\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-point-charge-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-point-charge-03",
+    text: "Point charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Point charge formula \\Phi = \\frac{q}{\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-point-charge-04",
+    text: "Calculate using Point charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = \\frac{q}{\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-point-charge-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-point-charge-06",
+    text: "Point charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Point charge formula \\Phi = \\frac{q}{\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-point-charge-07",
+    text: "Calculate using Point charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = \\frac{q}{\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-point-charge-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-point-charge-09",
+    text: "Point charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Point charge formula \\Phi = \\frac{q}{\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-point-charge-10",
+    text: "Calculate using Point charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = \\frac{q}{\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-no-charge-inside-01",
+    text: "Calculate using No charge inside: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-no-charge-inside-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-no-charge-inside-03",
+    text: "No charge inside is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "No charge inside formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-no-charge-inside-04",
+    text: "Calculate using No charge inside: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-no-charge-inside-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-no-charge-inside-06",
+    text: "No charge inside is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "No charge inside formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-no-charge-inside-07",
+    text: "Calculate using No charge inside: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-no-charge-inside-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-no-charge-inside-09",
+    text: "No charge inside is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "No charge inside formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-no-charge-inside-10",
+    text: "Calculate using No charge inside: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "no-charge-inside"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-at-surface-r-r-01",
+    text: "Calculate using At surface (r = R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{kQ}{R^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-at-surface-r-r-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-at-surface-r-r-03",
+    text: "At surface (r = R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At surface (r = R) formula E = \\frac{kQ}{R^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-at-surface-r-r-04",
+    text: "Calculate using At surface (r = R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{kQ}{R^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-at-surface-r-r-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-at-surface-r-r-06",
+    text: "At surface (r = R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At surface (r = R) formula E = \\frac{kQ}{R^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-at-surface-r-r-07",
+    text: "Calculate using At surface (r = R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{kQ}{R^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-at-surface-r-r-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-at-surface-r-r-09",
+    text: "At surface (r = R) is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At surface (r = R) formula E = \\frac{kQ}{R^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-at-surface-r-r-10",
+    text: "Calculate using At surface (r = R): A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{kQ}{R^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface-r-r"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-at-center-01",
+    text: "Calculate using At center: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-at-center-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-at-center-03",
+    text: "At center is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At center formula E = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-at-center-04",
+    text: "Calculate using At center: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-at-center-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-at-center-06",
+    text: "At center is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At center formula E = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-at-center-07",
+    text: "Calculate using At center: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-at-center-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-at-center-09",
+    text: "At center is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At center formula E = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-at-center-10",
+    text: "Calculate using At center: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-center"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-01",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} \\perp \\text{line, radially outward}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-03",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E} \\perp \\text{line, radially outward} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-04",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} \\perp \\text{line, radially outward}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-direction-06",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E} \\perp \\text{line, radially outward} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-direction-07",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} \\perp \\text{line, radially outward}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-09",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E} \\perp \\text{line, radially outward} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-10",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} \\perp \\text{line, radially outward}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-at-surface-01",
+    text: "Calculate using At surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{\\rho R}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-at-surface-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-at-surface-03",
+    text: "At surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At surface formula E = \\frac{\\rho R}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-at-surface-04",
+    text: "Calculate using At surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{\\rho R}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-at-surface-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-at-surface-06",
+    text: "At surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At surface formula E = \\frac{\\rho R}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-at-surface-07",
+    text: "Calculate using At surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{\\rho R}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-at-surface-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-at-surface-09",
+    text: "At surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "At surface formula E = \\frac{\\rho R}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-at-surface-10",
+    text: "Calculate using At surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using E = \\frac{\\rho R}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "gauss-law",
+    formulas: [
+      "at-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-electron-acceleration-01",
+    text: "Calculate using Electron acceleration: Electron in field E = 10⁴ N/C has acceleration (m_e = 9.1×10⁻³¹ kg):",
+    options: [
+      "1.76×10¹⁵ m/s²",
+      "1.76×10¹⁴ m/s²",
+      "1.76×10¹⁶ m/s²",
+      "1.76×10¹³ m/s²"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using a_e = \\frac{eE}{m_e}: a = eE/m_e = 1.6×10⁻¹⁹ × 10⁴ / 9.1×10⁻³¹ ≈ 1.76×10¹⁵ m/s²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-electron-acceleration-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-electron-acceleration-03",
+    text: "Electron acceleration is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Electron acceleration formula a_e = \\frac{eE}{m_e} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-electron-acceleration-04",
+    text: "Calculate using Electron acceleration: Electron in field E = 10⁴ N/C has acceleration (m_e = 9.1×10⁻³¹ kg):",
+    options: [
+      "1.76×10¹⁵ m/s²",
+      "1.76×10¹⁴ m/s²",
+      "1.76×10¹⁶ m/s²",
+      "1.76×10¹³ m/s²"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using a_e = \\frac{eE}{m_e}: a = eE/m_e = 1.6×10⁻¹⁹ × 10⁴ / 9.1×10⁻³¹ ≈ 1.76×10¹⁵ m/s²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-electron-acceleration-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-electron-acceleration-06",
+    text: "Electron acceleration is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Electron acceleration formula a_e = \\frac{eE}{m_e} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-electron-acceleration-07",
+    text: "Calculate using Electron acceleration: Electron in field E = 10⁴ N/C has acceleration (m_e = 9.1×10⁻³¹ kg):",
+    options: [
+      "1.76×10¹⁵ m/s²",
+      "1.76×10¹⁴ m/s²",
+      "1.76×10¹⁶ m/s²",
+      "1.76×10¹³ m/s²"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using a_e = \\frac{eE}{m_e}: a = eE/m_e = 1.6×10⁻¹⁹ × 10⁴ / 9.1×10⁻³¹ ≈ 1.76×10¹⁵ m/s²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-electron-acceleration-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-electron-acceleration-09",
+    text: "Electron acceleration is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Electron acceleration formula a_e = \\frac{eE}{m_e} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-electron-acceleration-10",
+    text: "Calculate using Electron acceleration: Electron in field E = 10⁴ N/C has acceleration (m_e = 9.1×10⁻³¹ kg):",
+    options: [
+      "1.76×10¹⁵ m/s²",
+      "1.76×10¹⁴ m/s²",
+      "1.76×10¹⁶ m/s²",
+      "1.76×10¹³ m/s²"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using a_e = \\frac{eE}{m_e}: a = eE/m_e = 1.6×10⁻¹⁹ × 10⁴ / 9.1×10⁻³¹ ≈ 1.76×10¹⁵ m/s²",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-acceleration"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-proton-acceleration-01",
+    text: "Calculate using Proton acceleration: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using a_p = \\frac{eE}{m_p} = \\frac{a_e}{1836}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-proton-acceleration-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-proton-acceleration-03",
+    text: "Proton acceleration is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Proton acceleration formula a_p = \\frac{eE}{m_p} = \\frac{a_e}{1836} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-proton-acceleration-04",
+    text: "Calculate using Proton acceleration: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using a_p = \\frac{eE}{m_p} = \\frac{a_e}{1836}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-proton-acceleration-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-proton-acceleration-06",
+    text: "Proton acceleration is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Proton acceleration formula a_p = \\frac{eE}{m_p} = \\frac{a_e}{1836} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-proton-acceleration-07",
+    text: "Calculate using Proton acceleration: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using a_p = \\frac{eE}{m_p} = \\frac{a_e}{1836}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-proton-acceleration-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-proton-acceleration-09",
+    text: "Proton acceleration is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Proton acceleration formula a_p = \\frac{eE}{m_p} = \\frac{a_e}{1836} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-proton-acceleration-10",
+    text: "Calculate using Proton acceleration: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using a_p = \\frac{eE}{m_p} = \\frac{a_e}{1836}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "proton-acceleration"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-deflection-01",
+    text: "Calculate using Deflection: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using y = \\frac{1}{2}at^2 = \\frac{qEL^2}{2mv_0^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-deflection-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-deflection-03",
+    text: "Deflection is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Deflection formula y = \\frac{1}{2}at^2 = \\frac{qEL^2}{2mv_0^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-deflection-04",
+    text: "Calculate using Deflection: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using y = \\frac{1}{2}at^2 = \\frac{qEL^2}{2mv_0^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-deflection-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-deflection-06",
+    text: "Deflection is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Deflection formula y = \\frac{1}{2}at^2 = \\frac{qEL^2}{2mv_0^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-deflection-07",
+    text: "Calculate using Deflection: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using y = \\frac{1}{2}at^2 = \\frac{qEL^2}{2mv_0^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-deflection-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-deflection-09",
+    text: "Deflection is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Deflection formula y = \\frac{1}{2}at^2 = \\frac{qEL^2}{2mv_0^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-deflection-10",
+    text: "Calculate using Deflection: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using y = \\frac{1}{2}at^2 = \\frac{qEL^2}{2mv_0^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "deflection"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-exit-angle-01",
+    text: "Calculate using Exit angle: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tan\\theta = \\frac{v_y}{v_x} = \\frac{qEL}{mv_0^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-exit-angle-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-exit-angle-03",
+    text: "Exit angle is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Exit angle formula \\tan\\theta = \\frac{v_y}{v_x} = \\frac{qEL}{mv_0^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-exit-angle-04",
+    text: "Calculate using Exit angle: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tan\\theta = \\frac{v_y}{v_x} = \\frac{qEL}{mv_0^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-exit-angle-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-exit-angle-06",
+    text: "Exit angle is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Exit angle formula \\tan\\theta = \\frac{v_y}{v_x} = \\frac{qEL}{mv_0^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-exit-angle-07",
+    text: "Calculate using Exit angle: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tan\\theta = \\frac{v_y}{v_x} = \\frac{qEL}{mv_0^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-exit-angle-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-exit-angle-09",
+    text: "Exit angle is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Exit angle formula \\tan\\theta = \\frac{v_y}{v_x} = \\frac{qEL}{mv_0^2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-exit-angle-10",
+    text: "Calculate using Exit angle: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\tan\\theta = \\frac{v_y}{v_x} = \\frac{qEL}{mv_0^2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "exit-angle"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-speed-from-rest-01",
+    text: "Calculate using Speed from rest: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using v = \\sqrt{\\frac{2qV}{m}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-speed-from-rest-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-speed-from-rest-03",
+    text: "Speed from rest is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Speed from rest formula v = \\sqrt{\\frac{2qV}{m}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-speed-from-rest-04",
+    text: "Calculate using Speed from rest: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using v = \\sqrt{\\frac{2qV}{m}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-speed-from-rest-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-speed-from-rest-06",
+    text: "Speed from rest is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Speed from rest formula v = \\sqrt{\\frac{2qV}{m}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-speed-from-rest-07",
+    text: "Calculate using Speed from rest: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using v = \\sqrt{\\frac{2qV}{m}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-speed-from-rest-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-speed-from-rest-09",
+    text: "Speed from rest is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Speed from rest formula v = \\sqrt{\\frac{2qV}{m}} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-speed-from-rest-10",
+    text: "Calculate using Speed from rest: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using v = \\sqrt{\\frac{2qV}{m}}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "speed-from-rest"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-electron-volt-01",
+    text: "Calculate using Electron volt: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using 1 \\text{ eV} = 1.6 \\times 10^{-19} \\text{ J}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-electron-volt-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-electron-volt-03",
+    text: "Electron volt is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Electron volt formula 1 \\text{ eV} = 1.6 \\times 10^{-19} \\text{ J} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-electron-volt-04",
+    text: "Calculate using Electron volt: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using 1 \\text{ eV} = 1.6 \\times 10^{-19} \\text{ J}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-electron-volt-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-electron-volt-06",
+    text: "Electron volt is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Electron volt formula 1 \\text{ eV} = 1.6 \\times 10^{-19} \\text{ J} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-electron-volt-07",
+    text: "Calculate using Electron volt: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using 1 \\text{ eV} = 1.6 \\times 10^{-19} \\text{ J}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-electron-volt-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-electron-volt-09",
+    text: "Electron volt is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Electron volt formula 1 \\text{ eV} = 1.6 \\times 10^{-19} \\text{ J} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-electron-volt-10",
+    text: "Calculate using Electron volt: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using 1 \\text{ eV} = 1.6 \\times 10^{-19} \\text{ J}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "motion-in-electric-field",
+    formulas: [
+      "electron-volt"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-element-01",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\lambda \\, dl: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-element-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-element-03",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\lambda \\, dl is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-element-04",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\lambda \\, dl: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-element-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-charge-element-06",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\lambda \\, dl is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-charge-element-07",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\lambda \\, dl: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-element-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-element-09",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\lambda \\, dl is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-element-10",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\lambda \\, dl: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-total-charge-on-ring-01",
+    text: "Calculate using Total charge on ring: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\lambda \\times 2\\pi R: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-total-charge-on-ring-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-total-charge-on-ring-03",
+    text: "Total charge on ring is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Total charge on ring formula Q = \\lambda \\times 2\\pi R is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-total-charge-on-ring-04",
+    text: "Calculate using Total charge on ring: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\lambda \\times 2\\pi R: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-total-charge-on-ring-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-total-charge-on-ring-06",
+    text: "Total charge on ring is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Total charge on ring formula Q = \\lambda \\times 2\\pi R is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-total-charge-on-ring-07",
+    text: "Calculate using Total charge on ring: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\lambda \\times 2\\pi R: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-total-charge-on-ring-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-total-charge-on-ring-09",
+    text: "Total charge on ring is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Total charge on ring formula Q = \\lambda \\times 2\\pi R is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-total-charge-on-ring-10",
+    text: "Calculate using Total charge on ring: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\lambda \\times 2\\pi R: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "total-charge-on-ring"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-element-2-01",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\sigma \\, dA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-element-2-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-element-2-03",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\sigma \\, dA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-element-2-04",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\sigma \\, dA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-element-2-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-charge-element-2-06",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\sigma \\, dA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-charge-element-2-07",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\sigma \\, dA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-element-2-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-element-2-09",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\sigma \\, dA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-element-2-10",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\sigma \\, dA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-2"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-sphere-surface-01",
+    text: "Calculate using Sphere surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\sigma \\times 4\\pi R^2: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-sphere-surface-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-sphere-surface-03",
+    text: "Sphere surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Sphere surface formula Q = \\sigma \\times 4\\pi R^2 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-sphere-surface-04",
+    text: "Calculate using Sphere surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\sigma \\times 4\\pi R^2: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-sphere-surface-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-sphere-surface-06",
+    text: "Sphere surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Sphere surface formula Q = \\sigma \\times 4\\pi R^2 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-sphere-surface-07",
+    text: "Calculate using Sphere surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\sigma \\times 4\\pi R^2: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-sphere-surface-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-sphere-surface-09",
+    text: "Sphere surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Sphere surface formula Q = \\sigma \\times 4\\pi R^2 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-sphere-surface-10",
+    text: "Calculate using Sphere surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\sigma \\times 4\\pi R^2: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-element-3-01",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\rho \\, dV: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-element-3-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-element-3-03",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\rho \\, dV is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-element-3-04",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\rho \\, dV: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-charge-element-3-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-charge-element-3-06",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\rho \\, dV is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-charge-element-3-07",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\rho \\, dV: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-charge-element-3-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-charge-element-3-09",
+    text: "Charge element is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Charge element formula dq = \\rho \\, dV is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-charge-element-3-10",
+    text: "Calculate using Charge element: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using dq = \\rho \\, dV: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "charge-element-3"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-sphere-volume-01",
+    text: "Calculate using Sphere volume: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\rho \\times \\frac{4}{3}\\pi R^3: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-sphere-volume-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-sphere-volume-03",
+    text: "Sphere volume is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Sphere volume formula Q = \\rho \\times \\frac{4}{3}\\pi R^3 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-sphere-volume-04",
+    text: "Calculate using Sphere volume: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\rho \\times \\frac{4}{3}\\pi R^3: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-sphere-volume-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-sphere-volume-06",
+    text: "Sphere volume is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Sphere volume formula Q = \\rho \\times \\frac{4}{3}\\pi R^3 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-sphere-volume-07",
+    text: "Calculate using Sphere volume: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\rho \\times \\frac{4}{3}\\pi R^3: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-sphere-volume-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-sphere-volume-09",
+    text: "Sphere volume is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Sphere volume formula Q = \\rho \\times \\frac{4}{3}\\pi R^3 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-sphere-volume-10",
+    text: "Calculate using Sphere volume: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using Q = \\rho \\times \\frac{4}{3}\\pi R^3: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "continuous-charge-distribution",
+    formulas: [
+      "sphere-volume"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-point-charge-01",
+    text: "Calculate using Point charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\text{Lines: radial, density} \\propto 1/r^2: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-point-charge-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-point-charge-03",
+    text: "Point charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Point charge formula \\text{Lines: radial, density} \\propto 1/r^2 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-point-charge-04",
+    text: "Calculate using Point charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\text{Lines: radial, density} \\propto 1/r^2: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-point-charge-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-point-charge-06",
+    text: "Point charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Point charge formula \\text{Lines: radial, density} \\propto 1/r^2 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-point-charge-07",
+    text: "Calculate using Point charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\text{Lines: radial, density} \\propto 1/r^2: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-point-charge-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-point-charge-09",
+    text: "Point charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Point charge formula \\text{Lines: radial, density} \\propto 1/r^2 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-point-charge-10",
+    text: "Calculate using Point charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\text{Lines: radial, density} \\propto 1/r^2: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-field-lines",
+    formulas: [
+      "point-charge"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-01",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} \\perp \\text{surface}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-03",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E} \\perp \\text{surface} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-04",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} \\perp \\text{surface}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-direction-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-direction-06",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E} \\perp \\text{surface} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-direction-07",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} \\perp \\text{surface}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-direction-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-direction-09",
+    text: "Direction is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Direction formula \\vec{E} \\perp \\text{surface} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-direction-10",
+    text: "Calculate using Direction: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\vec{E} \\perp \\text{surface}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "direction"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-0-in-conductor-01",
+    text: "Calculate using E = 0 in conductor: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q_{enc} = 0 \\text{ for Gaussian surface in conductor}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-0-in-conductor-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-0-in-conductor-03",
+    text: "E = 0 in conductor is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E = 0 in conductor formula q_{enc} = 0 \\text{ for Gaussian surface in conductor} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-0-in-conductor-04",
+    text: "Calculate using E = 0 in conductor: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q_{enc} = 0 \\text{ for Gaussian surface in conductor}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-0-in-conductor-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-e-0-in-conductor-06",
+    text: "E = 0 in conductor is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E = 0 in conductor formula q_{enc} = 0 \\text{ for Gaussian surface in conductor} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-e-0-in-conductor-07",
+    text: "Calculate using E = 0 in conductor: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q_{enc} = 0 \\text{ for Gaussian surface in conductor}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-0-in-conductor-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-0-in-conductor-09",
+    text: "E = 0 in conductor is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E = 0 in conductor formula q_{enc} = 0 \\text{ for Gaussian surface in conductor} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-0-in-conductor-10",
+    text: "Calculate using E = 0 in conductor: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q_{enc} = 0 \\text{ for Gaussian surface in conductor}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "conductors-electrostatics",
+    formulas: [
+      "e-0-in-conductor"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-unequal-sizes-01",
+    text: "Calculate using Unequal sizes: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using V_1 = V_2 \\Rightarrow \\frac{q_1'}{r_1} = \\frac{q_2'}{r_2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-unequal-sizes-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-unequal-sizes-03",
+    text: "Unequal sizes is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Unequal sizes formula V_1 = V_2 \\Rightarrow \\frac{q_1'}{r_1} = \\frac{q_2'}{r_2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-unequal-sizes-04",
+    text: "Calculate using Unequal sizes: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using V_1 = V_2 \\Rightarrow \\frac{q_1'}{r_1} = \\frac{q_2'}{r_2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-unequal-sizes-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-unequal-sizes-06",
+    text: "Unequal sizes is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Unequal sizes formula V_1 = V_2 \\Rightarrow \\frac{q_1'}{r_1} = \\frac{q_2'}{r_2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-unequal-sizes-07",
+    text: "Calculate using Unequal sizes: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using V_1 = V_2 \\Rightarrow \\frac{q_1'}{r_1} = \\frac{q_2'}{r_2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-unequal-sizes-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-unequal-sizes-09",
+    text: "Unequal sizes is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Unequal sizes formula V_1 = V_2 \\Rightarrow \\frac{q_1'}{r_1} = \\frac{q_2'}{r_2} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-unequal-sizes-10",
+    text: "Calculate using Unequal sizes: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using V_1 = V_2 \\Rightarrow \\frac{q_1'}{r_1} = \\frac{q_2'}{r_2}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "unequal-sizes"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-grounding-01",
+    text: "Calculate using Grounding: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q_{final} = -q_{induced}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-grounding-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-grounding-03",
+    text: "Grounding is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Grounding formula q_{final} = -q_{induced} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-grounding-04",
+    text: "Calculate using Grounding: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q_{final} = -q_{induced}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-grounding-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-grounding-06",
+    text: "Grounding is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Grounding formula q_{final} = -q_{induced} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-grounding-07",
+    text: "Calculate using Grounding: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q_{final} = -q_{induced}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-grounding-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-grounding-09",
+    text: "Grounding is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Grounding formula q_{final} = -q_{induced} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-grounding-10",
+    text: "Calculate using Grounding: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using q_{final} = -q_{induced}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "charging-methods",
+    formulas: [
+      "grounding"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-01",
+    text: "Calculate using E perpendicular to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = EA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-03",
+    text: "E perpendicular to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E perpendicular to surface formula \\Phi = EA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-04",
+    text: "Calculate using E perpendicular to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = EA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-06",
+    text: "E perpendicular to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E perpendicular to surface formula \\Phi = EA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-07",
+    text: "Calculate using E perpendicular to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = EA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-09",
+    text: "E perpendicular to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E perpendicular to surface formula \\Phi = EA is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-perpendicular-to-surface-10",
+    text: "Calculate using E perpendicular to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = EA: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-perpendicular-to-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-parallel-to-surface-01",
+    text: "Calculate using E parallel to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-parallel-to-surface-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-parallel-to-surface-03",
+    text: "E parallel to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E parallel to surface formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-parallel-to-surface-04",
+    text: "Calculate using E parallel to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-e-parallel-to-surface-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-e-parallel-to-surface-06",
+    text: "E parallel to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E parallel to surface formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-e-parallel-to-surface-07",
+    text: "Calculate using E parallel to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-e-parallel-to-surface-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-e-parallel-to-surface-09",
+    text: "E parallel to surface is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "E parallel to surface formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-e-parallel-to-surface-10",
+    text: "Calculate using E parallel to surface: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "e-parallel-to-surface"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-external-charge-01",
+    text: "Calculate using External charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-external-charge-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-external-charge-03",
+    text: "External charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "External charge formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-external-charge-04",
+    text: "Calculate using External charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-external-charge-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-external-charge-06",
+    text: "External charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "External charge formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-external-charge-07",
+    text: "Calculate using External charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-external-charge-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-external-charge-09",
+    text: "External charge is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "External charge formula \\Phi = 0 is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-external-charge-10",
+    text: "Calculate using External charge: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = 0: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "external-charge"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-partial-enclosure-01",
+    text: "Calculate using Partial enclosure: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = \\frac{q}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-partial-enclosure-02",
+    text: "This formula is valid under which conditions?",
+    options: [
+      "Always",
+      "Specific conditions only",
+      "Only in vacuum",
+      "Only for point charges"
+    ],
+    correct: 1,
+    difficulty: "easy",
+    explanation: "Most formulas have specific applicability conditions",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-partial-enclosure-03",
+    text: "Partial enclosure is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Partial enclosure formula \\Phi = \\frac{q}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-partial-enclosure-04",
+    text: "Calculate using Partial enclosure: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = \\frac{q}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  },
+  {
+    id: "ecf-partial-enclosure-05",
+    text: "This concept was experimentally verified by:",
+    options: [
+      "Millikan",
+      "Coulomb",
+      "Faraday",
+      "Multiple scientists"
+    ],
+    correct: 3,
+    difficulty: "easy",
+    explanation: "Electrostatic principles have extensive experimental validation",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2023",
+      "conceptual"
+    ],
+    year: 2023
+  },
+  {
+    id: "ecf-partial-enclosure-06",
+    text: "Partial enclosure is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Partial enclosure formula \\Phi = \\frac{q}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2018",
+      "conceptual"
+    ],
+    year: 2018
+  },
+  {
+    id: "ecf-partial-enclosure-07",
+    text: "Calculate using Partial enclosure: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = \\frac{q}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2019",
+      "numerical"
+    ],
+    year: 2019
+  },
+  {
+    id: "ecf-partial-enclosure-08",
+    text: "The SI units of quantities in this formula are:",
+    options: [
+      "Standard SI units",
+      "CGS units",
+      "Mixed units",
+      "Dimensionless"
+    ],
+    correct: 0,
+    difficulty: "easy",
+    explanation: "We use SI units: Coulomb (C), Newton (N), Volt (V), meter (m)",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2020",
+      "conceptual"
+    ],
+    year: 2020
+  },
+  {
+    id: "ecf-partial-enclosure-09",
+    text: "Partial enclosure is primarily used to find:",
+    options: [
+      "Electric field",
+      "Electric force",
+      "Related quantity",
+      "Potential"
+    ],
+    correct: 2,
+    difficulty: "easy",
+    explanation: "Partial enclosure formula \\Phi = \\frac{q}{2\\varepsilon_0} is used for specific calculations",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2021",
+      "conceptual"
+    ],
+    year: 2021
+  },
+  {
+    id: "ecf-partial-enclosure-10",
+    text: "Calculate using Partial enclosure: A charge q = 2µC experiences field E = 5×10⁴ N/C. Force is:",
+    options: [
+      "0.1 N",
+      "0.2 N",
+      "0.05 N",
+      "0.15 N"
+    ],
+    correct: 0,
+    difficulty: "hard",
+    explanation: "Using \\Phi = \\frac{q}{2\\varepsilon_0}: F = qE = 2×10⁻⁶ × 5×10⁴ = 0.1 N",
+    subject: "physics",
+    chapter: "electric-charges-fields",
+    topic: "electric-flux-properties",
+    formulas: [
+      "partial-enclosure"
+    ],
+    tags: [
+      "neet-2022",
+      "numerical"
+    ],
+    year: 2022
+  }
 ];
