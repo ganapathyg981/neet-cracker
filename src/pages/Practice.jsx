@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Filter, CheckCircle2, XCircle, RotateCcw, ChevronDown } from 'lucide-react';
 import { getAllQuestions, getQuestionsBySubject, getQuestionsByChapter } from '../data/questionBank';
@@ -40,7 +40,13 @@ export default function Practice() {
     return filtered;
   }, [allQuestions, difficultyFilter, chapterFilter, statusFilter]);
 
+  // Use ref to always get current filtered question IDs (avoids stale closure)
+  const filteredQuestionIdsRef = useRef(new Set());
+  filteredQuestionIdsRef.current = new Set(filteredQuestions.map(q => q.id));
+
   const handleOptionClick = (questionId, optionIndex, correctIndex) => {
+    // Prevent stale clicks on questions not in current filtered list
+    if (!filteredQuestionIdsRef.current.has(questionId)) return;
     if (selectedAnswers[questionId] !== undefined) return;
 
     const isCorrect = optionIndex === correctIndex;
@@ -194,7 +200,7 @@ export default function Practice() {
           </button>
         </div>
       ) : (
-        <div className="questions-grid">
+        <div className="questions-grid" key={`grid-${chapterFilter}-${difficultyFilter}-${statusFilter}`}>
           {filteredQuestions.map((question) => {
             const previousStatus = getQuestionStatus(question.id);
             const currentAnswer = selectedAnswers[question.id];
