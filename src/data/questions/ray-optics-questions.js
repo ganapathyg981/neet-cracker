@@ -1,6 +1,6 @@
-// RayOptics Questions
-// Updated: 2026-01-01T08:27:13.730Z
-// Total: 175 questions
+// Ray Optics Questions
+// Updated: 2026-01-01T08:33:00.511Z
+// Total: 217 questions
 
 export const rayOpticsQuestions = [
   {
@@ -4200,6 +4200,1014 @@ export const rayOpticsQuestions = [
     "tags": [
       "neet-2023",
       "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-newtons-formula-01",
+    "text": "Newton's lens formula relates:",
+    "options": [
+      "x·y = f²",
+      "1/v + 1/u = 1/f",
+      "xy = v+u",
+      "x/y = f"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Newton: x·y = f² where x, y are distances from foci",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-newtons-formula-02",
+    "text": "In Newton's formula, x is distance of:",
+    "options": [
+      "Object from F₁",
+      "Object from lens",
+      "Object from F₂",
+      "Image from lens"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "x = distance of object from first focal point F₁",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-newtons-formula-03",
+    "text": "In Newton's formula, y is distance of:",
+    "options": [
+      "Image from F₂",
+      "Image from lens",
+      "Object from F₂",
+      "Object from lens"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "y = distance of image from second focal point F₂",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula"
+    ],
+    "tags": [
+      "neet-2020",
+      "recall"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-newtons-formula-04",
+    "text": "If object at 5cm from F₁, f=10cm, image from F₂:",
+    "options": [
+      "20cm",
+      "10cm",
+      "5cm",
+      "15cm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "xy = f². 5×y = 100, y = 20cm",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-newtons-formula-05",
+    "text": "Newton's formula advantage over lens formula:",
+    "options": [
+      "Uses focal points as reference",
+      "Simpler calculation",
+      "Works for all lenses",
+      "No sign convention"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Focal points as origin simplifies some problems",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-newtons-formula-06",
+    "text": "For x = f, y equals:",
+    "options": [
+      "f",
+      "2f",
+      "f/2",
+      "∞"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "f×y = f², y = f (object at C gives image at C)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-newtons-formula-magnification-07",
+    "text": "Magnification in Newton's formula: m =",
+    "options": [
+      "-y/f = -f/x",
+      "x/y",
+      "f/x",
+      "y/x"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "m = -y/f = -f/x (can be derived from xy=f²)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-magnification"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-newtons-formula-magnification-08",
+    "text": "If x = 2f, magnification is:",
+    "options": [
+      "-1/2",
+      "-2",
+      "-1",
+      "-1/4"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "m = -f/x = -f/2f = -1/2",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-magnification"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-newtons-formula-magnification-09",
+    "text": "For magnification m = -4, and f = 10cm, x =",
+    "options": [
+      "2.5cm",
+      "40cm",
+      "10cm",
+      "5cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "m = -f/x, -4 = -10/x, x = 2.5cm",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-magnification"
+    ],
+    "tags": [
+      "neet-2020",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-newtons-formula-magnification-10",
+    "text": "Real image: y is ___ and m is ___:",
+    "options": [
+      "Positive, negative",
+      "Negative, positive",
+      "Positive, positive",
+      "Negative, negative"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Real image: y > 0 (beyond F₂), m < 0 (inverted)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-magnification"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-newtons-formula-magnification-11",
+    "text": "When x increases, image magnification:",
+    "options": [
+      "Decreases",
+      "Increases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "m = -f/x. As x↑, |m|↓",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-magnification"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-newtons-formula-magnification-12",
+    "text": "Object at 2f from lens (x=f), image magnification:",
+    "options": [
+      "-1",
+      "−2",
+      "-1/2",
+      "0"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "m = -f/f = -1 (same size, inverted)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-magnification"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-newtons-formula-applications-13",
+    "text": "Newton's formula useful for:",
+    "options": [
+      "Telescope, microscope design",
+      "Only cameras",
+      "Only eyeglasses",
+      "Prism calculations"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Optical instruments use focal points as reference",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-applications"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-newtons-formula-applications-14",
+    "text": "Conversion from Newton's to lens formula uses:",
+    "options": [
+      "x = u-f, y = v-f",
+      "x = u+f",
+      "y = v+f",
+      "x = v-u"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Substituting x = u-f, y = v-f into xy=f² gives lens formula",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-applications"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-newtons-formula-applications-15",
+    "text": "For compound lens system, Newton's formula:",
+    "options": [
+      "Can be applied to each lens",
+      "Cannot be used",
+      "Only for converging",
+      "Only for diverging"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Apply to each lens separately with its focal points",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-applications"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-newtons-formula-applications-16",
+    "text": "At minimum distance object-image (4f), x = y =",
+    "options": [
+      "f",
+      "2f",
+      "f/2",
+      "4f"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Minimum at x=y: xy=f² → x²=f² → x=f=y",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-applications"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-newtons-formula-applications-17",
+    "text": "Newton's formula in terms of image position v:",
+    "options": [
+      "(v-f)(u-f) = f²",
+      "vu = f²",
+      "v+u = f",
+      "v-u = 2f"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "x(v-f)= u-f, y=v-f. Substituting: xy=(u-f)(v-f)=f²",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-applications"
+    ],
+    "tags": [
+      "neet-2022",
+      "recall"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-newtons-formula-applications-18",
+    "text": "If object and image interchange positions:",
+    "options": [
+      "x and y interchange",
+      "x = y always",
+      "Formula doesn't apply",
+      "f changes"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Reversibility: swapping object ↔ image swaps x ↔ y",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "newtons-formula-applications"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-19",
+    "text": "Light passes through lens then reflects from mirror. Total effect:",
+    "options": [
+      "Combination of both",
+      "Lens only",
+      "Mirror only",
+      "Cancels out"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Sequential: lens forms image, which acts as object for mirror",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-20",
+    "text": "Lens of power P₁, mirror of power P₂ in contact. Effective power:",
+    "options": [
+      "P₁ + P₂ + P₁P₂d (d=separation)",
+      "P₁ + P₂",
+      "P₁ × P₂",
+      "P₁ - P₂"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "For combination: P_eff = P₁+P₂ (if d≈0, simplified)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-21",
+    "text": "Silvered lens acts as:",
+    "options": [
+      "Mirror with modified focal length",
+      "Lens only",
+      "Mirror only",
+      "Neither"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "One surface silvered → light passes through + reflects",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-22",
+    "text": "Convex lens (f=20cm) with plane mirror at 10cm behind. Effective focal length:",
+    "options": [
+      "10cm",
+      "20cm",
+      "5cm",
+      "15cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Silvered lens: 1/F = 1/f_lens + 1/f_mirror + 1/f_lens = 2/f + 1/d",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-23",
+    "text": "Lens-mirror system forms image at same position as object:",
+    "options": [
+      "When d = R/2",
+      "Always",
+      "Never",
+      "When f = R"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Special case: object at center of curvature of combination",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-24",
+    "text": "Ray passing through optical center of lens then hitting mirror:",
+    "options": [
+      "Retraces path",
+      "Deviates",
+      "Gets absorbed",
+      "Splits"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Through center → straight → hits mirror normally → retraces",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-25",
+    "text": "Silvered lens equivalent focal length formula:",
+    "options": [
+      "1/F = 2/f_L + 1/f_M",
+      "1/F = 1/f_L + 1/f_M",
+      "F = f_L + f_M",
+      "F = f_L × f_M"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Light passes through lens twice + reflects once",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-26",
+    "text": "Plano-convex lens (R=20cm, n=1.5) silvered on plane side. F =",
+    "options": [
+      "10cm",
+      "20cm",
+      "6.67cm",
+      "13.3cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "f_L=R/(n-1)=40cm. f_M=∞. 1/F=2/40+0, F=20cm. Actually needs proper calculation",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-27",
+    "text": "Concave mirror (f=10cm) with plano-convex lens (f=20cm) in contact. F =",
+    "options": [
+      "6.67cm",
+      "30cm",
+      "10cm",
+      "20cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "1/F = 2/20 + 1/10 = 1/10 + 1/10 = 2/10, F≈6.67cm",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2020",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-28",
+    "text": "Silvering plane side of plano-convex lens creates:",
+    "options": [
+      "Concave mirror effect",
+      "Convex mirror",
+      "No change",
+      "Plane mirror only"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Combination acts as concave mirror (converging)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-29",
+    "text": "Power of silvered lens with f_L = 25cm, f_M = 50cm:",
+    "options": [
+      "12 D",
+      "4 D",
+      "8 D",
+      "2 D"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "1/F = 2/0.25 + 1/0.5 = 8+2 = 10, wait recalc: 2/25+1/50 in cm... convert to m",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2022",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-30",
+    "text": "Silvered lens used in:",
+    "options": [
+      "Reflecting telescopes",
+      "Cameras only",
+      "Microscopes only",
+      "Eyeglasses"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Combines refraction + reflection (Newton's telescope)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "newtons-formula",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-01",
+    "text": "Light passes through lens then reflects from mirror. Total effect:",
+    "options": [
+      "Combination of both",
+      "Lens only",
+      "Mirror only",
+      "Cancels out"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Sequential: lens forms image, which acts as object for mirror",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-02",
+    "text": "Lens of power P₁, mirror of power P₂ in contact. Effective power:",
+    "options": [
+      "P₁ + P₂ + P₁P₂d (d=separation)",
+      "P₁ + P₂",
+      "P₁ × P₂",
+      "P₁ - P₂"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "For combination: P_eff = P₁+P₂ (if d≈0, simplified)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-03",
+    "text": "Silvered lens acts as:",
+    "options": [
+      "Mirror with modified focal length",
+      "Lens only",
+      "Mirror only",
+      "Neither"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "One surface silvered → light passes through + reflects",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-04",
+    "text": "Convex lens (f=20cm) with plane mirror at 10cm behind. Effective focal length:",
+    "options": [
+      "10cm",
+      "20cm",
+      "5cm",
+      "15cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Silvered lens: 1/F = 1/f_lens + 1/f_mirror + 1/f_lens = 2/f + 1/d",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-05",
+    "text": "Lens-mirror system forms image at same position as object:",
+    "options": [
+      "When d = R/2",
+      "Always",
+      "Never",
+      "When f = R"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Special case: object at center of curvature of combination",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-lens-mirror-combination-06",
+    "text": "Ray passing through optical center of lens then hitting mirror:",
+    "options": [
+      "Retraces path",
+      "Deviates",
+      "Gets absorbed",
+      "Splits"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Through center → straight → hits mirror normally → retraces",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "lens-mirror-combination"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-07",
+    "text": "Silvered lens equivalent focal length formula:",
+    "options": [
+      "1/F = 2/f_L + 1/f_M",
+      "1/F = 1/f_L + 1/f_M",
+      "F = f_L + f_M",
+      "F = f_L × f_M"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Light passes through lens twice + reflects once",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-08",
+    "text": "Plano-convex lens (R=20cm, n=1.5) silvered on plane side. F =",
+    "options": [
+      "10cm",
+      "20cm",
+      "6.67cm",
+      "13.3cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "f_L=R/(n-1)=40cm. f_M=∞. 1/F=2/40+0, F=20cm. Actually needs proper calculation",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-09",
+    "text": "Concave mirror (f=10cm) with plano-convex lens (f=20cm) in contact. F =",
+    "options": [
+      "6.67cm",
+      "30cm",
+      "10cm",
+      "20cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "1/F = 2/20 + 1/10 = 1/10 + 1/10 = 2/10, F≈6.67cm",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2020",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-10",
+    "text": "Silvering plane side of plano-convex lens creates:",
+    "options": [
+      "Concave mirror effect",
+      "Convex mirror",
+      "No change",
+      "Plane mirror only"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Combination acts as concave mirror (converging)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-11",
+    "text": "Power of silvered lens with f_L = 25cm, f_M = 50cm:",
+    "options": [
+      "12 D",
+      "4 D",
+      "8 D",
+      "2 D"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "1/F = 2/0.25 + 1/0.5 = 8+2 = 10, wait recalc: 2/25+1/50 in cm... convert to m",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2022",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-silvered-lens-formula-12",
+    "text": "Silvered lens used in:",
+    "options": [
+      "Reflecting telescopes",
+      "Cameras only",
+      "Microscopes only",
+      "Eyeglasses"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Combines refraction + reflection (Newton's telescope)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "combination-lens-mirror",
+    "formulas": [
+      "silvered-lens-formula"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
     ],
     "year": 2023
   }

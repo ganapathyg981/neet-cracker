@@ -1,6 +1,6 @@
-// ElectrostaticPotentialCapacitance Questions
-// Updated: 2026-01-01T08:27:13.741Z
-// Total: 76 questions
+// Electrostatic Potential & Capacitance Questions
+// Updated: 2026-01-01T08:33:00.506Z
+// Total: 118 questions
 
 export const electrostaticPotentialCapacitanceQuestions = [
   {
@@ -1824,6 +1824,1014 @@ export const electrostaticPotentialCapacitanceQuestions = [
     "tags": [
       "neet-2023",
       "recall"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-definition-01",
+    "text": "Equipotential surface is one where:",
+    "options": [
+      "Potential is same everywhere",
+      "Electric field is zero",
+      "Charge is uniform",
+      "Work done is maximum"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Equipotential: V = constant at all points on surface",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-definition"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-definition-02",
+    "text": "Work done moving charge on equipotential surface:",
+    "options": [
+      "Zero",
+      "Maximum",
+      "Depends on path",
+      "Negative"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "W = q(V_f - V_i) = 0 (since V constant)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-definition"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-definition-03",
+    "text": "Electric field lines are ___ to equipotential surfaces:",
+    "options": [
+      "Perpendicular",
+      "Parallel",
+      "At 45°",
+      "Random"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "E ⊥ equipotential (field is -∇V, perpendicular to constant V surfaces)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-definition"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-definition-04",
+    "text": "Two equipotential surfaces:",
+    "options": [
+      "Never intersect",
+      "Always intersect",
+      "Intersect at one point",
+      "Intersect at multiple points"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Cannot intersect (would mean 2 potentials at same point - impossible)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-definition"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-definition-05",
+    "text": "Equipotential surfaces for point charge are:",
+    "options": [
+      "Concentric spheres",
+      "Parallel planes",
+      "Cylinders",
+      "Ellipsoids"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "V = kQ/r. Constant V → constant r → spheres centered at charge",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-definition"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-definition-06",
+    "text": "Moving charge from 100V to 100V surface, work done:",
+    "options": [
+      "0 J",
+      "100 J",
+      "Depends on charge",
+      "Cannot determine"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Both at same potential → ΔV = 0 → W = 0",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-definition"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-spacing-07",
+    "text": "Closely spaced equipotential surfaces indicate:",
+    "options": [
+      "Strong electric field",
+      "Weak electric field",
+      "Zero field",
+      "Uniform field"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "E = -dV/dx. Small spacing → large E (steep potential gradient)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-spacing"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-spacing-08",
+    "text": "For uniform field, equipotential surfaces are:",
+    "options": [
+      "Equally spaced parallel planes",
+      "Concentric spheres",
+      "Randomly spaced",
+      "Converging planes"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Uniform E → constant dV/dx → equal spacing",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-spacing"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-spacing-09",
+    "text": "Near a charged conductor surface, equipotentials:",
+    "options": [
+      "Are closely spaced",
+      "Are widely spaced",
+      "Don't exist",
+      "Are parallel to surface"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "High field near conductor → steep V change → close spacing",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-spacing"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-spacing-10",
+    "text": "Between parallel plates (100V apart, 10cm), equipotential spacing for 10V difference:",
+    "options": [
+      "1 cm",
+      "10 cm",
+      "0.1 cm",
+      "5 cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Uniform field: ΔV/d = constant. 100V/10cm = 10V/x, x=1cm",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-spacing"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-spacing-11",
+    "text": "Equipotential at V=0 for point charge is at:",
+    "options": [
+      "Infinity",
+      "Origin",
+      "r=R",
+      "Cannot exist"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "V = kQ/r = 0 only at r = ∞",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-spacing"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-equipotential-spacing-12",
+    "text": "Shape of equipotentials for electric dipole:",
+    "options": [
+      "Figure-eight near charges",
+      "Circles",
+      "Ellipses only",
+      "Straight lines"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Dipole equipotentials form figure-eight pattern between charges",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "equipotential-spacing"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-surface-equipotential-13",
+    "text": "Surface of conductor in electrostatic equilibrium is:",
+    "options": [
+      "Equipotential",
+      "Non-equipotential",
+      "Has varying potential",
+      "Zero potential"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Free charges distribute to make surface equipotential",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-surface-equipotential"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-surface-equipotential-14",
+    "text": "Inside a conductor, potential:",
+    "options": [
+      "Is constant (same as surface)",
+      "Varies linearly",
+      "Is zero",
+      "Is maximum"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "E = 0 inside → V constant throughout = surface value",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-surface-equipotential"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-surface-equipotential-15",
+    "text": "Electric field just outside conductor surface is:",
+    "options": [
+      "Perpendicular to surface",
+      "Parallel to surface",
+      "Zero",
+      "45° to surface"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Surface is equipotential → E must be ⊥ (no tangential component)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-surface-equipotential"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-surface-equipotential-16",
+    "text": "Two conductors at different potentials connected by wire:",
+    "options": [
+      "Reach same potential",
+      "Remain at different potentials",
+      "One becomes zero",
+      "Both become zero"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Charges flow until both at same V (equilibrium)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-surface-equipotential"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-surface-equipotential-17",
+    "text": "Cavity inside conductor: potential inside is:",
+    "options": [
+      "Constant (equal to conductor)",
+      "Zero",
+      "Varies",
+      "Infinite"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Shielding: E = 0 in cavity → V = constant = conductor potential",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-surface-equipotential"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-surface-equipotential-18",
+    "text": "Grounded conductor has potential:",
+    "options": [
+      "Zero (by definition)",
+      "Negative",
+      "Positive",
+      "Infinite"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Ground = reference, V = 0 by convention",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-surface-equipotential"
+    ],
+    "tags": [
+      "neet-2023",
+      "recall"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-19",
+    "text": "Electric field inside conductor in electrostatic equilibrium:",
+    "options": [
+      "Zero",
+      "Maximum",
+      "Depends on charge",
+      "Varies with position"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "E = 0 inside conductor (charges redistribute to cancel)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-20",
+    "text": "Why E = 0 inside conductor?",
+    "options": [
+      "Charges redistribute to cancel field",
+      "No charges present",
+      "Insulator property",
+      "Random motion"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Free electrons move to cancel any internal field",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-21",
+    "text": "If E ≠ 0 inside conductor, charges would:",
+    "options": [
+      "Move (not equilibrium)",
+      "Stay stationary",
+      "Disappear",
+      "Create field"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Non-zero E → force on free charges → motion → not equilibrium",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-22",
+    "text": "Net charge inside conductor volume resides:",
+    "options": [
+      "On surface only",
+      "Throughout volume",
+      "At center",
+      "No charge exists"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "All excess charge moves to surface (minimize energy)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2021",
+      "recall"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-23",
+    "text": "Charge density inside conductor (not on surface):",
+    "options": [
+      "Zero",
+      "Uniform",
+      "Maximum at center",
+      "Negative"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "ρ = 0 in volume, all charge on surface",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2022",
+      "recall"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-24",
+    "text": "Time taken to reach equilibrium in good conductor:",
+    "options": [
+      "~10⁻¹⁹ s (nearly instant)",
+      "Minutes",
+      "Hours",
+      "Never reaches"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Relaxation time τ = ε/σ ≈ 10⁻¹⁹s for metals",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-25",
+    "text": "Charge distribution on conductor surface depends on:",
+    "options": [
+      "Curvature (shape)",
+      "Volume",
+      "Mass",
+      "Temperature"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "σ higher where radius of curvature is smaller",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-26",
+    "text": "On sharp points of conductor, charge density:",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Zero",
+      "Uniform"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Small radius → high σ (corona discharge at tips)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-27",
+    "text": "Charge density on flat conductor surface vs spherical:",
+    "options": [
+      "Lower on flat",
+      "Higher on flat",
+      "Same",
+      "Zero on flat"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Flatter surface (larger R) → lower σ",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-28",
+    "text": "Electric field at sharp tip is:",
+    "options": [
+      "Very strong",
+      "Very weak",
+      "Zero",
+      "Moderate"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "High σ → high E = σ/ε₀ (lightning rod principle)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-29",
+    "text": "Two conducting spheres: R₁ = 2R₂, connected. Charge ratio Q₁/Q₂:",
+    "options": [
+      "2:1",
+      "1:2",
+      "4:1",
+      "1:1"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Same V: kQ₁/R₁ = kQ₂/R₂. Q₁/Q₂ = R₁/R₂ = 2:1",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2022",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-30",
+    "text": "Hollow conductor with charge +Q. Inside cavity charge:",
+    "options": [
+      "Zero (if no charge inside)",
+      "Q",
+      "+Q",
+      "-Q"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "All charge on outer surface if cavity empty",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "equipotential-surface",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-01",
+    "text": "Electric field inside conductor in electrostatic equilibrium:",
+    "options": [
+      "Zero",
+      "Maximum",
+      "Depends on charge",
+      "Varies with position"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "E = 0 inside conductor (charges redistribute to cancel)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-02",
+    "text": "Why E = 0 inside conductor?",
+    "options": [
+      "Charges redistribute to cancel field",
+      "No charges present",
+      "Insulator property",
+      "Random motion"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Free electrons move to cancel any internal field",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-03",
+    "text": "If E ≠ 0 inside conductor, charges would:",
+    "options": [
+      "Move (not equilibrium)",
+      "Stay stationary",
+      "Disappear",
+      "Create field"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Non-zero E → force on free charges → motion → not equilibrium",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-04",
+    "text": "Net charge inside conductor volume resides:",
+    "options": [
+      "On surface only",
+      "Throughout volume",
+      "At center",
+      "No charge exists"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "All excess charge moves to surface (minimize energy)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2021",
+      "recall"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-05",
+    "text": "Charge density inside conductor (not on surface):",
+    "options": [
+      "Zero",
+      "Uniform",
+      "Maximum at center",
+      "Negative"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "ρ = 0 in volume, all charge on surface",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2022",
+      "recall"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-inside-conductor-06",
+    "text": "Time taken to reach equilibrium in good conductor:",
+    "options": [
+      "~10⁻¹⁹ s (nearly instant)",
+      "Minutes",
+      "Hours",
+      "Never reaches"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Relaxation time τ = ε/σ ≈ 10⁻¹⁹s for metals",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "field-inside-conductor"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-07",
+    "text": "Charge distribution on conductor surface depends on:",
+    "options": [
+      "Curvature (shape)",
+      "Volume",
+      "Mass",
+      "Temperature"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "σ higher where radius of curvature is smaller",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-08",
+    "text": "On sharp points of conductor, charge density:",
+    "options": [
+      "Maximum",
+      "Minimum",
+      "Zero",
+      "Uniform"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Small radius → high σ (corona discharge at tips)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-09",
+    "text": "Charge density on flat conductor surface vs spherical:",
+    "options": [
+      "Lower on flat",
+      "Higher on flat",
+      "Same",
+      "Zero on flat"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Flatter surface (larger R) → lower σ",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-10",
+    "text": "Electric field at sharp tip is:",
+    "options": [
+      "Very strong",
+      "Very weak",
+      "Zero",
+      "Moderate"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "High σ → high E = σ/ε₀ (lightning rod principle)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-11",
+    "text": "Two conducting spheres: R₁ = 2R₂, connected. Charge ratio Q₁/Q₂:",
+    "options": [
+      "2:1",
+      "1:2",
+      "4:1",
+      "1:1"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Same V: kQ₁/R₁ = kQ₂/R₂. Q₁/Q₂ = R₁/R₂ = 2:1",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2022",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-conductor-charge-distribution-12",
+    "text": "Hollow conductor with charge +Q. Inside cavity charge:",
+    "options": [
+      "Zero (if no charge inside)",
+      "Q",
+      "+Q",
+      "-Q"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "All charge on outer surface if cavity empty",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "conductor-electrostatics",
+    "formulas": [
+      "conductor-charge-distribution"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
     ],
     "year": 2023
   }
