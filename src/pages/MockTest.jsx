@@ -240,42 +240,48 @@ export default function MockTest() {
 
         {/* Navigation */}
         <div className="test-navigation">
-          <button 
-            className="btn btn-secondary"
-            disabled={currentQuestionIndex === 0}
-            onClick={() => setCurrentQuestionIndex(prev => prev - 1)}
-          >
-            <ArrowLeft size={18} />
-            Previous
-          </button>
-          
-          <div className="test-nav-dots">
-            {testQuestions.map((q, idx) => (
-              <div
-                key={q.id}
-                className={`test-nav-dot 
-                  ${idx === currentQuestionIndex ? 'current' : ''} 
-                  ${answers[q.id] !== undefined ? 'answered' : ''} 
-                  ${flagged[q.id] ? 'flagged' : ''}`}
-                onClick={() => setCurrentQuestionIndex(idx)}
-                title={`Question ${idx + 1}`}
-              />
-            ))}
+          <div className="test-nav-dots-wrapper">
+            <div className="test-nav-dots">
+              {testQuestions.map((q, idx) => (
+                <div
+                  key={q.id}
+                  className={`test-nav-dot 
+                    ${idx === currentQuestionIndex ? 'current' : ''} 
+                    ${answers[q.id] !== undefined ? 'answered' : ''} 
+                    ${flagged[q.id] ? 'flagged' : ''}`}
+                  onClick={() => setCurrentQuestionIndex(idx)}
+                  title={`Question ${idx + 1}`}
+                >
+                  {idx + 1}
+                </div>
+              ))}
+            </div>
           </div>
           
-          {currentQuestionIndex < testQuestions.length - 1 ? (
+          <div className="test-nav-buttons">
             <button 
-              className="btn btn-primary"
-              onClick={() => setCurrentQuestionIndex(prev => prev + 1)}
+              className="btn btn-secondary"
+              disabled={currentQuestionIndex === 0}
+              onClick={() => setCurrentQuestionIndex(prev => prev - 1)}
             >
-              Next
-              <ArrowRight size={18} />
+              <ArrowLeft size={18} />
+              Prev
             </button>
-          ) : (
-            <button className="btn btn-success" onClick={finishTest}>
-              Submit Test
-            </button>
-          )}
+            
+            {currentQuestionIndex < testQuestions.length - 1 ? (
+              <button 
+                className="btn btn-primary"
+                onClick={() => setCurrentQuestionIndex(prev => prev + 1)}
+              >
+                Next
+                <ArrowRight size={18} />
+              </button>
+            ) : (
+              <button className="btn btn-success" onClick={finishTest}>
+                Submit
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Stats */}
