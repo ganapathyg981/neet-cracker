@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "um-sf-001",
+    "text": "The number of significant figures in the quantity 0.10130 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2011
+  },
+  {
+    "id": "um-sf-002",
+    "text": "The number of significant figures in the quantity 0.20230 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-sf-003",
+    "text": "The number of significant figures in the quantity 0.00330 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-sf-004",
+    "text": "The number of significant figures in the quantity 0.10430 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-sf-005",
+    "text": "The number of significant figures in the quantity 0.20530 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-sf-006",
+    "text": "The number of significant figures in the quantity 0.00630 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-sf-007",
+    "text": "The number of significant figures in the quantity 0.10030 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-sf-008",
+    "text": "The number of significant figures in the quantity 0.20130 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-sf-009",
+    "text": "The number of significant figures in the quantity 0.00230 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-sf-010",
+    "text": "The number of significant figures in the quantity 0.10330 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-sf-011",
+    "text": "The number of significant figures in the quantity 0.20430 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "um-sf-012",
+    "text": "The number of significant figures in the quantity 0.00530 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "um-sf-013",
+    "text": "The number of significant figures in the quantity 0.10630 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "um-sf-014",
+    "text": "The number of significant figures in the quantity 0.20030 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2024
+  },
+  {
+    "id": "um-sf-015",
+    "text": "The number of significant figures in the quantity 0.00130 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "easy",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2010
+  },
+  {
+    "id": "um-sf-016",
+    "text": "The number of significant figures in the quantity 0.10230 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2011
+  },
+  {
+    "id": "um-sf-017",
+    "text": "The number of significant figures in the quantity 0.20330 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-sf-018",
+    "text": "The number of significant figures in the quantity 0.00430 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-sf-019",
+    "text": "The number of significant figures in the quantity 0.10530 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-sf-020",
+    "text": "The number of significant figures in the quantity 0.20630 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-sf-021",
+    "text": "The number of significant figures in the quantity 0.00030 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-sf-022",
+    "text": "The number of significant figures in the quantity 0.10130 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-sf-023",
+    "text": "The number of significant figures in the quantity 0.20230 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-sf-024",
+    "text": "The number of significant figures in the quantity 0.00330 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-sf-025",
+    "text": "The number of significant figures in the quantity 0.10430 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-sf-026",
+    "text": "The number of significant figures in the quantity 0.20530 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "um-sf-027",
+    "text": "The number of significant figures in the quantity 0.00630 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "um-sf-028",
+    "text": "The number of significant figures in the quantity 0.10030 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "um-sf-029",
+    "text": "The number of significant figures in the quantity 0.20130 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2024
+  },
+  {
+    "id": "um-sf-030",
+    "text": "The number of significant figures in the quantity 0.00230 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2010
+  },
+  {
+    "id": "um-sf-031",
+    "text": "The number of significant figures in the quantity 0.10330 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2011
+  },
+  {
+    "id": "um-sf-032",
+    "text": "The number of significant figures in the quantity 0.20430 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-sf-033",
+    "text": "The number of significant figures in the quantity 0.00530 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-sf-034",
+    "text": "The number of significant figures in the quantity 0.10630 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-sf-035",
+    "text": "The number of significant figures in the quantity 0.20030 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-sf-036",
+    "text": "The number of significant figures in the quantity 0.00130 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-sf-037",
+    "text": "The number of significant figures in the quantity 0.10230 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-sf-038",
+    "text": "The number of significant figures in the quantity 0.20330 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-sf-039",
+    "text": "The number of significant figures in the quantity 0.00430 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-sf-040",
+    "text": "The number of significant figures in the quantity 0.10530 is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Leading zeros are not significant. All non-zero digits and zeros between/after them are significant.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "significant-figures",
+    "formulas": [],
+    "tags": [
+      "ncert",
+      "neet"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-er-001",
+    "text": "If a measured value is reported as 5.1 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-er-002",
+    "text": "If a measured value is reported as 5.2 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-er-003",
+    "text": "If a measured value is reported as 5.3 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-er-004",
+    "text": "If a measured value is reported as 5.4 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-er-005",
+    "text": "If a measured value is reported as 5.5 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-er-006",
+    "text": "If a measured value is reported as 5.6 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-er-007",
+    "text": "If a measured value is reported as 5.7 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-er-008",
+    "text": "If a measured value is reported as 5.8 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-er-009",
+    "text": "If a measured value is reported as 5.9 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-er-010",
+    "text": "If a measured value is reported as 6.0 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "um-er-011",
+    "text": "If a measured value is reported as 6.1 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "um-er-012",
+    "text": "If a measured value is reported as 6.2 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "um-er-013",
+    "text": "If a measured value is reported as 6.3 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2024
+  },
+  {
+    "id": "um-er-014",
+    "text": "If a measured value is reported as 6.4 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2011
+  },
+  {
+    "id": "um-er-015",
+    "text": "If a measured value is reported as 6.5 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-er-016",
+    "text": "If a measured value is reported as 6.6 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-er-017",
+    "text": "If a measured value is reported as 6.7 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-er-018",
+    "text": "If a measured value is reported as 6.8 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-er-019",
+    "text": "If a measured value is reported as 6.9 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-er-020",
+    "text": "If a measured value is reported as 7.0 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-er-021",
+    "text": "If a measured value is reported as 7.1 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-er-022",
+    "text": "If a measured value is reported as 7.2 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-er-023",
+    "text": "If a measured value is reported as 7.3 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-er-024",
+    "text": "If a measured value is reported as 7.4 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "um-er-025",
+    "text": "If a measured value is reported as 7.5 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "um-er-026",
+    "text": "If a measured value is reported as 7.6 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "um-er-027",
+    "text": "If a measured value is reported as 7.7 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2024
+  },
+  {
+    "id": "um-er-028",
+    "text": "If a measured value is reported as 7.8 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2011
+  },
+  {
+    "id": "um-er-029",
+    "text": "If a measured value is reported as 7.9 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-er-030",
+    "text": "If a measured value is reported as 8.0 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-er-031",
+    "text": "If a measured value is reported as 8.1 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-er-032",
+    "text": "If a measured value is reported as 8.2 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-er-033",
+    "text": "If a measured value is reported as 8.3 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-er-034",
+    "text": "If a measured value is reported as 8.4 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-er-035",
+    "text": "If a measured value is reported as 8.5 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-er-036",
+    "text": "If a measured value is reported as 8.6 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-er-037",
+    "text": "If a measured value is reported as 8.7 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-er-038",
+    "text": "If a measured value is reported as 8.8 \u00b1 0.3, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "um-er-039",
+    "text": "If a measured value is reported as 8.9 \u00b1 0.1, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "um-er-040",
+    "text": "If a measured value is reported as 9.0 \u00b1 0.2, the maximum percentage error is approximately:",
+    "options": [
+      "1%",
+      "2%",
+      "3%",
+      "4%"
+    ],
+    "correct": 2,
+    "difficulty": "medium",
+    "explanation": "Percentage error = (absolute error / measured value) \u00d7 100.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "errors-in-measurement",
+    "formulas": [
+      "percentage-error"
+    ],
+    "tags": [
+      "neet",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "um-mi-001",
+    "text": "A screw gauge has a pitch of 2 mm and 51 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.039 mm",
+      "0.020 mm",
+      "0.077 mm",
+      "0.182 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-mi-002",
+    "text": "A screw gauge has a pitch of 1 mm and 52 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.019 mm",
+      "0.010 mm",
+      "0.037 mm",
+      "0.083 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-mi-003",
+    "text": "A screw gauge has a pitch of 2 mm and 53 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.038 mm",
+      "0.019 mm",
+      "0.071 mm",
+      "0.154 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-mi-004",
+    "text": "A screw gauge has a pitch of 1 mm and 54 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.019 mm",
+      "0.010 mm",
+      "0.034 mm",
+      "0.071 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-mi-005",
+    "text": "A screw gauge has a pitch of 2 mm and 55 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.036 mm",
+      "0.019 mm",
+      "0.067 mm",
+      "0.133 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-mi-006",
+    "text": "A screw gauge has a pitch of 1 mm and 56 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.018 mm",
+      "0.009 mm",
+      "0.032 mm",
+      "0.062 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-mi-007",
+    "text": "A screw gauge has a pitch of 2 mm and 57 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.035 mm",
+      "0.019 mm",
+      "0.062 mm",
+      "0.118 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-mi-008",
+    "text": "A screw gauge has a pitch of 1 mm and 58 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.017 mm",
+      "0.009 mm",
+      "0.030 mm",
+      "0.056 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-mi-009",
+    "text": "A screw gauge has a pitch of 2 mm and 59 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.034 mm",
+      "0.018 mm",
+      "0.059 mm",
+      "0.105 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "um-mi-010",
+    "text": "A screw gauge has a pitch of 1 mm and 60 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.017 mm",
+      "0.009 mm",
+      "0.029 mm",
+      "0.050 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "um-mi-011",
+    "text": "A screw gauge has a pitch of 2 mm and 61 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.033 mm",
+      "0.018 mm",
+      "0.056 mm",
+      "0.095 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "um-mi-012",
+    "text": "A screw gauge has a pitch of 1 mm and 62 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.016 mm",
+      "0.009 mm",
+      "0.027 mm",
+      "0.045 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2024
+  },
+  {
+    "id": "um-mi-013",
+    "text": "A screw gauge has a pitch of 2 mm and 63 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.032 mm",
+      "0.018 mm",
+      "0.053 mm",
+      "0.087 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-mi-014",
+    "text": "A screw gauge has a pitch of 1 mm and 64 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.016 mm",
+      "0.009 mm",
+      "0.026 mm",
+      "0.042 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-mi-015",
+    "text": "A screw gauge has a pitch of 2 mm and 65 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.031 mm",
+      "0.017 mm",
+      "0.050 mm",
+      "0.080 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-mi-016",
+    "text": "A screw gauge has a pitch of 1 mm and 66 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.015 mm",
+      "0.009 mm",
+      "0.024 mm",
+      "0.038 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-mi-017",
+    "text": "A screw gauge has a pitch of 2 mm and 67 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.030 mm",
+      "0.017 mm",
+      "0.048 mm",
+      "0.074 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-mi-018",
+    "text": "A screw gauge has a pitch of 1 mm and 68 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.015 mm",
+      "0.008 mm",
+      "0.023 mm",
+      "0.036 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-mi-019",
+    "text": "A screw gauge has a pitch of 2 mm and 69 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.029 mm",
+      "0.017 mm",
+      "0.045 mm",
+      "0.069 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-mi-020",
+    "text": "A screw gauge has a pitch of 1 mm and 70 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.014 mm",
+      "0.008 mm",
+      "0.022 mm",
+      "0.033 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-mi-021",
+    "text": "A screw gauge has a pitch of 2 mm and 71 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.028 mm",
+      "0.017 mm",
+      "0.043 mm",
+      "0.065 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-mi-022",
+    "text": "A screw gauge has a pitch of 1 mm and 72 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.014 mm",
+      "0.008 mm",
+      "0.021 mm",
+      "0.031 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "um-mi-023",
+    "text": "A screw gauge has a pitch of 2 mm and 73 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.027 mm",
+      "0.016 mm",
+      "0.042 mm",
+      "0.061 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "um-mi-024",
+    "text": "A screw gauge has a pitch of 1 mm and 74 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.014 mm",
+      "0.008 mm",
+      "0.020 mm",
+      "0.029 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "um-mi-025",
+    "text": "A screw gauge has a pitch of 2 mm and 75 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.027 mm",
+      "0.016 mm",
+      "0.040 mm",
+      "0.057 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2024
+  },
+  {
+    "id": "um-mi-026",
+    "text": "A screw gauge has a pitch of 1 mm and 76 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.013 mm",
+      "0.008 mm",
+      "0.020 mm",
+      "0.028 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-mi-027",
+    "text": "A screw gauge has a pitch of 2 mm and 77 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.026 mm",
+      "0.016 mm",
+      "0.038 mm",
+      "0.054 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2013
+  },
+  {
+    "id": "um-mi-028",
+    "text": "A screw gauge has a pitch of 1 mm and 78 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.013 mm",
+      "0.008 mm",
+      "0.019 mm",
+      "0.026 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2014
+  },
+  {
+    "id": "um-mi-029",
+    "text": "A screw gauge has a pitch of 2 mm and 79 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.025 mm",
+      "0.016 mm",
+      "0.037 mm",
+      "0.051 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2015
+  },
+  {
+    "id": "um-mi-030",
+    "text": "A screw gauge has a pitch of 1 mm and 80 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.013 mm",
+      "0.008 mm",
+      "0.018 mm",
+      "0.025 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2016
+  },
+  {
+    "id": "um-mi-031",
+    "text": "A screw gauge has a pitch of 2 mm and 81 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.025 mm",
+      "0.015 mm",
+      "0.036 mm",
+      "0.049 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2017
+  },
+  {
+    "id": "um-mi-032",
+    "text": "A screw gauge has a pitch of 1 mm and 82 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.012 mm",
+      "0.008 mm",
+      "0.018 mm",
+      "0.024 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "um-mi-033",
+    "text": "A screw gauge has a pitch of 2 mm and 83 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.024 mm",
+      "0.015 mm",
+      "0.034 mm",
+      "0.047 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "um-mi-034",
+    "text": "A screw gauge has a pitch of 1 mm and 84 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.012 mm",
+      "0.007 mm",
+      "0.017 mm",
+      "0.023 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "um-mi-035",
+    "text": "A screw gauge has a pitch of 2 mm and 85 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.024 mm",
+      "0.015 mm",
+      "0.033 mm",
+      "0.044 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "um-mi-036",
+    "text": "A screw gauge has a pitch of 1 mm and 86 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.012 mm",
+      "0.007 mm",
+      "0.016 mm",
+      "0.022 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "um-mi-037",
+    "text": "A screw gauge has a pitch of 2 mm and 87 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.023 mm",
+      "0.015 mm",
+      "0.032 mm",
+      "0.043 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "um-mi-038",
+    "text": "A screw gauge has a pitch of 1 mm and 88 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.011 mm",
+      "0.007 mm",
+      "0.016 mm",
+      "0.021 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2024
+  },
+  {
+    "id": "um-mi-039",
+    "text": "A screw gauge has a pitch of 2 mm and 89 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.022 mm",
+      "0.014 mm",
+      "0.031 mm",
+      "0.041 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2012
+  },
+  {
+    "id": "um-mi-040",
+    "text": "A screw gauge has a pitch of 1 mm and 90 divisions on the circular scale. Its least count is:",
+    "options": [
+      "0.011 mm",
+      "0.007 mm",
+      "0.015 mm",
+      "0.020 mm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Least count = Pitch / number of circular scale divisions.",
+    "subject": "physics",
+    "chapter": "units-and-measurements",
+    "topic": "measuring-instruments",
+    "formulas": [
+      "least-count"
+    ],
+    "tags": [
+      "neet",
+      "pyq-style"
+    ],
+    "year": 2013
+  }
+]
