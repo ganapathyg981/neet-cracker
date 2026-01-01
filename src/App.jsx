@@ -6,7 +6,6 @@ import Chapters from './pages/Chapters';
 import Topics from './pages/Topics';
 import TopicDetail from './pages/TopicDetail';
 import FormulaDetail from './pages/FormulaDetail';
-import ApplicationDetail from './pages/ApplicationDetail';
 import Practice from './pages/Practice';
 import MockTest from './pages/MockTest';
 import Progress from './pages/Progress';
@@ -23,7 +22,6 @@ function App() {
           <Route path="/study/:subjectId/:chapterId" element={<Topics />} />
           <Route path="/study/:subjectId/:chapterId/:topicId" element={<TopicDetail />} />
           <Route path="/study/:subjectId/:chapterId/:topicId/formula/:formulaId" element={<FormulaDetail />} />
-          <Route path="/study/:subjectId/:chapterId/:topicId/formula/:formulaId/app/:appId" element={<ApplicationDetail />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="/mock-test" element={<MockTest />} />
           <Route path="/progress" element={<Progress />} />
