@@ -1,6 +1,6 @@
-// Electrostatic Potential & Capacitance Questions
-// Generated: 2026-01-01T07:48:17.823Z
-// Total: 52 questions
+// Electrostatic Questions
+// Updated: 2026-01-01T08:05:31.393Z
+// Total: 76 questions
 
 export const electrostaticPotentialQuestions = [
   {
@@ -1248,6 +1248,582 @@ export const electrostaticPotentialQuestions = [
     "tags": [
       "neet-2023",
       "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-potential-relation-01",
+    "text": "Electric field E and potential V relation:",
+    "options": [
+      "E = -dV/dx",
+      "E = dV/dx",
+      "E = V/d",
+      "V = Ed"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "E = -grad(V) = -dV/dx (field is negative potential gradient)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "field-potential-relation"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-potential-relation-02",
+    "text": "If V is constant in a region, E is:",
+    "options": [
+      "Zero",
+      "Maximum",
+      "Infinite",
+      "Negative"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "dV/dx=0 → E=0 (equipotential region)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "field-potential-relation"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-potential-relation-03",
+    "text": "Potential decreases in direction of:",
+    "options": [
+      "Electric field",
+      "Opposite to field",
+      "Perpendicular to field",
+      "Random"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "E = -dV/dx. V decreases along E direction",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "field-potential-relation"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-potential-relation-04",
+    "text": "Uniform field E=100V/m over 2m. Potential difference?",
+    "options": [
+      "200V",
+      "100V",
+      "50V",
+      "400V"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "ΔV = E×d = 100×2 = 200V",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "field-potential-relation"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-potential-relation-05",
+    "text": "E field unit V/m is equivalent to:",
+    "options": [
+      "N/C",
+      "J/C",
+      "C/N",
+      "J·m"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "[E] = V/m = J/(C·m) = N/C",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "field-potential-relation"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-field-potential-relation-06",
+    "text": "V increases from 100V to 400V over 3m. Average E=",
+    "options": [
+      "100V/m",
+      "300V/m",
+      "133V/m",
+      "400V/m"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "E=ΔV/Δx=(400-100)/3=100V/m",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "field-potential-relation"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-capacitance-def-07",
+    "text": "Capacitance C is defined as:",
+    "options": [
+      "Q/V",
+      "V/Q",
+      "QV",
+      "Q+V"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "C = Q/V (charge per unit voltage)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "capacitance-def"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-capacitance-def-08",
+    "text": "Unit of capacitance is:",
+    "options": [
+      "Farad (F)",
+      "Coulomb (C)",
+      "Volt (V)",
+      "Ohm (Ω)"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "1F = 1C/V (farad)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "capacitance-def"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-capacitance-def-09",
+    "text": "1 Farad equals:",
+    "options": [
+      "1 C/V",
+      "1 V/C",
+      "1 J/C",
+      "1 N/C"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "[C] = C/V = coulomb/volt",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "capacitance-def"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-capacitance-def-10",
+    "text": "10μF capacitor at 100V. Charge stored?",
+    "options": [
+      "1000μC",
+      "10μC",
+      "100μC",
+      "10000μC"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Q=CV=10×100=1000μC=1mC",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "capacitance-def"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-capacitance-def-11",
+    "text": "If voltage doubles, charge stored:",
+    "options": [
+      "Doubles",
+      "Remains same",
+      "Halves",
+      "Quadruples"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Q=CV. If V→2V, Q→2Q (C constant)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "capacitance-def"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-capacitance-def-12",
+    "text": "Capacitance depends on:",
+    "options": [
+      "Geometry and dielectric",
+      "Applied voltage",
+      "Stored charge",
+      "Current"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "C determined by physical structure, not V or Q",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "capacitance-def"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-dielectric-effect-13",
+    "text": "Inserting dielectric (K) in capacitor:",
+    "options": [
+      "Increases C by factor K",
+      "Decreases C",
+      "No effect",
+      "Increases by K²"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "C'=KC (capacitance multiplied by K)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "dielectric-effect"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-dielectric-effect-14",
+    "text": "Capacitor C=10μF. With dielectric K=5:",
+    "options": [
+      "50μF",
+      "10μF",
+      "2μF",
+      "100μF"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "C'=KC=5×10=50μF",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "dielectric-effect"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-dielectric-effect-15",
+    "text": "Dielectric constant K is always:",
+    "options": [
+      "≥1",
+      "<1",
+      "=1",
+      "Negative"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "K≥1 (vacuum K=1, all materials K>1)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "dielectric-effect"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-dielectric-effect-16",
+    "text": "With dielectric at constant voltage, energy stored:",
+    "options": [
+      "Increases by factor K",
+      "Decreases",
+      "Remains same",
+      "Increases by K²"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "U=(1/2)CV². C→KC, so U→KU (increases)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "dielectric-effect"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-dielectric-effect-17",
+    "text": "With dielectric at constant charge, voltage:",
+    "options": [
+      "Decreases by factor K",
+      "Increases",
+      "Remains same",
+      "Decreases by K²"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "V=Q/C. C→KC, so V→V/K (decreases)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "dielectric-effect"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-dielectric-effect-18",
+    "text": "Air has K≈",
+    "options": [
+      "1",
+      "2",
+      "5",
+      "10"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Air K≈1 (close to vacuum)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "dielectric-effect"
+    ],
+    "tags": [
+      "neet-2023",
+      "recall"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "electrostatic-potential-capacitance-potential-energy-19",
+    "text": "PE of system of two charges:",
+    "options": [
+      "kq₁q₂/r",
+      "kq₁q₂/r²",
+      "q₁q₂",
+      "k/r"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "U=kq₁q₂/r (work to bring from ∞)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "potential-energy"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "electrostatic-potential-capacitance-potential-energy-20",
+    "text": "Two +ve charges brought closer. PE:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains same",
+      "Becomes negative"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Like charges: U=kq₁q₂/r>0, decreases r → U↑",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "potential-energy"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "electrostatic-potential-capacitance-potential-energy-21",
+    "text": "Opposite charges system has PE:",
+    "options": [
+      "Negative",
+      "Positive",
+      "Zero",
+      "Infinite"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "U=k(+q)(-q)/r<0 (negative, bound state)",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "potential-energy"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "electrostatic-potential-capacitance-potential-energy-22",
+    "text": "Three equal charges q at corners of equilateral triangle side a. Total PE?",
+    "options": [
+      "3kq²/a",
+      "kq²/a",
+      "6kq²/a",
+      "kq²/a²"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Three pairs: U=3×kq²/a=3kq²/a",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "potential-energy"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "electrostatic-potential-capacitance-potential-energy-23",
+    "text": "To separate opposite charges to infinity, work required is:",
+    "options": [
+      "Positive (energy input)",
+      "Negative",
+      "Zero",
+      "Depends on path"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "U_∞-U_bound>0. Need positive work to separate",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "potential-energy"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "electrostatic-potential-capacitance-potential-energy-24",
+    "text": "PE of uniformly charged sphere radius R, charge Q:",
+    "options": [
+      "3kQ²/5R",
+      "kQ²/R",
+      "kQ²/2R",
+      "kQ²/R²"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Self-energy: U=3kQ²/5R",
+    "subject": "physics",
+    "chapter": "electrostatic-potential-capacitance",
+    "topic": "electrostatics",
+    "formulas": [
+      "potential-energy"
+    ],
+    "tags": [
+      "neet-2023",
+      "recall"
     ],
     "year": 2023
   }

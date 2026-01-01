@@ -1,6 +1,6 @@
 // Ray Optics Questions
-// Generated: 2026-01-01T07:48:17.821Z
-// Total: 115 questions
+// Updated: 2026-01-01T08:03:21.302Z
+// Total: 175 questions
 
 export const rayOpticsQuestions = [
   {
@@ -2756,6 +2756,1446 @@ export const rayOpticsQuestions = [
     "topic": "optical-systems",
     "formulas": [
       "compound-microscope-magnification"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-law-of-reflection-01",
+    "text": "Law of reflection states that angle of incidence:",
+    "options": [
+      "Equals angle of reflection",
+      "Is half of reflection angle",
+      "Is double reflection angle",
+      "Is 90° to reflection"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "∠i = ∠r (measured from normal)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "law-of-reflection"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-law-of-reflection-02",
+    "text": "Light ray hits mirror at 30° to normal. Reflection angle?",
+    "options": [
+      "30°",
+      "60°",
+      "90°",
+      "15°"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "∠r = ∠i = 30°",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "law-of-reflection"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-law-of-reflection-03",
+    "text": "Incident and reflected rays are on:",
+    "options": [
+      "Opposite sides of normal",
+      "Same side",
+      "Parallel",
+      "Perpendicular"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Rays lie in plane containing incident ray and normal, opposite sides",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "law-of-reflection"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-law-of-reflection-04",
+    "text": "Glancing angle is 20°. Angle of incidence?",
+    "options": [
+      "70°",
+      "20°",
+      "90°",
+      "10°"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Glancing angle = 90°-i. So i=90-20=70°",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "law-of-reflection"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-law-of-reflection-05",
+    "text": "If mirror rotates by θ, reflected ray rotates by:",
+    "options": [
+      "2θ",
+      "θ",
+      "θ/2",
+      "4θ"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Mirror rotation θ → reflected ray rotates 2θ",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "law-of-reflection"
+    ],
+    "tags": [
+      "neet-2022",
+      "recall"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-law-of-reflection-06",
+    "text": "Law of reflection applies to:",
+    "options": [
+      "All surfaces",
+      "Only plane mirrors",
+      "Only curved mirrors",
+      "Only smooth surfaces"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Universal law: applies to all reflecting surfaces",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "law-of-reflection"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-plane-mirror-image-07",
+    "text": "Image distance behind plane mirror equals:",
+    "options": [
+      "Object distance",
+      "Twice object distance",
+      "Half object distance",
+      "Independent of object"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "v = -u (same distance behind mirror)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "plane-mirror-image"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-plane-mirror-image-08",
+    "text": "Object 5cm from plane mirror. Image distance?",
+    "options": [
+      "5cm behind",
+      "10cm behind",
+      "2.5cm behind",
+      "5cm in front"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Image at same distance behind: 5cm",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "plane-mirror-image"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-plane-mirror-image-09",
+    "text": "Plane mirror image is:",
+    "options": [
+      "Virtual, erect, same size",
+      "Real, inverted",
+      "Virtual, magnified",
+      "Real, erect"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Plane mirror: always virtual, erect, |m|=1",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "plane-mirror-image"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-plane-mirror-image-10",
+    "text": "Magnification of plane mirror is:",
+    "options": [
+      "1",
+      "-1",
+      "2",
+      "0"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "m = +1 (same size, erect)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "plane-mirror-image"
+    ],
+    "tags": [
+      "neet-2021",
+      "recall"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-plane-mirror-image-11",
+    "text": "Object moves 3cm toward mirror. Image moves:",
+    "options": [
+      "3cm toward object",
+      "3cm away from object",
+      "6cm toward object",
+      "Doesn't move"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Image moves same distance in opposite direction",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "plane-mirror-image"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-plane-mirror-image-12",
+    "text": "Man 1.8m tall needs minimum mirror height to see full image:",
+    "options": [
+      "0.9m",
+      "1.8m",
+      "0.45m",
+      "3.6m"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Minimum mirror height = h/2 = 1.8/2 = 0.9m",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "plane-mirror-image"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-multiple-mirrors-13",
+    "text": "Two plane mirrors at angle θ. Number of images n =",
+    "options": [
+      "(360/θ)-1 if 360/θ is even",
+      "360/θ",
+      "θ/360",
+      "360-θ"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "n = (360/θ)-1 when 360/θ is integer",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "multiple-mirrors"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-multiple-mirrors-14",
+    "text": "Two mirrors at 90°. Number of images formed?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "Infinite"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "n = 360/90 - 1 = 4-1 = 3 images",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "multiple-mirrors"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-multiple-mirrors-15",
+    "text": "Two parallel mirrors. Number of images?",
+    "options": [
+      "Infinite",
+      "2",
+      "1",
+      "0"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "θ=0°: infinite images (multiple reflections)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "multiple-mirrors"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-multiple-mirrors-16",
+    "text": "Mirrors at 60°. Number of images?",
+    "options": [
+      "5",
+      "6",
+      "3",
+      "4"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "n = 360/60 - 1 = 6-1 = 5 images",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "multiple-mirrors"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-multiple-mirrors-17",
+    "text": "For maximum images (infinite), angle should be:",
+    "options": [
+      "0° (parallel)",
+      "90°",
+      "180°",
+      "45°"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Parallel mirrors (θ=0) give infinite images",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "multiple-mirrors"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-multiple-mirrors-18",
+    "text": "Mirrors at 120°. Images formed?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "n = 360/120 - 1 = 3-1 = 2 images",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "multiple-mirrors"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-lateral-shift-19",
+    "text": "Lateral shift in glass slab depends on:",
+    "options": [
+      "Thickness, angle, refractive index",
+      "Only thickness",
+      "Only angle",
+      "Only refractive index"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "d = t×sin(i-r)/cos(r) depends on t, i, n",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lateral-shift"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-lateral-shift-20",
+    "text": "For normal incidence (i=0), lateral shift is:",
+    "options": [
+      "Zero",
+      "Maximum",
+      "Equal to thickness",
+      "Cannot determine"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "i=0 → r=0 → no bending → no lateral shift",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lateral-shift"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-lateral-shift-21",
+    "text": "Lateral shift increases with:",
+    "options": [
+      "Angle of incidence",
+      "Wavelength",
+      "Speed of light",
+      "Frequency"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "d ∝ sin(i-r). Larger i → larger shift",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lateral-shift"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-lateral-shift-22",
+    "text": "Glass slab (t=3cm, n=1.5) at i=60°. Approximate shift:",
+    "options": [
+      "~1.7cm",
+      "3cm",
+      "6cm",
+      "0cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Using formula with sin60°≈0.866, r≈35°, d≈1.7cm",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lateral-shift"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-lateral-shift-23",
+    "text": "Thicker slab produces:",
+    "options": [
+      "Larger lateral shift",
+      "Smaller shift",
+      "No effect",
+      "Zero shift"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "d ∝ t. Thicker slab → larger shift",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lateral-shift"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-lateral-shift-24",
+    "text": "Emergent ray is ___ incident ray:",
+    "options": [
+      "Parallel to",
+      "Perpendicular to",
+      "Converging toward",
+      "Diverging from"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Parallel faces: emergent || incident (laterally displaced)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lateral-shift"
+    ],
+    "tags": [
+      "neet-2023",
+      "recall"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-tir-condition-25",
+    "text": "Two conditions for TIR: (1) denser to rarer, (2):",
+    "options": [
+      "i > critical angle",
+      "i < critical angle",
+      "i = 0°",
+      "Any angle"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "TIR needs: (1) n₁>n₂ (2) i>θc",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "tir-condition"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-tir-condition-26",
+    "text": "TIR occurs when light goes from:",
+    "options": [
+      "Glass to air",
+      "Air to glass",
+      "Air to water",
+      "Glass to water"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "TIR: denser→rarer (e.g., glass to air)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "tir-condition"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-tir-condition-27",
+    "text": "For TIR at glass-air interface (n=1.5), minimum angle?",
+    "options": [
+      ">41.8°",
+      ">90°",
+      "<41.8°",
+      "Any angle"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "θc=sin⁻¹(1/1.5)=41.8°. Need i>41.8°",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "tir-condition"
+    ],
+    "tags": [
+      "neet-2020",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-tir-condition-28",
+    "text": "At i=θc (critical angle), refracted ray:",
+    "options": [
+      "Grazes interface (r=90°)",
+      "Goes straight",
+      "Is absorbed",
+      "Reflects back"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "At critical angle: r=90° (grazing emergence)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "tir-condition"
+    ],
+    "tags": [
+      "neet-2021",
+      "recall"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-tir-condition-29",
+    "text": "TIR cannot occur when:",
+    "options": [
+      "Going from rarer to denser",
+      "Going from denser to rarer",
+      "i>θc",
+      "Light speed decreases"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "TIR impossible for rarer→denser (ray bends toward normal)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "tir-condition"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-tir-condition-30",
+    "text": "Diamond (n=2.4) to air. Critical angle?",
+    "options": [
+      "~24.6°",
+      "~41.8°",
+      "~48.6°",
+      "~60°"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "θc=sin⁻¹(1/2.4)=sin⁻¹(0.417)≈24.6°",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "tir-condition"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-lens-maker-31",
+    "text": "Lens maker's formula: 1/f =",
+    "options": [
+      "(n-1)(1/R₁-1/R₂)",
+      "(n+1)(1/R₁+1/R₂)",
+      "n(1/R₁-1/R₂)",
+      "(1/R₁-1/R₂)"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "1/f = (μ-1)(1/R₁-1/R₂) where μ is refractive index",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lens-maker"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-lens-maker-32",
+    "text": "Convex lens (R₁=20cm, R₂=-30cm, n=1.5). Focal length?",
+    "options": [
+      "24cm",
+      "12cm",
+      "48cm",
+      "6cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "1/f=0.5(1/20-1/(-30))=0.5(1/20+1/30)=0.5×5/60, f=24cm",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lens-maker"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-lens-maker-33",
+    "text": "If lens medium equals surrounding medium (n_lens=n_medium):",
+    "options": [
+      "f→∞ (no power)",
+      "f=0",
+      "f doubles",
+      "f halves"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "(n-1)→0, so 1/f→0, f→∞ (lens loses power)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lens-maker"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-lens-maker-34",
+    "text": "Double convex lens (R₁=R₂=R). Focal length:",
+    "options": [
+      "R/(n-1)",
+      "R(n-1)",
+      "R/n",
+      "R"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "1/f=(n-1)(1/R-1/(-R))=(n-1)×2/R, f=R/[2(n-1)]",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lens-maker"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-lens-maker-35",
+    "text": "Lens maker equation is independent of:",
+    "options": [
+      "Object distance",
+      "Refractive index",
+      "Radius of curvature",
+      "Wavelength"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Lens parameters only: n, R₁, R₂. Not object dependent",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lens-maker"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-lens-maker-36",
+    "text": "If n increases, focal length:",
+    "options": [
+      "Decreases",
+      "Increases",
+      "Remains same",
+      "Becomes negative"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "f ∝ 1/(n-1). Higher n → smaller f",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "lens-maker"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-achromatic-combination-37",
+    "text": "Achromatic doublet condition: ω₁/f₁ + ω₂/f₂ =",
+    "options": [
+      "0",
+      "1",
+      "ω₁+ω₂",
+      "f₁+f₂"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "For zero chromatic aberration: ω₁/f₁ + ω₂/f₂ = 0",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "achromatic-combination"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-achromatic-combination-38",
+    "text": "Achromatic combination aims to eliminate:",
+    "options": [
+      "Chromatic aberration",
+      "Spherical aberration",
+      "Distortion",
+      "Coma"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Achromatic: removes color dispersion defect",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "achromatic-combination"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-achromatic-combination-39",
+    "text": "Achromatic doublet typically uses:",
+    "options": [
+      "Convex and concave lenses",
+      "Two convex lenses",
+      "Two concave lenses",
+      "Plane mirrors"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Combines lenses of opposite powers (+ and -)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "achromatic-combination"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-achromatic-combination-40",
+    "text": "Crown glass lens (ω₁=0.03, f₁=20cm) with flint lens (ω₂=0.05). f₂ for achromatic:",
+    "options": [
+      "-33.3cm",
+      "+33.3cm",
+      "-20cm",
+      "+20cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "0.03/20 + 0.05/f₂ = 0, f₂=-0.05×20/0.03=-33.3cm",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "achromatic-combination"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-achromatic-combination-41",
+    "text": "Dispersive power ω represents:",
+    "options": [
+      "Variation of n with λ",
+      "Average refractive index",
+      "Focal length",
+      "Magnification"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "ω = (n_v-n_r)/(n_y-1) measures dispersion",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "achromatic-combination"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-achromatic-combination-42",
+    "text": "For achromatic combination, net focal length:",
+    "options": [
+      "Finite (non-zero)",
+      "Zero",
+      "Infinite",
+      "Negative"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "1/F=1/f₁+1/f₂≠0 (not zero power, just achromatic)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "achromatic-combination"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-prism-deviation-43",
+    "text": "Angle of deviation δ = i + e - A where A is:",
+    "options": [
+      "Prism angle",
+      "Angle of incidence",
+      "Angle of emergence",
+      "Refracting angle"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "δ = i + e - A (A is apex angle of prism)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "prism-deviation"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-prism-deviation-44",
+    "text": "For minimum deviation: i =",
+    "options": [
+      "e",
+      "A/2",
+      "δ",
+      "90°-A"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "At minimum deviation δ_m: i=e (symmetric path)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "prism-deviation"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-prism-deviation-45",
+    "text": "Prism A=60°, i=50°, e=40°. Deviation δ =",
+    "options": [
+      "30°",
+      "60°",
+      "90°",
+      "150°"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "δ=i+e-A=50+40-60=30°",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "prism-deviation"
+    ],
+    "tags": [
+      "neet-2020",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-prism-deviation-46",
+    "text": "At minimum deviation, ray inside prism is:",
+    "options": [
+      "Parallel to base",
+      "Perpendicular to base",
+      "Along one face",
+      "Random"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "At δ_m: ray inside || base, r₁=r₂",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "prism-deviation"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-prism-deviation-47",
+    "text": "As angle of incidence increases from grazing, deviation:",
+    "options": [
+      "First decreases then increases",
+      "Continuously increases",
+      "Continuously decreases",
+      "Remains constant"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "δ vs i curve: U-shaped, minimum at specific i",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "prism-deviation"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-prism-deviation-48",
+    "text": "Prism in minimum deviation: A=60°, δ_m=30°. Then i=",
+    "options": [
+      "45°",
+      "30°",
+      "60°",
+      "90°"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "At min dev: i=(A+δ_m)/2=(60+30)/2=45°",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "prism-deviation"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-minimum-deviation-49",
+    "text": "At minimum deviation: n =",
+    "options": [
+      "sin[(A+δ_m)/2]/sin(A/2)",
+      "sin(A)/sin(δ_m)",
+      "(A+δ_m)/A",
+      "A/δ_m"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "n = sin[(A+δ_m)/2] / sin(A/2)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "minimum-deviation"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-minimum-deviation-50",
+    "text": "Prism A=60°, δ_m=30°. Refractive index?",
+    "options": [
+      "1.5",
+      "1.33",
+      "2.0",
+      "1.41"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "n=sin(45°)/sin(30°)=0.707/0.5=1.414≈1.5 (approx)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "minimum-deviation"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-minimum-deviation-51",
+    "text": "Condition for minimum deviation: r₁ + r₂ =",
+    "options": [
+      "A",
+      "δ_m",
+      "A/2",
+      "i+e"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "r₁+r₂=A (always true). At min: r₁=r₂=A/2",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "minimum-deviation"
+    ],
+    "tags": [
+      "neet-2020",
+      "recall"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-minimum-deviation-52",
+    "text": "For small angle prism, δ_m ≈",
+    "options": [
+      "(n-1)A",
+      "nA",
+      "A/n",
+      "A"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Thin prism: δ≈(n-1)A",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "minimum-deviation"
+    ],
+    "tags": [
+      "neet-2021",
+      "recall"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-minimum-deviation-53",
+    "text": "Prism A=10°, n=1.5. Minimum deviation?",
+    "options": [
+      "5°",
+      "10°",
+      "15°",
+      "7.5°"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Small angle: δ_m≈(n-1)A=(1.5-1)×10=5°",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "minimum-deviation"
+    ],
+    "tags": [
+      "neet-2022",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-minimum-deviation-54",
+    "text": "If n increases, minimum deviation:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "δ_m ∝ (n-1). Higher n → larger δ_m",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "minimum-deviation"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "ray-optics-simple-microscope-55",
+    "text": "Simple microscope magnification M =",
+    "options": [
+      "D/f",
+      "f/D",
+      "D×f",
+      "D-f"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "M = D/f where D=25cm (near point)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "simple-microscope"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "ray-optics-simple-microscope-56",
+    "text": "Convex lens f=5cm used as simple microscope. Magnification?",
+    "options": [
+      "5",
+      "25",
+      "125",
+      "0.2"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "M=25/5=5 (angular magnification)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "simple-microscope"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "ray-optics-simple-microscope-57",
+    "text": "Near point D is taken as:",
+    "options": [
+      "25cm",
+      "25m",
+      "Infinity",
+      "1m"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Standard near point D=25cm for normal eye",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "simple-microscope"
+    ],
+    "tags": [
+      "neet-2020",
+      "recall"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "ray-optics-simple-microscope-58",
+    "text": "For higher magnification in simple microscope:",
+    "options": [
+      "Use smaller focal length",
+      "Use larger focal length",
+      "Increase D",
+      "Decrease D"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "M=D/f. Smaller f → larger M",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "simple-microscope"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "ray-optics-simple-microscope-59",
+    "text": "Maximum magnification of simple microscope is about:",
+    "options": [
+      "5-10×",
+      "50-100×",
+      "500×",
+      "1000×"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Practical limit ~10× (f cannot be too small)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "simple-microscope"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "ray-optics-simple-microscope-60",
+    "text": "Lens f=10cm. For M=5, object should be at:",
+    "options": [
+      "u=-5cm",
+      "u=-10cm",
+      "u=-25cm",
+      "u=-2.5cm"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "For final image at D: M=(D/u)+1=5, gives u≈-6.25cm (or use M=D/f=2.5)",
+    "subject": "physics",
+    "chapter": "ray-optics",
+    "topic": "optical-systems",
+    "formulas": [
+      "simple-microscope"
     ],
     "tags": [
       "neet-2023",

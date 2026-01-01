@@ -1,6 +1,6 @@
-// Semiconductor Electronics Questions
-// Generated: 2026-01-01T07:48:17.824Z
-// Total: 60 questions
+// Semiconductor Questions
+// Updated: 2026-01-01T08:05:31.391Z
+// Total: 102 questions
 
 export const semiconductorElectronicsQuestions = [
   {
@@ -1440,6 +1440,1014 @@ export const semiconductorElectronicsQuestions = [
     "tags": [
       "neet-2023",
       "recall"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "semiconductor-electronics-carrier-concentration-01",
+    "text": "Intrinsic semiconductor: n×p =",
+    "options": [
+      "n_i²",
+      "constant",
+      "n+p",
+      "0"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Mass action law: np=n_i² (constant at given T)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "carrier-concentration"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "semiconductor-electronics-carrier-concentration-02",
+    "text": "At thermal equilibrium, if n increases by doping, p:",
+    "options": [
+      "Decreases",
+      "Increases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "np=constant. If n↑, then p↓",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "carrier-concentration"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "semiconductor-electronics-carrier-concentration-03",
+    "text": "Intrinsic carrier concentration n_i increases with:",
+    "options": [
+      "Temperature",
+      "Doping",
+      "Size",
+      "Pressure"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "n_i ∝ T^(3/2) × e^(-E_g/2kT). Higher T → more n_i",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "carrier-concentration"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "semiconductor-electronics-carrier-concentration-04",
+    "text": "Si at 300K: n_i≈10¹⁰/cm³. If n=10¹⁶/cm³, then p≈",
+    "options": [
+      "10⁴/cm³",
+      "10¹⁰/cm³",
+      "10¹⁶/cm³",
+      "10²⁶/cm³"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "np=n_i². p=(10¹⁰)²/10¹⁶=10⁴/cm³",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "carrier-concentration"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "semiconductor-electronics-carrier-concentration-05",
+    "text": "In n-type semiconductor:",
+    "options": [
+      "n>>p",
+      "p>>n",
+      "n=p",
+      "n=0"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "n-type: electrons (n) are majority carriers",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "carrier-concentration"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "semiconductor-electronics-carrier-concentration-06",
+    "text": "Pure Si: n=p=n_i. This is called:",
+    "options": [
+      "Intrinsic semiconductor",
+      "n-type",
+      "p-type",
+      "Extrinsic"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Intrinsic: no doping, n=p=n_i",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "carrier-concentration"
+    ],
+    "tags": [
+      "neet-2023",
+      "recall"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "semiconductor-electronics-conductivity-07",
+    "text": "Conductivity σ =",
+    "options": [
+      "neμ_e + peμ_h",
+      "ne + pe",
+      "μ_e×μ_h",
+      "n+p"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "σ = neμ_e + peμ_h (both carriers contribute)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "conductivity"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "semiconductor-electronics-conductivity-08",
+    "text": "Intrinsic semiconductor: σ_i =",
+    "options": [
+      "n_i×e(μ_e+μ_h)",
+      "n_i×e×μ_e",
+      "n_i²e",
+      "neμ_e"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "n=p=n_i: σ=n_i×e(μ_e+μ_h)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "conductivity"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "semiconductor-electronics-conductivity-09",
+    "text": "As temperature increases, semiconductor conductivity:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Higher T → more carriers (n_i↑) → σ↑ (negative temp coefficient)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "conductivity"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "semiconductor-electronics-conductivity-10",
+    "text": "Conductivity unit is:",
+    "options": [
+      "S/m or Ω⁻¹m⁻¹",
+      "Ω·m",
+      "A/V",
+      "V/A"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "σ in siemens/meter (S/m) = (Ω·m)⁻¹",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "conductivity"
+    ],
+    "tags": [
+      "neet-2021",
+      "recall"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "semiconductor-electronics-conductivity-11",
+    "text": "Heavily doped n-type: conductivity mainly due to:",
+    "options": [
+      "Electrons",
+      "Holes",
+      "Both equally",
+      "Neither"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "n>>p: electron term dominates σ≈neμ_e",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "conductivity"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "semiconductor-electronics-conductivity-12",
+    "text": "If electron mobility doubles, conductivity:",
+    "options": [
+      "Doubles (if n-type)",
+      "Halves",
+      "Quadruples",
+      "Unchanged"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "σ∝μ_e for n-type. If μ_e→2μ_e, σ→2σ",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "conductivity"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "semiconductor-electronics-rectifier-efficiency-13",
+    "text": "Rectifier efficiency η =",
+    "options": [
+      "P_DC/P_AC",
+      "P_AC/P_DC",
+      "V_DC/V_AC",
+      "I_DC/I_AC"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "η = DC power output / AC power input",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "rectifier-efficiency"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "semiconductor-electronics-rectifier-efficiency-14",
+    "text": "Half-wave rectifier maximum efficiency:",
+    "options": [
+      "40.6%",
+      "81.2%",
+      "100%",
+      "50%"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Half-wave: η_max = 40.6% (0.406)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "rectifier-efficiency"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "semiconductor-electronics-rectifier-efficiency-15",
+    "text": "Full-wave rectifier maximum efficiency:",
+    "options": [
+      "81.2%",
+      "40.6%",
+      "100%",
+      "50%"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Full-wave: η_max = 81.2% (0.812)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "rectifier-efficiency"
+    ],
+    "tags": [
+      "neet-2020",
+      "recall"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "semiconductor-electronics-rectifier-efficiency-16",
+    "text": "Full-wave is more efficient than half-wave because:",
+    "options": [
+      "Uses both half-cycles",
+      "Higher voltage",
+      "Lower current",
+      "Simpler circuit"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Full-wave utilizes both halves of AC, better efficiency",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "rectifier-efficiency"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "semiconductor-electronics-rectifier-efficiency-17",
+    "text": "Ideal rectifier has efficiency:",
+    "options": [
+      "100%",
+      "81.2%",
+      "40.6%",
+      "50%"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Ideal: no losses, η=100% (theoretical)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "rectifier-efficiency"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "semiconductor-electronics-rectifier-efficiency-18",
+    "text": "If load resistance increases, efficiency:",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "η increases with R_L (less diode loss)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "rectifier-efficiency"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "semiconductor-electronics-zener-regulation-19",
+    "text": "Zener diode in reverse bias operates in:",
+    "options": [
+      "Breakdown region",
+      "Forward region",
+      "Cut-off",
+      "Saturation"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Zener: reverse biased in breakdown, constant voltage",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "zener-regulation"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "semiconductor-electronics-zener-regulation-20",
+    "text": "Zener voltage V_Z=6V. Output voltage across it:",
+    "options": [
+      "6V (constant)",
+      "Varies with load",
+      "12V",
+      "0V"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "In breakdown: V_out=V_Z (regulated constant voltage)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "zener-regulation"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "semiconductor-electronics-zener-regulation-21",
+    "text": "Zener regulator: series resistance R_S purpose:",
+    "options": [
+      "Limit current",
+      "Increase voltage",
+      "Store energy",
+      "Block DC"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "R_S drops excess voltage and limits current",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "zener-regulation"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "semiconductor-electronics-zener-regulation-22",
+    "text": "V_in=15V, V_Z=6V, I_L=10mA, I_Z(min)=5mA. Min R_S?",
+    "options": [
+      "600Ω",
+      "900Ω",
+      "150Ω",
+      "1500Ω"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "R_S=(V_in-V_Z)/(I_L+I_Z)=(15-6)/(15mA)=600Ω",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "zener-regulation"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "semiconductor-electronics-zener-regulation-23",
+    "text": "Load current increases. Zener current:",
+    "options": [
+      "Decreases",
+      "Increases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "I_S=I_L+I_Z=const. If I_L↑, I_Z↓",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "zener-regulation"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "semiconductor-electronics-zener-regulation-24",
+    "text": "Zener diode maintains:",
+    "options": [
+      "Constant voltage",
+      "Constant current",
+      "Constant resistance",
+      "Constant power"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Voltage regulator: maintains constant V_out",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "zener-regulation"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "semiconductor-electronics-led-wavelength-25",
+    "text": "LED emission wavelength depends on:",
+    "options": [
+      "Bandgap E_g",
+      "Applied voltage",
+      "Current",
+      "Size"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "λ = hc/E_g. Wavelength determined by bandgap",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "led-wavelength"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "semiconductor-electronics-led-wavelength-26",
+    "text": "Relation: λ =",
+    "options": [
+      "hc/E_g",
+      "E_g/hc",
+      "h/E_g",
+      "E_g×λ"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Energy-wavelength: E=hc/λ, so λ=hc/E",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "led-wavelength"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "semiconductor-electronics-led-wavelength-27",
+    "text": "LED with E_g=2eV emits approximately:",
+    "options": [
+      "620nm (red)",
+      "450nm (blue)",
+      "950nm (IR)",
+      "380nm (UV)"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "λ=1240/E_g(eV) = 1240/2 = 620nm (red)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "led-wavelength"
+    ],
+    "tags": [
+      "neet-2020",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "semiconductor-electronics-led-wavelength-28",
+    "text": "For blue LED (450nm), bandgap should be:",
+    "options": [
+      "~2.75eV",
+      "~2eV",
+      "~1.5eV",
+      "~1eV"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "E_g=1240/450≈2.75eV",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "led-wavelength"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "semiconductor-electronics-led-wavelength-29",
+    "text": "IR LED has bandgap:",
+    "options": [
+      "<1.5eV (lower)",
+      "~3eV (higher)",
+      "~2eV",
+      "~5eV"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "IR has longer λ → lower E_g (<1.5eV)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "led-wavelength"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "semiconductor-electronics-led-wavelength-30",
+    "text": "Higher bandgap semiconductor emits:",
+    "options": [
+      "Shorter wavelength",
+      "Longer wavelength",
+      "Same wavelength",
+      "No light"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "E_g↑ → λ↓ (inverse relation)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "led-wavelength"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "semiconductor-electronics-basic-gates-31",
+    "text": "AND gate output is 1 when:",
+    "options": [
+      "All inputs are 1",
+      "Any input is 1",
+      "All inputs are 0",
+      "Any input is 0"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "AND: Y=A·B (1 only if all inputs are 1)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "basic-gates"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "semiconductor-electronics-basic-gates-32",
+    "text": "OR gate output is 0 when:",
+    "options": [
+      "All inputs are 0",
+      "Any input is 1",
+      "All inputs are 1",
+      "Any input is 0"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "OR: Y=A+B (0 only if all inputs are 0)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "basic-gates"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "semiconductor-electronics-basic-gates-33",
+    "text": "NOT gate has ___ input(s):",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "NOT: inverter, single input Y=Ā",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "basic-gates"
+    ],
+    "tags": [
+      "neet-2020",
+      "recall"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "semiconductor-electronics-basic-gates-34",
+    "text": "NAND gate is:",
+    "options": [
+      "AND followed by NOT",
+      "OR followed by NOT",
+      "NOT followed by AND",
+      "XOR"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "NAND = NOT-AND: Y=A·B̄",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "basic-gates"
+    ],
+    "tags": [
+      "neet-2021",
+      "recall"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "semiconductor-electronics-basic-gates-35",
+    "text": "Universal gates are:",
+    "options": [
+      "NAND, NOR",
+      "AND, OR",
+      "NOT, XOR",
+      "AND, NOT"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "NAND and NOR can implement any Boolean function",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "basic-gates"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "semiconductor-electronics-basic-gates-36",
+    "text": "XOR gate output is 1 when inputs are:",
+    "options": [
+      "Different",
+      "Same",
+      "Both 1",
+      "Both 0"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "XOR: Y=A⊕B (1 when inputs differ)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "basic-gates"
+    ],
+    "tags": [
+      "neet-2023",
+      "recall"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "semiconductor-electronics-de-morgans-37",
+    "text": "De Morgan's theorem: (A·B)' =",
+    "options": [
+      "A'+B'",
+      "A'·B'",
+      "A+B",
+      "AB"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "NOT(AND) = OR of NOTs: (AB)'=A'+B'",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "de-morgans"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "semiconductor-electronics-de-morgans-38",
+    "text": "De Morgan's theorem: (A+B)' =",
+    "options": [
+      "A'·B'",
+      "A'+B'",
+      "AB",
+      "A+B"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "NOT(OR) = AND of NOTs: (A+B)'=A'·B'",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "de-morgans"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "semiconductor-electronics-de-morgans-39",
+    "text": "NAND gate can be written as:",
+    "options": [
+      "A'+B' (NOR form)",
+      "A·B",
+      "A+B",
+      "A'·B'"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "(AB)'=A'+B' (De Morgan)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "de-morgans"
+    ],
+    "tags": [
+      "neet-2020",
+      "recall"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "semiconductor-electronics-de-morgans-40",
+    "text": "NOR gate can be written as:",
+    "options": [
+      "A'·B' (NAND form)",
+      "A+B",
+      "A'B'",
+      "AB"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "(A+B)'=A'·B' (De Morgan)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "de-morgans"
+    ],
+    "tags": [
+      "neet-2021",
+      "recall"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "semiconductor-electronics-de-morgans-41",
+    "text": "NOT(A AND B AND C) =",
+    "options": [
+      "A' OR B' OR C'",
+      "A' AND B' AND C'",
+      "ABC",
+      "A+B+C"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "(ABC)'=A'+B'+C' (extend De Morgan)",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "de-morgans"
+    ],
+    "tags": [
+      "neet-2022",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "semiconductor-electronics-de-morgans-42",
+    "text": "De Morgan's laws help convert:",
+    "options": [
+      "AND↔OR with inversion",
+      "AND to OR only",
+      "OR to XOR",
+      "NOT to AND"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "De Morgan: interconversion between AND/OR with complements",
+    "subject": "physics",
+    "chapter": "semiconductor-electronics",
+    "topic": "devices",
+    "formulas": [
+      "de-morgans"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
     ],
     "year": 2023
   }

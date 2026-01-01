@@ -1,6 +1,6 @@
 // Gravitation Questions
-// Generated: 2026-01-01T07:48:54.628Z
-// Total: 226 questions
+// Updated: 2026-01-01T08:05:31.397Z
+// Total: 244 questions
 
 export const gravitationQuestions = [
   {
@@ -5420,6 +5420,438 @@ export const gravitationQuestions = [
     "topic": "satellite-motion",
     "formulas": [
       "geostationary"
+    ],
+    "tags": [
+      "neet-2023",
+      "conceptual"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "gravitation-velocity-perihelion-aphelion-01",
+    "text": "At perihelion (closest), planet has:",
+    "options": [
+      "Maximum velocity",
+      "Minimum velocity",
+      "Zero velocity",
+      "Constant velocity"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Conservation: closer → faster (Kepler's 2nd law)",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "velocity-perihelion-aphelion"
+    ],
+    "tags": [
+      "neet-2018",
+      "conceptual"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "gravitation-velocity-perihelion-aphelion-02",
+    "text": "Velocity ratio v_p/v_a (perihelion/aphelion):",
+    "options": [
+      "r_a/r_p",
+      "r_p/r_a",
+      "(r_a/r_p)²",
+      "1"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Angular momentum: v_p×r_p=v_a×r_a, so v_p/v_a=r_a/r_p",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "velocity-perihelion-aphelion"
+    ],
+    "tags": [
+      "neet-2019",
+      "recall"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "gravitation-velocity-perihelion-aphelion-03",
+    "text": "Orbit has r_p=1AU, r_a=4AU. Speed ratio v_p/v_a:",
+    "options": [
+      "4",
+      "2",
+      "1/4",
+      "1/2"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "v_p/v_a=4/1=4",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "velocity-perihelion-aphelion"
+    ],
+    "tags": [
+      "neet-2020",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "gravitation-velocity-perihelion-aphelion-04",
+    "text": "At aphelion (farthest), planet has:",
+    "options": [
+      "Minimum speed",
+      "Maximum speed",
+      "Zero speed",
+      "Same as perihelion"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Farthest point → slowest speed",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "velocity-perihelion-aphelion"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "gravitation-velocity-perihelion-aphelion-05",
+    "text": "For circular orbit, v_p/v_a =",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "∞"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Circular: r_p=r_a, so v_p=v_a",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "velocity-perihelion-aphelion"
+    ],
+    "tags": [
+      "neet-2022",
+      "numerical"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "gravitation-velocity-perihelion-aphelion-06",
+    "text": "Earth closest to Sun in:",
+    "options": [
+      "January (perihelion)",
+      "July (aphelion)",
+      "March",
+      "September"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Earth perihelion ~Jan 3, aphelion ~Jul 4",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "velocity-perihelion-aphelion"
+    ],
+    "tags": [
+      "neet-2023",
+      "recall"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "gravitation-effective-g-latitude-07",
+    "text": "Effective g at latitude λ:",
+    "options": [
+      "g-ω²Rcos²λ",
+      "g-ω²R",
+      "g+ω²Rcos²λ",
+      "g/cos²λ"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "g'=g-ω²Rcosλ (centrifugal effect varies with latitude)",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "effective-g-latitude"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "gravitation-effective-g-latitude-08",
+    "text": "At poles (λ=90°), effective g equals:",
+    "options": [
+      "g (maximum)",
+      "g-ω²R",
+      "0",
+      "g+ω²R"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "cos90°=0, g'=g (no rotation effect at poles)",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "effective-g-latitude"
+    ],
+    "tags": [
+      "neet-2019",
+      "numerical"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "gravitation-effective-g-latitude-09",
+    "text": "At equator (λ=0°), g is minimum because:",
+    "options": [
+      "Maximum centrifugal effect",
+      "Minimum radius",
+      "Maximum radius",
+      "No gravity"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "cos0°=1, maximum ω²R term, minimum g'",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "effective-g-latitude"
+    ],
+    "tags": [
+      "neet-2020",
+      "conceptual"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "gravitation-effective-g-latitude-10",
+    "text": "If Earth stops rotating, g at equator:",
+    "options": [
+      "Increases by ~0.034m/s²",
+      "Decreases",
+      "Remains same",
+      "Becomes zero"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "ω=0 → no centrifugal effect, g increases",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "effective-g-latitude"
+    ],
+    "tags": [
+      "neet-2021",
+      "numerical"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "gravitation-effective-g-latitude-11",
+    "text": "Rotation effect on g is maximum at:",
+    "options": [
+      "Equator",
+      "Poles",
+      "45° latitude",
+      "30° latitude"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Equator: cos²λ maximum → largest ω²R effect",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "effective-g-latitude"
+    ],
+    "tags": [
+      "neet-2022",
+      "conceptual"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "gravitation-effective-g-latitude-12",
+    "text": "At 45° latitude, cos²λ=",
+    "options": [
+      "0.5",
+      "0.707",
+      "1",
+      "0"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "cos45°=1/√2, cos²45°=0.5",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "effective-g-latitude"
+    ],
+    "tags": [
+      "neet-2023",
+      "numerical"
+    ],
+    "year": 2023
+  },
+  {
+    "id": "gravitation-parking-orbit-13",
+    "text": "Energy to move satellite from r₁ to r₂:",
+    "options": [
+      "GMm/2(1/r₁-1/r₂)",
+      "GMm(1/r₂-1/r₁)",
+      "GMm/r₂-GMm/r₁",
+      "(GMm/2r₂)-(GMm/2r₁)"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "ΔE=E₂-E₁=-GMm/2r₂+GMm/2r₁=GMm/2(1/r₁-1/r₂)",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "parking-orbit"
+    ],
+    "tags": [
+      "neet-2018",
+      "recall"
+    ],
+    "year": 2018
+  },
+  {
+    "id": "gravitation-parking-orbit-14",
+    "text": "To move satellite to higher orbit:",
+    "options": [
+      "Add energy",
+      "Remove energy",
+      "No energy needed",
+      "Decrease speed only"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Higher orbit less negative E, need energy input",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "parking-orbit"
+    ],
+    "tags": [
+      "neet-2019",
+      "conceptual"
+    ],
+    "year": 2019
+  },
+  {
+    "id": "gravitation-parking-orbit-15",
+    "text": "Satellite at r=R moves to r=2R. Energy needed (in terms of mgR)?",
+    "options": [
+      "mgR/4",
+      "mgR/2",
+      "mgR",
+      "2mgR"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "ΔE=GMm/2(1/R-1/2R)=GMm/4R=mgR/4",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "parking-orbit"
+    ],
+    "tags": [
+      "neet-2020",
+      "numerical"
+    ],
+    "year": 2020
+  },
+  {
+    "id": "gravitation-parking-orbit-16",
+    "text": "Hohmann transfer uses:",
+    "options": [
+      "Elliptical transfer orbit",
+      "Direct path",
+      "Spiral path",
+      "Random path"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Most efficient: tangential burns via ellipse",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "parking-orbit"
+    ],
+    "tags": [
+      "neet-2021",
+      "conceptual"
+    ],
+    "year": 2021
+  },
+  {
+    "id": "gravitation-parking-orbit-17",
+    "text": "Parking orbit usually at:",
+    "options": [
+      "~200km (LEO)",
+      "GEO altitude",
+      "Moon orbit",
+      "Sun orbit"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Parking orbit: temporary LEO before transfer",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "parking-orbit"
+    ],
+    "tags": [
+      "neet-2022",
+      "recall"
+    ],
+    "year": 2022
+  },
+  {
+    "id": "gravitation-parking-orbit-18",
+    "text": "To go to higher orbit, first burn:",
+    "options": [
+      "Speeds up (prograde)",
+      "Slows down (retrograde)",
+      "Perpendicular",
+      "Random"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Increase speed to enter elliptical transfer orbit",
+    "subject": "physics",
+    "chapter": "gravitation",
+    "topic": "satellite-motion",
+    "formulas": [
+      "parking-orbit"
     ],
     "tags": [
       "neet-2023",
