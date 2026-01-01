@@ -1,8 +1,8 @@
-// Electrostatic Questions
-// Updated: 2026-01-01T08:05:31.393Z
+// ElectrostaticPotentialCapacitance Questions
+// Updated: 2026-01-01T08:27:13.741Z
 // Total: 76 questions
 
-export const electrostaticPotentialQuestions = [
+export const electrostaticPotentialCapacitanceQuestions = [
   {
     "id": "elec-pot-capacitance-01",
     "text": "Capacitance of a conductor is defined as:",
@@ -17,7 +17,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C = Q/V (charge per unit potential). Unit: Farad (F) = C/V",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "capacitance"
     ],
@@ -41,7 +41,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C = Q/V = 100×10⁻⁶/50 = 2×10⁻⁶ F = 2 μF",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "capacitance"
     ],
@@ -65,7 +65,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C depends on geometry (size, shape, separation) and dielectric material, NOT on Q or V",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "capacitance"
     ],
@@ -89,7 +89,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C = ε₀A/d where A = area, d = separation. C ∝ A, C ∝ 1/d",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -113,7 +113,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C ∝ 1/d. If d → 2d, then C → C/2",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -137,7 +137,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C = (8.85×10⁻¹²×0.01)/(1×10⁻³) = 88.5×10⁻¹² F = 88.5 pF",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -161,7 +161,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C' = KC where K is dielectric constant (relative permittivity)",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -185,7 +185,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Series: 1/C_eq = 1/C₁ + 1/C₂ + ... (like parallel resistors). For two: C_eq = C₁C₂/(C₁+C₂)",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "series-capacitance"
     ],
@@ -209,7 +209,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C_eq = C₁C₂/(C₁+C₂) = 4×6/(4+6) = 24/10 = 2.4 μF",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "series-capacitance"
     ],
@@ -233,7 +233,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Series → same charge Q on all capacitors (charge conservation)",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "series-capacitance"
     ],
@@ -257,7 +257,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Parallel: C_eq = C₁ + C₂ + ... (like series resistors)",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "parallel-capacitance"
     ],
@@ -281,7 +281,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C_eq = 2+3+5 = 10 μF",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "parallel-capacitance"
     ],
@@ -305,7 +305,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Parallel → connected to same two points → same voltage",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "capacitors",
+    "topic": "capacitance",
     "formulas": [
       "parallel-capacitance"
     ],
@@ -329,7 +329,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U = (1/2)QV = (1/2)CV² = Q²/(2C). Work done to charge capacitor",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "energy-capacitor",
+    "topic": "capacitance",
     "formulas": [
       "energy-capacitor"
     ],
@@ -353,7 +353,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U = (1/2)CV² = (1/2)×10×10⁻⁶×100² = 0.05 J = 50 mJ",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "energy-capacitor",
+    "topic": "capacitance",
     "formulas": [
       "energy-capacitor"
     ],
@@ -377,7 +377,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U ∝ V². If V → 2V, then U → 4U",
     "subject": "physics",
     "chapter": "electrostatic-potential",
-    "topic": "energy-capacitor",
+    "topic": "capacitance",
     "formulas": [
       "energy-capacitor"
     ],
@@ -401,7 +401,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "V=kQ/r where k=9×10⁹ N·m²/C²",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-point-charge"
     ],
@@ -425,7 +425,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "V=9×10⁹×10⁻⁶/1=9000V",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-point-charge"
     ],
@@ -449,7 +449,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Positive charge creates positive potential",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-point-charge"
     ],
@@ -473,7 +473,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "V∝1/r. If r→2r, V→V/2",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-point-charge"
     ],
@@ -497,7 +497,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "V(∞)=kQ/∞=0 (reference point)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-point-charge"
     ],
@@ -521,7 +521,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "V=9×10⁹×5×10⁻⁹/0.02=2250V",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-point-charge"
     ],
@@ -545,7 +545,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "ΔV=V_A-V_B (final-initial)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-difference"
     ],
@@ -569,7 +569,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "V_AB=100-40=60V",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-difference"
     ],
@@ -593,7 +593,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "1V=1J/C (potential energy per coulomb)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-difference"
     ],
@@ -617,7 +617,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "W=qΔV=(-e)(100)=-100eV (against field)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-difference"
     ],
@@ -641,7 +641,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Field does positive work when +ve charge moves to lower V",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-difference"
     ],
@@ -665,7 +665,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "W_ext=qΔV=5×(50-20)=150J",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-difference"
     ],
@@ -689,7 +689,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C=ε₀A/d where ε₀=8.85×10⁻¹²F/m",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -713,7 +713,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C∝A. If A→2A, C→2C",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -737,7 +737,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C∝1/d. If d→2d, C→C/2",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -761,7 +761,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C=8.85×10⁻¹²×10⁻³/10⁻³=8.85×10⁻¹²F=8.85pF",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -785,7 +785,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C'=KC. If K=5, C→5C",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -809,7 +809,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "ε₀ in F/m or C²/(N·m²)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "parallel-plate-capacitor"
     ],
@@ -833,7 +833,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U=(1/2)CV²=(1/2)QV=(1/2)Q²/C",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitor-energy"
     ],
@@ -857,7 +857,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U=(1/2)×10×10⁻⁶×100²=0.05J",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitor-energy"
     ],
@@ -881,7 +881,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U∝V². If V→2V, U→4U",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitor-energy"
     ],
@@ -905,7 +905,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U=0.5×5×10⁻¹²×(200)²=10⁻⁷J",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitor-energy"
     ],
@@ -929,7 +929,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "u=(1/2)ε₀E² (energy per unit volume)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitor-energy"
     ],
@@ -953,7 +953,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Q constant. C decreases→U=Q²/2C increases",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitor-energy"
     ],
@@ -977,7 +977,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "1/C_eq=1/C₁+1/C₂, so C_eq=C₁C₂/(C₁+C₂)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-series"
     ],
@@ -1001,7 +1001,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C_eq=4×6/(4+6)=24/10=2.4μF",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-series"
     ],
@@ -1025,7 +1025,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C_eq=C×C/(C+C)=C/2",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-series"
     ],
@@ -1049,7 +1049,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "In series: charge Q is same on all capacitors",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-series"
     ],
@@ -1073,7 +1073,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Series adds 1/C terms, net C decreases",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-series"
     ],
@@ -1097,7 +1097,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Q same. C_eq=2μF. Q=180μC. V₁=Q/C₁=180/3=60V",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-series"
     ],
@@ -1121,7 +1121,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C_eq=C₁+C₂ (capacitances add)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-parallel"
     ],
@@ -1145,7 +1145,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C_eq=3+7=10μF",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-parallel"
     ],
@@ -1169,7 +1169,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "In parallel: voltage V is same across all",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-parallel"
     ],
@@ -1193,7 +1193,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C_eq=5×2=10μF",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-parallel"
     ],
@@ -1217,7 +1217,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Parallel adds more C, total increases",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-parallel"
     ],
@@ -1241,7 +1241,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C_eq=10μF. Q=CV=10×100=1000μC",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "two-capacitors-parallel"
     ],
@@ -1265,7 +1265,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "E = -grad(V) = -dV/dx (field is negative potential gradient)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "field-potential-relation"
     ],
@@ -1289,7 +1289,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "dV/dx=0 → E=0 (equipotential region)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "field-potential-relation"
     ],
@@ -1313,7 +1313,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "E = -dV/dx. V decreases along E direction",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "field-potential-relation"
     ],
@@ -1337,7 +1337,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "ΔV = E×d = 100×2 = 200V",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "field-potential-relation"
     ],
@@ -1361,7 +1361,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "[E] = V/m = J/(C·m) = N/C",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "field-potential-relation"
     ],
@@ -1385,7 +1385,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "E=ΔV/Δx=(400-100)/3=100V/m",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "field-potential-relation"
     ],
@@ -1409,7 +1409,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C = Q/V (charge per unit voltage)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitance-def"
     ],
@@ -1433,7 +1433,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "1F = 1C/V (farad)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitance-def"
     ],
@@ -1457,7 +1457,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "[C] = C/V = coulomb/volt",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitance-def"
     ],
@@ -1481,7 +1481,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Q=CV=10×100=1000μC=1mC",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitance-def"
     ],
@@ -1505,7 +1505,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Q=CV. If V→2V, Q→2Q (C constant)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitance-def"
     ],
@@ -1529,7 +1529,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C determined by physical structure, not V or Q",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "capacitance-def"
     ],
@@ -1553,7 +1553,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C'=KC (capacitance multiplied by K)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "dielectric-effect"
     ],
@@ -1577,7 +1577,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "C'=KC=5×10=50μF",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "dielectric-effect"
     ],
@@ -1601,7 +1601,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "K≥1 (vacuum K=1, all materials K>1)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "dielectric-effect"
     ],
@@ -1625,7 +1625,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U=(1/2)CV². C→KC, so U→KU (increases)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "dielectric-effect"
     ],
@@ -1649,7 +1649,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "V=Q/C. C→KC, so V→V/K (decreases)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "dielectric-effect"
     ],
@@ -1673,7 +1673,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Air K≈1 (close to vacuum)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "capacitance",
     "formulas": [
       "dielectric-effect"
     ],
@@ -1697,7 +1697,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U=kq₁q₂/r (work to bring from ∞)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-energy"
     ],
@@ -1721,7 +1721,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Like charges: U=kq₁q₂/r>0, decreases r → U↑",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-energy"
     ],
@@ -1745,7 +1745,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U=k(+q)(-q)/r<0 (negative, bound state)",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-energy"
     ],
@@ -1769,7 +1769,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Three pairs: U=3×kq²/a=3kq²/a",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-energy"
     ],
@@ -1793,7 +1793,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "U_∞-U_bound>0. Need positive work to separate",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-energy"
     ],
@@ -1817,7 +1817,7 @@ export const electrostaticPotentialQuestions = [
     "explanation": "Self-energy: U=3kQ²/5R",
     "subject": "physics",
     "chapter": "electrostatic-potential-capacitance",
-    "topic": "electrostatics",
+    "topic": "electrostatic-potential",
     "formulas": [
       "potential-energy"
     ],

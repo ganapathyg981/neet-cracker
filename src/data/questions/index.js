@@ -5,7 +5,7 @@ import { electricChargesFieldsQuestions } from './electric-charges-fields-questi
 import { gravitationQuestions } from './gravitation-questions.js';
 import { rayOpticsQuestions } from './ray-optics-questions.js';
 import { currentElectricityQuestions } from './current-electricity-questions.js';
-import { electrostaticPotentialQuestions } from './electrostatic-potential-questions.js';
+import { electrostaticPotentialCapacitanceQuestions } from './electrostatic-potential-questions.js';
 import { semiconductorElectronicsQuestions } from './semiconductor-electronics-questions.js';
 
 // Combined question bank - all chapters
@@ -14,7 +14,7 @@ export const allQuestions = [
   ...gravitationQuestions,
   ...rayOpticsQuestions,
   ...currentElectricityQuestions,
-  ...electrostaticPotentialQuestions,
+  ...electrostaticPotentialCapacitanceQuestions,
   ...semiconductorElectronicsQuestions,
 ];
 
@@ -24,7 +24,7 @@ export {
   gravitationQuestions,
   rayOpticsQuestions,
   currentElectricityQuestions,
-  electrostaticPotentialQuestions,
+  electrostaticPotentialCapacitanceQuestions,
   semiconductorElectronicsQuestions,
 };
 

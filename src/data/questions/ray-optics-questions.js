@@ -1,5 +1,5 @@
-// Ray Optics Questions
-// Updated: 2026-01-01T08:03:21.302Z
+// RayOptics Questions
+// Updated: 2026-01-01T08:27:13.730Z
 // Total: 175 questions
 
 export const rayOpticsQuestions = [
@@ -17,7 +17,7 @@ export const rayOpticsQuestions = [
     "explanation": "Mirror formula: 1/f = 1/v + 1/u (valid for both concave and convex mirrors)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "mirror-formula"
     ],
@@ -41,7 +41,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/f = 1/v + 1/u: 1/20 = 1/v + 1/(-30). Solving: v = -60 cm (real image)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "mirror-formula"
     ],
@@ -65,7 +65,7 @@ export const rayOpticsQuestions = [
     "explanation": "Sign convention: f is positive for convex mirror (diverging), negative for concave",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "mirror-formula"
     ],
@@ -89,7 +89,7 @@ export const rayOpticsQuestions = [
     "explanation": "When u → ∞, 1/u → 0. So 1/f = 1/v + 0, giving v = f",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "mirror-formula"
     ],
@@ -113,7 +113,7 @@ export const rayOpticsQuestions = [
     "explanation": "m = -v/u = -2 (real, inverted). So v = 2u. Using 1/f = 1/v + 1/u: 1/15 = 1/(2u) + 1/(-u) = -1/(2u). u = -22.5 cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "mirror-formula"
     ],
@@ -137,7 +137,7 @@ export const rayOpticsQuestions = [
     "explanation": "u = -2f, so 1/f = 1/v + 1/(-2f). Solving: v = -2f = C. Magnification m = -v/u = -1 (same size)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "mirror-formula"
     ],
@@ -161,7 +161,7 @@ export const rayOpticsQuestions = [
     "explanation": "Convex mirror: v is always positive (behind mirror) and |v| < |u|, so virtual, erect, smaller",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "mirror-formula"
     ],
@@ -185,7 +185,7 @@ export const rayOpticsQuestions = [
     "explanation": "When -f < u < 0: v comes out positive (behind mirror), magnification > 1. Virtual, erect, enlarged",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "mirror-formula"
     ],
@@ -209,7 +209,7 @@ export const rayOpticsQuestions = [
     "explanation": "m = -v/u (negative sign accounts for inversion). Also m = h'/h (image height/object height)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "magnification-mirror"
     ],
@@ -233,7 +233,7 @@ export const rayOpticsQuestions = [
     "explanation": "Negative m → real, inverted. |m| = 2 → twice the size",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "magnification-mirror"
     ],
@@ -257,7 +257,7 @@ export const rayOpticsQuestions = [
     "explanation": "Erect image → positive m. m = h'/h = 2/5 = +0.4",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "magnification-mirror"
     ],
@@ -281,7 +281,7 @@ export const rayOpticsQuestions = [
     "explanation": "Plane mirror: v = -u (behind mirror at same distance). m = -v/u = -(-u)/u = +1 (virtual, erect, same size)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "magnification-mirror"
     ],
@@ -305,7 +305,7 @@ export const rayOpticsQuestions = [
     "explanation": "m = -v/u = -(-40)/(-10) = -4 (real, inverted, 4× magnified)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "spherical-mirrors",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "magnification-mirror"
     ],
@@ -329,7 +329,7 @@ export const rayOpticsQuestions = [
     "explanation": "Snell's law: n₁sinθ₁ = n₂sinθ₂ or μ₁sinθ₁ = μ₂sinθ₂",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -353,7 +353,7 @@ export const rayOpticsQuestions = [
     "explanation": "1×sin60° = 1.5×sinr. sinr = sin60°/1.5 = 0.866/1.5 = 0.577. r = 35.3°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -377,7 +377,7 @@ export const rayOpticsQuestions = [
     "explanation": "Denser medium (higher n) → ray bends toward normal (angle decreases)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -401,7 +401,7 @@ export const rayOpticsQuestions = [
     "explanation": "Glass has higher n than water, so denser to rarer. Ray bends away from normal",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -425,7 +425,7 @@ export const rayOpticsQuestions = [
     "explanation": "1×sini = 1.5×sin30°. sini = 1.5×0.5 = 0.75. i = 48.6°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -449,7 +449,7 @@ export const rayOpticsQuestions = [
     "explanation": "At normal incidence (θ₁ = 0°), sinθ₁ = 0, so sinθ₂ = 0. No bending, passes straight",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -473,7 +473,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = c/v = λ₀/λ (both speed ratio and wavelength ratio). Frequency remains constant",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -665,7 +665,7 @@ export const rayOpticsQuestions = [
     "explanation": "Lens formula: 1/f = 1/v - 1/u (note sign convention: u is always negative for real object)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -689,7 +689,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/20 = 1/v - 1/u. For real image v is positive. Taking v = 60: 1/20 = 1/60 - 1/u. u = -60 cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -713,7 +713,7 @@ export const rayOpticsQuestions = [
     "explanation": "Sign convention: f negative for concave (diverging) lens, positive for convex",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -737,7 +737,7 @@ export const rayOpticsQuestions = [
     "explanation": "u = -2f. Then 1/f = 1/v - 1/(-2f) = 1/v + 1/(2f). Solving: v = 2f. Magnification = -1",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -761,7 +761,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/(-15) = 1/v - 1/(-30). -1/15 = 1/v + 1/30. 1/v = -1/15 - 1/30 = -3/30 = -1/10. v = -10 cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -785,7 +785,7 @@ export const rayOpticsQuestions = [
     "explanation": "When 0 < |u| < f: v becomes negative (virtual image on same side as object), magnified",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -809,7 +809,7 @@ export const rayOpticsQuestions = [
     "explanation": "Power P = 1/f where f is in meters. Unit: diopter (D) = m⁻¹",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -833,7 +833,7 @@ export const rayOpticsQuestions = [
     "explanation": "P = 1/f. 5 = 1/f. f = 0.2 m = 20 cm (positive power → convex lens)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -857,7 +857,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/f = (n-1)(1/R₁ - 1/R₂) relates f to n and curvature radii",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker-formula"
     ],
@@ -881,7 +881,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/f = (μ_lens/μ_medium - 1)(1/R₁ - 1/R₂). In air: 1/f = (n-1)(1/R₁ - 1/R₂)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker-formula"
     ],
@@ -905,7 +905,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/f = (1.5-1)(1/20 - 1/(-30)) = 0.5(1/20 + 1/30) = 0.5(5/60) = 1/24. f = 24 cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker-formula"
     ],
@@ -929,7 +929,7 @@ export const rayOpticsQuestions = [
     "explanation": "f ∝ 1/(n_rel - 1) where n_rel = n_lens/n_medium. In water: n_rel decreases → (n_rel-1) decreases → f increases",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker-formula"
     ],
@@ -953,7 +953,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/R₂ = 0 for flat surface. So 1/f = (n-1)/R₁, or f = R₁/(n-1)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker-formula"
     ],
@@ -977,7 +977,7 @@ export const rayOpticsQuestions = [
     "explanation": "n_rel = n_glass/n_water still > 1, so still diverging. But reduced power (larger focal length)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-lens",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker-formula"
     ],
@@ -1001,7 +1001,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = c/v where c is speed in vacuum, v is speed in medium. Also n = λ₀/λ",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "refractive-index"
     ],
@@ -1025,7 +1025,7 @@ export const rayOpticsQuestions = [
     "explanation": "v = c/n = 3×10⁸/1.5 = 2×10⁸ m/s",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "refractive-index"
     ],
@@ -1049,7 +1049,7 @@ export const rayOpticsQuestions = [
     "explanation": "Frequency remains constant during refraction. Speed and wavelength both decrease in denser medium",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "refractive-index"
     ],
@@ -1073,7 +1073,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = c/v. Since v ≤ c always, n ≥ 1 (minimum is 1 for vacuum)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "refractive-index"
     ],
@@ -1097,7 +1097,7 @@ export const rayOpticsQuestions = [
     "explanation": "λ_medium = λ_air/n = 600/1.5 = 400 nm (frequency constant, so λ ∝ v ∝ 1/n)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "refractive-index"
     ],
@@ -1121,7 +1121,7 @@ export const rayOpticsQuestions = [
     "explanation": "Object at depth d appears at d/n when viewed from rarer medium (n = refractive index)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "apparent-depth"
     ],
@@ -1145,7 +1145,7 @@ export const rayOpticsQuestions = [
     "explanation": "Apparent depth = real depth/n = 12/(4/3) = 12×3/4 = 9 cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "apparent-depth"
     ],
@@ -1169,7 +1169,7 @@ export const rayOpticsQuestions = [
     "explanation": "Light from pool bottom bends away from normal when leaving water, making pool appear shallower",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "apparent-depth"
     ],
@@ -1193,7 +1193,7 @@ export const rayOpticsQuestions = [
     "explanation": "Real/Apparent = d/(d/n) = n = 1.5. So 1.5:1",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "apparent-depth"
     ],
@@ -1217,7 +1217,7 @@ export const rayOpticsQuestions = [
     "explanation": "Apparent depth = 3/1.5 = 2 cm. Shift = 3-2 = 1 cm (appears 1 cm closer)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "refraction-plane",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "apparent-depth"
     ],
@@ -1241,7 +1241,7 @@ export const rayOpticsQuestions = [
     "explanation": "δ depends on: i (incidence), A (prism angle), n (refractive index)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -1265,7 +1265,7 @@ export const rayOpticsQuestions = [
     "explanation": "At δ_min: ray travels parallel to base, r₁ = r₂ = A/2, i = e",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -1289,7 +1289,7 @@ export const rayOpticsQuestions = [
     "explanation": "At minimum deviation: n = sin((A+δ_m)/2) / sin(A/2)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -1313,7 +1313,7 @@ export const rayOpticsQuestions = [
     "explanation": "Small angle approximation: δ ≈ (n-1)A (valid when A < 10°)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -1337,7 +1337,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = sin(45°)/sin(30°) = (√2/2)/(1/2) = √2 ≈ 1.41",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -1361,7 +1361,7 @@ export const rayOpticsQuestions = [
     "explanation": "Violet has highest n (shortest λ) → maximum deviation. Red has minimum deviation",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -1385,7 +1385,7 @@ export const rayOpticsQuestions = [
     "explanation": "ω = (δ_V - δ_R)/δ_Y = (n_V - n_R)/(n_Y - 1) where V, R, Y are violet, red, yellow",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "dispersive-power"
     ],
@@ -1409,7 +1409,7 @@ export const rayOpticsQuestions = [
     "explanation": "Angular dispersion = deviation difference = δ_violet - δ_red",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "dispersive-power"
     ],
@@ -1433,7 +1433,7 @@ export const rayOpticsQuestions = [
     "explanation": "Lower ω → less separation of colors → lower chromatic aberration",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "dispersive-power"
     ],
@@ -1457,7 +1457,7 @@ export const rayOpticsQuestions = [
     "explanation": "ω = (1.52-1.50)/(1.51-1) = 0.02/0.51 ≈ 0.04",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "dispersive-power"
     ],
@@ -1481,7 +1481,7 @@ export const rayOpticsQuestions = [
     "explanation": "For no deviation: δ₁+δ₂=0. For equal dispersion: ω₁δ₁+ω₂δ₂=0. Gives ω₁A₁=-ω₂A₂",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "dispersion",
+    "topic": "dispersion-light",
     "formulas": [
       "dispersive-power"
     ],
@@ -1913,7 +1913,7 @@ export const rayOpticsQuestions = [
     "explanation": "f=R/2 for both concave and convex mirrors",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "radius-focal-relation"
     ],
@@ -1937,7 +1937,7 @@ export const rayOpticsQuestions = [
     "explanation": "f=R/2=20/2=10cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "radius-focal-relation"
     ],
@@ -1961,7 +1961,7 @@ export const rayOpticsQuestions = [
     "explanation": "f∝R. If R→2R, then f→2f",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "radius-focal-relation"
     ],
@@ -1985,7 +1985,7 @@ export const rayOpticsQuestions = [
     "explanation": "Convex mirror: f=+R/2=+15cm (positive)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "radius-focal-relation"
     ],
@@ -2009,7 +2009,7 @@ export const rayOpticsQuestions = [
     "explanation": "R=2f (C is twice focal length from pole)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "radius-focal-relation"
     ],
@@ -2033,7 +2033,7 @@ export const rayOpticsQuestions = [
     "explanation": "Plane mirror: R→∞, so f=R/2→∞",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-spherical-mirror",
     "formulas": [
       "radius-focal-relation"
     ],
@@ -2057,7 +2057,7 @@ export const rayOpticsQuestions = [
     "explanation": "n₁sinθ₁=n₂sinθ₂ (constant ratio)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -2081,7 +2081,7 @@ export const rayOpticsQuestions = [
     "explanation": "1×sin30°=1.5×sinθ₂, sinθ₂=0.5/1.5=0.33, θ₂≈19.5°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -2105,7 +2105,7 @@ export const rayOpticsQuestions = [
     "explanation": "Denser→rarer: speed increases, bends away from normal",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -2129,7 +2129,7 @@ export const rayOpticsQuestions = [
     "explanation": "sin0°=0. θ₂=0 (no bending at normal incidence)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -2153,7 +2153,7 @@ export const rayOpticsQuestions = [
     "explanation": "Same medium (n₁=n₂): θ₁=θ₂, no refraction",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -2177,7 +2177,7 @@ export const rayOpticsQuestions = [
     "explanation": "sin90°=(4/3)sinθ₂, sinθ₂=3/4=0.75, θ₂≈48.6°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "snells-law"
     ],
@@ -2201,7 +2201,7 @@ export const rayOpticsQuestions = [
     "explanation": "At critical angle θ_c: refracted ray grazes interface (90°)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "critical-angle"
     ],
@@ -2225,7 +2225,7 @@ export const rayOpticsQuestions = [
     "explanation": "sinθ_c=n_rarer/n_denser (for n₁>n₂)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "critical-angle"
     ],
@@ -2249,7 +2249,7 @@ export const rayOpticsQuestions = [
     "explanation": "sinθ_c=1/1.5=0.667, θ_c=41.8°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "critical-angle"
     ],
@@ -2273,7 +2273,7 @@ export const rayOpticsQuestions = [
     "explanation": "sinθ_c=1/(4/3)=3/4, θ_c≈48.6°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "critical-angle"
     ],
@@ -2297,7 +2297,7 @@ export const rayOpticsQuestions = [
     "explanation": "TIR occurs when θ_i>θ_c (beyond critical)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "critical-angle"
     ],
@@ -2321,7 +2321,7 @@ export const rayOpticsQuestions = [
     "explanation": "θ_c∝1/n. Higher n→smaller θ_c",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "critical-angle"
     ],
@@ -2345,7 +2345,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/f=1/v-1/u (sign convention matters)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -2369,7 +2369,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/10=1/v-1/(-20), 1/10=1/v+1/20, v=20cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -2393,7 +2393,7 @@ export const rayOpticsQuestions = [
     "explanation": "u=-2f: 1/f=1/v+1/2f, v=+2f (real, inverted, m=-1)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -2417,7 +2417,7 @@ export const rayOpticsQuestions = [
     "explanation": "Only convex lens can form real images",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -2441,7 +2441,7 @@ export const rayOpticsQuestions = [
     "explanation": "u=-f/2: 1/f=1/v+2/f, v=-f (virtual, magnified)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -2465,7 +2465,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/(-10)=1/v-1/(-30), 1/v=-1/10+1/30=-1/15, v=-7.5cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "thin-lens-formula"
     ],
@@ -2489,7 +2489,7 @@ export const rayOpticsQuestions = [
     "explanation": "m=v/u (height ratio also h'/h)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-magnification"
     ],
@@ -2513,7 +2513,7 @@ export const rayOpticsQuestions = [
     "explanation": "m=v/u=40/(-10)=-4 (inverted, 4× size)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-magnification"
     ],
@@ -2537,7 +2537,7 @@ export const rayOpticsQuestions = [
     "explanation": "m=-1: |m|=1 (same size), negative (inverted)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-magnification"
     ],
@@ -2561,7 +2561,7 @@ export const rayOpticsQuestions = [
     "explanation": "Virtual images: m>0 (erect, positive)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-magnification"
     ],
@@ -2585,7 +2585,7 @@ export const rayOpticsQuestions = [
     "explanation": "m=h'/h=-15/5=-3 (inverted, 3× magnified)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-magnification"
     ],
@@ -2609,7 +2609,7 @@ export const rayOpticsQuestions = [
     "explanation": "m=+2: positive (erect/virtual), |m|>1 (magnified)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-magnification"
     ],
@@ -2633,7 +2633,7 @@ export const rayOpticsQuestions = [
     "explanation": "Total magnification = product of objective and eyepiece magnifications",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "compound-microscope-magnification"
     ],
@@ -2657,7 +2657,7 @@ export const rayOpticsQuestions = [
     "explanation": "M=40×10=400×",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "compound-microscope-magnification"
     ],
@@ -2681,7 +2681,7 @@ export const rayOpticsQuestions = [
     "explanation": "M=m_o×m_e. Increase both for maximum M",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "compound-microscope-magnification"
     ],
@@ -2705,7 +2705,7 @@ export const rayOpticsQuestions = [
     "explanation": "M=(v_o/u_o)×(D/f_e) where D=25cm (near point)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "compound-microscope-magnification"
     ],
@@ -2729,7 +2729,7 @@ export const rayOpticsQuestions = [
     "explanation": "Higher M allows seeing finer details",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "compound-microscope-magnification"
     ],
@@ -2753,7 +2753,7 @@ export const rayOpticsQuestions = [
     "explanation": "M=m_o×m_e, 500=50×m_e, m_e=10",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "compound-microscope-magnification"
     ],
@@ -2777,7 +2777,7 @@ export const rayOpticsQuestions = [
     "explanation": "∠i = ∠r (measured from normal)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "law-of-reflection"
     ],
@@ -2801,7 +2801,7 @@ export const rayOpticsQuestions = [
     "explanation": "∠r = ∠i = 30°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "law-of-reflection"
     ],
@@ -2825,7 +2825,7 @@ export const rayOpticsQuestions = [
     "explanation": "Rays lie in plane containing incident ray and normal, opposite sides",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "law-of-reflection"
     ],
@@ -2849,7 +2849,7 @@ export const rayOpticsQuestions = [
     "explanation": "Glancing angle = 90°-i. So i=90-20=70°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "law-of-reflection"
     ],
@@ -2873,7 +2873,7 @@ export const rayOpticsQuestions = [
     "explanation": "Mirror rotation θ → reflected ray rotates 2θ",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "law-of-reflection"
     ],
@@ -2897,7 +2897,7 @@ export const rayOpticsQuestions = [
     "explanation": "Universal law: applies to all reflecting surfaces",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "law-of-reflection"
     ],
@@ -2921,7 +2921,7 @@ export const rayOpticsQuestions = [
     "explanation": "v = -u (same distance behind mirror)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "plane-mirror-image"
     ],
@@ -2945,7 +2945,7 @@ export const rayOpticsQuestions = [
     "explanation": "Image at same distance behind: 5cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "plane-mirror-image"
     ],
@@ -2969,7 +2969,7 @@ export const rayOpticsQuestions = [
     "explanation": "Plane mirror: always virtual, erect, |m|=1",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "plane-mirror-image"
     ],
@@ -2993,7 +2993,7 @@ export const rayOpticsQuestions = [
     "explanation": "m = +1 (same size, erect)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "plane-mirror-image"
     ],
@@ -3017,7 +3017,7 @@ export const rayOpticsQuestions = [
     "explanation": "Image moves same distance in opposite direction",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "plane-mirror-image"
     ],
@@ -3041,7 +3041,7 @@ export const rayOpticsQuestions = [
     "explanation": "Minimum mirror height = h/2 = 1.8/2 = 0.9m",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "plane-mirror-image"
     ],
@@ -3065,7 +3065,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = (360/θ)-1 when 360/θ is integer",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "multiple-mirrors"
     ],
@@ -3089,7 +3089,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = 360/90 - 1 = 4-1 = 3 images",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "multiple-mirrors"
     ],
@@ -3113,7 +3113,7 @@ export const rayOpticsQuestions = [
     "explanation": "θ=0°: infinite images (multiple reflections)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "multiple-mirrors"
     ],
@@ -3137,7 +3137,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = 360/60 - 1 = 6-1 = 5 images",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "multiple-mirrors"
     ],
@@ -3161,7 +3161,7 @@ export const rayOpticsQuestions = [
     "explanation": "Parallel mirrors (θ=0) give infinite images",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "multiple-mirrors"
     ],
@@ -3185,7 +3185,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = 360/120 - 1 = 3-1 = 2 images",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "reflection-plane-mirror",
     "formulas": [
       "multiple-mirrors"
     ],
@@ -3209,7 +3209,7 @@ export const rayOpticsQuestions = [
     "explanation": "d = t×sin(i-r)/cos(r) depends on t, i, n",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "lateral-shift"
     ],
@@ -3233,7 +3233,7 @@ export const rayOpticsQuestions = [
     "explanation": "i=0 → r=0 → no bending → no lateral shift",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "lateral-shift"
     ],
@@ -3257,7 +3257,7 @@ export const rayOpticsQuestions = [
     "explanation": "d ∝ sin(i-r). Larger i → larger shift",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "lateral-shift"
     ],
@@ -3281,7 +3281,7 @@ export const rayOpticsQuestions = [
     "explanation": "Using formula with sin60°≈0.866, r≈35°, d≈1.7cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "lateral-shift"
     ],
@@ -3305,7 +3305,7 @@ export const rayOpticsQuestions = [
     "explanation": "d ∝ t. Thicker slab → larger shift",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "lateral-shift"
     ],
@@ -3329,7 +3329,7 @@ export const rayOpticsQuestions = [
     "explanation": "Parallel faces: emergent || incident (laterally displaced)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "refraction-plane-surface",
     "formulas": [
       "lateral-shift"
     ],
@@ -3353,7 +3353,7 @@ export const rayOpticsQuestions = [
     "explanation": "TIR needs: (1) n₁>n₂ (2) i>θc",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "tir-condition"
     ],
@@ -3377,7 +3377,7 @@ export const rayOpticsQuestions = [
     "explanation": "TIR: denser→rarer (e.g., glass to air)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "tir-condition"
     ],
@@ -3401,7 +3401,7 @@ export const rayOpticsQuestions = [
     "explanation": "θc=sin⁻¹(1/1.5)=41.8°. Need i>41.8°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "tir-condition"
     ],
@@ -3425,7 +3425,7 @@ export const rayOpticsQuestions = [
     "explanation": "At critical angle: r=90° (grazing emergence)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "tir-condition"
     ],
@@ -3449,7 +3449,7 @@ export const rayOpticsQuestions = [
     "explanation": "TIR impossible for rarer→denser (ray bends toward normal)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "tir-condition"
     ],
@@ -3473,7 +3473,7 @@ export const rayOpticsQuestions = [
     "explanation": "θc=sin⁻¹(1/2.4)=sin⁻¹(0.417)≈24.6°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "total-internal-reflection",
     "formulas": [
       "tir-condition"
     ],
@@ -3497,7 +3497,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/f = (μ-1)(1/R₁-1/R₂) where μ is refractive index",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker"
     ],
@@ -3521,7 +3521,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/f=0.5(1/20-1/(-30))=0.5(1/20+1/30)=0.5×5/60, f=24cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker"
     ],
@@ -3545,7 +3545,7 @@ export const rayOpticsQuestions = [
     "explanation": "(n-1)→0, so 1/f→0, f→∞ (lens loses power)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker"
     ],
@@ -3569,7 +3569,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/f=(n-1)(1/R-1/(-R))=(n-1)×2/R, f=R/[2(n-1)]",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker"
     ],
@@ -3593,7 +3593,7 @@ export const rayOpticsQuestions = [
     "explanation": "Lens parameters only: n, R₁, R₂. Not object dependent",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker"
     ],
@@ -3617,7 +3617,7 @@ export const rayOpticsQuestions = [
     "explanation": "f ∝ 1/(n-1). Higher n → smaller f",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "lens-formula",
     "formulas": [
       "lens-maker"
     ],
@@ -3641,7 +3641,7 @@ export const rayOpticsQuestions = [
     "explanation": "For zero chromatic aberration: ω₁/f₁ + ω₂/f₂ = 0",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "achromatic-combination"
     ],
@@ -3665,7 +3665,7 @@ export const rayOpticsQuestions = [
     "explanation": "Achromatic: removes color dispersion defect",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "achromatic-combination"
     ],
@@ -3689,7 +3689,7 @@ export const rayOpticsQuestions = [
     "explanation": "Combines lenses of opposite powers (+ and -)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "achromatic-combination"
     ],
@@ -3713,7 +3713,7 @@ export const rayOpticsQuestions = [
     "explanation": "0.03/20 + 0.05/f₂ = 0, f₂=-0.05×20/0.03=-33.3cm",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "achromatic-combination"
     ],
@@ -3737,7 +3737,7 @@ export const rayOpticsQuestions = [
     "explanation": "ω = (n_v-n_r)/(n_y-1) measures dispersion",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "achromatic-combination"
     ],
@@ -3761,7 +3761,7 @@ export const rayOpticsQuestions = [
     "explanation": "1/F=1/f₁+1/f₂≠0 (not zero power, just achromatic)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "achromatic-combination"
     ],
@@ -3785,7 +3785,7 @@ export const rayOpticsQuestions = [
     "explanation": "δ = i + e - A (A is apex angle of prism)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -3809,7 +3809,7 @@ export const rayOpticsQuestions = [
     "explanation": "At minimum deviation δ_m: i=e (symmetric path)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -3833,7 +3833,7 @@ export const rayOpticsQuestions = [
     "explanation": "δ=i+e-A=50+40-60=30°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -3857,7 +3857,7 @@ export const rayOpticsQuestions = [
     "explanation": "At δ_m: ray inside || base, r₁=r₂",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -3881,7 +3881,7 @@ export const rayOpticsQuestions = [
     "explanation": "δ vs i curve: U-shaped, minimum at specific i",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -3905,7 +3905,7 @@ export const rayOpticsQuestions = [
     "explanation": "At min dev: i=(A+δ_m)/2=(60+30)/2=45°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "prism-deviation"
     ],
@@ -3929,7 +3929,7 @@ export const rayOpticsQuestions = [
     "explanation": "n = sin[(A+δ_m)/2] / sin(A/2)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "minimum-deviation"
     ],
@@ -3953,7 +3953,7 @@ export const rayOpticsQuestions = [
     "explanation": "n=sin(45°)/sin(30°)=0.707/0.5=1.414≈1.5 (approx)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "minimum-deviation"
     ],
@@ -3977,7 +3977,7 @@ export const rayOpticsQuestions = [
     "explanation": "r₁+r₂=A (always true). At min: r₁=r₂=A/2",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "minimum-deviation"
     ],
@@ -4001,7 +4001,7 @@ export const rayOpticsQuestions = [
     "explanation": "Thin prism: δ≈(n-1)A",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "minimum-deviation"
     ],
@@ -4025,7 +4025,7 @@ export const rayOpticsQuestions = [
     "explanation": "Small angle: δ_m≈(n-1)A=(1.5-1)×10=5°",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "minimum-deviation"
     ],
@@ -4049,7 +4049,7 @@ export const rayOpticsQuestions = [
     "explanation": "δ_m ∝ (n-1). Higher n → larger δ_m",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "dispersion-light",
     "formulas": [
       "minimum-deviation"
     ],
@@ -4073,7 +4073,7 @@ export const rayOpticsQuestions = [
     "explanation": "M = D/f where D=25cm (near point)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "simple-microscope"
     ],
@@ -4097,7 +4097,7 @@ export const rayOpticsQuestions = [
     "explanation": "M=25/5=5 (angular magnification)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "simple-microscope"
     ],
@@ -4121,7 +4121,7 @@ export const rayOpticsQuestions = [
     "explanation": "Standard near point D=25cm for normal eye",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "simple-microscope"
     ],
@@ -4145,7 +4145,7 @@ export const rayOpticsQuestions = [
     "explanation": "M=D/f. Smaller f → larger M",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "simple-microscope"
     ],
@@ -4169,7 +4169,7 @@ export const rayOpticsQuestions = [
     "explanation": "Practical limit ~10× (f cannot be too small)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "simple-microscope"
     ],
@@ -4193,7 +4193,7 @@ export const rayOpticsQuestions = [
     "explanation": "For final image at D: M=(D/u)+1=5, gives u≈-6.25cm (or use M=D/f=2.5)",
     "subject": "physics",
     "chapter": "ray-optics",
-    "topic": "optical-systems",
+    "topic": "optical-instruments",
     "formulas": [
       "simple-microscope"
     ],

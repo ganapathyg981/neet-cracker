@@ -1,5 +1,5 @@
-// Semiconductor Questions
-// Updated: 2026-01-01T08:05:31.391Z
+// SemiconductorElectronics Questions
+// Updated: 2026-01-01T08:27:13.740Z
 // Total: 102 questions
 
 export const semiconductorElectronicsQuestions = [
@@ -17,7 +17,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Forward bias: p → positive terminal, n → negative. Reduces barrier, allows current",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "pn-junction",
+    "topic": "pn-junction-diode",
     "formulas": [
       "pn-junction"
     ],
@@ -41,7 +41,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Forward bias reduces barrier potential → depletion width decreases",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "pn-junction",
+    "topic": "pn-junction-diode",
     "formulas": [
       "pn-junction"
     ],
@@ -65,7 +65,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "In reverse bias, beyond breakdown voltage (Zener/avalanche), current increases dramatically",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "pn-junction",
+    "topic": "pn-junction-diode",
     "formulas": [
       "pn-junction"
     ],
@@ -89,7 +89,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Shockley equation: I = I₀(e^(qV/kT) - 1) where V_T = kT/q ≈ 26mV at room temp",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "pn-junction",
+    "topic": "pn-junction-diode",
     "formulas": [
       "diode-equation"
     ],
@@ -113,7 +113,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "For V >> 26mV: e^(V/V_T) >> 1, so I ≈ I₀e^(V/V_T) (exponential growth)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "pn-junction",
+    "topic": "pn-junction-diode",
     "formulas": [
       "diode-equation"
     ],
@@ -137,7 +137,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "HWR: diode conducts only during positive half (if p-side toward AC source)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "rectifier",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier"
     ],
@@ -161,7 +161,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "FWR: 2 diodes with center-tap transformer OR 4 diodes in bridge configuration",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "rectifier",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier"
     ],
@@ -185,7 +185,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Ripple factor = V_ac/V_dc in output. Lower is better (smoother DC)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "rectifier",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier"
     ],
@@ -209,7 +209,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β = I_C/I_B (ratio of collector to base current). Typically 50-200",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "transistor",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-current-gain"
     ],
@@ -233,7 +233,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "I_C = βI_B = 100×20×10⁻⁶ = 2×10⁻³ A = 2 mA",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "transistor",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-current-gain"
     ],
@@ -257,7 +257,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "α = I_C/I_E and β = I_C/I_B. Since I_E = I_B + I_C: α = β/(β+1)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "transistor",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-current-gain"
     ],
@@ -281,7 +281,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "CE: input at base-emitter, output at collector-emitter. Emitter common to both",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "transistor",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-amplifier"
     ],
@@ -305,7 +305,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "A_v ≈ β(R_C/r_in) where R_C = collector resistance, r_in = input resistance",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "transistor",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-amplifier"
     ],
@@ -329,7 +329,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "CE amplifier inverts signal → 180° phase shift",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "transistor",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-amplifier"
     ],
@@ -449,7 +449,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Si: V_B≈0.7V, Ge: V_B≈0.3V at room temperature",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "barrier-potential"
     ],
@@ -473,7 +473,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Ge has lower barrier ≈0.3V (vs Si 0.7V)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "barrier-potential"
     ],
@@ -497,7 +497,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Built-in potential across depletion region prevents carrier flow",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "barrier-potential"
     ],
@@ -521,7 +521,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Higher T→more carriers→lower V_B (≈-2mV/°C for Si)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "barrier-potential"
     ],
@@ -545,7 +545,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "At absolute zero, V_B is maximum (no thermal carriers)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "barrier-potential"
     ],
@@ -569,7 +569,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Forward bias must overcome barrier potential V_B",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "barrier-potential"
     ],
@@ -593,7 +593,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "α=I_C/I_E (collector current/emitter current)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-alpha"
     ],
@@ -617,7 +617,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "α=0.95-0.99 (close to 1, not exactly 1)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-alpha"
     ],
@@ -641,7 +641,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "α=I_C/I_E=4.8/5=0.96",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-alpha"
     ],
@@ -665,7 +665,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Small fraction lost in base due to recombination, so α<1",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-alpha"
     ],
@@ -689,7 +689,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "α=0.98 means 98% of I_E becomes I_C",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-alpha"
     ],
@@ -713,7 +713,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "I_C=αI_E=0.95×2=1.9mA",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-alpha"
     ],
@@ -737,7 +737,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β=I_C/I_B (current gain)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-beta"
     ],
@@ -761,7 +761,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β typically 50-200 (common values: 100, 150)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-beta"
     ],
@@ -785,7 +785,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β=I_C/I_B=2000/20=100",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-beta"
     ],
@@ -809,7 +809,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β=α/(1-α) or α=β/(1+β)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-beta"
     ],
@@ -833,7 +833,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β=0.98/(1-0.98)=0.98/0.02=49",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-beta"
     ],
@@ -857,7 +857,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "High β→large I_C for small I_B (good amplification)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "transistor-beta"
     ],
@@ -881,7 +881,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "α=β/(1+β) or β=α/(1-α)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "alpha-beta-relation"
     ],
@@ -905,7 +905,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "α=β/(1+β)=99/100=0.99",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "alpha-beta-relation"
     ],
@@ -929,7 +929,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β=α/(1-α)=0.95/0.05=19",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "alpha-beta-relation"
     ],
@@ -953,7 +953,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β=α/(1-α). As α→1, denominator→0, β→∞",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "alpha-beta-relation"
     ],
@@ -977,7 +977,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Both are positive ratios. α<1, β>1",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "alpha-beta-relation"
     ],
@@ -1001,7 +1001,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "β∝α/(1-α). As α↑, (1-α)↓, so β↑",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "alpha-beta-relation"
     ],
@@ -1025,7 +1025,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Kirchhoff: I_E=I_B+I_C (emitter feeds both base and collector)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "emitter-current"
     ],
@@ -1049,7 +1049,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "I_E=50μA+5mA=0.05+5=5.05mA",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "emitter-current"
     ],
@@ -1073,7 +1073,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "I_E is largest (sum of I_B and I_C)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "emitter-current"
     ],
@@ -1097,7 +1097,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "I_C=αI_E=1.96mA. I_B=I_E-I_C=2-1.96=0.04mA",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "emitter-current"
     ],
@@ -1121,7 +1121,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Active mode: E-B forward, C-B reverse",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "emitter-current"
     ],
@@ -1145,7 +1145,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "I_C=0.95×10=9.5mA. I_B=10-9.5=0.5mA",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "emitter-current"
     ],
@@ -1169,7 +1169,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "CE mode: current gain = β = I_C/I_B",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "current-amplification"
     ],
@@ -1193,7 +1193,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "CB mode: gain = α = I_C/I_E < 1",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "current-amplification"
     ],
@@ -1217,7 +1217,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "CE: β>>1, highest current gain among configurations",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "current-amplification"
     ],
@@ -1241,7 +1241,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "I_C=βI_B=100×10=1000μA=1mA",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "current-amplification"
     ],
@@ -1265,7 +1265,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "h_fe = β (small signal current gain parameter)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "current-amplification"
     ],
@@ -1289,7 +1289,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "High β means large amplification of small base currents",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "current-amplification"
     ],
@@ -1313,7 +1313,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "A_v = β×(R_L/R_{in}) for CE amplifier",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "voltage-amplification"
     ],
@@ -1337,7 +1337,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "A_v ∝ R_L and ∝ 1/R_{in}",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "voltage-amplification"
     ],
@@ -1361,7 +1361,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "A_v=100×(5/1)=500",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "voltage-amplification"
     ],
@@ -1385,7 +1385,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "A_v = V_out/V_in (can be <1, =1, or >1)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "voltage-amplification"
     ],
@@ -1409,7 +1409,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "CE configuration: 180° phase inversion",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "voltage-amplification"
     ],
@@ -1433,7 +1433,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "CC (emitter follower): A_v≈1, high current gain",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "voltage-amplification"
     ],
@@ -1457,7 +1457,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Mass action law: np=n_i² (constant at given T)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "carrier-concentration"
     ],
@@ -1481,7 +1481,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "np=constant. If n↑, then p↓",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "carrier-concentration"
     ],
@@ -1505,7 +1505,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "n_i ∝ T^(3/2) × e^(-E_g/2kT). Higher T → more n_i",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "carrier-concentration"
     ],
@@ -1529,7 +1529,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "np=n_i². p=(10¹⁰)²/10¹⁶=10⁴/cm³",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "carrier-concentration"
     ],
@@ -1553,7 +1553,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "n-type: electrons (n) are majority carriers",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "carrier-concentration"
     ],
@@ -1577,7 +1577,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Intrinsic: no doping, n=p=n_i",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "carrier-concentration"
     ],
@@ -1601,7 +1601,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "σ = neμ_e + peμ_h (both carriers contribute)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "conductivity"
     ],
@@ -1625,7 +1625,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "n=p=n_i: σ=n_i×e(μ_e+μ_h)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "conductivity"
     ],
@@ -1649,7 +1649,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Higher T → more carriers (n_i↑) → σ↑ (negative temp coefficient)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "conductivity"
     ],
@@ -1673,7 +1673,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "σ in siemens/meter (S/m) = (Ω·m)⁻¹",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "conductivity"
     ],
@@ -1697,7 +1697,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "n>>p: electron term dominates σ≈neμ_e",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "conductivity"
     ],
@@ -1721,7 +1721,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "σ∝μ_e for n-type. If μ_e→2μ_e, σ→2σ",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "pn-junction-diode",
     "formulas": [
       "conductivity"
     ],
@@ -1745,7 +1745,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "η = DC power output / AC power input",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier-efficiency"
     ],
@@ -1769,7 +1769,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Half-wave: η_max = 40.6% (0.406)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier-efficiency"
     ],
@@ -1793,7 +1793,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Full-wave: η_max = 81.2% (0.812)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier-efficiency"
     ],
@@ -1817,7 +1817,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Full-wave utilizes both halves of AC, better efficiency",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier-efficiency"
     ],
@@ -1841,7 +1841,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Ideal: no losses, η=100% (theoretical)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier-efficiency"
     ],
@@ -1865,7 +1865,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "η increases with R_L (less diode loss)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "rectifier-efficiency"
     ],
@@ -1889,7 +1889,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Zener: reverse biased in breakdown, constant voltage",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "zener-regulation"
     ],
@@ -1913,7 +1913,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "In breakdown: V_out=V_Z (regulated constant voltage)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "zener-regulation"
     ],
@@ -1937,7 +1937,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "R_S drops excess voltage and limits current",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "zener-regulation"
     ],
@@ -1961,7 +1961,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "R_S=(V_in-V_Z)/(I_L+I_Z)=(15-6)/(15mA)=600Ω",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "zener-regulation"
     ],
@@ -1985,7 +1985,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "I_S=I_L+I_Z=const. If I_L↑, I_Z↓",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "zener-regulation"
     ],
@@ -2009,7 +2009,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Voltage regulator: maintains constant V_out",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "zener-regulation"
     ],
@@ -2033,7 +2033,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "λ = hc/E_g. Wavelength determined by bandgap",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "led-wavelength"
     ],
@@ -2057,7 +2057,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "Energy-wavelength: E=hc/λ, so λ=hc/E",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "led-wavelength"
     ],
@@ -2081,7 +2081,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "λ=1240/E_g(eV) = 1240/2 = 620nm (red)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "led-wavelength"
     ],
@@ -2105,7 +2105,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "E_g=1240/450≈2.75eV",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "led-wavelength"
     ],
@@ -2129,7 +2129,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "IR has longer λ → lower E_g (<1.5eV)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "led-wavelength"
     ],
@@ -2153,7 +2153,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "E_g↑ → λ↓ (inverse relation)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "diode-applications",
     "formulas": [
       "led-wavelength"
     ],
@@ -2177,7 +2177,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "AND: Y=A·B (1 only if all inputs are 1)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "basic-gates"
     ],
@@ -2201,7 +2201,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "OR: Y=A+B (0 only if all inputs are 0)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "basic-gates"
     ],
@@ -2225,7 +2225,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "NOT: inverter, single input Y=Ā",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "basic-gates"
     ],
@@ -2249,7 +2249,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "NAND = NOT-AND: Y=A·B̄",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "basic-gates"
     ],
@@ -2273,7 +2273,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "NAND and NOR can implement any Boolean function",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "basic-gates"
     ],
@@ -2297,7 +2297,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "XOR: Y=A⊕B (1 when inputs differ)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "basic-gates"
     ],
@@ -2321,7 +2321,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "NOT(AND) = OR of NOTs: (AB)'=A'+B'",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "de-morgans"
     ],
@@ -2345,7 +2345,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "NOT(OR) = AND of NOTs: (A+B)'=A'·B'",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "de-morgans"
     ],
@@ -2369,7 +2369,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "(AB)'=A'+B' (De Morgan)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "de-morgans"
     ],
@@ -2393,7 +2393,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "(A+B)'=A'·B' (De Morgan)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "de-morgans"
     ],
@@ -2417,7 +2417,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "(ABC)'=A'+B'+C' (extend De Morgan)",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "de-morgans"
     ],
@@ -2441,7 +2441,7 @@ export const semiconductorElectronicsQuestions = [
     "explanation": "De Morgan: interconversion between AND/OR with complements",
     "subject": "physics",
     "chapter": "semiconductor-electronics",
-    "topic": "devices",
+    "topic": "logic-gates",
     "formulas": [
       "de-morgans"
     ],

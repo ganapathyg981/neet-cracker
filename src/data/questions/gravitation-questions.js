@@ -1,5 +1,5 @@
 // Gravitation Questions
-// Updated: 2026-01-01T08:05:31.397Z
+// Updated: 2026-01-01T08:27:13.736Z
 // Total: 244 questions
 
 export const gravitationQuestions = [
@@ -2561,7 +2561,7 @@ export const gravitationQuestions = [
     "explanation": "W = mg = 50×10 = 500 N",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "weight-at-surface"
     ],
@@ -2585,7 +2585,7 @@ export const gravitationQuestions = [
     "explanation": "W = mg. g is maximum at poles due to minimum radius and no rotation effect",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "weight-at-surface"
     ],
@@ -2609,7 +2609,7 @@ export const gravitationQuestions = [
     "explanation": "W_moon = mg_m = 10×1.6 = 16 N (mass unchanged, weight changes)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "weight-at-surface"
     ],
@@ -2633,7 +2633,7 @@ export const gravitationQuestions = [
     "explanation": "W = GMm/R². If R→0.99R, W→W/(0.99)² = W×1.0203 ≈ 2% increase",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "weight-at-surface"
     ],
@@ -2657,7 +2657,7 @@ export const gravitationQuestions = [
     "explanation": "At center, g=0, so W=mg=0. At infinity, g→0 so W→0 (both correct, center more precise)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "weight-at-surface"
     ],
@@ -2681,7 +2681,7 @@ export const gravitationQuestions = [
     "explanation": "W ∝ M/R². Ratio = (2M)/(2R)² = 2M/4R² = 1/2. New W = 600/2 = 300 N",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "weight-at-surface"
     ],
@@ -2705,7 +2705,7 @@ export const gravitationQuestions = [
     "explanation": "F = GMm/r² where r = R+h from Earth center",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "force-on-satellite"
     ],
@@ -2729,7 +2729,7 @@ export const gravitationQuestions = [
     "explanation": "F = mg_h = mg(R/(R+h))² = 500×10×(6400/6800)² ≈ 4318 N",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "force-on-satellite"
     ],
@@ -2753,7 +2753,7 @@ export const gravitationQuestions = [
     "explanation": "F ∝ 1/r². At 2h: r₁=R+h, r₂=R+2h. Since R>>h not always, F > F/4 but < F/2",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "force-on-satellite"
     ],
@@ -2777,7 +2777,7 @@ export const gravitationQuestions = [
     "explanation": "F ∝ 1/r². At R above: r=2R. At 2R above: r=3R. Ratio = (3R)²/(2R)² = 9/4",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "force-on-satellite"
     ],
@@ -2801,7 +2801,7 @@ export const gravitationQuestions = [
     "explanation": "At r=2R: g_h = g/4 = 2.5 m/s². F = mg_h = 1000×2.5 = 2500 N",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "force-on-satellite"
     ],
@@ -2825,7 +2825,7 @@ export const gravitationQuestions = [
     "explanation": "Gravitational force = centripetal force for circular orbit, provides centripetal acceleration",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "force-on-satellite"
     ],
@@ -2849,7 +2849,7 @@ export const gravitationQuestions = [
     "explanation": "g = GM/R² = (6.67×10⁻¹¹×6×10²⁴)/(6.4×10⁶)² ≈ 9.8 m/s²",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "at-earth-surface"
     ],
@@ -2873,7 +2873,7 @@ export const gravitationQuestions = [
     "explanation": "g = GM/R² depends on M, R, G but NOT on mass of falling object",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "at-earth-surface"
     ],
@@ -2897,7 +2897,7 @@ export const gravitationQuestions = [
     "explanation": "g ∝ 1/R². If R→R/2, then g→g/(R/2)² = 4g",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "at-earth-surface"
     ],
@@ -2921,7 +2921,7 @@ export const gravitationQuestions = [
     "explanation": "M = (4/3)πR³ρ. g = GM/R² = G×(4/3)πR³ρ/R² = (4/3)πGρR",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "at-earth-surface"
     ],
@@ -2945,7 +2945,7 @@ export const gravitationQuestions = [
     "explanation": "g ∝ R (when density constant). g₁/g₂ = R₁/R₂ = 2R₂/R₂ = 2:1",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "at-earth-surface"
     ],
@@ -2969,7 +2969,7 @@ export const gravitationQuestions = [
     "explanation": "g_Mars/g_E = (M/R²)_Mars/(M/R²)_E = (0.11)/(0.53)² ≈ 0.39",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "law-of-gravitation",
     "formulas": [
       "at-earth-surface"
     ],
@@ -2993,7 +2993,7 @@ export const gravitationQuestions = [
     "explanation": "g_h = GM/(R+h)² = g×R²/(R+h)² = g(R/(R+h))²",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "orbital-velocity",
     "formulas": [
       "at-height-h"
     ],
@@ -3017,7 +3017,7 @@ export const gravitationQuestions = [
     "explanation": "g_h = g(R/(R+R))² = g(R/2R)² = g/4",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "orbital-velocity",
     "formulas": [
       "at-height-h"
     ],
@@ -3041,7 +3041,7 @@ export const gravitationQuestions = [
     "explanation": "g_h/g = (R/(R+h))² = 1/2. So R+h = R√2. Hence h = R(√2-1) ≈ 0.414R",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "orbital-velocity",
     "formulas": [
       "at-height-h"
     ],
@@ -3065,7 +3065,7 @@ export const gravitationQuestions = [
     "explanation": "For h<<R: g_h ≈ g(1-2h/R) = g(1-2/100) = 0.98g. Decrease = 2%",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "orbital-velocity",
     "formulas": [
       "at-height-h"
     ],
@@ -3089,7 +3089,7 @@ export const gravitationQuestions = [
     "explanation": "Δg/g ≈ -2h/R = -2×10/6400 = -0.003 = -0.3%",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "orbital-velocity",
     "formulas": [
       "at-height-h"
     ],
@@ -3113,7 +3113,7 @@ export const gravitationQuestions = [
     "explanation": "W_h/W = (R/(R+h))² = 1/9. So R/(R+h) = 1/3. R+h = 3R. Hence h = 2R",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "orbital-velocity",
     "formulas": [
       "at-height-h"
     ],
@@ -3137,7 +3137,7 @@ export const gravitationQuestions = [
     "explanation": "Binomial approximation: (1+x)ⁿ≈1+nx for small x. g_h = g(1+h/R)⁻² ≈ g(1-2h/R)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "approximate-h-r"
     ],
@@ -3161,7 +3161,7 @@ export const gravitationQuestions = [
     "explanation": "Δg/g ≈ -2h/R = -2×3.2/6400 = -0.001 = -0.1%",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "approximate-h-r"
     ],
@@ -3185,7 +3185,7 @@ export const gravitationQuestions = [
     "explanation": "Δg/g = -2h/R = -0.01. So h/R = 0.005 = 1/200. Hence h = R/200 ≈ 32km",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "approximate-h-r"
     ],
@@ -3209,7 +3209,7 @@ export const gravitationQuestions = [
     "explanation": "Binomial expansion valid only when h/R << 1, i.e., h << R (height much smaller than radius)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "approximate-h-r"
     ],
@@ -3233,7 +3233,7 @@ export const gravitationQuestions = [
     "explanation": "g_h = g(1-2h/R) = 9.8(1-20/6400) = 9.8×0.9969 ≈ 9.77 m/s²",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "approximate-h-r"
     ],
@@ -3257,7 +3257,7 @@ export const gravitationQuestions = [
     "explanation": "Exact: (10/11)²=0.826. Approx: 1-2/10=0.8. Error = (0.826-0.8)/0.826 ≈ 3% (close to 2%)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "approximate-h-r"
     ],
@@ -3281,7 +3281,7 @@ export const gravitationQuestions = [
     "explanation": "At r = 2R: g_h = g(R/2R)² = g/4",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-h-r"
     ],
@@ -3305,7 +3305,7 @@ export const gravitationQuestions = [
     "explanation": "At r = 3R: g_h = g(R/3R)² = g/9",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-h-r"
     ],
@@ -3329,7 +3329,7 @@ export const gravitationQuestions = [
     "explanation": "g_h/g = (R/(R+h))² = 1/16. So R/(R+h) = 1/4. R+h = 4R. Hence h = 3R",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-h-r"
     ],
@@ -3353,7 +3353,7 @@ export const gravitationQuestions = [
     "explanation": "v ∝ 1/√r. At 2R: v₁. At 4R: v₂. Ratio v₂/v₁ = √(2R/4R) = 1/√2",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-h-r"
     ],
@@ -3377,7 +3377,7 @@ export const gravitationQuestions = [
     "explanation": "At h=R: g_h = g/4 = 2.5 m/s². W = mg_h = 10×2.5 = 25 N",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-h-r"
     ],
@@ -3401,7 +3401,7 @@ export const gravitationQuestions = [
     "explanation": "g ∝ 1/r². This is inverse square law, shows hyperbolic decay with height",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-h-r"
     ],
@@ -3425,7 +3425,7 @@ export const gravitationQuestions = [
     "explanation": "At center, all mass distributed symmetrically around point. Net gravitational field = 0",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-center"
     ],
@@ -3449,7 +3449,7 @@ export const gravitationQuestions = [
     "explanation": "W = mg_center = m×0 = 0. Weightless at center!",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-center"
     ],
@@ -3473,7 +3473,7 @@ export const gravitationQuestions = [
     "explanation": "Undergoes SHM through center with restoring force F ∝ -x",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-center"
     ],
@@ -3497,7 +3497,7 @@ export const gravitationQuestions = [
     "explanation": "g_inside = (GM_inside)/r² = G×(4/3)πr³ρ/r² = (4/3)πGρr ∝ r",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-center"
     ],
@@ -3521,7 +3521,7 @@ export const gravitationQuestions = [
     "explanation": "g_inside = g_surface × (r/R) = g × (R/2)/R = g/2",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-center"
     ],
@@ -3545,7 +3545,7 @@ export const gravitationQuestions = [
     "explanation": "V_center = -3GM/2R, V_surface = -GM/R. |V_center| > |V_surface|, more negative",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-center"
     ],
@@ -3569,7 +3569,7 @@ export const gravitationQuestions = [
     "explanation": "g_d = g(1-d/R). Linear decrease with depth for uniform density",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-half-depth"
     ],
@@ -3593,7 +3593,7 @@ export const gravitationQuestions = [
     "explanation": "g_d = g(1-d/R) = g(1-1/2) = g/2",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-half-depth"
     ],
@@ -3617,7 +3617,7 @@ export const gravitationQuestions = [
     "explanation": "g_d/g = 1-d/R = 0.75. So d/R = 0.25. Hence d = R/4",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-half-depth"
     ],
@@ -3641,7 +3641,7 @@ export const gravitationQuestions = [
     "explanation": "g_d/g = 1-d/R = 1-3.2/6400 = 1-0.0005 = 0.9995. Decrease = 0.05%",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-half-depth"
     ],
@@ -3665,7 +3665,7 @@ export const gravitationQuestions = [
     "explanation": "g_d = g(1-1/4) = 0.75g = 7.5 m/s². W = 80×7.5 = 600 N",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-half-depth"
     ],
@@ -3689,7 +3689,7 @@ export const gravitationQuestions = [
     "explanation": "g_d = g(1-d/R) is linear. g_h = g(R/(R+h))² is inverse square",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-half-depth"
     ],
@@ -3713,7 +3713,7 @@ export const gravitationQuestions = [
     "explanation": "At equator: maximum centrifugal effect and maximum radius. g_eq < g_pole",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-equator"
     ],
@@ -3737,7 +3737,7 @@ export const gravitationQuestions = [
     "explanation": "Centrifugal acceleration ω²R acts outward, reduces effective g: g_eff = g - ω²R",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-equator"
     ],
@@ -3761,7 +3761,7 @@ export const gravitationQuestions = [
     "explanation": "ω²R = (2π/86400)²×6.4×10⁶ ≈ 0.034 m/s²",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-equator"
     ],
@@ -3785,7 +3785,7 @@ export const gravitationQuestions = [
     "explanation": "Without rotation, no centrifugal effect. g increases by ~0.034 m/s² (0.3% increase)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-equator"
     ],
@@ -3809,7 +3809,7 @@ export const gravitationQuestions = [
     "explanation": "W' = m(g - ω²R) = W - mω²R < W due to rotation",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-equator"
     ],
@@ -3833,7 +3833,7 @@ export const gravitationQuestions = [
     "explanation": "g_equator ≈ 9.78, g_pole ≈ 9.83. Ratio = 9.78/9.83 ≈ 0.995 (closest to 0.997)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-equator"
     ],
@@ -3857,7 +3857,7 @@ export const gravitationQuestions = [
     "explanation": "At poles: no centrifugal effect, minimum radius. g_pole > g_equator",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-poles"
     ],
@@ -3881,7 +3881,7 @@ export const gravitationQuestions = [
     "explanation": "g_pole ≈ 9.83 m/s² (maximum on Earth). At equator g ≈ 9.78 m/s²",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-poles"
     ],
@@ -3905,7 +3905,7 @@ export const gravitationQuestions = [
     "explanation": "At poles, rotation axis passes through point. ω²R_eff = 0 (no centrifugal effect)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-poles"
     ],
@@ -3929,7 +3929,7 @@ export const gravitationQuestions = [
     "explanation": "W_p - W_e = 50×(9.83-9.78) = 50×0.05 = 2.5 N",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-poles"
     ],
@@ -3953,7 +3953,7 @@ export const gravitationQuestions = [
     "explanation": "Spring balance measures apparent weight = mg_effective. Maximum at poles where g is maximum",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-poles"
     ],
@@ -3977,7 +3977,7 @@ export const gravitationQuestions = [
     "explanation": "Δg = 9.83-9.78 = 0.05. Percentage = 0.05/9.8 × 100 ≈ 0.5%",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-field",
+    "topic": "acceleration-due-gravity",
     "formulas": [
       "at-poles"
     ],
@@ -4289,7 +4289,7 @@ export const gravitationQuestions = [
     "explanation": "E = GMm/2R = mgR/2 = 1×10×6.4×10⁶/2 = 3.2×10⁷ J",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-potential-energy",
+    "topic": "satellites",
     "formulas": [
       "energy-to-orbit"
     ],
@@ -4313,7 +4313,7 @@ export const gravitationQuestions = [
     "explanation": "KE = GMm/2r, PE = -GMm/r. So |PE| = 2KE (virial theorem)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-potential-energy",
+    "topic": "satellites",
     "formulas": [
       "energy-to-orbit"
     ],
@@ -4337,7 +4337,7 @@ export const gravitationQuestions = [
     "explanation": "E = KE + PE = GMm/2r - GMm/r = -GMm/2r (negative, bound state)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-potential-energy",
+    "topic": "satellites",
     "formulas": [
       "energy-to-orbit"
     ],
@@ -4361,7 +4361,7 @@ export const gravitationQuestions = [
     "explanation": "E = -GMm/2r = -gRm/2r = -10×6.4×10⁶×500/(2×2R) = -0.8×10¹⁰ J (using r=2R)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-potential-energy",
+    "topic": "satellites",
     "formulas": [
       "energy-to-orbit"
     ],
@@ -4385,7 +4385,7 @@ export const gravitationQuestions = [
     "explanation": "ΔE = E₂-E₁ = -GMm/2r₂-(-GMm/2r₁) = GMm/2(1/r₁-1/r₂)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-potential-energy",
+    "topic": "satellites",
     "formulas": [
       "energy-to-orbit"
     ],
@@ -4409,7 +4409,7 @@ export const gravitationQuestions = [
     "explanation": "E₁=-GMm/2R. E₂=-GMm/4R. ΔE=E₂-E₁=-GMm/4R+GMm/2R=GMm/4R=|E₁|/2",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "gravitational-potential-energy",
+    "topic": "satellites",
     "formulas": [
       "energy-to-orbit"
     ],
@@ -4865,7 +4865,7 @@ export const gravitationQuestions = [
     "explanation": "Centripetal force = Gravitational force. mv²/r = GMm/r². So v = √(GM/r)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "gravitational-potential-energy",
     "formulas": [
       "for-satellite"
     ],
@@ -4889,7 +4889,7 @@ export const gravitationQuestions = [
     "explanation": "v = √(gR) = √(10×6.4×10⁶) = √(6.4×10⁷) = 8000 m/s = 8 km/s",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "gravitational-potential-energy",
     "formulas": [
       "for-satellite"
     ],
@@ -4913,7 +4913,7 @@ export const gravitationQuestions = [
     "explanation": "v ∝ 1/√r. If r→4r, then v→v/√4 = v/2",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "gravitational-potential-energy",
     "formulas": [
       "for-satellite"
     ],
@@ -4937,7 +4937,7 @@ export const gravitationQuestions = [
     "explanation": "At height h: r = R+h. v = √(GM/r) = √(GM/(R+h))",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "gravitational-potential-energy",
     "formulas": [
       "for-satellite"
     ],
@@ -4961,7 +4961,7 @@ export const gravitationQuestions = [
     "explanation": "v ∝ 1/√r. v₂/v₁ = √(r₁/r₂) = √(2R/8R) = √(1/4) = 1/2",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "gravitational-potential-energy",
     "formulas": [
       "for-satellite"
     ],
@@ -4985,7 +4985,7 @@ export const gravitationQuestions = [
     "explanation": "Circular orbit requires exact balance: v = √(GM/r). More → ellipse/escape, less → crash",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "gravitational-potential-energy",
     "formulas": [
       "for-satellite"
     ],
@@ -5009,7 +5009,7 @@ export const gravitationQuestions = [
     "explanation": "T = 2πr/v = 2πr/√(GM/r) = 2π√(r³/GM) (Kepler's third law form)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "time-period-orbit"
     ],
@@ -5033,7 +5033,7 @@ export const gravitationQuestions = [
     "explanation": "T = 2π√(R/g) = 2π√(6.4×10⁶/10) = 2π×800 ≈ 5024 s ≈ 84 min",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "time-period-orbit"
     ],
@@ -5057,7 +5057,7 @@ export const gravitationQuestions = [
     "explanation": "T ∝ r^(3/2). If r→8r, then T→T×8^(3/2) = T×(2³)^(3/2) = T×2^(9/2) = T×16√2 ≈ 22.6T (closest 8√2)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "time-period-orbit"
     ],
@@ -5081,7 +5081,7 @@ export const gravitationQuestions = [
     "explanation": "Geostationary means synchronous with Earth rotation = 24 hours",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "time-period-orbit"
     ],
@@ -5105,7 +5105,7 @@ export const gravitationQuestions = [
     "explanation": "T ∝ r^(3/2). T₁/T₂ = (R/4R)^(3/2) = (1/4)^(3/2) = 1/8",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "time-period-orbit"
     ],
@@ -5129,7 +5129,7 @@ export const gravitationQuestions = [
     "explanation": "T = 2π√(r³/GM). Depends on M (planet) and r (orbit), NOT satellite mass",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "time-period-orbit"
     ],
@@ -5153,7 +5153,7 @@ export const gravitationQuestions = [
     "explanation": "v = √(GM/R) = √(gR) when r≈R",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "close-to-surface"
     ],
@@ -5177,7 +5177,7 @@ export const gravitationQuestions = [
     "explanation": "v = √(gR) = √(10×6.4×10⁶) ≈ 7920 m/s ≈ 7.9 km/s",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "close-to-surface"
     ],
@@ -5201,7 +5201,7 @@ export const gravitationQuestions = [
     "explanation": "T = 2π√(R/g) = 2π×800 ≈ 5027 s ≈ 84 min (ignoring atmosphere)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "close-to-surface"
     ],
@@ -5225,7 +5225,7 @@ export const gravitationQuestions = [
     "explanation": "v_o = √(gR), v_e = √(2gR). So v_e = √2 v_o",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "close-to-surface"
     ],
@@ -5249,7 +5249,7 @@ export const gravitationQuestions = [
     "explanation": "KE = (1/2)mv² = 0.5×1000×(8000)² = 3.2×10¹⁰ J",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "close-to-surface"
     ],
@@ -5273,7 +5273,7 @@ export const gravitationQuestions = [
     "explanation": "In free fall orbit, apparent weight = 0 (weightlessness). g still acts!",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "close-to-surface"
     ],
@@ -5297,7 +5297,7 @@ export const gravitationQuestions = [
     "explanation": "r = 42000 km from center. h = r-R = 42000-6400 ≈ 36000 km (35786 km exact)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "geostationary"
     ],
@@ -5321,7 +5321,7 @@ export const gravitationQuestions = [
     "explanation": "Period = 24hr = Earth rotation. Appears fixed over one longitude",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "geostationary"
     ],
@@ -5345,7 +5345,7 @@ export const gravitationQuestions = [
     "explanation": "Must be in equatorial plane to match Earth's rotation axis",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "geostationary"
     ],
@@ -5369,7 +5369,7 @@ export const gravitationQuestions = [
     "explanation": "v = 2πr/T = 2π×42×10⁶/(24×3600) ≈ 3070 m/s ≈ 3.1 km/s",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "geostationary"
     ],
@@ -5393,7 +5393,7 @@ export const gravitationQuestions = [
     "explanation": "Geostationary only possible over equator (0° latitude) for 24hr period match",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "geostationary"
     ],
@@ -5417,7 +5417,7 @@ export const gravitationQuestions = [
     "explanation": "Infinitely many can share the orbit at different longitudes with proper spacing",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "orbital-velocity",
     "formulas": [
       "geostationary"
     ],
@@ -5441,7 +5441,7 @@ export const gravitationQuestions = [
     "explanation": "Conservation: closer → faster (Kepler's 2nd law)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "keplers-laws",
     "formulas": [
       "velocity-perihelion-aphelion"
     ],
@@ -5465,7 +5465,7 @@ export const gravitationQuestions = [
     "explanation": "Angular momentum: v_p×r_p=v_a×r_a, so v_p/v_a=r_a/r_p",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "keplers-laws",
     "formulas": [
       "velocity-perihelion-aphelion"
     ],
@@ -5489,7 +5489,7 @@ export const gravitationQuestions = [
     "explanation": "v_p/v_a=4/1=4",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "keplers-laws",
     "formulas": [
       "velocity-perihelion-aphelion"
     ],
@@ -5513,7 +5513,7 @@ export const gravitationQuestions = [
     "explanation": "Farthest point → slowest speed",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "keplers-laws",
     "formulas": [
       "velocity-perihelion-aphelion"
     ],
@@ -5537,7 +5537,7 @@ export const gravitationQuestions = [
     "explanation": "Circular: r_p=r_a, so v_p=v_a",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "keplers-laws",
     "formulas": [
       "velocity-perihelion-aphelion"
     ],
@@ -5561,7 +5561,7 @@ export const gravitationQuestions = [
     "explanation": "Earth perihelion ~Jan 3, aphelion ~Jul 4",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "keplers-laws",
     "formulas": [
       "velocity-perihelion-aphelion"
     ],
@@ -5585,7 +5585,7 @@ export const gravitationQuestions = [
     "explanation": "g'=g-ω²Rcosλ (centrifugal effect varies with latitude)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "weightlessness",
     "formulas": [
       "effective-g-latitude"
     ],
@@ -5609,7 +5609,7 @@ export const gravitationQuestions = [
     "explanation": "cos90°=0, g'=g (no rotation effect at poles)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "weightlessness",
     "formulas": [
       "effective-g-latitude"
     ],
@@ -5633,7 +5633,7 @@ export const gravitationQuestions = [
     "explanation": "cos0°=1, maximum ω²R term, minimum g'",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "weightlessness",
     "formulas": [
       "effective-g-latitude"
     ],
@@ -5657,7 +5657,7 @@ export const gravitationQuestions = [
     "explanation": "ω=0 → no centrifugal effect, g increases",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "weightlessness",
     "formulas": [
       "effective-g-latitude"
     ],
@@ -5681,7 +5681,7 @@ export const gravitationQuestions = [
     "explanation": "Equator: cos²λ maximum → largest ω²R effect",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "weightlessness",
     "formulas": [
       "effective-g-latitude"
     ],
@@ -5705,7 +5705,7 @@ export const gravitationQuestions = [
     "explanation": "cos45°=1/√2, cos²45°=0.5",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "weightlessness",
     "formulas": [
       "effective-g-latitude"
     ],
@@ -5729,7 +5729,7 @@ export const gravitationQuestions = [
     "explanation": "ΔE=E₂-E₁=-GMm/2r₂+GMm/2r₁=GMm/2(1/r₁-1/r₂)",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "satellites",
     "formulas": [
       "parking-orbit"
     ],
@@ -5753,7 +5753,7 @@ export const gravitationQuestions = [
     "explanation": "Higher orbit less negative E, need energy input",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "satellites",
     "formulas": [
       "parking-orbit"
     ],
@@ -5777,7 +5777,7 @@ export const gravitationQuestions = [
     "explanation": "ΔE=GMm/2(1/R-1/2R)=GMm/4R=mgR/4",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "satellites",
     "formulas": [
       "parking-orbit"
     ],
@@ -5801,7 +5801,7 @@ export const gravitationQuestions = [
     "explanation": "Most efficient: tangential burns via ellipse",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "satellites",
     "formulas": [
       "parking-orbit"
     ],
@@ -5825,7 +5825,7 @@ export const gravitationQuestions = [
     "explanation": "Parking orbit: temporary LEO before transfer",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "satellites",
     "formulas": [
       "parking-orbit"
     ],
@@ -5849,7 +5849,7 @@ export const gravitationQuestions = [
     "explanation": "Increase speed to enter elliptical transfer orbit",
     "subject": "physics",
     "chapter": "gravitation",
-    "topic": "satellite-motion",
+    "topic": "satellites",
     "formulas": [
       "parking-orbit"
     ],

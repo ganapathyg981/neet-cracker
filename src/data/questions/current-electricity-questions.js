@@ -1,5 +1,5 @@
-// Current Electricity Questions
-// Updated: 2026-01-01T08:01:43.757Z
+// CurrentElectricity Questions
+// Updated: 2026-01-01T08:27:13.725Z
 // Total: 154 questions
 
 export const currentElectricityQuestions = [
@@ -17,7 +17,7 @@ export const currentElectricityQuestions = [
     "explanation": "V = IR (V ∝ I) only when R is constant, which requires constant temperature",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "ohms-law"
     ],
@@ -41,7 +41,7 @@ export const currentElectricityQuestions = [
     "explanation": "V = IR = 2×10 = 20 V",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "ohms-law"
     ],
@@ -65,7 +65,7 @@ export const currentElectricityQuestions = [
     "explanation": "V = IR. If V → 2V and R constant, then I → 2I",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "ohms-law"
     ],
@@ -89,7 +89,7 @@ export const currentElectricityQuestions = [
     "explanation": "Ohmic conductor: V ∝ I → straight line. Slope = R",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "ohms-law"
     ],
@@ -113,7 +113,7 @@ export const currentElectricityQuestions = [
     "explanation": "Series: same current, voltages add. R_eq = R₁ + R₂ + R₃ + ...",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-resistance"
     ],
@@ -137,7 +137,7 @@ export const currentElectricityQuestions = [
     "explanation": "R_eq = 2+3+5 = 10 Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-resistance"
     ],
@@ -161,7 +161,7 @@ export const currentElectricityQuestions = [
     "explanation": "Series → same current path → same current through all",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-resistance"
     ],
@@ -185,7 +185,7 @@ export const currentElectricityQuestions = [
     "explanation": "R_eq = R + R = 2R",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-resistance"
     ],
@@ -209,7 +209,7 @@ export const currentElectricityQuestions = [
     "explanation": "Parallel: same voltage, currents add. 1/R_eq = 1/R₁ + 1/R₂ + ...",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-resistance"
     ],
@@ -233,7 +233,7 @@ export const currentElectricityQuestions = [
     "explanation": "1/R_eq = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2. R_eq = 2 Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-resistance"
     ],
@@ -257,7 +257,7 @@ export const currentElectricityQuestions = [
     "explanation": "1/R_eq = 1/R + 1/R = 2/R. R_eq = R/2",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-resistance"
     ],
@@ -281,7 +281,7 @@ export const currentElectricityQuestions = [
     "explanation": "R_eq < R_min (adding parallel paths decreases total resistance)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-resistance"
     ],
@@ -305,7 +305,7 @@ export const currentElectricityQuestions = [
     "explanation": "Parallel → connected at same two points → same voltage",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-resistance"
     ],
@@ -329,7 +329,7 @@ export const currentElectricityQuestions = [
     "explanation": "KCL: sum of currents entering junction = sum leaving (charge conservation)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kirchhoff-current-law"
     ],
@@ -353,7 +353,7 @@ export const currentElectricityQuestions = [
     "explanation": "I_in = I_out: 3+2 = 4+I. I = 1 A leaving",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kirchhoff-current-law"
     ],
@@ -377,7 +377,7 @@ export const currentElectricityQuestions = [
     "explanation": "Current = charge/time. KCL ensures no charge accumulates at junction",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kirchhoff-current-law"
     ],
@@ -401,7 +401,7 @@ export const currentElectricityQuestions = [
     "explanation": "KVL: algebraic sum of potential changes around any closed loop = 0 (energy conservation)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kirchhoff-voltage-law"
     ],
@@ -425,7 +425,7 @@ export const currentElectricityQuestions = [
     "explanation": "ΣV = 0: 12 - 5 - 4 - V₃ = 0. V₃ = 3 V",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kirchhoff-voltage-law"
     ],
@@ -449,7 +449,7 @@ export const currentElectricityQuestions = [
     "explanation": "Potential = energy/charge. Loop sum = 0 ensures energy conservation",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "kirchhoff-laws",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kirchhoff-voltage-law"
     ],
@@ -569,7 +569,7 @@ export const currentElectricityQuestions = [
     "explanation": "Shunt in parallel with G to bypass most current, converting G to ammeter",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "measuring-instruments",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "shunt-resistance"
     ],
@@ -593,7 +593,7 @@ export const currentElectricityQuestions = [
     "explanation": "S = I_g G/(I-I_g) where I_g through galvanometer, (I-I_g) through shunt",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "measuring-instruments",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "shunt-resistance"
     ],
@@ -617,7 +617,7 @@ export const currentElectricityQuestions = [
     "explanation": "S = I_g G/(I-I_g) = (0.001×100)/(1-0.001) = 0.1/0.999 ≈ 0.1 Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "measuring-instruments",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "shunt-resistance"
     ],
@@ -641,7 +641,7 @@ export const currentElectricityQuestions = [
     "explanation": "S << G to bypass most current through shunt (low resistance path)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "measuring-instruments",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "shunt-resistance"
     ],
@@ -665,7 +665,7 @@ export const currentElectricityQuestions = [
     "explanation": "Series high resistance limits current for given voltage → voltmeter",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "measuring-instruments",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "multiplier-resistance"
     ],
@@ -689,7 +689,7 @@ export const currentElectricityQuestions = [
     "explanation": "V = I_g(G+R). So R = V/I_g - G",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "measuring-instruments",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "multiplier-resistance"
     ],
@@ -713,7 +713,7 @@ export const currentElectricityQuestions = [
     "explanation": "R = V/I_g - G = 10/0.002 - 50 = 5000 - 50 = 4950 Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "measuring-instruments",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "multiplier-resistance"
     ],
@@ -737,7 +737,7 @@ export const currentElectricityQuestions = [
     "explanation": "R >> G to limit current and extend voltage range",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "measuring-instruments",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "multiplier-resistance"
     ],
@@ -977,7 +977,7 @@ export const currentElectricityQuestions = [
     "explanation": "R_eq=R₁+R₂=4+6=10Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-two-resistors"
     ],
@@ -1001,7 +1001,7 @@ export const currentElectricityQuestions = [
     "explanation": "R_eq=25Ω, I=V/R=50/25=2A",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-two-resistors"
     ],
@@ -1025,7 +1025,7 @@ export const currentElectricityQuestions = [
     "explanation": "In series: current is same through all resistors",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-two-resistors"
     ],
@@ -1049,7 +1049,7 @@ export const currentElectricityQuestions = [
     "explanation": "R_eq=6+6+6=18Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-two-resistors"
     ],
@@ -1073,7 +1073,7 @@ export const currentElectricityQuestions = [
     "explanation": "Series circuit breaks if any element opens. I=0",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-two-resistors"
     ],
@@ -1097,7 +1097,7 @@ export const currentElectricityQuestions = [
     "explanation": "R_eq=R+R+...n times=nR",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "series-two-resistors"
     ],
@@ -1121,7 +1121,7 @@ export const currentElectricityQuestions = [
     "explanation": "1/R_eq=1/6+1/3=1/2, so R_eq=2Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-two-resistors"
     ],
@@ -1145,7 +1145,7 @@ export const currentElectricityQuestions = [
     "explanation": "1/R_eq=1/R+1/R=2/R, so R_eq=R/2",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-two-resistors"
     ],
@@ -1169,7 +1169,7 @@ export const currentElectricityQuestions = [
     "explanation": "In parallel: voltage across all is same",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-two-resistors"
     ],
@@ -1193,7 +1193,7 @@ export const currentElectricityQuestions = [
     "explanation": "R_eq=4Ω (product/sum). I=12/4=3A",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-two-resistors"
     ],
@@ -1217,7 +1217,7 @@ export const currentElectricityQuestions = [
     "explanation": "Parallel path reduces net resistance",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-two-resistors"
     ],
@@ -1241,7 +1241,7 @@ export const currentElectricityQuestions = [
     "explanation": "1/R_eq=n/R, so R_eq=R/n",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "parallel-two-resistors"
     ],
@@ -1265,7 +1265,7 @@ export const currentElectricityQuestions = [
     "explanation": "P=I²R=10²×5=500W",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "power-dissipation"
     ],
@@ -1289,7 +1289,7 @@ export const currentElectricityQuestions = [
     "explanation": "P=V²/R=100²/25=400W",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "power-dissipation"
     ],
@@ -1313,7 +1313,7 @@ export const currentElectricityQuestions = [
     "explanation": "P∝V². If V→2V, P→4P",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "power-dissipation"
     ],
@@ -1337,7 +1337,7 @@ export const currentElectricityQuestions = [
     "explanation": "P=I²R, 40=4R, R=10Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "power-dissipation"
     ],
@@ -1361,7 +1361,7 @@ export const currentElectricityQuestions = [
     "explanation": "P=I²R constant. If R→2R, I²→I²/2, so I→I/√2",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "power-dissipation"
     ],
@@ -1385,7 +1385,7 @@ export const currentElectricityQuestions = [
     "explanation": "R=V²/P=220²/1000=48.4Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "power-dissipation"
     ],
@@ -1409,7 +1409,7 @@ export const currentElectricityQuestions = [
     "explanation": "E_total=E₁+E₂=1.5+1.5=3V",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-series"
     ],
@@ -1433,7 +1433,7 @@ export const currentElectricityQuestions = [
     "explanation": "Series: EMFs add. Total=nE",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-series"
     ],
@@ -1457,7 +1457,7 @@ export const currentElectricityQuestions = [
     "explanation": "If reversed: net=(n-1)E-E=(n-2)E, reduced by 2E",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-series"
     ],
@@ -1481,7 +1481,7 @@ export const currentElectricityQuestions = [
     "explanation": "E_total=5×2=10V, r_total=5×1=5Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-series"
     ],
@@ -1505,7 +1505,7 @@ export const currentElectricityQuestions = [
     "explanation": "Series increases total EMF (voltage), not current capacity",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-series"
     ],
@@ -1529,7 +1529,7 @@ export const currentElectricityQuestions = [
     "explanation": "E=4×1.5=6V, r=0.5+0.5+0.5+1=2.5Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-series"
     ],
@@ -1553,7 +1553,7 @@ export const currentElectricityQuestions = [
     "explanation": "Parallel: EMF same as one cell=1.5V",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-parallel"
     ],
@@ -1577,7 +1577,7 @@ export const currentElectricityQuestions = [
     "explanation": "EMF=E (same), r_eq=r/n (resistances in parallel)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-parallel"
     ],
@@ -1601,7 +1601,7 @@ export const currentElectricityQuestions = [
     "explanation": "Parallel increases current capacity, EMF unchanged",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-parallel"
     ],
@@ -1625,7 +1625,7 @@ export const currentElectricityQuestions = [
     "explanation": "E=2V, r=0.8/4=0.2Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-parallel"
     ],
@@ -1649,7 +1649,7 @@ export const currentElectricityQuestions = [
     "explanation": "Parallel good for low R loads (high current demand)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-parallel"
     ],
@@ -1673,7 +1673,7 @@ export const currentElectricityQuestions = [
     "explanation": "Mixed: EMF=1.5+1.5=3V, r varies based on individual r values",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "cells-parallel"
     ],
@@ -1697,7 +1697,7 @@ export const currentElectricityQuestions = [
     "explanation": "τ=RC=10000×100×10⁻⁶=1s",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "rc-time-constant"
     ],
@@ -1721,7 +1721,7 @@ export const currentElectricityQuestions = [
     "explanation": "At t=τ, Q=Q₀(1-e⁻¹)≈0.63Q₀",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "rc-time-constant"
     ],
@@ -1745,7 +1745,7 @@ export const currentElectricityQuestions = [
     "explanation": "τ=RC. If R→2R and C→2C, τ→4τ",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "rc-time-constant"
     ],
@@ -1769,7 +1769,7 @@ export const currentElectricityQuestions = [
     "explanation": "[RC]=[Ω][F]=[V/A][C/V]=[C/A]=s",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "rc-time-constant"
     ],
@@ -1793,7 +1793,7 @@ export const currentElectricityQuestions = [
     "explanation": "At 5τ: 1-e⁻⁵=0.993≈99%",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "rc-time-constant"
     ],
@@ -1817,7 +1817,7 @@ export const currentElectricityQuestions = [
     "explanation": "τ=RC. Smaller τ means faster charging",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "rc-time-constant"
     ],
@@ -1841,7 +1841,7 @@ export const currentElectricityQuestions = [
     "explanation": "Initially capacitor is short. I₀=V/R",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-current"
     ],
@@ -1865,7 +1865,7 @@ export const currentElectricityQuestions = [
     "explanation": "I(t)=I₀e⁻ᵗ/τ=(V/R)e⁻ᵗ/ᴿᶜ (exponential decay)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-current"
     ],
@@ -1889,7 +1889,7 @@ export const currentElectricityQuestions = [
     "explanation": "I(τ)=I₀e⁻¹≈0.37I₀",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-current"
     ],
@@ -1913,7 +1913,7 @@ export const currentElectricityQuestions = [
     "explanation": "As Q builds up, V_C increases, net V=V_battery-V_C decreases",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-current"
     ],
@@ -1937,7 +1937,7 @@ export const currentElectricityQuestions = [
     "explanation": "I₀=V/R=10/1000=0.01A=10mA",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-current"
     ],
@@ -1961,7 +1961,7 @@ export const currentElectricityQuestions = [
     "explanation": "Exponential decay: I→0 only as t→∞ (practically ~5τ)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-current"
     ],
@@ -1985,7 +1985,7 @@ export const currentElectricityQuestions = [
     "explanation": "During discharge, current flows from +ve to -ve plate (opposite)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-current"
     ],
@@ -2009,7 +2009,7 @@ export const currentElectricityQuestions = [
     "explanation": "Initially full voltage across C. I₀=V₀/R",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-current"
     ],
@@ -2033,7 +2033,7 @@ export const currentElectricityQuestions = [
     "explanation": "I(t)=-I₀e⁻ᵗ/τ (negative for opposite direction)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-current"
     ],
@@ -2057,7 +2057,7 @@ export const currentElectricityQuestions = [
     "explanation": "I₀=V₀/R=10/10000=1mA",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-current"
     ],
@@ -2081,7 +2081,7 @@ export const currentElectricityQuestions = [
     "explanation": "I(τ)=I₀e⁻¹≈0.37I₀",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-current"
     ],
@@ -2105,7 +2105,7 @@ export const currentElectricityQuestions = [
     "explanation": "τ=RC (independent of initial charge/voltage)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-current"
     ],
@@ -2129,7 +2129,7 @@ export const currentElectricityQuestions = [
     "explanation": "KCL: Sum of currents entering = sum leaving (charge conservation)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kcl"
     ],
@@ -2153,7 +2153,7 @@ export const currentElectricityQuestions = [
     "explanation": "ΣI_in = ΣI_out. 5+3 = 2+I_out, so I_out=6A",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kcl"
     ],
@@ -2177,7 +2177,7 @@ export const currentElectricityQuestions = [
     "explanation": "KCL: charge cannot accumulate at a junction",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kcl"
     ],
@@ -2201,7 +2201,7 @@ export const currentElectricityQuestions = [
     "explanation": "3-2+5+I₄=0, I₄=-6A (negative means outward)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kcl"
     ],
@@ -2225,7 +2225,7 @@ export const currentElectricityQuestions = [
     "explanation": "KCL universal: applies to any junction in any circuit",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kcl"
     ],
@@ -2249,7 +2249,7 @@ export const currentElectricityQuestions = [
     "explanation": "I₁+I₂=I₃, 4+1=5A",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kcl"
     ],
@@ -2273,7 +2273,7 @@ export const currentElectricityQuestions = [
     "explanation": "KVL: algebraic sum of voltage drops around loop = 0",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kvl"
     ],
@@ -2297,7 +2297,7 @@ export const currentElectricityQuestions = [
     "explanation": "12-5-4-V₄=0, V₄=3V",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kvl"
     ],
@@ -2321,7 +2321,7 @@ export const currentElectricityQuestions = [
     "explanation": "KVL: energy conservation in electric circuits",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kvl"
     ],
@@ -2345,7 +2345,7 @@ export const currentElectricityQuestions = [
     "explanation": "10-3-2+V₄=0, V₄=-5V (voltage drop)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kvl"
     ],
@@ -2369,7 +2369,7 @@ export const currentElectricityQuestions = [
     "explanation": "KVL applies to any closed path in circuit",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kvl"
     ],
@@ -2393,7 +2393,7 @@ export const currentElectricityQuestions = [
     "explanation": "Net EMF = 6-3 = 3V (opposing batteries subtract)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "kvl"
     ],
@@ -2417,7 +2417,7 @@ export const currentElectricityQuestions = [
     "explanation": "V = E-Ir (voltage drop across internal resistance)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "internal-resistance"
     ],
@@ -2441,7 +2441,7 @@ export const currentElectricityQuestions = [
     "explanation": "V=E-Ir=12-5×2=2V",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "internal-resistance"
     ],
@@ -2465,7 +2465,7 @@ export const currentElectricityQuestions = [
     "explanation": "I=0: V=E-0=E (open circuit voltage)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "internal-resistance"
     ],
@@ -2489,7 +2489,7 @@ export const currentElectricityQuestions = [
     "explanation": "V=E-Ir. As I↑, Ir↑, so V↓",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "internal-resistance"
     ],
@@ -2513,7 +2513,7 @@ export const currentElectricityQuestions = [
     "explanation": "Short circuit: V=0, so 0=E-Ir, I=E/r (maximum current)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "internal-resistance"
     ],
@@ -2537,7 +2537,7 @@ export const currentElectricityQuestions = [
     "explanation": "V=E-Ir, 5=6-I×0.5, 0.5I=1, I=2A",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "kirchhoffs-laws",
     "formulas": [
       "internal-resistance"
     ],
@@ -2561,7 +2561,7 @@ export const currentElectricityQuestions = [
     "explanation": "Meter bridge is practical form of Wheatstone bridge",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "meter-bridge"
     ],
@@ -2585,7 +2585,7 @@ export const currentElectricityQuestions = [
     "explanation": "At balance: P/Q = l₁/l₂ (length ratio)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "meter-bridge"
     ],
@@ -2609,7 +2609,7 @@ export const currentElectricityQuestions = [
     "explanation": "R/S = 40/60, R=S×40/60=10×2/3=6.67Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "meter-bridge"
     ],
@@ -2633,7 +2633,7 @@ export const currentElectricityQuestions = [
     "explanation": "R/S=l₁/l₂. If R↑, l₁↑ (balance point moves right)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "meter-bridge"
     ],
@@ -2657,7 +2657,7 @@ export const currentElectricityQuestions = [
     "explanation": "l₁=l₂=50cm: R/S=1, so R=S",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "meter-bridge"
     ],
@@ -2681,7 +2681,7 @@ export const currentElectricityQuestions = [
     "explanation": "Maximum sensitivity when bridge is balanced near middle",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "meter-bridge"
     ],
@@ -2705,7 +2705,7 @@ export const currentElectricityQuestions = [
     "explanation": "Potentiometer: null method, no current drawn",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "potentiometer-principle"
     ],
@@ -2729,7 +2729,7 @@ export const currentElectricityQuestions = [
     "explanation": "Uniform wire: potential drop proportional to length",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "potentiometer-principle"
     ],
@@ -2753,7 +2753,7 @@ export const currentElectricityQuestions = [
     "explanation": "E∝l. E₁/E₂=60/40=3/2",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "potentiometer-principle"
     ],
@@ -2777,7 +2777,7 @@ export const currentElectricityQuestions = [
     "explanation": "Null method: infinite resistance, no loading effect",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "potentiometer-principle"
     ],
@@ -2801,7 +2801,7 @@ export const currentElectricityQuestions = [
     "explanation": "K=V/L. If L→2L and V same, K→K/2",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "potentiometer-principle"
     ],
@@ -2825,7 +2825,7 @@ export const currentElectricityQuestions = [
     "explanation": "E=K×l=2×75=150mV",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "potentiometer-principle"
     ],
@@ -2849,7 +2849,7 @@ export const currentElectricityQuestions = [
     "explanation": "Balance: P/Q = R/S or PS=QR",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "wheatstone-bridge"
     ],
@@ -2873,7 +2873,7 @@ export const currentElectricityQuestions = [
     "explanation": "10/20=5/S, S=5×20/10=10Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "wheatstone-bridge"
     ],
@@ -2897,7 +2897,7 @@ export const currentElectricityQuestions = [
     "explanation": "Balanced bridge: no potential difference, I_g=0",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "wheatstone-bridge"
     ],
@@ -2921,7 +2921,7 @@ export const currentElectricityQuestions = [
     "explanation": "P/Q=R/S. If P↑ and Q,S fixed, R must ↑",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "wheatstone-bridge"
     ],
@@ -2945,7 +2945,7 @@ export const currentElectricityQuestions = [
     "explanation": "5/5=10/10, 1=1 ✓ Balanced!",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "wheatstone-bridge"
     ],
@@ -2969,7 +2969,7 @@ export const currentElectricityQuestions = [
     "explanation": "Maximum sensitivity when resistances are of same order",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "wheatstone-bridge",
     "formulas": [
       "wheatstone-bridge"
     ],
@@ -2993,7 +2993,7 @@ export const currentElectricityQuestions = [
     "explanation": "Shunt: parallel path to bypass excess current",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "ammeter-shunt"
     ],
@@ -3017,7 +3017,7 @@ export const currentElectricityQuestions = [
     "explanation": "I_g×R_g=(I-I_g)×S. 0.001×100=0.999×S, S≈0.1Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "ammeter-shunt"
     ],
@@ -3041,7 +3041,7 @@ export const currentElectricityQuestions = [
     "explanation": "Shunt: small R to carry large current",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "ammeter-shunt"
     ],
@@ -3065,7 +3065,7 @@ export const currentElectricityQuestions = [
     "explanation": "Higher range needs more current through shunt, smaller S",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "ammeter-shunt"
     ],
@@ -3089,7 +3089,7 @@ export const currentElectricityQuestions = [
     "explanation": "Shunt makes low resistance device = ammeter",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "ammeter-shunt"
     ],
@@ -3113,7 +3113,7 @@ export const currentElectricityQuestions = [
     "explanation": "n=I/I_g=100/10=10",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "ammeter-shunt"
     ],
@@ -3137,7 +3137,7 @@ export const currentElectricityQuestions = [
     "explanation": "Multiplier: high series resistance to limit current",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "voltmeter-multiplier"
     ],
@@ -3161,7 +3161,7 @@ export const currentElectricityQuestions = [
     "explanation": "V=I_g(R_g+R). 10=0.001(50+R), R=10000-50=9950Ω",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "voltmeter-multiplier"
     ],
@@ -3185,7 +3185,7 @@ export const currentElectricityQuestions = [
     "explanation": "Multiplier: large R to limit current through galvanometer",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "voltmeter-multiplier"
     ],
@@ -3209,7 +3209,7 @@ export const currentElectricityQuestions = [
     "explanation": "Higher range needs higher total resistance, larger R",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "voltmeter-multiplier"
     ],
@@ -3233,7 +3233,7 @@ export const currentElectricityQuestions = [
     "explanation": "High series R makes high resistance device = voltmeter",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "voltmeter-multiplier"
     ],
@@ -3257,7 +3257,7 @@ export const currentElectricityQuestions = [
     "explanation": "n=V/V_g=50/0.5=100",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "electrical-measuring-instruments",
     "formulas": [
       "voltmeter-multiplier"
     ],
@@ -3281,7 +3281,7 @@ export const currentElectricityQuestions = [
     "explanation": "τ=RC (product of resistance and capacitance)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "time-constant"
     ],
@@ -3305,7 +3305,7 @@ export const currentElectricityQuestions = [
     "explanation": "τ=10×10³×100×10⁻⁶=1s",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "time-constant"
     ],
@@ -3329,7 +3329,7 @@ export const currentElectricityQuestions = [
     "explanation": "At t=τ: Q=Q_max(1-e⁻¹)≈0.63Q_max",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "time-constant"
     ],
@@ -3353,7 +3353,7 @@ export const currentElectricityQuestions = [
     "explanation": "At 5τ: 1-e⁻⁵≈0.993≈99% (practically fully charged)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "time-constant"
     ],
@@ -3377,7 +3377,7 @@ export const currentElectricityQuestions = [
     "explanation": "Large τ→slower exponential approach to final value",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "time-constant"
     ],
@@ -3401,7 +3401,7 @@ export const currentElectricityQuestions = [
     "explanation": "τ=RC. New=(R/2)×(2C)=RC (unchanged)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "time-constant"
     ],
@@ -3425,7 +3425,7 @@ export const currentElectricityQuestions = [
     "explanation": "Q(t)=Q_max(1-e^(-t/τ)) - exponential rise",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-charge"
     ],
@@ -3449,7 +3449,7 @@ export const currentElectricityQuestions = [
     "explanation": "Initially uncharged: Q(0)=Q_max(1-1)=0",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-charge"
     ],
@@ -3473,7 +3473,7 @@ export const currentElectricityQuestions = [
     "explanation": "Fully charged: Q=CV (capacitor equation)",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-charge"
     ],
@@ -3497,7 +3497,7 @@ export const currentElectricityQuestions = [
     "explanation": "Q=CV=100×50=5000μC=5mC",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-charge"
     ],
@@ -3521,7 +3521,7 @@ export const currentElectricityQuestions = [
     "explanation": "Exponential: Q→Q_max only as t→∞",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-charge"
     ],
@@ -3545,7 +3545,7 @@ export const currentElectricityQuestions = [
     "explanation": "Q(τ)=Q_max(1-e⁻¹)≈0.63Q_max",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "charging-charge"
     ],
@@ -3569,7 +3569,7 @@ export const currentElectricityQuestions = [
     "explanation": "Q(t)=Q₀e^(-t/τ) - exponential decay",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-charge"
     ],
@@ -3593,7 +3593,7 @@ export const currentElectricityQuestions = [
     "explanation": "Initially fully charged: Q(0)=Q₀",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-charge"
     ],
@@ -3617,7 +3617,7 @@ export const currentElectricityQuestions = [
     "explanation": "Q(τ)=Q₀e⁻¹≈0.37Q₀",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-charge"
     ],
@@ -3641,7 +3641,7 @@ export const currentElectricityQuestions = [
     "explanation": "Q=Q₀/2: e^(-t/τ)=0.5, t=0.693τ=ln(2)×τ",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-charge"
     ],
@@ -3665,7 +3665,7 @@ export const currentElectricityQuestions = [
     "explanation": "Q(3τ)=Q₀e⁻³≈0.05Q₀=5%",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-charge"
     ],
@@ -3689,7 +3689,7 @@ export const currentElectricityQuestions = [
     "explanation": "Q(t)=Q₀e^(-t/τ) is exponential decay",
     "subject": "physics",
     "chapter": "current-electricity",
-    "topic": "circuits",
+    "topic": "rc-circuit",
     "formulas": [
       "discharging-charge"
     ],
