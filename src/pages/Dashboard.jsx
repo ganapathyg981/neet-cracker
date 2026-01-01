@@ -9,7 +9,7 @@ export default function Dashboard() {
   const allQuestions = getAllQuestions();
   
   // Calculate days left until NEET 2025 (assuming May 2025)
-  const neetDate = new Date('2025-05-04');
+  const neetDate = new Date('2026-05-04');
   const today = new Date();
   const daysLeft = Math.ceil((neetDate - today) / (1000 * 60 * 60 * 24));
   
