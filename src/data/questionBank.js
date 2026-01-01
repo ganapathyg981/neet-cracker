@@ -2,14 +2,58 @@
 // All curated NEET-style questions linked to topics, formulas, chapters
 // Now organized with modular chapter-specific files
 
-import { allQuestions, getQuestionsByChapter, getQuestionsByFormula, getQuestionsByDifficulty, getQuestionStats } from './questions/index.js';
+import { allQuestions, getQuestionsByChapter, getQuestionsByFormula, getQuestionsByDifficulty } from './questions/index.js';
 
 // Main question bank export - combines all chapters
 export const questionBank = allQuestions;
 
-// Helper functions to filter questions
-export function getQuestionsByTopicId(topicId) {
+// Get all questions
+export function getAllQuestions() {
+  return questionBank;
+}
+
+// Get questions by subject
+export function getQuestionsBySubject(subject) {
+  return questionBank.filter(q => q.subject === subject);
+}
+
+// Get questions by topic
+export function getQuestionsByTopic(topicId) {
   return questionBank.filter(q => q.topic === topicId);
+}
+
+// Get questions by chapter (re-export)
+export { getQuestionsByChapter };
+
+// Get questions by formula (re-export)
+export { getQuestionsByFormula };
+
+// Get random questions for mock tests
+export function getRandomQuestions(count = 10, options = {}) {
+  let filtered = [...questionBank];
+  
+  if (options.subject) {
+    filtered = filtered.filter(q => q.subject === options.subject);
+  }
+  if (options.chapter) {
+    filtered = filtered.filter(q => q.chapter === options.chapter);
+  }
+  if (options.difficulty) {
+    filtered = filtered.filter(q => q.difficulty === options.difficulty);
+  }
+  
+  // Shuffle and take count
+  for (let i = filtered.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
+  }
+  
+  return filtered.slice(0, count);
+}
+
+// Helper functions to filter questions (legacy aliases)
+export function getQuestionsByTopicId(topicId) {
+  return getQuestionsByTopic(topicId);
 }
 
 export function getQuestionsByChapterId(chapterId) {
